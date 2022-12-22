@@ -1,0 +1,140 @@
+---
+title: "Titre de la présentation"
+subtitle: "Sous titre de la présentation"
+date: today
+date-format: "DD/MM/YYYY"
+institute: Insee
+menu: true
+title-slide-attributes:
+  data-background-image: img/com_interne/TitlePage.svg # com_interne / com_entrepriseEtExperts ou com_toutPublic
+  data-background-size: 90%
+  data-background-opacity: "1"
+format:
+  revealjs:
+    # logo: img/logos/logoDeVotreService.png
+    include-after-body: ["modulesCompl/footer.html"]
+    embed-resources: false
+    theme: [Insee_Commun.scss, insee_rouge_interne.scss] #insee_rouge_interne.scss / Insee_Vert_entreprises_experts.scss / Insee_Jaune_toutPublic.scss
+    css: stylePerso.css
+    menu:
+      side: left
+      width: wide
+    slide-number: c/t
+    controls-layout: bottom-right
+    transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
+    background-transition: fade
+    navigation-mode: vertical
+    transition-speed: slow
+    toc: true
+    toc-title: Sommaire
+    toc-depth: 1
+    toc-float: true
+    number-sections: true
+    number-depth: 2
+    preview-links: auto
+    code-fold: true
+    code-summary: "Code"
+    chalkboard: false # press the B key to toggle chalkboard
+revealjs-plugins:
+  - pointer # press the Q key to toggle pointer
+  - confetti # press the C key to throw confettis
+  - verticator
+filters:
+  - roughnotation
+execute:
+  echo: false
+  warning: false
+---
+
+# titre de niveau 1 {.backGroundTitre}
+
+## Titre de niveau 2 {.backGroundstandard}
+
+:::{.enteteAvecTitre}
+titre de niveau 1
+:::
+
+### Titre de niveau 3 (taille 1)
+
+#### Titre de niveau 4
+
+##### Titre de niveau 5
+
+###### Titre de niveau 6
+
+- liste de niveau 1
+  - liste de niveau 2
+    - liste de niveau 3
+      - liste de niveau 4
+        - liste de niveau 5
+          - liste de niveau 6
+
+## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
+
+::: {.textPageFinale}
+ Merci de votre attention
+:::
+
+::: {.textFooter}
+Retrouvez nous sur
+:::
+
+:::: {.columns}
+
+::: {.column .coordonnees width=50%}
+- Prénom Nom
+- fonction
+- Service
+- Numéro de téléphone
+- Mél
+:::
+
+::: {.column .droite width=40%}
+:::
+
+::::
+
+# documentations {.backGroundTitre}
+
+## Techno utilisées {.backGroundstandard}
+
+:::{.enteteAvecTitre}
+documentations
+:::
+
+- [documentation quarto](https://quarto.org/docs/presentations/)
+- [documentation revealjs](https://revealjs.com/)
+- [documentation scss](https://www.w3schools.com/sass/default.php)
+- [documentation css](https://www.w3schools.com/css/default.asp)
+
+
+## Plugins {.backGroundstandard}
+
+:::{.enteteAvecTitre}
+documentations
+:::
+
+- **Pointer :** presser "q" pour changer le pointer de la souris
+- **Confetti :** presser "c" pour envoyer des confettis
+- **Verticator :**
+  - [exemple](https://martinomagnifico.github.io/reveal.js-verticator/demo.html#/)
+  - [code de l'exemple](https://github.com/Martinomagnifico/quarto-verticator/blob/main/example.qmd)
+- **roughtnotation :**
+  - [exemple](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide) 
+  - [code l'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
+- **fontawesome :** :
+  - [liste des icones](https://fontawesome.com/search?o=r&m=free)
+
+## Autres sites {.backGroundstandard}
+
+:::{.enteteAvecTitre}
+documentations
+:::
+
+- [Présentation des fonctionnalités](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)
+- [Code source associé à la présentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
+- [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
+
+# TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
+
+

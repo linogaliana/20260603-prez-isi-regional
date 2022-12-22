@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<div id="footerPersonnalise">
+  <p>
+      <a target="_blank" href="https://www.insee.fr/fr/accueil"><img src="img/logos/png/Logo_Insee_TailleMINI.jpg" alt="lien page Insee.fr" title= "Page du site de l'Insee" class="logo"></a> |
+      <a target="_blank" href="https://twitter.com/InseeFr"><img src="img/logos/png/logoTwitter.png" alt="lien page twitter Insee" title= "Page Twitter de l'Insee" class="logo"></a> | 
+      <a target="_blank" href="https://www.linkedin.com/company/insee?original_referer="><img src="img/logos/png/logoLinkedIn.png" alt="lien page linkedIn Insee" title= "Page linkedIn de l'Insee" class="logo"></a> |
+      <a target="_blank" href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g"><img src="img/logos/png/logoYoutube.png" alt="lien page youtube Insee" title= "Chaîne Youtube de l'Insee" class="logo"></a> | 
+      <a target="_blank" href="https://www.dailymotion.com/InseeFr"><img src="img/logos/png/logoDailyMotion.png" alt="lien page Dailymotion Insee" title= "Chaîne Dailymotion de l'Insee" class="logo"></a> | 
+      <a target="_blank" href="https://blog.insee.fr/"><img src="img/logos/png/logoBlog.jpg" alt="lien blog Insee" title= "Blog de l'Insee" class="logo"></a> |
+      <a target="_blank" href="https://www.insee.fr/fr/information/2381941"><img src="img/logos/png/logoFluxRSS3.png" alt="lien flux RSS Insee" title= "RSS" class="logo"></a>
+  </p>
+</div>
+
+<script src="js/miseEnPage.js"></script>
+<script type="text/javascript">
+
+  var $footerPerso = document.getElementById('footerPersonnalise')
+  var $pageDebut = document.getElementById('title-slide')
+  var $pageSommaire = document.getElementById('TOC')
+  var $pageFin = document.getElementById('pageDeFin')
+
+  Reveal.on( 'slidechanged', event => {
+
+    if (!$footerPerso.classList.contains("divCachee")) {
+      $footerPerso.classList.add("divCachee");
+    } 
+    
+    if ($pageDebut.classList.contains("present") 
+        || $pageSommaire.classList.contains("present")
+        || $pageFin.classList.contains("present")) {
+      $footerPerso.classList.remove("divCachee");
+    }
+    
+  });
+
+</script>

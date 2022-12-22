@@ -1,0 +1,304 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Open Sans", "Arial", "Helvetica" ;
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-color: #383d3d !default;
+$h1-font-size: 1.6em;
+$h2-font-size: 1.3em;
+$h3-font-size: 1em;
+$h4-font-size: 0.7em;
+$h5-font-size: 0.4em;
+
+// colors
+$body-bg: #f0f1eb !default;
+$body-color: #000 !default;
+$link-color:  #3ea0e5 !default;
+$selection-bg: #26351c !default;
+$navigation-tools-color: #3ea0e5 !default;
+$main-color-text: #0F417A !default;
+$second-color-text: #5B8ED4 !default;
+$yellow-color: #ffda5a !default;
+$grey-color-endPage: #646363 !default;
+
+
+/*-- scss:rules --*/
+
+/**************GENERIQUE*******************/
+
+p, li {
+  font-family: $font-family-sans-serif;
+  color: $main-color-text;
+}
+
+
+.reveal {
+  .controls, .progress, .verticator {
+    color: $navigation-tools-color;
+  }
+  a {
+    line-height: 1.3em;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #5a95cf;
+  }
+  a:active {
+    color: blueviolet;
+  }
+  h1, h4, h5, h6 {
+  color: $main-color-text;
+  }
+  h2 {
+    color: $second-color-text;
+  }
+  h3 {
+    color: #B0AEAE;
+  }
+}
+
+.slide-number{
+  top: 2%;
+  height: fit-content;
+  background-color: $main-color-text !important;
+  color: $yellow-color !important;
+  font-weight: bold;
+}
+
+.level2{
+  ul {
+    li {//liste de niveau 1
+      list-style-type: "–";
+    }
+    ul {
+      li {//liste de niveau 2
+        list-style-type: disc;
+      }
+      ul {
+        li {//liste de niveau 3
+          list-style-type: "–";
+        }
+        ul{
+          li{//liste de niveau 4
+            list-style-type: disc;
+          }
+          ul{
+            li{//liste de niveau 5
+              list-style-type: disc;
+            }
+            ul{
+              li{//liste de niveau 6
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}
+
+/***********premiere page**********/
+
+p.date{
+  font-size: 65%;
+  text-align: left;
+}
+
+.reveal h1 {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+#title-slide{
+  hyphens: auto;
+  width: 65%;
+  top: 150px !important;
+}
+
+.reveal .subtitle {
+  text-align: left;
+  font-weight: bold;
+  color: $second-color-text;
+}
+
+#nomReunion {
+  font-size: 0.7em;
+  text-align: left;
+/*  color: #B0AEAE;*/
+  color: $grey-color-endPage;
+  font-weight: bold;
+}
+
+/***********Page Sommaire ************/
+
+#TOC {
+  height: 95% !important;
+  background-repeat: no-repeat;
+}
+
+#toc-title {
+  float: right;
+  font-size: 50%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  color: $yellow-color;
+}
+
+#TOC ul {
+  font-size: 95%;
+  margin-top: 5%;
+  list-style-type: none;
+  padding-left: 15%;
+}
+
+#TOC ul li {
+  list-style-position: outside;
+  text-indent: -1em;
+  text-transform: uppercase;
+}
+
+#TOC ul li a {
+  font-weight: bold;
+}
+
+#TOC ul li:not(:last-child) {
+   margin-bottom: 2%;
+}
+
+/***********Page Titre ************/
+
+div.backGroundTitre{
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.level1 {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  
+  h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.header-section-number{
+  text-decoration: none;
+  display: inline-block;
+}
+
+/***********Page Standard************/
+
+div.backGroundstandard {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.level2 {
+  ul li, p {
+    font-size: 0.7em;
+  }
+  h2 {
+    margin-top: 7%;
+  }
+}
+
+.enteteAvecTitre {
+  position: absolute;
+  top: -1em;
+  left: 20%;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  p {
+    color: $grey-color-endPage;
+  }
+}
+
+/***********Page de fin************/
+
+div.backgroundPageFinale {
+  background-repeat: round;
+  background-size: cover;
+}
+
+.textPageFinale {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: solid 5px $main-color-text;
+  color: $main-color-text;
+  width: 80%;
+  font-size: 0.8em;
+}
+
+
+.textFooter {
+  bottom: 3%;
+  position: fixed;
+  left: 40%;
+  font-size: 0.8em;
+  
+  p {
+    color: $grey-color-endPage;
+    font-weight: bold;
+  }
+}
+
+.coordonnees {
+  font-size: 0.7em;
+  margin-top: 2em;
+  
+  ul li {
+    color: $grey-color-endPage;
+    font-weight: bold;
+    list-style-type: none;
+  }
+}
+
+
+/*********LOGO**************/
+.slide-logo{
+  max-height: 15% !important;
+  right: 110px !important;
+  z-index: 1;
+  bottom: 25px !important;
+}
+
+/************FOOTER PRINCIPAL**************/
+
+#footerPersonnalise {
+  position: fixed;
+  bottom: 18px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  z-index: 2;
+  height: 40px;
+}
+
+img.logo {
+  width: 40px !important;
+  height: 40px !important;
+  margin-bottom: -1% !important;
+}
+
+.divCachee{
+  display: none !important;
+}
+
+
+/***************AUTRES*******************/
+
+.aside-footnotes {
+  font-size: medium !important;
+}

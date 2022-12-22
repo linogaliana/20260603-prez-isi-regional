@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+$color-text-sommaire: #0F417A !default;
+
+/*-- scss:rules --*/
+
+
+
+
+/*Sommaire*/
+#TOC {
+  background-image: url(img/PageSommaire_16_9_jaune.png);
+}
+
+/*page sommaire*/
+.toc-section-number{
+  color: $color-text-sommaire;
+}
+
+#TOC ul li a{
+  color: $color-text-sommaire;
+}
+
+
+/*page Titre*/
+div.backGroundTitre{
+  background-image: url(img/PagePartie_16_9_jaune.svg);
+}
+
+/*Page standard*/
+div.backGroundstandard {
+  background-image: url(img/PageStandard_16_9_jaune.svg);
+}
+
+/*Page finale*/
+div.backgroundPageFinale {
+  background-image: url(img/EndPage_16_9_jaune.PNG);
+}
+
