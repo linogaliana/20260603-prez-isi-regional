@@ -15,10 +15,21 @@
 <script src="js/miseEnPage.js"></script>
 <script type="text/javascript">
 
+/*Positionnement du champ de saisie de la réunion*/
+
+var el1 = document.querySelector('#title-slide');
+
+el1.insertAdjacentHTML('beforeend', ' <div id=\'nomReunion\' w3-include-html="modulesCompl/customPremierePage.html"></div> ');
+
+includeHTML();
+
+/*Gestion de l'apparition du footer et du nom de la réunion*/
+
   var $footerPerso = document.getElementById('footerPersonnalise')
   var $pageDebut = document.getElementById('title-slide')
   var $pageSommaire = document.getElementById('TOC')
   var $pageFin = document.getElementById('pageDeFin')
+  var $nomReunion = document.getElementById('nomReunion')
 
   Reveal.on( 'slidechanged', event => {
 
@@ -32,6 +43,32 @@
       $footerPerso.classList.remove("divCachee");
     }
     
+    if (!$nomReunion.classList.contains("divCachee")) {
+      $nomReunion.classList.add("divCachee");
+    } 
+    
+    if ($pageDebut.classList.contains("present")) {
+      $nomReunion.classList.remove("divCachee");
+    }
+    
   });
+  
+  Reveal.on( 'resize', event => {
+  // event.scale, event.oldScale, event.size
+  console.log(event)
+
+    if(window.screen.height == 963 & window.screen.width == 1540){
+      if (event.scale == 1.2381428571428572){
+        document.getElementById("nomReunion").style.top = "22.5%"
+      }
+      else{
+        document.getElementById("nomReunion").style.top = "25.5%"        
+      }
+    }
+    
+    console.log("height", window.screen.height)/* dom: 963*/
+    console.log("width", window.screen.width) /*dom: 1540*/
+
+} );
 
 </script>

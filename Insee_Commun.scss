@@ -114,8 +114,14 @@ p.date{
 
 #title-slide{
   hyphens: auto;
-  width: 65%;
-  top: 150px !important;
+  width: 100%;
+  height: 100%;
+/*  width: 65%;
+  top: 150px !important;*/
+}
+
+.reveal .title {
+  padding-top: 15%;
 }
 
 .reveal .subtitle {
@@ -125,11 +131,20 @@ p.date{
 }
 
 #nomReunion {
-  font-size: 0.7em;
-  text-align: left;
-/*  color: #B0AEAE;*/
-  color: $grey-color-endPage;
-  font-weight: bold;
+  top: 25.5%;
+  position: relative;
+  right: 0;
+  float: right;
+}
+
+#nomReunion p {
+  font-size: 0.4em;
+  text-align: right;
+  color: $yellow-color;
+  margin: 0;
+  padding: 0 5px;
+  background-color: #0f417a;
+  /*font-weight: bold;*/
 }
 
 /***********Page Sommaire ************/

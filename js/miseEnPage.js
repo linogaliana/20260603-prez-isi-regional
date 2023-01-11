@@ -26,12 +26,4 @@ function includeHTML() {
     }
   }
 }
-
-/*Positionnement du champ de saisie de la réunion*/
-
-var el1 = document.querySelector('.subtitle');
-
-el1.insertAdjacentHTML('afterend', ' <div w3-include-html="modulesCompl/customPremierePage.html"></div> ');
-
-includeHTML();
   

@@ -3,11 +3,12 @@ title: "Titre de la présentation"
 subtitle: "Sous titre de la présentation"
 date: today
 date-format: "DD/MM/YYYY"
-institute: Insee
+# institute: Insee
+# author: " "
 menu: true
 title-slide-attributes:
   data-background-image: img/com_interne/TitlePage.svg # com_interne / com_entrepriseEtExperts ou com_toutPublic
-  data-background-size: 90%
+  data-background-size: contain
   data-background-opacity: "1"
 format:
   revealjs:
@@ -135,6 +136,6 @@ documentations
 - [Code source associé à la présentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
 - [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
 
-# TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
+# TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES {.backGroundTitre}
 
 
