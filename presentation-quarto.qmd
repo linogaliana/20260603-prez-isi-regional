@@ -3,8 +3,6 @@ title: "Titre de la présentation"
 subtitle: "Sous titre de la présentation"
 date: today
 date-format: "DD/MM/YYYY"
-# institute: Insee
-# author: " "
 menu: true
 title-slide-attributes:
   data-background-image: img/com_interne/TitlePage.svg # com_interne / com_entrepriseEtExperts ou com_toutPublic
