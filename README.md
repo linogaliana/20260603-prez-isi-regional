@@ -16,7 +16,8 @@ title-slide-attributes:
   data-background-image: img/com_toutPublic/TitlePage.svg
   
 ...
-
+format:
+  revealjs:
     theme: [Insee_Commun.scss, Insee_Jaune_toutPublic.scss]
 
 ```
@@ -26,7 +27,7 @@ title-slide-attributes:
 Les images utilisées par le support sont partagées entre 2 répertoires :
 
 - img/ -> pour la première page
-- presentation-quarto_files/libs/revealjs/dist/theme/img -> pour les autres pages
+- css/presentation-quarto_files/libs/revealjs/dist/theme/img -> pour les autres pages
 
 Si vous passez l'option `embed-resources: false` à `true` (cas où vous souhaitez partager votre support de présentation avec une tierce personne), alors le dossier "presentation-quarto_files" disparaîtra et sera intégré dans le fichier html généré en sortie.
 
