@@ -13,8 +13,8 @@ format:
     # logo: img/logos/logoDeVotreService.png
     include-after-body: ["modulesCompl/footer.html"]
     embed-resources: false
-    theme: [Insee_Commun.scss, Insee_rouge_interne.scss] #Insee_rouge_interne.scss / Insee_Vert_entreprises_experts.scss / Insee_Jaune_toutPublic.scss
-    css: stylePerso.css
+    theme: [css/Insee_Commun.scss, css/Insee_rouge_interne.scss] #Insee_rouge_interne.scss / Insee_Vert_entreprises_experts.scss / Insee_Jaune_toutPublic.scss
+    css: css/stylePerso.css
     menu:
       side: left
       width: wide

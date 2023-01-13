@@ -1,0 +1,18 @@
+variables:
+  # LC_ALL: C.UTF-8
+  GIT_SSL_NO_VERIFY: "1"
+
+pages:
+  tags :
+   - docker
+
+  script:
+  - echo 'Deploy presentation to Gitlab pages'
+  - mkdir public # on cree le repertoire public
+  - cp presentation-quarto.html public # on copie le fichier presentation-quarto.html dans le repertoire public
+  - cp -r data img _extensions css js modulesCompl presentation-quarto_files public # on copie les repertoires img et css (et leurs ss-rep) dans public
+  artifacts:
+    paths:
+      - public
+  only:
+    - testDeployment
