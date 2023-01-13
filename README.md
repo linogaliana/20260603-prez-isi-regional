@@ -33,5 +33,11 @@ Si vous passez l'option `embed-resources: false` à `true` (cas où vous souhait
 
 Si vous souhaitez rebasculer l'option `embed-resources: true` à `false`, alors cela va re-généré le dossier "presentation-quarto_files" au moment de lancer le programme (clique sur "render"). Néanmoins, celui-ci sera vidé des images qu'il contenait. Il faudra alors copier et coller les images utilisées du premier répertoire sus-nommé dans le 2ème pour rétablir la situation.
 
+## Déploiement du support
 
+Le support de présentation est accessible sur internet via l'url suivante :
+
+<http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto/presentation-quarto.html>
+
+Il s'agit de l'uri présente dans votre dépôt à la page suivante : "settings -> pages" à laquelle on concatène le nom du fichier html en output.
 
