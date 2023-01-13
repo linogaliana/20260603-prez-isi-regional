@@ -34,7 +34,6 @@ format:
     code-fold: true
     code-summary: "Code"
     chalkboard: false # press the B key to toggle chalkboard
-    output-file: index.html
 revealjs-plugins:
   - pointer # press the Q key to toggle pointer
   - confetti # press the C key to throw confettis
