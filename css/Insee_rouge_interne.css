@@ -1,0 +1,32 @@
+
+
+/*Sommaire*/
+#TOC {
+  background-image: url(../img/com_interne/PageSommaire_16_9_rouge.PNG);
+}
+
+/*page sommaire*/
+.toc-section-number{
+  color: #C4E1FF;
+}
+
+#TOC ul li a{
+  color: white;
+}
+
+
+/*page Titre*/
+div.backGroundTitre{
+  background-image: url(../img/com_interne/PagePartie_16_9_rouge.svg);
+}
+
+/*Page standard*/
+div.backGroundstandard {
+  background-image: url(../img/com_interne/PageStandard_16_9_rouge.svg);
+}
+
+/*Page finale*/
+div.backgroundPageFinale {
+  background-image: url(../img/com_interne/EndPage_16_9_rouge.PNG);
+}
+

@@ -2,7 +2,7 @@
 
 <div id="footerPersonnalise">
   <p>
-      <a target="_blank" href="https://www.insee.fr/fr/accueil"><img src="img/logos/png/logo_Insee_TailleMINI.jpg" alt="lien page Insee.fr" title= "Page du site de l'Insee" class="logo"></a> |
+      <a target="_blank" href="https://www.insee.fr/fr/accueil"><img src="img/logos/png/Logo_Insee_TailleMINI.jpg" alt="lien page Insee.fr" title= "Page du site de l'Insee" class="logo"></a> |
       <a target="_blank" href="https://twitter.com/InseeFr"><img src="img/logos/png/LogoTwitter.png" alt="lien page twitter Insee" title= "Page Twitter de l'Insee" class="logo"></a> | 
       <a target="_blank" href="https://www.linkedin.com/company/insee?original_referer="><img src="img/logos/png/LogoLinkedIn.png" alt="lien page linkedIn Insee" title= "Page linkedIn de l'Insee" class="logo"></a> |
       <a target="_blank" href="https://www.youtube.com/channel/UChCCvJTbZEYsCXyfu27eQ6g"><img src="img/logos/png/LogoYoutube.png" alt="lien page youtube Insee" title= "Chaîne Youtube de l'Insee" class="logo"></a> | 
@@ -57,7 +57,16 @@ includeHTML();
   // event.scale, event.oldScale, event.size
   console.log(event)
 
-    if(window.screen.height == 963 & window.screen.width == 1540){
+    if(window.screen.height == 963 & window.screen.width == 1540){ /*ecran bureau*/
+      if (event.scale == 1.2381428571428572){
+        document.getElementById("nomReunion").style.top = "22.5%"
+      }
+      else{
+        document.getElementById("nomReunion").style.top = "25.5%"        
+      }
+    }
+    
+    if(window.screen.height == 960 & window.screen.width == 1280){ /*ecran salle reunion*/
       if (event.scale == 1.2381428571428572){
         document.getElementById("nomReunion").style.top = "22.5%"
       }

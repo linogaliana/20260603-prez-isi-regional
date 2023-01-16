@@ -1,0 +1,31 @@
+
+/*Sommaire*/
+#TOC {
+  background-image: url(../img/com_entrepriseEtExperts/PageSommaire_16_9_vert.PNG);
+}
+
+/*page sommaire*/
+.toc-section-number{
+  color: #0F417A;
+}
+
+#TOC ul li a{
+  color: white;
+}
+
+
+/*page Titre*/
+div.backGroundTitre{
+  background-image: url(../img/com_entrepriseEtExperts/PagePartie_16_9_vert.svg);
+}
+
+/*Page standard*/
+div.backGroundstandard {
+  background-image: url(../img/com_entrepriseEtExperts/PageStandard_16_9_vert.svg);
+}
+
+/*Page finale*/
+div.backgroundPageFinale {
+  background-image: url(../img/com_entrepriseEtExperts/EndPage_16_9_vert.png);
+}
+

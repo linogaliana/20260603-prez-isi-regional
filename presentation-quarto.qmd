@@ -10,11 +10,11 @@ title-slide-attributes:
   data-background-opacity: "1"
 format:
   revealjs:
+    embed-resources: false
     # logo: img/logos/logoDeVotreService.png
     include-after-body: ["modulesCompl/footer.html"]
-    embed-resources: false
-    theme: [css/Insee_Commun.scss, css/Insee_rouge_interne.scss] #Insee_rouge_interne.scss / Insee_Vert_entreprises_experts.scss / Insee_Jaune_toutPublic.scss
-    css: css/stylePerso.css
+    theme: css/Insee_Commun.scss 
+    css: [css/Insee_rouge_interne.css, css/stylePerso.css] #Insee_rouge_interne.css / Insee_Vert_entreprises_experts.css / Insee_Jaune_toutPublic.css
     menu:
       side: left
       width: wide
