@@ -436,7 +436,7 @@
 <li><a href="https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide">exemple</a></li>
 <li><a href="https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd">code l’exemple</a></li>
 </ul></li>
-<li><strong>fontawesome :</strong> :
+<li><strong>fontawesome :</strong>
 <ul>
 <li><a href="https://fontawesome.com/search?o=r&amp;m=free">liste des icones</a></li>
 </ul></li>
@@ -737,24 +737,24 @@
 
         if(window.screen.height == 963 & window.screen.width == 1540){ /*ecran bureau*/
           if (event.scale == 1.2381428571428572){
-            document.getElementById("nomReunion").style.top = "22.5%"
+            document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
           }
           else{
             document.getElementById("nomReunion").style.top = "25.5%"        
           }
         }
         
-        if(window.screen.height == 960 & window.screen.width == 1280){ /*ecran salle reunion*/
-          if (event.scale == 1.2381428571428572){
-            document.getElementById("nomReunion").style.top = "22.5%"
+        if(window.screen.height == 858 & window.screen.width == 1143){ /*ecran salle reunion*/
+          if (event.scale == 0.9797142857142858){
+            document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
           }
           else{
             document.getElementById("nomReunion").style.top = "25.5%"        
           }
         }
         
-        console.log("height", window.screen.height)/* dom: 963*/
-        console.log("width", window.screen.width) /*dom: 1540*/
+        console.log("height", window.screen.height)
+        console.log("width", window.screen.width)
 
     } );
 

@@ -7,7 +7,8 @@ $h1-font-size: 1.6em;
 $h2-font-size: 1.3em;
 $h3-font-size: 1em;
 $h4-font-size: 0.7em;
-$h5-font-size: 0.4em;
+$h5-font-size: 0.6em;
+$h6-font-size: 0.5em;
 
 // colors
 $body-bg: #f0f1eb !default;
@@ -24,6 +25,30 @@ $grey-color-endPage: #646363 !default;
 /*-- scss:rules --*/
 
 /**************GENERIQUE*******************/
+
+h1{
+  font-size: $h1-font-size;
+}
+
+h2{
+  font-size: $h2-font-size;
+}
+
+h3{
+  font-size: $h3-font-size;
+}
+
+h4{
+  font-size: $h4-font-size;
+}
+
+h5{
+  font-size: $h5-font-size;
+}
+
+h6{
+  font-size: $h6-font-size;
+}
 
 p, li {
   font-family: $font-family-sans-serif;
@@ -68,27 +93,33 @@ p, li {
 .level2{
   ul {
     li {//liste de niveau 1
-      list-style-type: "–";
+      list-style-type: "– ";
+      font-size: 30px !important;
     }
     ul {
       li {//liste de niveau 2
         list-style-type: disc;
+        font-size: 25px !important;
       }
       ul {
         li {//liste de niveau 3
-          list-style-type: "–";
+          list-style-type: "– ";
+          font-size: 25px !important;
         }
         ul{
           li{//liste de niveau 4
             list-style-type: disc;
+            font-size: 25px !important;
           }
           ul{
             li{//liste de niveau 5
               list-style-type: disc;
+              font-size: 25px !important;
             }
             ul{
               li{//liste de niveau 6
                 list-style-type: disc;
+                font-size: 25px !important;
               }
             }
           }

@@ -121,7 +121,7 @@ documentations
 - **roughtnotation :**
   - [exemple](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide) 
   - [code l'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
-- **fontawesome :** :
+- **fontawesome :**
   - [liste des icones](https://fontawesome.com/search?o=r&m=free)
 
 ## Autres sites {.backGroundstandard}
