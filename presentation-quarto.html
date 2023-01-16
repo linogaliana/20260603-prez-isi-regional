@@ -753,6 +753,15 @@
           }
         }
         
+        if(window.screen.height == 768 & window.screen.width == 1024){ /*ecran salle reunion*/
+          if (event.scale == 0.8777142857142858){
+            document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
+          }
+          else{
+            document.getElementById("nomReunion").style.top = "25.5%"        
+          }
+        }
+        
         console.log("height", window.screen.height)
         console.log("width", window.screen.width)
 
