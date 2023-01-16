@@ -1,7 +1,5 @@
 /.quarto/
 .Rproj.user
-presentation-quarto_files/
 data/*.csv
 data/*.xls
 data/*xlsx
-presentation-quarto.html
