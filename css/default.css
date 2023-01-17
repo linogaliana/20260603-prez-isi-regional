@@ -1,0 +1,439 @@
+/*Taille de la police*/
+
+.Large { 
+  font-size: 144%;
+}
+.large {
+  font-size: 120%;
+}
+.small {
+  font-size: 90%;
+}
+.footnotesize {
+  font-size: 80%;
+}
+.scriptsize {
+  font-size: 70%;
+}
+.tiny {
+  font-size: 60%;
+}
+
+/*Style du texte*/
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+
+/*couleurs par défaut*/
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.orange {
+  color: orange;
+}
+
+.purple {
+  color: purple;
+}
+
+.gray {
+  color: gray;
+}
+
+.grey {
+  color: gray;
+}
+
+
+/*couleurs palettes Insee*/
+
+.dot {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 4px 3px 0 3px;
+  text-align: center;
+}
+
+.nomPaletteCouleur {
+  text-align: center;
+  top: 50%;
+  font-size: 60%;
+}
+
+.B6 {
+  color: white;
+  background-color: #0C3A5A;
+}
+
+.B5 {
+  color: white;
+  background-color: #0F417A;
+}
+
+.B4 {
+  color: white;
+  background-color: #286AC7;
+}
+
+.B3 {
+  color: white;
+  background-color: #5B8ED4;
+}
+
+.B2 {
+  color: black;
+  background-color: #8DB0E1;
+}
+
+.B1demi {
+  color: black;
+  background-color: #AACAF1;
+}
+
+.B1 {
+  color: black;
+  background-color: #C4E1FF;
+}
+
+.J6 {
+  color: white;
+  background-color: #D98C07;
+}
+
+.J5 {
+  color: white;
+  background-color: #E89E0B;
+}
+
+.J4 {
+  color: white;
+  background-color: #FFC300;
+}
+
+.J3 {
+  color: white;
+  background-color: #FBD616;
+}
+
+.J2tiers {
+  color: black;
+  background-color: #ffda5a;
+}
+
+.J2 {
+  color: black;
+  background-color: #FFE58E;
+}
+
+.J1 {
+  color: black;
+  background-color: #FDF0C9;
+}
+
+.G6 {
+  color: white;
+  background-color: #2D363F;
+}
+
+.G5 {
+  color: white;
+  background-color: #646363;
+}
+
+.G4 {
+  color: white;
+  background-color: #868686;
+}
+
+.G3 {
+  color: white;
+  background-color: #B0AEAE;
+}
+
+.G2 {
+  color: black;
+  background-color: #C6C6C6;
+}
+
+.G1demi {
+  color: black;
+  background-color: #dadada;
+}
+
+.G1 {
+  color: black;
+  background-color: #E8E8E8;
+}
+
+
+.R5 {
+  color: white;
+  background-color: #5D1212;
+}
+
+.R4 {
+  color: white;
+  background-color: #AD1638;
+}
+
+.R3 {
+  color: white;
+  background-color: #E4003A;
+}
+
+.R2 {
+  color: white;
+  background-color: #EB617F;
+}
+
+.R1demi {
+  color: white;
+  background-color: #F190A5;
+}
+
+.R1 {
+  color: black;
+  background-color: #F5B8C2;
+}
+
+.R0 {
+  color: black;
+  background-color: #fbdfe4;
+}
+
+
+.T5 {
+  color: white;
+  background-color: #1c4b5f;
+}
+
+.T4 {
+  color: white;
+  background-color: #0C6876;
+}
+
+.T3 {
+  color: white;
+  background-color: #008085;
+}
+
+.T2 {
+  color: white;
+  background-color: #0AACAB;
+}
+
+.T1demi {
+  color: white;
+  background-color: #71c3c7;
+}
+
+.T1 {
+  color: black;
+  background-color: #97CFD0;
+}
+
+.T0 {
+  color: black;
+  background-color: #c6e3e4;
+}
+
+.P5 {
+  color: white;
+  background-color: #4f2742;
+}
+
+.P4 {
+  color: white;
+  background-color: #633251;
+}
+
+.P3 {
+  color: white;
+  background-color: #954577;
+}
+
+.P2 {
+  color: white;
+  background-color: #B06293;
+}
+
+.P1 {
+  color: black;
+  background-color: #CA8CB3;
+}
+
+.Pdemi {
+  color: black;
+  background-color: #dcacca;
+}
+
+.P0 {
+  color: black;
+  background-color: #e5c2da;
+}
+
+.V5 {
+  color: white;
+  background-color: #036237;
+}
+
+.V4 {
+  color: white;
+  background-color: #068043;
+}
+
+.V3 {
+  color: white;
+  background-color: #1CA459;
+}
+
+.V2 {
+  color: white;
+  background-color: #4BB375;
+}
+
+.V1 {
+  color: black;
+  background-color: #8BC8A4;
+}
+
+.Vdemi {
+  color: black;
+  background-color: #a2d3b6;
+}
+
+.V0 {
+  color: black;
+  background-color: #c0e0ca;
+}
+
+
+.jaune_insee {
+  color: #fdc218;
+}
+.rouge_insee {
+  color: #e4003a;
+}
+.vert_insee {
+  color: #1ca459;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Content-box*/
+
+.content-box { 
+  box-sizing: content-box;
+  background-color: #e2e2e2;
+}
+
+
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+    border-radius: 10px;
+    margin: 0 0 15px;
+    overflow: hidden;
+    padding: 5px;
+    width: 100%;
+}
+
+.content-box-blue {
+  background-color: #F0F8FF;
+}
+
+.content-box-gray {
+    background-color: #e2e2e2;
+}
+
+.content-box-grey {
+	background-color: #F5F5F5;
+}
+
+.content-box-army {
+	background-color: #737a36;
+}
+
+.content-box-green {
+  background-color: #e2faec;
+  border: solid 2px #1ca459;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.content-box-purple {
+	background-color: #e2e2f9;
+}
+
+.content-box-red {
+  background-color: #ffe1e9;
+  border: solid 2px #e4003a;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.content-box-yellow {
+  background-color: #fdf0c9;
+  border: solid 2px #fdc218;
+  box-shadow: 5px 5px 5px #aaa;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

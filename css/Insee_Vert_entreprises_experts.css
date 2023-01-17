@@ -15,12 +15,12 @@
 
 
 /*page Titre*/
-div.backGroundTitre{
+div.backgroundTitre{
   background-image: url(../img/com_entrepriseEtExperts/PagePartie_16_9_vert.svg);
 }
 
 /*Page standard*/
-div.backGroundstandard {
+div.backgroundStandard {
   background-image: url(../img/com_entrepriseEtExperts/PageStandard_16_9_vert.svg);
 }
 

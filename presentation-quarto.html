@@ -31,6 +31,7 @@
     }
   </style>
   <link rel="stylesheet" href="presentation-quarto_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/Insee_rouge_interne.css">
   <link rel="stylesheet" href="css/stylePerso.css">
   <link href="presentation-quarto_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -335,28 +336,29 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">16/01/2023</p>
+  <p class="date">17/01/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
 <ul>
 <li><a href="#/titre-de-niveau-1" id="/toc-titre-de-niveau-1"><span class="toc-section-number">1</span>  titre de niveau 1</a></li>
-<li><a href="#/documentations" id="/toc-documentations"><span class="toc-section-number">2</span>  documentations</a></li>
-<li><a href="#/titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">3</span>  TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</a></li>
+<li><a href="#/styles-par-défaut" id="/toc-styles-par-défaut"><span class="toc-section-number">2</span>  Styles par défaut</a></li>
+<li><a href="#/documentations" id="/toc-documentations"><span class="toc-section-number">3</span>  documentations</a></li>
+<li><a href="#/titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">4</span>  TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</a></li>
 </ul>
 </nav>
 </section>
 <section>
-<section id="titre-de-niveau-1" class="title-slide slide level1 backGroundTitre center" data-number="1">
+<section id="titre-de-niveau-1" class="title-slide slide level1 backgroundTitre center" data-number="1">
 <h1><span class="header-section-number">1</span> titre de niveau 1</h1>
 
 </section>
-<section id="titre-de-niveau-2" class="slide level2 backGroundstandard" data-number="1.1">
+<section id="titre-de-niveau-2" class="slide level2 backgroundStandard" data-number="1.1">
 <h2><span class="header-section-number">1.1</span> Titre de niveau 2</h2>
 <div class="enteteAvecTitre">
 <p>titre de niveau 1</p>
 </div>
-<h3 id="titre-de-niveau-3-taille-1">Titre de niveau 3 (taille 1)</h3>
+<h3 id="titre-de-niveau-3">Titre de niveau 3</h3>
 <h4 id="titre-de-niveau-4">Titre de niveau 4</h4>
 <h5 id="titre-de-niveau-5">Titre de niveau 5</h5>
 <h6 id="titre-de-niveau-6">Titre de niveau 6</h6>
@@ -402,12 +404,89 @@
 </div>
 </section></section>
 <section>
-<section id="documentations" class="title-slide slide level1 backGroundTitre center" data-number="2">
-<h1><span class="header-section-number">2</span> documentations</h1>
+<section id="styles-par-défaut" class="title-slide slide level1 backgroundTitre center" data-number="2">
+<h1><span class="header-section-number">2</span> Styles par défaut</h1>
 
 </section>
-<section id="techno-utilisées" class="slide level2 backGroundstandard" data-number="2.1">
-<h2><span class="header-section-number">2.1</span> Techno utilisées</h2>
+<section id="style-du-texte" class="slide level2 backgroundStandard" data-number="2.1">
+<h2><span class="header-section-number">2.1</span> Style du texte</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<h4 id="en-markdown">en markdown</h4>
+<p><em>texte en italique</em> : <code>*texte en italique*</code><br>
+<strong>texte en gras</strong> : <code>**texte en gras**</code><br>
+<strong><em>texte en gras et en italique</em></strong> : <code>***texte en gras et en italique***</code><br>
+<del>texte barré</del> : <code>~~texte barré~~</code></p>
+<h4 id="avec-des-balises-html">avec des balises html</h4>
+<p><i>texte en italique</i> : <code>&lt;i&gt;texte en italique&lt;/i&gt;</code><br>
+<b>texte en gras</b> : <code>&lt;b&gt;texte en gras&lt;/b&gt;</code><br>
+<strike>texte barré</strike> : <code>&lt;strike&gt;texte barré&lt;/strike&gt;</code><br>
+<u>texte souligné</u> : <code>&lt;u&gt;texte souligné&lt;/u&gt;</code><br>
+<br> <i><u>exemple de balises combinées</u></i> : <code>&lt;i&gt;&lt;u&gt;exemple de balises combinées&lt;/i&gt;&lt;/u&gt;</code></p>
+</section>
+<section id="style-du-texte-1" class="slide level2 backgroundStandard" data-number="2.2">
+<h2><span class="header-section-number">2.2</span> Style du texte</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<p><span class="bold">gras</span> : <code>[gras]{.bold}</code> </p>
+<p><span class="bolder">très gras</span> : <code>[très gras]{.bolder}</code></p>
+<h3 id="taille-des-caractères">Taille des caractères</h3>
+<p><span class="tiny">Texte très petit</span> : <code>[Texte très petit]{.tiny}</code><br>
+<span class="small">Texte plus petit</span> : <code>[Texte plus petit]{.small}</code><br>
+Texte standard : <code>Texte standard</code><br>
+<span class="large">Texte plus grand</span> : <code>.large[Texte plus grand]</code><br>
+<span class="Large">Texte encore plus grand</span> : <code>.Large[Texte encore plus grand]</code></p>
+<ul>
+<li>texte<sup>1</sup> : <code>texte^[A footnote]</code></li>
+<li>texte<sub>a</sub> (indice) : <code>texte&lt;sub&gt;a&lt;/sub&gt;</code></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>A footnote</p></li></ol></aside></section>
+<section id="couleurs-du-texte" class="slide level2 backgroundStandard" data-number="2.3">
+<h2><span class="header-section-number">2.3</span> Couleurs du texte</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<p><span class="black">texte en noir</span> : <code>[texte en noir]{.black}</code></p>
+<p><span class="red">texte en rouge</span> : <code>[texte en rouge]{.red}</code></p>
+<p><span class="blue">texte en bleu</span> : <code>[texte en bleu]{.blue}</code></p>
+<p><span class="green">texte en vert</span> : <code>[texte en vert]{.green}</code></p>
+<p><span class="yellow">texte en jaune</span> : <code>[texte en jaune]{.yellow}</code></p>
+<p><span class="orange">texte en orange</span> : <code>[texte en orange]{.orange}</code></p>
+<p><span class="purple">texte en violet</span> : <code>[texte en violet]{.purple}</code></p>
+<p><span class="gray">texte en gris</span> : <code>[texte en gris]{.gray}</code> ou <code>[texte en gris]{.grey}</code></p>
+</section>
+<section id="couleurs-de-la-palette-insee" class="slide level2 backgroundStandard" data-number="2.4">
+<h2><span class="header-section-number">2.4</span> Couleurs de la palette Insee</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<div class="columns">
+<div class="column" style="text-align: center;">
+<h4 style="margin: 5%; text-align: center;" id="couleurs-principales">Couleurs principales</h4>
+<p><span class="nomPaletteCouleur dot B6">B6</span> <span class="nomPaletteCouleur dot B5">B5</span> <span class="nomPaletteCouleur dot B4">B4</span> <span class="nomPaletteCouleur dot B3">B3</span> <span class="nomPaletteCouleur dot B2">B2</span> <span class="nomPaletteCouleur dot B1demi">B1/2</span> <span class="nomPaletteCouleur dot B1">B1</span></p>
+<p><span class="nomPaletteCouleur dot J6">J6</span> <span class="nomPaletteCouleur dot J5">J5</span> <span class="nomPaletteCouleur dot J4">J4</span> <span class="nomPaletteCouleur dot J3">J3</span> <span class="nomPaletteCouleur dot J2tiers">J2/3</span> <span class="nomPaletteCouleur dot J2">J2</span> <span class="nomPaletteCouleur dot J1">J1</span></p>
+<p><span class="nomPaletteCouleur dot G6">G6</span> <span class="nomPaletteCouleur dot G5">G5</span> <span class="nomPaletteCouleur dot G4">G4</span> <span class="nomPaletteCouleur dot G3">G3</span> <span class="nomPaletteCouleur dot G2">G2</span> <span class="nomPaletteCouleur dot G1demi">G1/2</span> <span class="nomPaletteCouleur dot G1">G1</span></p>
+</div><div class="column" style="text-align: center;">
+<h4 style="margin: 5%; text-align: center;" id="couleurs-complémentaires">Couleurs complémentaires</h4>
+<p><span class="nomPaletteCouleur dot R5">R5</span> <span class="nomPaletteCouleur dot R4">R4</span> <span class="nomPaletteCouleur dot R3">R3</span> <span class="nomPaletteCouleur dot R2">R2</span> <span class="nomPaletteCouleur dot R1demi">R1/2</span> <span class="nomPaletteCouleur dot R1">R1</span> <span class="nomPaletteCouleur dot R0">R0</span></p>
+<p><span class="nomPaletteCouleur dot T5">T5</span> <span class="nomPaletteCouleur dot T4">T4</span> <span class="nomPaletteCouleur dot T3">T3</span> <span class="nomPaletteCouleur dot T2">T2</span> <span class="nomPaletteCouleur dot T1demi">T1/2</span> <span class="nomPaletteCouleur dot T1">T1</span> <span class="nomPaletteCouleur dot T0">T0</span></p>
+<p><span class="nomPaletteCouleur dot P5">P5</span> <span class="nomPaletteCouleur dot P4">P4</span> <span class="nomPaletteCouleur dot P3">P3</span> <span class="nomPaletteCouleur dot P2">P2</span> <span class="nomPaletteCouleur dot P1">P1</span> <span class="nomPaletteCouleur dot Pdemi">P1/0</span> <span class="nomPaletteCouleur dot P0">P0</span></p>
+<p><span class="nomPaletteCouleur dot V5">V5</span> <span class="nomPaletteCouleur dot V4">V4</span> <span class="nomPaletteCouleur dot V3">V3</span> <span class="nomPaletteCouleur dot V2">V2</span> <span class="nomPaletteCouleur dot V1">V1</span> <span class="nomPaletteCouleur dot Vdemi">V1/0</span> <span class="nomPaletteCouleur dot V0">V0</span></p>
+</div>
+</div>
+<p><span class="jaune_insee">Texte en jaune Insee</span> : <code>[Texte en jaune Insee].jaune_insee</code></p>
+<p><span class="rouge_insee">Texte en rouge Insee</span> : <code>[Texte en rouge Insee].rouge_insee</code></p>
+<p><span class="vert_insee">Texte en vert Insee</span> : <code>[Texte en vert Insee].vert_insee</code></p>
+</section></section>
+<section>
+<section id="documentations" class="title-slide slide level1 backgroundTitre center" data-number="3">
+<h1><span class="header-section-number">3</span> documentations</h1>
+
+</section>
+<section id="techno-utilisées" class="slide level2 backgroundStandard" data-number="3.1">
+<h2><span class="header-section-number">3.1</span> Techno utilisées</h2>
 <div class="enteteAvecTitre">
 <p>documentations</p>
 </div>
@@ -418,8 +497,8 @@
 <li><a href="https://www.w3schools.com/css/default.asp">documentation css</a></li>
 </ul>
 </section>
-<section id="plugins" class="slide level2 backGroundstandard" data-number="2.2">
-<h2><span class="header-section-number">2.2</span> Plugins</h2>
+<section id="plugins" class="slide level2 backgroundStandard" data-number="3.2">
+<h2><span class="header-section-number">3.2</span> Plugins</h2>
 <div class="enteteAvecTitre">
 <p>documentations</p>
 </div>
@@ -442,8 +521,8 @@
 </ul></li>
 </ul>
 </section>
-<section id="autres-sites" class="slide level2 backGroundstandard" data-number="2.3">
-<h2><span class="header-section-number">2.3</span> Autres sites</h2>
+<section id="autres-sites" class="slide level2 backgroundStandard" data-number="3.3">
+<h2><span class="header-section-number">3.3</span> Autres sites</h2>
 <div class="enteteAvecTitre">
 <p>documentations</p>
 </div>
@@ -453,12 +532,21 @@
 <li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">quarto-tip_A_Day</a></li>
 </ul>
 </section></section>
-<section id="titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" class="title-slide slide level1 backGroundTitre center" data-number="3">
-<h1><span class="header-section-number">3</span> TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</h1>
+<section>
+<section id="titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" class="title-slide slide level1 backgroundTitre center" data-number="4">
+<h1><span class="header-section-number">4</span> TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</h1>
+
+</section>
+<section id="sous-titre-3ème-partie" class="slide level2 backgroundStandard" data-number="4.1">
+<h2><span class="header-section-number">4.1</span> Sous-titre 3ème partie</h2>
+<div class="enteteAvecTitre">
+<p>TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</p>
+</div>
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
+
     </div>
   </div>
 
@@ -744,7 +832,7 @@
           }
         }
         
-        if(window.screen.height == 858 & window.screen.width == 1143){ /*ecran salle reunion*/
+        if(window.screen.height == 858 & window.screen.width == 1143){ /*ecran salle reunion en local*/
           if (event.scale == 0.9797142857142858){
             document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
           }
@@ -753,12 +841,12 @@
           }
         }
         
-        if(window.screen.height == 768 & window.screen.width == 1024){ /*ecran salle reunion*/
+        if(window.screen.height == 768 & window.screen.width == 1024){ /*ecran salle reunion apres deploiement*/
           if (event.scale == 0.8777142857142858){
             document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
           }
           else{
-            document.getElementById("nomReunion").style.top = "25.5%"        
+            document.getElementById("nomReunion").style.top = "24.5%"        
           }
         }
         

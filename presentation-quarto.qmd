@@ -14,7 +14,7 @@ format:
     # logo: img/logos/logoDeVotreService.png
     include-after-body: ["modulesCompl/footer.html"]
     theme: css/Insee_Commun.scss 
-    css: [css/Insee_rouge_interne.css, css/stylePerso.css] #Insee_rouge_interne.css / Insee_Vert_entreprises_experts.css / Insee_Jaune_toutPublic.css
+    css: [css/default.css, css/Insee_rouge_interne.css, css/stylePerso.css] #Insee_rouge_interne.css / Insee_Vert_entreprises_experts.css ou Insee_Jaune_toutPublic.css
     menu:
       side: left
       width: wide
@@ -45,15 +45,15 @@ execute:
   warning: false
 ---
 
-# titre de niveau 1 {.backGroundTitre}
+# titre de niveau 1 {.backgroundTitre}
 
-## Titre de niveau 2 {.backGroundstandard}
+## Titre de niveau 2 {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 titre de niveau 1
 :::
 
-### Titre de niveau 3 (taille 1)
+### Titre de niveau 3
 
 #### Titre de niveau 4
 
@@ -67,7 +67,7 @@ titre de niveau 1
       - liste de niveau 4
         - liste de niveau 5
           - liste de niveau 6
-
+          
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
 ::: {.textPageFinale}
@@ -93,9 +93,158 @@ Retrouvez nous sur
 
 ::::
 
-# documentations {.backGroundTitre}
+# Styles par défaut {.backgroundTitre}
 
-## Techno utilisées {.backGroundstandard}
+## Style du texte {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+#### en markdown
+
+*texte en italique* : `*texte en italique*`    
+**texte en gras** : `**texte en gras**`    
+***texte en gras et en italique*** : `***texte en gras et en italique***`   
+~~texte barré~~ : `~~texte barré~~`
+
+#### avec des balises html
+
+<i>texte en italique</i> :  `<i>texte en italique</i>`   
+<b>texte en gras</b> : `<b>texte en gras</b>`   
+<strike>texte barré</strike> : `<strike>texte barré</strike>`  
+<u>texte souligné</u> : `<u>texte souligné</u>`  
+<br>
+<i><u>exemple de balises combinées</i></u> :  `<i><u>exemple de balises combinées</i></u>`
+
+## Style du texte {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+[gras]{.bold} : `[gras]{.bold}`&emsp;
+
+[très gras]{.bolder} : `[très gras]{.bolder}`
+
+### Taille des caractères
+
+[Texte très petit]{.tiny} : `[Texte très petit]{.tiny}`  
+[Texte plus petit]{.small} : `[Texte plus petit]{.small}`  
+Texte standard : `Texte standard`  
+[Texte plus grand]{.large} : `.large[Texte plus grand]`  
+[Texte encore plus grand]{.Large} : `.Large[Texte encore plus grand]`  
+
+- texte^[A footnote] : `texte^[A footnote]`
+- texte<sub>a</sub> (indice) : `texte<sub>a</sub>`
+
+## Couleurs du texte {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+[texte en noir]{.black} : `[texte en noir]{.black}`
+
+[texte en rouge]{.red} : `[texte en rouge]{.red}`
+
+[texte en bleu]{.blue} : `[texte en bleu]{.blue}`
+
+[texte en vert]{.green} : `[texte en vert]{.green}`
+
+[texte en jaune]{.yellow} : `[texte en jaune]{.yellow}`
+
+[texte en orange]{.orange} : `[texte en orange]{.orange}`
+
+[texte en violet]{.purple} : `[texte en violet]{.purple}`
+
+[texte en gris]{.gray} : `[texte en gris]{.gray}` ou `[texte en gris]{.grey}`
+
+## Couleurs de la palette Insee {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+Styles par défaut
+:::
+
+:::: columns
+::: {.column width="45%" style="text-align: center;"}
+
+#### Couleurs principales {style="margin: 5%; text-align: center;"}
+
+[B6]{.nomPaletteCouleur .dot .B6}
+[B5]{.nomPaletteCouleur .dot .B5}
+[B4]{.nomPaletteCouleur .dot .B4}
+[B3]{.nomPaletteCouleur .dot .B3}
+[B2]{.nomPaletteCouleur .dot .B2}
+[B1/2]{.nomPaletteCouleur .dot .B1demi}
+[B1]{.nomPaletteCouleur .dot .B1}
+
+[J6]{.nomPaletteCouleur .dot .J6}
+[J5]{.nomPaletteCouleur .dot .J5}
+[J4]{.nomPaletteCouleur .dot .J4}
+[J3]{.nomPaletteCouleur .dot .J3}
+[J2/3]{.nomPaletteCouleur .dot .J2tiers}
+[J2]{.nomPaletteCouleur .dot .J2}
+[J1]{.nomPaletteCouleur .dot .J1}
+
+[G6]{.nomPaletteCouleur .dot .G6}
+[G5]{.nomPaletteCouleur .dot .G5}
+[G4]{.nomPaletteCouleur .dot .G4}
+[G3]{.nomPaletteCouleur .dot .G3}
+[G2]{.nomPaletteCouleur .dot .G2}
+[G1/2]{.nomPaletteCouleur .dot .G1demi}
+[G1]{.nomPaletteCouleur .dot .G1}
+
+:::
+::: {.column width="45%" style="text-align: center;"}
+
+#### Couleurs complémentaires {style="margin: 5%; text-align: center;"}
+
+[R5]{.nomPaletteCouleur .dot .R5}
+[R4]{.nomPaletteCouleur .dot .R4}
+[R3]{.nomPaletteCouleur .dot .R3}
+[R2]{.nomPaletteCouleur .dot .R2}
+[R1/2]{.nomPaletteCouleur .dot .R1demi}
+[R1]{.nomPaletteCouleur .dot .R1}
+[R0]{.nomPaletteCouleur .dot .R0}
+
+[T5]{.nomPaletteCouleur .dot .T5}
+[T4]{.nomPaletteCouleur .dot .T4}
+[T3]{.nomPaletteCouleur .dot .T3}
+[T2]{.nomPaletteCouleur .dot .T2}
+[T1/2]{.nomPaletteCouleur .dot .T1demi}
+[T1]{.nomPaletteCouleur .dot .T1}
+[T0]{.nomPaletteCouleur .dot .T0}
+
+[P5]{.nomPaletteCouleur .dot .P5}
+[P4]{.nomPaletteCouleur .dot .P4}
+[P3]{.nomPaletteCouleur .dot .P3}
+[P2]{.nomPaletteCouleur .dot .P2}
+[P1]{.nomPaletteCouleur .dot .P1}
+[P1/0]{.nomPaletteCouleur .dot .Pdemi}
+[P0]{.nomPaletteCouleur .dot .P0}
+
+[V5]{.nomPaletteCouleur .dot .V5}
+[V4]{.nomPaletteCouleur .dot .V4}
+[V3]{.nomPaletteCouleur .dot .V3}
+[V2]{.nomPaletteCouleur .dot .V2}
+[V1]{.nomPaletteCouleur .dot .V1}
+[V1/0]{.nomPaletteCouleur .dot .Vdemi}
+[V0]{.nomPaletteCouleur .dot .V0}
+
+:::
+::::
+
+[Texte en jaune Insee]{.jaune_insee} : `[Texte en jaune Insee].jaune_insee`
+
+[Texte en rouge Insee]{.rouge_insee} : `[Texte en rouge Insee].rouge_insee`
+
+[Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee].vert_insee`
+
+
+# documentations {.backgroundTitre}
+
+## Techno utilisées {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentations
@@ -107,7 +256,7 @@ documentations
 - [documentation css](https://www.w3schools.com/css/default.asp)
 
 
-## Plugins {.backGroundstandard}
+## Plugins {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentations
@@ -124,7 +273,7 @@ documentations
 - **fontawesome :**
   - [liste des icones](https://fontawesome.com/search?o=r&m=free)
 
-## Autres sites {.backGroundstandard}
+## Autres sites {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentations
@@ -134,6 +283,10 @@ documentations
 - [Code source associé à la présentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
 - [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
 
-# TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES {.backGroundTitre}
+# TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES {.backgroundTitre}
 
+## Sous-titre 3ème partie {.backgroundStandard}
 
+:::{.enteteAvecTitre}
+TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
+:::

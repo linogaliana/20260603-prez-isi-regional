@@ -16,12 +16,12 @@
 
 
 /*page Titre*/
-div.backGroundTitre{
+div.backgroundTitre{
   background-image: url(../img/com_interne/PagePartie_16_9_rouge.svg);
 }
 
 /*Page standard*/
-div.backGroundstandard {
+div.backgroundStandard {
   background-image: url(../img/com_interne/PageStandard_16_9_rouge.svg);
 }
 
