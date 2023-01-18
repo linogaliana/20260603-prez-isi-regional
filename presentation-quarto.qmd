@@ -286,6 +286,7 @@ documentations
 - [Présentation des fonctionnalités](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)
 - [Code source associé à la présentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
 - [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
+- [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
 
 # TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES {.backgroundTitre}
 
