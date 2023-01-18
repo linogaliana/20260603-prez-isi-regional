@@ -336,7 +336,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">17/01/2023</p>
+  <p class="date">18/01/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
@@ -456,9 +456,12 @@ Texte standard : <code>Texte standard</code><br>
 <p><span class="orange">texte en orange</span> : <code>[texte en orange]{.orange}</code></p>
 <p><span class="purple">texte en violet</span> : <code>[texte en violet]{.purple}</code></p>
 <p><span class="gray">texte en gris</span> : <code>[texte en gris]{.gray}</code> ou <code>[texte en gris]{.grey}</code></p>
+<p><span class="jaune_insee">Texte en jaune Insee</span> : <code>[Texte en jaune Insee].jaune_insee</code></p>
+<p><span class="rouge_insee">Texte en rouge Insee</span> : <code>[Texte en rouge Insee].rouge_insee</code></p>
+<p><span class="vert_insee">Texte en vert Insee</span> : <code>[Texte en vert Insee].vert_insee</code></p>
 </section>
-<section id="couleurs-de-la-palette-insee" class="slide level2 backgroundStandard" data-number="2.4">
-<h2><span class="header-section-number">2.4</span> Couleurs de la palette Insee</h2>
+<section id="palette-de-couleurs-de-linsee" class="slide level2 backgroundStandard" data-number="2.4">
+<h2><span class="header-section-number">2.4</span> Palette de couleurs de l’Insee</h2>
 <div class="enteteAvecTitre">
 <p>Styles par défaut</p>
 </div>
@@ -476,9 +479,8 @@ Texte standard : <code>Texte standard</code><br>
 <p><span class="nomPaletteCouleur dot V5">V5</span> <span class="nomPaletteCouleur dot V4">V4</span> <span class="nomPaletteCouleur dot V3">V3</span> <span class="nomPaletteCouleur dot V2">V2</span> <span class="nomPaletteCouleur dot V1">V1</span> <span class="nomPaletteCouleur dot Vdemi">V1/0</span> <span class="nomPaletteCouleur dot V0">V0</span></p>
 </div>
 </div>
-<p><span class="jaune_insee">Texte en jaune Insee</span> : <code>[Texte en jaune Insee].jaune_insee</code></p>
-<p><span class="rouge_insee">Texte en rouge Insee</span> : <code>[Texte en rouge Insee].rouge_insee</code></p>
-<p><span class="vert_insee">Texte en vert Insee</span> : <code>[Texte en vert Insee].vert_insee</code></p>
+<p><span class="souligneRouge"><em>Exemple :</em></span></p>
+<p><span class="V5">texte non encadré de classe V5</span> : <code>[texte non encadré de classe V5]{.V5}</code></p>
 </section></section>
 <section>
 <section id="documentations" class="title-slide slide level1 backgroundTitre center" data-number="3">
@@ -513,7 +515,7 @@ Texte standard : <code>Texte standard</code><br>
 <li><strong>roughtnotation :</strong>
 <ul>
 <li><a href="https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide">exemple</a></li>
-<li><a href="https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd">code l’exemple</a></li>
+<li><a href="https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd">code del’exemple</a></li>
 </ul></li>
 <li><strong>fontawesome :</strong>
 <ul>
@@ -823,35 +825,15 @@ Texte standard : <code>Texte standard</code><br>
       // event.scale, event.oldScale, event.size
       console.log(event)
 
-        if(window.screen.height == 963 & window.screen.width == 1540){ /*ecran bureau*/
-          if (event.scale == 1.2381428571428572){
+
+        console.log(window.innerWidth, window.innerHeight)
+        
+        if(window.innerHeight == 1173){
             document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
-          }
-          else{
+        }
+        if(window.innerHeight == 970){
             document.getElementById("nomReunion").style.top = "25.5%"        
-          }
         }
-        
-        if(window.screen.height == 858 & window.screen.width == 1143){ /*ecran salle reunion en local*/
-          if (event.scale == 0.9797142857142858){
-            document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
-          }
-          else{
-            document.getElementById("nomReunion").style.top = "25.5%"        
-          }
-        }
-        
-        if(window.screen.height == 768 & window.screen.width == 1024){ /*ecran salle reunion apres deploiement*/
-          if (event.scale == 0.8777142857142858){
-            document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
-          }
-          else{
-            document.getElementById("nomReunion").style.top = "24.5%"        
-          }
-        }
-        
-        console.log("height", window.screen.height)
-        console.log("width", window.screen.width)
 
     } );
 

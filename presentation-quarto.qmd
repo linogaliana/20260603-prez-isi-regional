@@ -160,7 +160,13 @@ Styles par défaut
 
 [texte en gris]{.gray} : `[texte en gris]{.gray}` ou `[texte en gris]{.grey}`
 
-## Couleurs de la palette Insee {.backgroundStandard}
+[Texte en jaune Insee]{.jaune_insee} : `[Texte en jaune Insee].jaune_insee`
+
+[Texte en rouge Insee]{.rouge_insee} : `[Texte en rouge Insee].rouge_insee`
+
+[Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee].vert_insee`
+
+## Palette de couleurs de l'Insee {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -235,11 +241,9 @@ Styles par défaut
 :::
 ::::
 
-[Texte en jaune Insee]{.jaune_insee} : `[Texte en jaune Insee].jaune_insee`
+[*Exemple :*]{.souligneRouge}
 
-[Texte en rouge Insee]{.rouge_insee} : `[Texte en rouge Insee].rouge_insee`
-
-[Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee].vert_insee`
+[texte non encadré de classe V5]{.V5} : `[texte non encadré de classe V5]{.V5}` 
 
 
 # documentations {.backgroundTitre}
@@ -269,7 +273,7 @@ documentations
   - [code de l'exemple](https://github.com/Martinomagnifico/quarto-verticator/blob/main/example.qmd)
 - **roughtnotation :**
   - [exemple](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide) 
-  - [code l'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
+  - [code del'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
 - **fontawesome :**
   - [liste des icones](https://fontawesome.com/search?o=r&m=free)
 

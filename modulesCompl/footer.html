@@ -56,36 +56,14 @@ includeHTML();
   Reveal.on( 'resize', event => {
   // event.scale, event.oldScale, event.size
   console.log(event)
-
-    if(window.screen.height == 963 & window.screen.width == 1540){ /*ecran bureau*/
-      if (event.scale == 1.2381428571428572){
-        document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
-      }
-      else{
-        document.getElementById("nomReunion").style.top = "25.5%"        
-      }
-    }
-    
-    if(window.screen.height == 858 & window.screen.width == 1143){ /*ecran salle reunion en local*/
-      if (event.scale == 0.9797142857142858){
-        document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
-      }
-      else{
-        document.getElementById("nomReunion").style.top = "25.5%"        
-      }
-    }
-    
-    if(window.screen.height == 768 & window.screen.width == 1024){ /*ecran salle reunion apres deploiement*/
-      if (event.scale == 0.8777142857142858){
-        document.getElementById("nomReunion").style.top = "20.5%" /*position fulscreen*/
-      }
-      else{
-        document.getElementById("nomReunion").style.top = "24.5%"        
-      }
-    }
-    
-    console.log("height", window.screen.height)
-    console.log("width", window.screen.width)
+  console.log(window.innerWidth, window.innerHeight)
+  
+  if(window.innerHeight == 1173){
+      document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
+  }
+  if(window.innerHeight == 970){
+      document.getElementById("nomReunion").style.top = "25.5%"        
+  }
 
 } );
 
