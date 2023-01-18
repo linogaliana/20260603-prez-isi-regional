@@ -52,20 +52,24 @@ includeHTML();
     }
     
   });
+ 
+   console.log(window.innerWidth, window.innerHeight)
   
   Reveal.on( 'resize', event => {
   // event.scale, event.oldScale, event.size
   console.log(event)
-  console.log(window.innerWidth, window.innerHeight)
   
-  if(window.innerHeight == 1173 || window.innerHeight == 1050){
-      document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
-  }
+    if(window.innerHeight == 1173){
+        document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
+    }
+    if(window.innerHeight == 1050){
+        document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
+    }
+  
+    if(window.innerHeight == 970 || window.innerHeight == 869){
+        document.getElementById("nomReunion").style.top = "25.5%"        
+    }
 
-  if(window.innerHeight == 970 || window.innerHeight == 869){
-      document.getElementById("nomReunion").style.top = "25.5%"        
-  }
-
-} );
+  });
 
 </script>

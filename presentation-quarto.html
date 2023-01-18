@@ -343,7 +343,7 @@
 <ul>
 <li><a href="#/titre-de-niveau-1" id="/toc-titre-de-niveau-1"><span class="toc-section-number">1</span>  titre de niveau 1</a></li>
 <li><a href="#/styles-par-défaut" id="/toc-styles-par-défaut"><span class="toc-section-number">2</span>  Styles par défaut</a></li>
-<li><a href="#/documentations" id="/toc-documentations"><span class="toc-section-number">3</span>  documentations</a></li>
+<li><a href="#/documentation" id="/toc-documentation"><span class="toc-section-number">3</span>  documentation</a></li>
 <li><a href="#/titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">4</span>  TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</a></li>
 </ul>
 </nav>
@@ -483,14 +483,30 @@ Texte standard : <code>Texte standard</code><br>
 <p><span class="V5">texte non encadré de classe V5</span> : <code>[texte non encadré de classe V5]{.V5}</code></p>
 </section></section>
 <section>
-<section id="documentations" class="title-slide slide level1 backgroundTitre center" data-number="3">
-<h1><span class="header-section-number">3</span> documentations</h1>
+<section id="documentation" class="title-slide slide level1 backgroundTitre center" data-number="3">
+<h1><span class="header-section-number">3</span> documentation</h1>
 
 </section>
-<section id="techno-utilisées" class="slide level2 backgroundStandard" data-number="3.1">
-<h2><span class="header-section-number">3.1</span> Techno utilisées</h2>
+<section id="sites-de-présentation" class="slide level2 backgroundStandard" data-number="3.1">
+<h2><span class="header-section-number">3.1</span> Sites de présentation</h2>
 <div class="enteteAvecTitre">
-<p>documentations</p>
+<p>documentation</p>
+</div>
+<h4 id="quarto">Quarto :</h4>
+<ul>
+<li><a href="https://quarto.org/docs/presentations/revealjs/demo/#/title-slide">Présentation des fonctionnalités Quarto</a></li>
+<li><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd">Code source associé à la présentation Quarto</a></li>
+<li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">quarto-tip_A_Day</a></li>
+</ul>
+<h4 id="insee">Insee :</h4>
+<ul>
+<li><a href="https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale">charte graphique Insee</a></li>
+</ul>
+</section>
+<section id="technologies-utilisées" class="slide level2 backgroundStandard" data-number="3.2">
+<h2><span class="header-section-number">3.2</span> Technologies utilisées</h2>
+<div class="enteteAvecTitre">
+<p>documentation</p>
 </div>
 <ul>
 <li><a href="https://quarto.org/docs/presentations/">documentation quarto</a></li>
@@ -499,10 +515,10 @@ Texte standard : <code>Texte standard</code><br>
 <li><a href="https://www.w3schools.com/css/default.asp">documentation css</a></li>
 </ul>
 </section>
-<section id="plugins" class="slide level2 backgroundStandard" data-number="3.2">
-<h2><span class="header-section-number">3.2</span> Plugins</h2>
+<section id="extensions-utilisées" class="slide level2 backgroundStandard" data-number="3.3">
+<h2><span class="header-section-number">3.3</span> Extensions utilisées</h2>
 <div class="enteteAvecTitre">
-<p>documentations</p>
+<p>documentation</p>
 </div>
 <ul>
 <li><strong>Pointer :</strong> presser “q” pour changer le pointer de la souris</li>
@@ -521,18 +537,6 @@ Texte standard : <code>Texte standard</code><br>
 <ul>
 <li><a href="https://fontawesome.com/search?o=r&amp;m=free">liste des icones</a></li>
 </ul></li>
-</ul>
-</section>
-<section id="autres-sites" class="slide level2 backgroundStandard" data-number="3.3">
-<h2><span class="header-section-number">3.3</span> Autres sites</h2>
-<div class="enteteAvecTitre">
-<p>documentations</p>
-</div>
-<ul>
-<li><a href="https://quarto.org/docs/presentations/revealjs/demo/#/title-slide">Présentation des fonctionnalités</a></li>
-<li><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd">Code source associé à la présentation</a></li>
-<li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">quarto-tip_A_Day</a></li>
-<li><a href="https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale">charte graphique Insee</a></li>
 </ul>
 </section></section>
 <section>
@@ -821,20 +825,22 @@ Texte standard : <code>Texte standard</code><br>
         }
         
       });
+     
+       console.log(window.innerWidth, window.innerHeight)
       
       Reveal.on( 'resize', event => {
       // event.scale, event.oldScale, event.size
       console.log(event)
-      console.log(window.innerWidth, window.innerHeight)
       
-      if(window.innerHeight == 1173){
-          document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
-      }
-      if(window.innerHeight == 970){
-          document.getElementById("nomReunion").style.top = "25.5%"        
-      }
+        if(window.innerHeight == 1173 || window.innerHeight == 1050){
+            document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
+        }
+      
+        if(window.innerHeight == 970 || window.innerHeight == 869){
+            document.getElementById("nomReunion").style.top = "25.5%"        
+        }
 
-    } );
+      });
 
     </script>
     <script id="quarto-html-after-body" type="application/javascript">

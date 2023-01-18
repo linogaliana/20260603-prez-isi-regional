@@ -246,12 +246,28 @@ Styles par défaut
 [texte non encadré de classe V5]{.V5} : `[texte non encadré de classe V5]{.V5}` 
 
 
-# documentations {.backgroundTitre}
+# documentation {.backgroundTitre}
 
-## Techno utilisées {.backgroundStandard}
+## Sites de présentation {.backgroundStandard}
 
 :::{.enteteAvecTitre}
-documentations
+documentation
+:::
+
+#### Quarto :
+
+- [Présentation des fonctionnalités Quarto](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)
+- [Code source associé à la présentation Quarto](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
+- [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
+
+#### Insee :
+
+- [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
+
+## Technologies utilisées {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+documentation
 :::
 
 - [documentation quarto](https://quarto.org/docs/presentations/)
@@ -260,10 +276,10 @@ documentations
 - [documentation css](https://www.w3schools.com/css/default.asp)
 
 
-## Plugins {.backgroundStandard}
+## Extensions utilisées {.backgroundStandard}
 
 :::{.enteteAvecTitre}
-documentations
+documentation
 :::
 
 - **Pointer :** presser "q" pour changer le pointer de la souris
@@ -276,17 +292,6 @@ documentations
   - [code del'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
 - **fontawesome :**
   - [liste des icones](https://fontawesome.com/search?o=r&m=free)
-
-## Autres sites {.backgroundStandard}
-
-:::{.enteteAvecTitre}
-documentations
-:::
-
-- [Présentation des fonctionnalités](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)
-- [Code source associé à la présentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
-- [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
-- [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
 
 # TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES {.backgroundTitre}
 
