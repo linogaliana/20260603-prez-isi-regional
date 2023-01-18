@@ -30,3 +30,7 @@ Le support de présentation est consultable sur internet via l'url suivante :
 <http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto/presentation-quarto.html>
 
 Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings &rarr; pages" à laquelle on concatène le nom du fichier html en output.
+
+## Contribution
+
+Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, hésitez pas à en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre.

@@ -29,6 +29,70 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="presentation-quarto_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="css/default.css">
@@ -481,6 +545,55 @@ Texte standard : <code>Texte standard</code><br>
 </div>
 <p><span class="souligneRouge"><em>Exemple :</em></span></p>
 <p><span class="V5">texte non encadré de classe V5</span> : <code>[texte non encadré de classe V5]{.V5}</code></p>
+</section>
+<section id="content-box" class="slide level2 backgroundStandard" data-number="2.5">
+<h2><span class="header-section-number">2.5</span> Content-box</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<p><span class="tiny"><code>[texte encadré sur fond jaune]{.content-box-yellow}</code></span></p>
+<p><span class="content-box-yellow">texte encadré sur fond jaune</span></p>
+<p><span class="tiny"><code>[texte encadré sur fond rouge]{.content-box-red}</code></span></p>
+<p><span class="content-box-red">texte encadré sur fond rouge</span></p>
+<p><span class="tiny"><code>[texte encadré sur fond vert]{.content-box-green}</code></span></p>
+<p><span class="content-box-green">texte encadré sur fond vert</span></p>
+<p><span class="tiny"><code>[cadre en pleine largeur]{.full-width .content-box-yellow}</code></span></p>
+<p><span class="full-width content-box-yellow">cadre en pleine largeur</span></p>
+</section>
+<section id="content-box-sur-2-colonnes" class="slide level2 backgroundStandard" data-number="2.6">
+<h2><span class="header-section-number">2.6</span> Content-box (sur 2 colonnes)</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<p><span class="pull-left-30"><span class="tiny"><code>[Très serré !...]{.pull-left-30}</code></span><span class="content-box-yellow full-width">Très serré !…</span></span> <span class="pull-right-70"><span class="tiny"><code>[Très au large !...]{.pull-right-70}</code></span><span class="content-box-yellow full-width">Très au large !…</span></span></p>
+<p><span class="pull-left-40"><span class="tiny"><code>[Serré !...]{.pull-left-40}</code></span><span class="content-box-red full-width">Serré !…</span></span> <span class="pull-right-60"><span class="tiny"><code>[Au large !...]{.pull-right-60}</code></span><span class="content-box-red full-width">Au large !…</span></span></p>
+<p><span class="pull-left-50"><span class="tiny"><code>[Moitié !...]{.pull-left-50}</code></span><span class="content-box-green full-width">Moitié !…</span></span> <span class="pull-right-50"><span class="tiny"><code>[Moitié !...]{.pull-right-50}</code></span><span class="content-box-green full-width">Moitié !…</span></span></p>
+<p><span class="pull-left-60"><span class="tiny"><code>[Au large !...]{.pull-left-60}</code></span><span class="content-box-red full-width">Au large !…</span></span> <span class="pull-right-40"><span class="tiny"><code>[Serré !...]{.pull-right-40}</code></span><span class="content-box-red full-width">Serré !…</span></span></p>
+<p><span class="pull-left-70"><span class="tiny"><code>[Très au large !...]{.pull-left-70}</code></span><span class="content-box-yellow full-width">Très au large !…</span></span> <span class="pull-right-30"><span class="tiny"><code>[Très serré !]{.pull-right-30}</code></span><span class="content-box-yellow full-width">Très serré !…</span></span></p>
+</section>
+<section id="equations-mathématiques" class="slide level2 backgroundStandard" data-number="2.7">
+<h2><span class="header-section-number">2.7</span> Equations mathématiques</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<h4 id="equation-sur-une-ligne">Equation sur une ligne</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="math display">\[TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1\]</span></p>
+<h4 id="equation-sur-plusieurs-lignes">Equation sur plusieurs lignes</h4>
+<div class="pull-left-50">
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="sc">$</span><span class="er">$</span>\begin{align}</span>
+<span id="cb2-2"><a href="#cb2-2"></a>(a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">3</span> <span class="sc">&amp;</span><span class="er">=</span>(a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">2</span>(a<span class="sc">+</span>b)\\</span>
+<span id="cb2-3"><a href="#cb2-3"></a>        <span class="sc">&amp;</span><span class="er">=</span>(a<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span>2ab<span class="sc">+</span>a<span class="sc">^</span><span class="dv">2</span>)(a<span class="sc">+</span>b)\\</span>
+<span id="cb2-4"><a href="#cb2-4"></a>        <span class="sc">&amp;</span><span class="er">=</span>a<span class="sc">^</span><span class="dv">3</span><span class="sc">+</span>3a<span class="sc">^</span>2b<span class="sc">+</span>3ab<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span>b<span class="sc">^</span><span class="dv">3</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>\end{align}<span class="sc">$</span><span class="er">$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="{{.pull-right-50}}">
+<p><span class="math display">\[\begin{align}
+(a+b)^3 &amp;=(a+b)^2(a+b)\\
+        &amp;=(a^2+2ab+a^2)(a+b)\\
+        &amp;=a^3+3a^2b+3ab^2+b^3
+\end{align}\]</span></p>
+</div>
 </section></section>
 <section>
 <section id="documentation" class="title-slide slide level1 backgroundTitre center" data-number="3">
@@ -832,8 +945,11 @@ Texte standard : <code>Texte standard</code><br>
       // event.scale, event.oldScale, event.size
       console.log(event)
       
-        if(window.innerHeight == 1173 || window.innerHeight == 1050){
-            document.getElementById("nomReunion").style.top = "22.5%" /*position fulscreen*/
+        if(window.innerHeight == 1173){
+            document.getElementById("nomReunion").style.top = "22.5%"
+        }
+        if(window.innerHeight == 1050){
+            document.getElementById("nomReunion").style.top = "22.5%"
         }
       
         if(window.innerHeight == 970 || window.innerHeight == 869){
