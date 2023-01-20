@@ -2,4 +2,30 @@ project:
   title: "Présentation quarto-Insee"
 
 editor: visual
-
+format:
+  revealjs: 
+    menu:
+      side: left
+      width: wide
+    progress: true
+    include-after-body: ["modulesCompl/footer.html"]
+    theme: css/Insee_Commun.scss 
+    slide-number: c/t
+    controls-layout: bottom-right
+    background-transition: fade
+    navigation-mode: vertical
+    transition-speed: slow
+    toc-title: Sommaire
+    toc-depth: 1
+    toc-float: true
+    number-sections: true
+    number-depth: 2
+    preview-links: auto
+    code-fold: true
+    code-summary: "Code"
+revealjs-plugins:
+  - pointer
+  - confetti
+  - verticator
+filters:
+  - roughnotation

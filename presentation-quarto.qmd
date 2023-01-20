@@ -3,7 +3,6 @@ title: "Titre de la présentation"
 subtitle: "Sous titre de la présentation"
 date: today
 date-format: "DD/MM/YYYY"
-menu: true
 title-slide-attributes:
   data-background-image: img/com_interne/TitlePage.svg # com_interne / com_entrepriseEtExperts ou com_toutPublic
   data-background-size: contain
@@ -12,37 +11,14 @@ format:
   revealjs:
     embed-resources: false
     # logo: img/logos/logoDeVotreService.png
-    include-after-body: ["modulesCompl/footer.html"]
-    theme: css/Insee_Commun.scss 
     css: [css/default.css, css/Insee_rouge_interne.css, css/stylePerso.css] #Insee_rouge_interne.css / Insee_Vert_entreprises_experts.css ou Insee_Jaune_toutPublic.css
-    menu:
-      side: left
-      width: wide
-    slide-number: c/t
-    controls-layout: bottom-right
     transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
-    background-transition: fade
-    navigation-mode: vertical
-    transition-speed: slow
     toc: true
-    toc-title: Sommaire
-    toc-depth: 1
-    toc-float: true
-    number-sections: true
-    number-depth: 2
-    preview-links: auto
-    code-fold: true
-    code-summary: "Code"
     chalkboard: false # press the B key to toggle chalkboard
-revealjs-plugins:
-  - pointer # press the Q key to toggle pointer
-  - confetti # press the C key to throw confettis
-  - verticator
-filters:
-  - roughnotation
 execute:
   echo: false
   warning: false
+  cache: false
 ---
 
 # titre de niveau 1 {.backgroundTitre}
