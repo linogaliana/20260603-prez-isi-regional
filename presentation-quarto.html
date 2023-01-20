@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="fr"><head>
 <script src="presentation-quarto_files/libs/clipboard/clipboard.min.js"></script>
 <script src="presentation-quarto_files/libs/quarto-html/tabby.min.js"></script>
 <script src="presentation-quarto_files/libs/quarto-html/popper.min.js"></script>
@@ -579,7 +579,7 @@ Texte standard : <code>Texte standard</code><br>
 <p>Styles par défaut</p>
 </div>
 <h4 id="equation-sur-une-ligne">Equation sur une ligne</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="math display">\[TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1\]</span></p>
 <h4 id="equation-sur-plusieurs-lignes">Equation sur plusieurs lignes</h4>
 <div class="pull-left-50">
@@ -587,7 +587,7 @@ Texte standard : <code>Texte standard</code><br>
 <span id="cb2-2"><a href="#cb2-2"></a>(a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">3</span> <span class="sc">&amp;</span><span class="er">=</span>(a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">2</span>(a<span class="sc">+</span>b)\\</span>
 <span id="cb2-3"><a href="#cb2-3"></a>        <span class="sc">&amp;</span><span class="er">=</span>(a<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span>2ab<span class="sc">+</span>a<span class="sc">^</span><span class="dv">2</span>)(a<span class="sc">+</span>b)\\</span>
 <span id="cb2-4"><a href="#cb2-4"></a>        <span class="sc">&amp;</span><span class="er">=</span>a<span class="sc">^</span><span class="dv">3</span><span class="sc">+</span>3a<span class="sc">^</span>2b<span class="sc">+</span>3ab<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span>b<span class="sc">^</span><span class="dv">3</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a>\end{align}<span class="sc">$</span><span class="er">$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5"></a>\end{align}<span class="sc">$</span><span class="er">$</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="{{.pull-right-50}}">
 <p><span class="math display">\[\begin{align}
@@ -667,6 +667,19 @@ Texte standard : <code>Texte standard</code><br>
 <div class="enteteAvecTitre">
 <p>TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</p>
 </div>
+<aside class="notes">
+<p>Speaker notes go here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="footer footer-default">
 
 </div>
@@ -700,7 +713,7 @@ Texte standard : <code>Texte standard</code><br>
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': true,
+'previewLinksAuto': false,
 'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -832,7 +845,7 @@ Texte standard : <code>Texte standard</code><br>
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: false,
+        previewLinks: true,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'slide',
@@ -902,6 +915,16 @@ Texte standard : <code>Texte standard</code><br>
           <a target="_blank" href="https://www.insee.fr/fr/information/2381941"><img src="img/logos/png/logoFluxRSS3.png" alt="lien flux RSS Insee" title="RSS" class="logo"></a>
       </p>
     </div>
+
+    <h1>External Links</h1>
+    <ul class="slide-menu-items">
+      <li class="slide-menu-item">
+        <a href="https://github.com/denehyg/reveal.js-menu">Reveal.js-menu</a>
+      </li>
+      <li class="slide-menu-item">
+        <a href="https://github.com/hakimel/reveal.js">Reveal.js</a>
+      </li>
+    </ul>
 
     <script src="js/miseEnPage.js"></script>
     <script type="text/javascript">
@@ -1001,12 +1024,12 @@ Texte standard : <code>Texte standard</code><br>
         // flash "checked"
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
+        button.setAttribute("title", "Copié");
         let tooltip;
         if (window.bootstrap) {
           button.setAttribute("data-bs-toggle", "tooltip");
           button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
+          button.setAttribute("data-bs-title", "Copié");
           tooltip = new bootstrap.Tooltip(button, 
             { trigger: "manual", 
               customClass: "code-copy-button-tooltip",

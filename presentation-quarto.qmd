@@ -361,3 +361,7 @@ documentation
 :::{.enteteAvecTitre}
 TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
 :::
+
+::: {.notes}
+Speaker notes go here.
+:::

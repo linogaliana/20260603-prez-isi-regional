@@ -1,6 +1,6 @@
 project:
   title: "Présentation quarto-Insee"
-
+lang: fr
 editor: visual
 format:
   revealjs: 
@@ -20,9 +20,11 @@ format:
     toc-float: true
     number-sections: true
     number-depth: 2
-    preview-links: auto
+    preview-links: true
     code-fold: true
     code-summary: "Code"
+    slide-tone: false
+    history: true
 revealjs-plugins:
   - pointer
   - confetti
