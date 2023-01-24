@@ -137,11 +137,11 @@ Styles par défaut
 
 [texte en gris]{.gray} : `[texte en gris]{.gray}` ou `[texte en gris]{.grey}`
 
-[Texte en jaune Insee]{.jaune_insee} : `[Texte en jaune Insee].jaune_insee`
+[Texte en jaune Insee]{.jaune_insee} : `[Texte en jaune Insee]{.jaune_insee}`
 
-[Texte en rouge Insee]{.rouge_insee} : `[Texte en rouge Insee].rouge_insee`
+[Texte en rouge Insee]{.rouge_insee} : `[Texte en rouge Insee]{.rouge_insee}`
 
-[Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee].vert_insee`
+[Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee]{.vert_insee}`
 
 ## Palette de couleurs de l'Insee {.backgroundStandard}
 
