@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="EndPage_16_9_jaune.svg"
+   sodipodi:docname="PageSommaire_16_9_vert.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    id="svg8"
    version="1.1"
@@ -889,9 +889,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="488.79158"
-     inkscape:cx="350.85616"
-     inkscape:zoom="0.70710678"
+     inkscape:cy="568.83248"
+     inkscape:cx="388.02099"
+     inkscape:zoom="0.64"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -916,27 +916,23 @@
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
     <rect
-       y="204.39534"
-       x="-38.21339"
-       height="159.58621"
-       width="366.71249"
+       y="229.11603"
+       x="-38.231331"
+       height="7.6420646"
+       width="367.73111"
+       id="rect849"
+       style="fill:#0f417a;fill-opacity:1;stroke:none;stroke-width:0.22912;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill" />
+    <rect
+       y="204.44054"
+       x="-38.220551"
+       height="24.648235"
+       width="366.72681"
        id="rect847"
-       style="fill:#e8e8e8;fill-opacity:1;stroke-width:0.230037;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill" />
-    <g
-       transform="matrix(0.8302015,0,0,-0.8302015,181.85628,328.52652)"
-       id="g1369-0-3"
-       style="fill:#ffc300;fill-opacity:1;stroke:none;stroke-width:0.0923379;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
-      <path
-         id="path1371-1-8"
-         style="fill:#ffc300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.195218;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M -63.380801,-42.737607 176.6362,109.48233 176.7323,-42.705308 Z"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccc" />
-    </g>
+       style="fill:#e8e8e8;fill-opacity:1;stroke:none;stroke-width:0.0904069;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill" />
     <g
        id="g823"
        inkscape:label="charte-graphique-insee"
-       transform="matrix(0.08685022,0,0,-0.08685022,-30.611825,430.52666)">
+       transform="matrix(0.06503624,0,0,-0.06289571,-34.904967,245.1616)">
       <g
          id="g1331">
         <g
@@ -1577,11 +1573,11 @@
              y="108.05814" /></flowRegion><flowPara
            id="flowPara3429" /></flowRoot>    </g>
     <rect
-       y="363.98157"
-       x="-38.21339"
-       height="9.5168858"
-       width="366.71249"
-       id="rect849"
-       style="fill:#0f417a;fill-opacity:1;stroke-width:0.25533;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill" />
+       y="236.75809"
+       x="-38.231331"
+       height="175.55927"
+       width="367.73111"
+       id="rect4343"
+       style="fill:#8bc8a4;fill-opacity:1;stroke-width:1.82187998" />
   </g>
 </svg>

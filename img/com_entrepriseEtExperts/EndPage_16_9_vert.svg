@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="EndPage_16_9_jaune.svg"
+   sodipodi:docname="EndPage_16_9_vert.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    id="svg8"
    version="1.1"
@@ -925,10 +925,10 @@
     <g
        transform="matrix(0.8302015,0,0,-0.8302015,181.85628,328.52652)"
        id="g1369-0-3"
-       style="fill:#ffc300;fill-opacity:1;stroke:none;stroke-width:0.0923379;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+       style="fill:#1ca459;fill-opacity:1;stroke:none;stroke-width:0.0923379;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
       <path
          id="path1371-1-8"
-         style="fill:#ffc300;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.195218;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#1ca459;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.195218;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M -63.380801,-42.737607 176.6362,109.48233 176.7323,-42.705308 Z"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccc" />
