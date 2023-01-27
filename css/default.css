@@ -3,18 +3,23 @@
 .Large { 
   font-size: 144%;
 }
+
 .large {
   font-size: 120%;
 }
+
 .small {
   font-size: 90%;
 }
+
 .footnotesize {
   font-size: 80%;
 }
+
 .scriptsize {
   font-size: 70%;
 }
+
 .tiny {
   font-size: 60%;
 }
@@ -337,11 +342,17 @@
 .jaune_insee {
   color: #fdc218;
 }
+
 .rouge_insee {
   color: #e4003a;
 }
+
 .vert_insee {
   color: #1ca459;
+}
+
+.bleu_Insee{
+  color: #0f417a;
 }
 
 
