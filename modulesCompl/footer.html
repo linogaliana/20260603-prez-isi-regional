@@ -30,8 +30,12 @@ includeHTML();
   var $pageSommaire = document.getElementById('TOC')
   var $pageFin = document.getElementById('pageDeFin')
   var $nomReunion = document.getElementById('nomReunion')
+  var $logoParDefault = document.getElementsByClassName("slide-logo");
 
   Reveal.on( 'slidechanged', event => {
+      console.log("$logoParDefault", $logoParDefault)
+      
+    /*gestion footer*/
 
     if (!$footerPerso.classList.contains("divCachee")) {
       $footerPerso.classList.add("divCachee");
@@ -43,6 +47,8 @@ includeHTML();
       $footerPerso.classList.remove("divCachee");
     }
     
+    /*gestion nomReunion*/
+    
     if (!$nomReunion.classList.contains("divCachee")) {
       $nomReunion.classList.add("divCachee");
     } 
@@ -51,13 +57,23 @@ includeHTML();
       $nomReunion.classList.remove("divCachee");
     }
     
+    /*gestion logo*/
+    
+    if (!$logoParDefault[0].classList.contains("divCachee")) {
+      $logoParDefault[0].classList.add("divCachee");
+    }
+    
+    if ($pageDebut.classList.contains("present")
+        || $pageFin.classList.contains("present")) {
+      $logoParDefault[0].classList.remove("divCachee");
+    }
+    
   });
- 
-   console.log(window.innerWidth, window.innerHeight)
   
   Reveal.on( 'resize', event => {
   // event.scale, event.oldScale, event.size
   console.log(event)
+  console.log(window.innerWidth, window.innerHeight)
   
     if(window.innerHeight == 1173){
         document.getElementById("nomReunion").style.top = "22.5%"

@@ -24,11 +24,21 @@ editor:
 
 # titre de niveau 1 {.backgroundTitre}
 
+<!-- :::{.logoTopRightTitre} -->
+<!-- ![](img/logos/logoDeVotreService.png) -->
+<!-- ::: -->
+
+
 ## Titre de niveau 2 {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 titre de niveau 1
 :::
+
+<!-- :::{.logoTopRightStandard} -->
+<!-- ![](img/logos/logoDeVotreService.png) -->
+<!-- ::: -->
+
 
 ### Titre de niveau 3
 

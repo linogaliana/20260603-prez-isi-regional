@@ -245,6 +245,13 @@ div.backgroundTitre{
   display: inline-block;
 }
 
+.logoTopRightTitre{
+  width: 95px;
+  top: -198%;
+  position: absolute;
+  right: -10%;
+}
+
 /***********Page Standard************/
 
 div.backgroundStandard {
@@ -274,6 +281,13 @@ div.backgroundStandard {
   p {
     color: $grey-color-endPage;
   }
+}
+
+.logoTopRightStandard{
+  width: 100px;
+  top: -9%;
+  position: absolute;
+  right: -10%;
 }
 
 /***********Page de fin************/
@@ -321,11 +335,12 @@ div.backgroundPageFinale {
 
 
 /*********LOGO**************/
+
 .slide-logo{
-  max-height: 15% !important;
-  right: 110px !important;
+  max-height: 20% !important;
+  right: 140px !important;
   z-index: 1;
-  bottom: 25px !important;
+  bottom: -7px !important;
 }
 
 /************FOOTER PRINCIPAL**************/
