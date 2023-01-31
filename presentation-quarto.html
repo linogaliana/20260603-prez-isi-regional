@@ -402,7 +402,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">27/01/2023</p>
+  <p class="date">31/01/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
@@ -939,8 +939,12 @@ Texte standard : <code>Texte standard</code><br>
       var $pageSommaire = document.getElementById('TOC')
       var $pageFin = document.getElementById('pageDeFin')
       var $nomReunion = document.getElementById('nomReunion')
+      var $logoParDefault = document.getElementsByClassName("slide-logo");
 
       Reveal.on( 'slidechanged', event => {
+          console.log("$logoParDefault", $logoParDefault)
+          
+        /*gestion footer*/
 
         if (!$footerPerso.classList.contains("divCachee")) {
           $footerPerso.classList.add("divCachee");
@@ -952,6 +956,8 @@ Texte standard : <code>Texte standard</code><br>
           $footerPerso.classList.remove("divCachee");
         }
         
+        /*gestion nomReunion*/
+        
         if (!$nomReunion.classList.contains("divCachee")) {
           $nomReunion.classList.add("divCachee");
         } 
@@ -960,13 +966,23 @@ Texte standard : <code>Texte standard</code><br>
           $nomReunion.classList.remove("divCachee");
         }
         
+        /*gestion logo*/
+        
+        if (!$logoParDefault[0].classList.contains("divCachee")) {
+          $logoParDefault[0].classList.add("divCachee");
+        }
+        
+        if ($pageDebut.classList.contains("present")
+            || $pageFin.classList.contains("present")) {
+          $logoParDefault[0].classList.remove("divCachee");
+        }
+        
       });
-     
-       console.log(window.innerWidth, window.innerHeight)
       
       Reveal.on( 'resize', event => {
       // event.scale, event.oldScale, event.size
       console.log(event)
+      console.log(window.innerWidth, window.innerHeight)
       
         if(window.innerHeight == 1173){
             document.getElementById("nomReunion").style.top = "22.5%"
@@ -975,10 +991,13 @@ Texte standard : <code>Texte standard</code><br>
             document.getElementById("nomReunion").style.top = "22.5%"
         }
       
-        if(window.innerHeight == 970 || window.innerHeight == 869){
+        if(window.innerHeight == 970 || window.innerHeight == 869 || window.innerHeight == 655){
             document.getElementById("nomReunion").style.top = "25.5%"        
         }
-
+        
+        if(window.innerHeight == 858){
+            document.getElementById("nomReunion").style.top = "20.5%"
+        }
       });
 
     </script>
