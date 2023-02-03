@@ -69,26 +69,5 @@ includeHTML();
     }
     
   });
-  
-  Reveal.on( 'resize', event => {
-  // event.scale, event.oldScale, event.size
-  console.log(event)
-  console.log(window.innerWidth, window.innerHeight)
-  
-    if(window.innerHeight == 1173){
-        document.getElementById("nomReunion").style.top = "22.5%"
-    }
-    if(window.innerHeight == 1050){
-        document.getElementById("nomReunion").style.top = "22.5%"
-    }
-  
-    if(window.innerHeight == 970 || window.innerHeight == 869 || window.innerHeight == 655){
-        document.getElementById("nomReunion").style.top = "25.5%"        
-    }
-    
-    if(window.innerHeight == 858){
-        document.getElementById("nomReunion").style.top = "20.5%"
-    }
-  });
 
 </script>

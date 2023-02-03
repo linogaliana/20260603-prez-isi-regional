@@ -13,6 +13,7 @@
 <link href="presentation-quarto_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
+  <meta name="dcterms.date" content="2023-03-02">
   <title>Titre de la présentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -390,6 +391,7 @@
       margin-right: 0; 
     }
   </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -402,7 +404,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">31/01/2023</p>
+  <p class="date">03/02/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
@@ -410,7 +412,7 @@
 <li><a href="#/titre-de-niveau-1" id="/toc-titre-de-niveau-1"><span class="toc-section-number">1</span>  titre de niveau 1</a></li>
 <li><a href="#/styles-par-défaut" id="/toc-styles-par-défaut"><span class="toc-section-number">2</span>  Styles par défaut</a></li>
 <li><a href="#/documentation" id="/toc-documentation"><span class="toc-section-number">3</span>  documentation</a></li>
-<li><a href="#/titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">4</span>  TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</a></li>
+<li><a href="#/titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">4</span>  titre de troisième partie qui doit être super long pour rentrer sur 2 lignes</a></li>
 </ul>
 </nav>
 </section>
@@ -663,8 +665,8 @@ Texte standard : <code>Texte standard</code><br>
 </ul>
 </section></section>
 <section>
-<section id="titre-de-troisieme-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" class="title-slide slide level1 backgroundTitre center" data-number="4">
-<h1><span class="header-section-number">4</span> TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</h1>
+<section id="titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" class="title-slide slide level1 backgroundTitre center" data-number="4">
+<h1><span class="header-section-number">4</span> titre de troisième partie qui doit être super long pour rentrer sur 2 lignes</h1>
 
 </section>
 <section id="sous-titre-3ème-partie" class="slide level2 backgroundStandard" data-number="4.1">
@@ -873,9 +875,9 @@ Texte standard : <code>Texte standard</code><br>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1920,
 
-        height: 700,
+        height: 1080,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -977,27 +979,6 @@ Texte standard : <code>Texte standard</code><br>
           $logoParDefault[0].classList.remove("divCachee");
         }
         
-      });
-      
-      Reveal.on( 'resize', event => {
-      // event.scale, event.oldScale, event.size
-      console.log(event)
-      console.log(window.innerWidth, window.innerHeight)
-      
-        if(window.innerHeight == 1173){
-            document.getElementById("nomReunion").style.top = "22.5%"
-        }
-        if(window.innerHeight == 1050){
-            document.getElementById("nomReunion").style.top = "22.5%"
-        }
-      
-        if(window.innerHeight == 970 || window.innerHeight == 869 || window.innerHeight == 655){
-            document.getElementById("nomReunion").style.top = "25.5%"        
-        }
-        
-        if(window.innerHeight == 858){
-            document.getElementById("nomReunion").style.top = "20.5%"
-        }
       });
 
     </script>

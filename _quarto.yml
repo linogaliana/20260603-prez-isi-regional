@@ -19,6 +19,10 @@ history: true
 menu:
   side: left
   width: wide
+width: 1920
+height: 1080
+header-includes: |
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 progress: true
 include-after-body: ["modulesCompl/footer.html"]
 theme: css/Insee_Commun.scss

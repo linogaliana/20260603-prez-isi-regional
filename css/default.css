@@ -355,6 +355,15 @@
   color: #0f417a;
 }
 
+.rougeBordeaux {
+  color: #610316;
+}
+
+.souligneRouge{
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+
 
 /*Content-box*/
 
@@ -445,11 +454,23 @@
 .pull-right-70 ~ * { clear: both; }
 
 
-.souligneRouge{
-  text-decoration-line: underline;
-  text-decoration-color: red;
+.listeSansPuceNiveau1 ul>li{
+  list-style-type: none;
 }
 
+.listeSansPuceNiveau2 ul>li>ul>li{
+  list-style-type: none;
+}
+
+.listeSansPuceNiveau3 ul>li>ul>li>ul>li {
+  list-style-type: disclosure-closed;
+}
+
+.puceListFleche::before {
+  content: "\2192";
+  color: #610316;
+  padding-right: 5px;
+}
 
 
 

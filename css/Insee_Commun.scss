@@ -3,10 +3,10 @@
 $font-family-sans-serif: "Open Sans", "Arial", "Helvetica" ;
 $presentation-heading-font: $font-family-sans-serif;
 $presentation-heading-color: #383d3d !default;
-$h1-font-size: 1.6em;
-$h2-font-size: 1em;
-$h3-font-size: 0.9em;
-$h4-font-size: 0.8em;
+$h1-font-size: 2em;
+$h2-font-size: 1.6em;
+$h3-font-size: 1.3em;
+$h4-font-size: 0.9em;
 $h5-font-size: 0.6em;
 $h6-font-size: 0.5em;
 
@@ -169,12 +169,13 @@ p.date{
 }
 
 #nomReunion {
-  top: 25.5%;
+/*  top: 25.5%;*/
+  top: 33%;
   position: relative;
 }
 
 #nomReunion p {
-  font-size: 0.4em;
+  font-size: 0.7em;
   text-align: right;
   color: $yellow-color;
   margin: 0;
@@ -188,6 +189,7 @@ p.date{
 #TOC {
   height: 95% !important;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #toc-title {
@@ -216,7 +218,7 @@ p.date{
 }
 
 #TOC ul li:not(:last-child) {
-   margin-bottom: 2%;
+   margin-bottom: 5%;
 }
 
 /***********Page Titre ************/
@@ -224,9 +226,11 @@ p.date{
 div.backgroundTitre{
   max-width: 100%;
   height: auto;
-  background-size: cover;
+/*  background-size: cover;*/
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 
 .level1 {
   display: flex !important;
@@ -246,24 +250,24 @@ div.backgroundTitre{
 }
 
 .logoTopRightTitre{
-  width: 95px;
-  top: -198%;
+  width: 125px;
+  top: -630%;
   position: absolute;
-  right: -10%;
+  right: 0%;
 }
 
 /***********Page Standard************/
 
 div.backgroundStandard {
   background-repeat: no-repeat;
-  background-size: cover;
+/*  background-size: cover;*/
+  background-size: 100% 100%;
 }
 
-
 .level2 {
-  ul li, p {
+/*  ul li, p {
     font-size: 0.7em;
-  }
+  }*/
   h2 {
     margin-top: 9%;
   }
@@ -273,7 +277,7 @@ div.backgroundStandard {
   position: absolute;
   top: -1em;
 /*  left: 20%;*/
-  text-align: right;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   width: 100%;
@@ -284,10 +288,10 @@ div.backgroundStandard {
 }
 
 .logoTopRightStandard{
-  width: 100px;
-  top: -9%;
+  width: 130px;
+  top: -7%;
   position: absolute;
-  right: -10%;
+  right: 0;
 }
 
 /***********Page de fin************/
@@ -302,10 +306,11 @@ div.backgroundPageFinale {
   font-weight: bold;
   border-bottom: solid 5px $main-color-text;
   width: 80%;
-  font-size: 0.8em;
+  font-size: 1.8em;
   
   p {
-    color: $main-color-text;    
+    color: $main-color-text;
+    font-size: 0.7em;
   }
 }
 
@@ -338,10 +343,10 @@ div.backgroundPageFinale {
 
 .slide-logo{
   max-height: 20% !important;
-  right: 140px !important;
-  z-index: 1;
-  bottom: -7px !important;
+  right: 5% !important;
+  bottom: -10px !important;
 }
+
 
 /************FOOTER PRINCIPAL**************/
 
