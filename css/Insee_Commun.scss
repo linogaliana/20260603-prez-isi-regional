@@ -194,7 +194,7 @@ p.date{
 
 #toc-title {
   float: right;
-  font-size: 50%;
+  font-size: 0.7em;
   padding-right: 1%;
   padding-top: 0.5%;
   color: $yellow-color;
@@ -377,3 +377,14 @@ img.logo {
 .aside-footnotes {
   font-size: medium !important;
 }
+
+#imageLogoInseeModal{
+  width: 70%;
+  left: 15%;
+  position: relative;
+}
+
+#logoInseeModal-title, #mymodal-title{
+  border-bottom: solid 2px gray;
+}
+

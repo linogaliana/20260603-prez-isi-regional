@@ -13,7 +13,7 @@
 <link href="presentation-quarto_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <meta name="dcterms.date" content="2023-03-02">
+  <meta name="dcterms.date" content="2023-07-02">
   <title>Titre de la présentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -391,6 +391,8 @@
       margin-right: 0; 
     }
   </style>
+  <script type="module" src="presentation-quarto_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="presentation-quarto_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 </head>
 <body class="quarto-light">
@@ -404,7 +406,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">03/02/2023</p>
+  <p class="date">07/02/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
@@ -603,6 +605,76 @@ Texte standard : <code>Texte standard</code><br>
         &amp;=a^3+3a^2b+3ab^2+b^3
 \end{align}\]</span></p>
 </div>
+</section>
+<section id="utilisation_modale" class="slide level2 backgroundStandard" data-number="2.8">
+<h2><span class="header-section-number">2.8</span> Utilisation d’une fenêtre modale</h2>
+<div class="enteteAvecTitre">
+<p>Styles par défaut</p>
+</div>
+<!-- here's the link that opens it. it can be anywhere!
+     it matches to the modal's id, #mymodal -->
+<ul>
+<li><p><strong><a href="#/utilisation_modale" data-micromodal-trigger="mymodal" tabindex="0">Click to see a popup!</a></strong></p></li>
+<li><p>Ouverture d’une fenêtre modale pour y afficher une image comme le <a href="#/utilisation_modale" data-micromodal-trigger="logoInseeModal" tabindex="0">logo de l’Insee</a></p></li>
+</ul>
+<!-- the rest of this stuff is for the popup! -->
+<div class="cell" data-include="false">
+<details class="hidden">
+<summary>Code</summary>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="337" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 336;"><span id="cb3-337"><a href="#cb3-337"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
+<span id="cb3-338"><a href="#cb3-338"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
+<span id="cb3-339"><a href="#cb3-339"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-340"><a href="#cb3-340"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb3-341"><a href="#cb3-341"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<!-- and here's the popup itself! -->
+<div id="mymodal" class="modal micromodal-slide" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="true">
+<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="mymodal-title">
+<button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+</button>
+<header>
+<h3 id="mymodal-title">Première popup !</h3>
+</header>
+<div id="modal-1-content">
+<p>I should probably tell you all about it</p>
+</div>
+</div>
+</div>
+</div>
+<!-- end of stuff for this popup! -->
+<!-- and here's the popup itself! -->
+<div id="logoInseeModal" class="modal micromodal-slide" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="true">
+<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="logoInseeModal-title">
+<button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+</button>
+<header>
+<h3 id="logoInseeModal-title">Deuxième popup !</h3>
+</header>
+<div id="modal-2-content">
+<p>Les id de cette popup doivent être différents de la première.</p>
+<p><img data-src="img/logos/Logo_Insee_SignatureAdroite.jpg" id="imageLogoInseeModal"></p>
+</div>
+</div>
+</div>
+</div>
+<!-- end of stuff for this popup! -->
 </section></section>
 <section>
 <section id="documentation" class="title-slide slide level1 backgroundTitre center" data-number="3">
@@ -981,6 +1053,16 @@ Texte standard : <code>Texte standard</code><br>
         
       });
 
+    </script>
+    <script type="ojs-module-contents">
+    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"micro = require(\"micromodal@0.4.10\");\r\nmicro.init({\r\n  awaitOpenAnimation: true,\r\n  awaitCloseAnimation: true\r\n});\r\n"}]}
+    </script>
+    <script type="module">
+    window._ojs.paths.runtimeToDoc = "../../..";
+    window._ojs.paths.runtimeToRoot = "../../..";
+    window._ojs.paths.docToRoot = "";
+    window._ojs.selfContained = false;
+    window._ojs.runtime.interpretFromScriptTags();
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
