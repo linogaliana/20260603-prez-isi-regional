@@ -7,6 +7,7 @@ slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
 transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
 toc: true
+fig-cap-location: bottom
 # multiplex: true
 format:
   # choisissez le format : insee-vert-revealjs / insee-jaune-revealjs ou insee-rouge-revealjs
@@ -153,6 +154,8 @@ Styles par défaut
 
 [Texte en vert Insee]{.vert_insee} : `[Texte en vert Insee]{.vert_insee}`
 
+[Texte en bleu Insee]{.bleu_insee} : `[Texte en bleu Insee]{.bleu_insee}`
+
 ## Palette de couleurs de l'Insee {.backgroundStandard}
 
 :::{.enteteAvecTitre}
@@ -160,7 +163,7 @@ Styles par défaut
 :::
 
 :::: columns
-::: {.column width="45%" style="text-align: center;"}
+::: {.column style="text-align: center;"}
 
 #### Couleurs principales {style="margin: 5%; text-align: center;"}
 
@@ -189,7 +192,7 @@ Styles par défaut
 [G1]{.nomPaletteCouleur .dot .G1}
 
 :::
-::: {.column width="45%" style="text-align: center;"}
+::: {.column style="text-align: center;"}
 
 #### Couleurs complémentaires {style="margin: 5%; text-align: center;"}
 
@@ -288,7 +291,9 @@ Styles par défaut
 #### Equation sur une ligne
 
 ```r
+
   $$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
+  
 ```
 
 $$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
@@ -375,10 +380,10 @@ I should probably tell you all about it
 ### Deuxième popup ! {#logoInseeModal-title}
 </header>
 
-::: {#modal-2-content}
+::: {#modal-2-content .centerImgModal}
 Les id de cette popup doivent être différents de la première.
 
-![](img/logos/Logo_Insee_SignatureAdroite.jpg){id="imageLogoInseeModal"}
+![Logo de l'insee](img/logos/Logo_Insee_SignatureAdroite.jpg "mon logo Insee"){width="50%" fig-alt="un logo de l'Insee" fig-align="center"}
 
 :::
 
@@ -399,9 +404,11 @@ documentation
 
 #### Quarto :
 
-- [Présentation des fonctionnalités Quarto](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide)
+- [Présentation des fonctionnalités Quarto](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide){target="_blank" preview-link="false"}
 - [Code source associé à la présentation Quarto](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
+- [documentation quarto](https://quarto.org/docs/presentations/)
 - [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
+
 
 #### Insee :
 
@@ -413,7 +420,7 @@ documentation
 documentation
 :::
 
-- [documentation quarto](https://quarto.org/docs/presentations/)
+- [Documentation markdown](https://quarto.org/docs/authoring/markdown-basics.html) pour la mise en page
 - [documentation revealjs](https://revealjs.com/)
 - [documentation scss](https://www.w3schools.com/sass/default.php)
 - [documentation css](https://www.w3schools.com/css/default.asp)

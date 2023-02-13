@@ -13,7 +13,6 @@
 <link href="presentation-quarto_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <meta name="dcterms.date" content="2023-07-02">
   <title>Titre de la présentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -406,7 +405,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">07/02/2023</p>
+  <p class="date">13/02/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
@@ -534,6 +533,7 @@ Texte standard : <code>Texte standard</code><br>
 <p><span class="jaune_insee">Texte en jaune Insee</span> : <code>[Texte en jaune Insee]{.jaune_insee}</code></p>
 <p><span class="rouge_insee">Texte en rouge Insee</span> : <code>[Texte en rouge Insee]{.rouge_insee}</code></p>
 <p><span class="vert_insee">Texte en vert Insee</span> : <code>[Texte en vert Insee]{.vert_insee}</code></p>
+<p><span class="bleu_insee">Texte en bleu Insee</span> : <code>[Texte en bleu Insee]{.bleu_insee}</code></p>
 </section>
 <section id="palette-de-couleurs-de-linsee" class="slide level2 backgroundStandard" data-number="2.4">
 <h2><span class="header-section-number">2.4</span> Palette de couleurs de l’Insee</h2>
@@ -588,7 +588,9 @@ Texte standard : <code>Texte standard</code><br>
 <p>Styles par défaut</p>
 </div>
 <h4 id="equation-sur-une-ligne">Equation sur une ligne</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span class="math display">\[TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1\]</span></p>
 <h4 id="equation-sur-plusieurs-lignes">Equation sur plusieurs lignes</h4>
 <div class="pull-left-50">
@@ -621,11 +623,11 @@ Texte standard : <code>Texte standard</code><br>
 <div class="cell" data-include="false">
 <details class="hidden">
 <summary>Code</summary>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="337" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 336;"><span id="cb3-337"><a href="#cb3-337"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
-<span id="cb3-338"><a href="#cb3-338"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
-<span id="cb3-339"><a href="#cb3-339"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-340"><a href="#cb3-340"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb3-341"><a href="#cb3-341"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="342" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 341;"><span id="cb3-342"><a href="#cb3-342"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
+<span id="cb3-343"><a href="#cb3-343"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
+<span id="cb3-344"><a href="#cb3-344"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb3-345"><a href="#cb3-345"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb3-346"><a href="#cb3-346"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display hidden">
 <div>
@@ -667,9 +669,16 @@ Texte standard : <code>Texte standard</code><br>
 <header>
 <h3 id="logoInseeModal-title">Deuxième popup !</h3>
 </header>
-<div id="modal-2-content">
+<div id="modal-2-content" class="centerImgModal">
 <p>Les id de cette popup doivent être différents de la première.</p>
-<p><img data-src="img/logos/Logo_Insee_SignatureAdroite.jpg" id="imageLogoInseeModal"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<figure>
+<img data-src="img/logos/Logo_Insee_SignatureAdroite.jpg" title="mon logo Insee" style="width:50.0%" alt="un logo de l'Insee">
+</figure>
+<p></p><figcaption>Logo de l’insee</figcaption><p></p>
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -688,8 +697,9 @@ Texte standard : <code>Texte standard</code><br>
 </div>
 <h4 id="quarto">Quarto :</h4>
 <ul>
-<li><a href="https://quarto.org/docs/presentations/revealjs/demo/#/title-slide">Présentation des fonctionnalités Quarto</a></li>
+<li><a href="https://quarto.org/docs/presentations/revealjs/demo/#/title-slide" target="_blank" data-preview-link="false">Présentation des fonctionnalités Quarto</a></li>
 <li><a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd">Code source associé à la présentation Quarto</a></li>
+<li><a href="https://quarto.org/docs/presentations/">documentation quarto</a></li>
 <li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">quarto-tip_A_Day</a></li>
 </ul>
 <h4 id="insee">Insee :</h4>
@@ -703,7 +713,7 @@ Texte standard : <code>Texte standard</code><br>
 <p>documentation</p>
 </div>
 <ul>
-<li><a href="https://quarto.org/docs/presentations/">documentation quarto</a></li>
+<li><a href="https://quarto.org/docs/authoring/markdown-basics.html">Documentation markdown</a> pour la mise en page</li>
 <li><a href="https://revealjs.com/">documentation revealjs</a></li>
 <li><a href="https://www.w3schools.com/sass/default.php">documentation scss</a></li>
 <li><a href="https://www.w3schools.com/css/default.asp">documentation css</a></li>

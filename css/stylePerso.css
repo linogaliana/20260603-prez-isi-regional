@@ -24,14 +24,6 @@
   font-weight: bold;
 }
 
-.listeSansPuceNiveau2 ul>li>ul>li{
-  list-style-type: none;
-}
-
-.listeSansPuceNiveau3 ul>li>ul>li>ul>li {
-  list-style-type: disclosure-closed;
-}
-
 .logoPageFin {
   width: 200px;
   height: 200px;
@@ -39,3 +31,15 @@
   position: relative;
 }
 
+.centerImgModal img{
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.centerImgModal figcaption{
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50%;
+}

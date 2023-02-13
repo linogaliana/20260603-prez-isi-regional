@@ -101,32 +101,32 @@ p {
   ul {
     li {//liste de niveau 1
       list-style-type: "– ";
-      font-size: 30px !important;
+      font-size: 1em !important;
     }
     ul {
       li {//liste de niveau 2
         list-style-type: disc;
-        font-size: 25px !important;
+        font-size: 0.9em !important;
       }
       ul {
         li {//liste de niveau 3
           list-style-type: "– ";
-          font-size: 25px !important;
+          font-size: 0.8em !important;
         }
         ul{
           li{//liste de niveau 4
             list-style-type: disc;
-            font-size: 25px !important;
+            font-size: 0.9em !important;
           }
           ul{
             li{//liste de niveau 5
               list-style-type: disc;
-              font-size: 25px !important;
+              font-size: 0.9em !important;
             }
             ul{
               li{//liste de niveau 6
                 list-style-type: disc;
-                font-size: 25px !important;
+                font-size: 1em !important;
               }
             }
           }
@@ -134,6 +134,15 @@ p {
       }
     }
   }  
+}
+
+
+.interligne2 ul li:not(:last-child) {
+   margin-bottom: 2% !important;
+}
+
+.interligne5 ul li:not(:last-child) {
+   margin-bottom: 5% !important;
 }
 
 /***********premiere page**********/
@@ -154,8 +163,6 @@ p.date{
   hyphens: auto;
   width: 100%;
   height: 100%;
-/*  width: 65%;
-  top: 150px !important;*/
 }
 
 .reveal .title {
@@ -169,7 +176,6 @@ p.date{
 }
 
 #nomReunion {
-/*  top: 25.5%;*/
   top: 33%;
   position: relative;
 }
@@ -181,7 +187,6 @@ p.date{
   margin: 0;
   padding: 0 5px;
   background-color: #0f417a;
-  /*font-weight: bold;*/
 }
 
 /***********Page Sommaire ************/
@@ -231,6 +236,13 @@ div.backgroundTitre{
   background-repeat: no-repeat;
 }
 
+.bandeauTitre{
+  top: -473%;
+  position: absolute;
+  width: 535px;
+  right: -8%;
+  font-size: 0.7em;
+}
 
 .level1 {
   display: flex !important;
@@ -249,19 +261,19 @@ div.backgroundTitre{
   display: inline-block;
 }
 
-.logoTopRightTitre{
-  width: 125px;
-  top: -630%;
-  position: absolute;
-  right: 0%;
-}
 
 /***********Page Standard************/
 
 div.backgroundStandard {
   background-repeat: no-repeat;
-/*  background-size: cover;*/
   background-size: 100% 100%;
+}
+
+.bandeauStandard{
+  position: absolute;
+  right: 0;
+  font-size: 0.7em;
+  top: 7%;
 }
 
 .level2 {
@@ -276,7 +288,6 @@ div.backgroundStandard {
 .enteteAvecTitre {
   position: absolute;
   top: -1em;
-/*  left: 20%;*/
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -285,13 +296,6 @@ div.backgroundStandard {
   p {
     color: $grey-color-endPage;
   }
-}
-
-.logoTopRightStandard{
-  width: 130px;
-  top: -7%;
-  position: absolute;
-  right: 0;
 }
 
 /***********Page de fin************/
@@ -347,6 +351,20 @@ div.backgroundPageFinale {
   bottom: -10px !important;
 }
 
+.logoTopRightStandard{
+  width: 130px;
+  top: -7%;
+  position: absolute;
+  right: 0;
+}
+
+.logoTopRightTitre{
+  width: 125px;
+  top: -630%;
+  position: absolute;
+  right: 0%;
+}
+
 
 /************FOOTER PRINCIPAL**************/
 
@@ -378,13 +396,84 @@ img.logo {
   font-size: medium !important;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerImage img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listeSansPuceNiveau1 ul>li{
+  list-style-type: none;
+}
+
+
+.listeSansPuceNiveau2 ul>li>ul>li{
+  list-style-type: none;
+}
+
+.listeSansPuceNiveau3 ul>li>ul>li>ul>li {
+  list-style-type: disclosure-closed;
+}
+
+.puceListFleche::before {
+  content: "\2192";
+  color: #610316;
+  padding-right: 5px;
+}
+
+.imgWidth100 img{
+  width: 100%;
+}
+
+.imgWidth90 img{
+  width: 90%;
+}
+
+.imgWidth85 img{
+  width: 85%;
+}
+
+.imgWidth70 img{
+  width: 70%;
+}
+
+.imgWidth50 img{
+  width: 50%;
+}
+
+
+
+/***************FENETRE MODALE*******************/
+
+
 #imageLogoInseeModal{
   width: 70%;
   left: 15%;
   position: relative;
 }
 
-#logoInseeModal-title, #mymodal-title{
-  border-bottom: solid 2px gray;
+.modal {
+  header{
+   border-bottom: solid 2px gray;
+  }
 }
+
+/*.centerModal{
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}*/
+
+/*.centerModal+figcaption{
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}*/
 
