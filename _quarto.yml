@@ -12,9 +12,12 @@ toc-depth: 1
 toc-float: true
 number-sections: true
 number-depth: 2
-preview-links: true
+link-external-newwindow: true
+link-external-icon: true
 code-fold: true
 code-summary: "Code"
+code-copy: true
+highlight-style: atom-one
 history: true
 menu:
   side: left

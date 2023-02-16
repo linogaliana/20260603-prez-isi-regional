@@ -30,16 +30,3 @@
   bottom: 50px;
   position: relative;
 }
-
-.centerImgModal img{
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.centerImgModal figcaption{
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 50%;
-}

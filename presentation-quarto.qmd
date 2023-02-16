@@ -3,6 +3,8 @@ title: "Titre de la présentation"
 subtitle: "Sous titre de la présentation"
 date: today
 date-format: "DD/MM/YYYY"
+description: |
+  template de support de présentation interactif intégrant la charte graphique de l'Insee
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
 transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
@@ -319,6 +321,8 @@ $$\begin{align}
         &=a^3+3a^2b+3ab^2+b^3
 \end{align}$$
 :::
+
+{{< include maPartie.qmd >}}
 
 ## Utilisation d'une fenêtre modale {#utilisation_modale .backgroundStandard}
 

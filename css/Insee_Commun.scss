@@ -21,7 +21,6 @@ $second-color-text: #5B8ED4 !default;
 $yellow-color: #ffda5a !default;
 $grey-color-endPage: #646363 !default;
 
-
 /*-- scss:rules --*/
 
 /**************GENERIQUE*******************/
@@ -448,8 +447,6 @@ img.logo {
   width: 50%;
 }
 
-
-
 /***************FENETRE MODALE*******************/
 
 
@@ -465,15 +462,16 @@ img.logo {
   }
 }
 
-/*.centerModal{
+.centerImgModal img{
   display: block;
   margin-left: auto !important;
   margin-right: auto !important;
-}*/
+}
 
-/*.centerModal+figcaption{
+.centerImgModal figcaption{
   display: block;
   margin-left: auto !important;
   margin-right: auto !important;
-}*/
+  width: 50%;
+}
 

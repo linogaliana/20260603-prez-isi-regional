@@ -57,44 +57,44 @@
         -khtml-user-select: none; -moz-user-select: none;
         -ms-user-select: none; user-select: none;
         padding: 0 4px; width: 4em;
-        color: #aaaaaa;
       }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
     div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
+      { color: #383a42;  }
     @media screen {
     pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    code span { color: #383a42; } /* Normal */
+    code span.al { color: #95da4c; background-color: #4d1f24; font-weight: bold; } /* Alert */
+    code span.an { color: #50a14f; } /* Annotation */
+    code span.at { color: #a626a4; } /* Attribute */
+    code span.bn { color: #986801; } /* BaseN */
+    code span.bu { color: #a626a4; } /* BuiltIn */
+    code span.cf { color: #a626a4; } /* ControlFlow */
+    code span.ch { color: #50a14f; } /* Char */
+    code span.cn { color: #986801; } /* Constant */
+    code span.co { color: #a0a1a7; font-style: italic; } /* Comment */
+    code span.cv { color: #e45649; font-style: italic; } /* CommentVar */
+    code span.do { color: #e45649; } /* Documentation */
+    code span.dt { color: #a626a4; } /* DataType */
+    code span.dv { color: #986801; } /* DecVal */
+    code span.er { color: #f44747; text-decoration: underline; } /* Error */
+    code span.ex { color: #4078f2; font-weight: bold; } /* Extension */
+    code span.fl { color: #986801; } /* Float */
+    code span.fu { color: #4078f2; } /* Function */
+    code span.im { color: #50a14f; } /* Import */
+    code span.in { color: #c45b00; } /* Information */
+    code span.kw { color: #a626a4; } /* Keyword */
+    code span.op { color: #a626a4; } /* Operator */
+    code span.ot { color: #27ae60; } /* Other */
+    code span.pp { color: #a626a4; } /* Preprocessor */
+    code span.re { color: #2980b9; background-color: #153042; } /* RegionMarker */
+    code span.sc { color: #0184bc; } /* SpecialChar */
+    code span.ss { color: #da4453; } /* SpecialString */
+    code span.st { color: #50a14f; } /* String */
+    code span.va { color: #e45649; } /* Variable */
+    code span.vs { color: #da4453; } /* VerbatimString */
+    code span.wa { color: #da4453; } /* Warning */
   </style>
   <link rel="stylesheet" href="presentation-quarto_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link rel="stylesheet" href="css/Insee_rouge_interne.css">
@@ -405,15 +405,16 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">13/02/2023</p>
+  <p class="date">16/02/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
 <ul>
 <li><a href="#/titre-de-niveau-1" id="/toc-titre-de-niveau-1"><span class="toc-section-number">1</span>  titre de niveau 1</a></li>
 <li><a href="#/styles-par-défaut" id="/toc-styles-par-défaut"><span class="toc-section-number">2</span>  Styles par défaut</a></li>
-<li><a href="#/documentation" id="/toc-documentation"><span class="toc-section-number">3</span>  documentation</a></li>
-<li><a href="#/titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">4</span>  titre de troisième partie qui doit être super long pour rentrer sur 2 lignes</a></li>
+<li><a href="#/comment-moduler-la-présentation" id="/toc-comment-moduler-la-présentation"><span class="toc-section-number">3</span>  Comment moduler la présentation</a></li>
+<li><a href="#/documentation" id="/toc-documentation"><span class="toc-section-number">4</span>  documentation</a></li>
+<li><a href="#/titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" id="/toc-titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes"><span class="toc-section-number">5</span>  titre de troisième partie qui doit être super long pour rentrer sur 2 lignes</a></li>
 </ul>
 </nav>
 </section>
@@ -607,9 +608,107 @@ Texte standard : <code>Texte standard</code><br>
         &amp;=a^3+3a^2b+3ab^2+b^3
 \end{align}\]</span></p>
 </div>
+</section></section>
+<section>
+<section id="comment-moduler-la-présentation" class="title-slide slide level1 backgroundTitre center" data-number="3">
+<h1><span class="header-section-number">3</span> Comment moduler la présentation</h1>
+
 </section>
-<section id="utilisation_modale" class="slide level2 backgroundStandard" data-number="2.8">
-<h2><span class="header-section-number">2.8</span> Utilisation d’une fenêtre modale</h2>
+<section id="modularité-de-fichiers-quarto-.qmd" class="slide level2 backgroundStandard" data-number="3.1">
+<h2><span class="header-section-number">3.1</span> Modularité de fichiers quarto (.qmd)</h2>
+<div class="enteteAvecTitre">
+<p>Comment moduler la présentation ?</p>
+</div>
+<div class="listeSansPuceNiveau1">
+<ul>
+<li><span class="puceListFleche">Il est possible d’externaliser une partie du support en créant un fichier quarto et en l’intégrant dans le fichier principal avec le code suivant :</span></li>
+</ul>
+</div>
+<p><code>{{&lt; include maPartie.qmd &gt;}}</code></p>
+</section>
+<section id="intégration-de-code-r-dans-le-support" class="slide level2 backgroundStandard" data-number="3.2">
+<h2><span class="header-section-number">3.2</span> Intégration de code R dans le support</h2>
+<div class="enteteAvecTitre">
+<p>Comment moduler la présentation ?</p>
+</div>
+<p><a href="#/fig-airquality">Figure&nbsp;1</a> further explores the impact of temperature on ozone level.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(Temp, Ozone)) <span class="sc">+</span> </span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="presentation-quarto_files/figure-revealjs/fig-airquality-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: Temperature and ozone level.</p></section>
+<section id="ScriptR" class="slide level2 backgroundStandard" data-number="3.3">
+<h2><span class="header-section-number">3.3</span> Intégration de code R dans le support (part2)</h2>
+<div class="enteteAvecTitre">
+<p>Comment moduler la présentation ?</p>
+</div>
+<h4 id="exemple-1-avec-un-chunk">Exemple 1 : avec un chunk</h4>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  </code></pre>
+</div>
+</div>
+<h4 id="exemple-2-avec-un-chunk-dans-le-chunk">Exemple 2 : avec un chunk dans le chunk</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "My document"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>Some markdown content.</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>Some additional markdown content.</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="intégration-de-code-r-dans-le-support-part3" class="slide level2 backgroundStandard" data-number="3.4">
+<h2><span class="header-section-number">3.4</span> Intégration de code R dans le support (part3)</h2>
+<div class="enteteAvecTitre">
+<p>Comment moduler la présentation ?</p>
+</div>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code># A tibble: 6 x 14
+  name         height  mass hair_~1 skin_~2 eye_c~3 birth~4 sex   gender homew~5
+  &lt;chr&gt;         &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  
+1 Luke Skywal~    172    77 blond   fair    blue       19   male  mascu~ Tatooi~
+2 C-3PO           167    75 &lt;NA&gt;    gold    yellow    112   none  mascu~ Tatooi~
+3 R2-D2            96    32 &lt;NA&gt;    white,~ red        33   none  mascu~ Naboo  
+4 Darth Vader     202   136 none    white   yellow     41.9 male  mascu~ Tatooi~
+5 Leia Organa     150    49 brown   light   brown      19   fema~ femin~ Aldera~
+6 Owen Lars       178   120 brown,~ light   blue       52   male  mascu~ Tatooi~
+# ... with 4 more variables: species &lt;chr&gt;, films &lt;list&gt;, vehicles &lt;list&gt;,
+#   starships &lt;list&gt;, and abbreviated variable names 1: hair_color,
+#   2: skin_color, 3: eye_color, 4: birth_year, 5: homeworld</code></pre>
+</div>
+<div class="cell-output cell-output-stdout quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<pre><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  </code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="utilisation_modale" class="slide level2 backgroundStandard" data-number="3.5">
+<h2><span class="header-section-number">3.5</span> Utilisation d’une fenêtre modale</h2>
 <div class="enteteAvecTitre">
 <p>Styles par défaut</p>
 </div>
@@ -623,11 +722,11 @@ Texte standard : <code>Texte standard</code><br>
 <div class="cell" data-include="false">
 <details class="hidden">
 <summary>Code</summary>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="342" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 341;"><span id="cb3-342"><a href="#cb3-342"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
-<span id="cb3-343"><a href="#cb3-343"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
-<span id="cb3-344"><a href="#cb3-344"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb3-345"><a href="#cb3-345"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb3-346"><a href="#cb3-346"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="346" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 345;"><span id="cb8-346"><a href="#cb8-346"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
+<span id="cb8-347"><a href="#cb8-347"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
+<span id="cb8-348"><a href="#cb8-348"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb8-349"><a href="#cb8-349"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb8-350"><a href="#cb8-350"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display hidden">
 <div>
@@ -686,12 +785,12 @@ Texte standard : <code>Texte standard</code><br>
 <!-- end of stuff for this popup! -->
 </section></section>
 <section>
-<section id="documentation" class="title-slide slide level1 backgroundTitre center" data-number="3">
-<h1><span class="header-section-number">3</span> documentation</h1>
+<section id="documentation" class="title-slide slide level1 backgroundTitre center" data-number="4">
+<h1><span class="header-section-number">4</span> documentation</h1>
 
 </section>
-<section id="sites-de-présentation" class="slide level2 backgroundStandard" data-number="3.1">
-<h2><span class="header-section-number">3.1</span> Sites de présentation</h2>
+<section id="sites-de-présentation" class="slide level2 backgroundStandard" data-number="4.1">
+<h2><span class="header-section-number">4.1</span> Sites de présentation</h2>
 <div class="enteteAvecTitre">
 <p>documentation</p>
 </div>
@@ -707,8 +806,8 @@ Texte standard : <code>Texte standard</code><br>
 <li><a href="https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale">charte graphique Insee</a></li>
 </ul>
 </section>
-<section id="technologies-utilisées" class="slide level2 backgroundStandard" data-number="3.2">
-<h2><span class="header-section-number">3.2</span> Technologies utilisées</h2>
+<section id="technologies-utilisées" class="slide level2 backgroundStandard" data-number="4.2">
+<h2><span class="header-section-number">4.2</span> Technologies utilisées</h2>
 <div class="enteteAvecTitre">
 <p>documentation</p>
 </div>
@@ -719,8 +818,8 @@ Texte standard : <code>Texte standard</code><br>
 <li><a href="https://www.w3schools.com/css/default.asp">documentation css</a></li>
 </ul>
 </section>
-<section id="extensions-utilisées" class="slide level2 backgroundStandard" data-number="3.3">
-<h2><span class="header-section-number">3.3</span> Extensions utilisées</h2>
+<section id="extensions-utilisées" class="slide level2 backgroundStandard" data-number="4.3">
+<h2><span class="header-section-number">4.3</span> Extensions utilisées</h2>
 <div class="enteteAvecTitre">
 <p>documentation</p>
 </div>
@@ -747,12 +846,12 @@ Texte standard : <code>Texte standard</code><br>
 </ul>
 </section></section>
 <section>
-<section id="titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" class="title-slide slide level1 backgroundTitre center" data-number="4">
-<h1><span class="header-section-number">4</span> titre de troisième partie qui doit être super long pour rentrer sur 2 lignes</h1>
+<section id="titre-de-troisième-partie-qui-doit-être-super-long-pour-rentrer-sur-2-lignes" class="title-slide slide level1 backgroundTitre center" data-number="5">
+<h1><span class="header-section-number">5</span> titre de troisième partie qui doit être super long pour rentrer sur 2 lignes</h1>
 
 </section>
-<section id="sous-titre-3ème-partie" class="slide level2 backgroundStandard" data-number="4.1">
-<h2><span class="header-section-number">4.1</span> Sous-titre 3ème partie</h2>
+<section id="sous-titre-3ème-partie" class="slide level2 backgroundStandard" data-number="5.1">
+<h2><span class="header-section-number">5.1</span> Sous-titre 3ème partie</h2>
 <div class="enteteAvecTitre">
 <p>TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES</p>
 </div>
@@ -934,7 +1033,7 @@ Texte standard : <code>Texte standard</code><br>
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: true,
+        previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'slide',
@@ -1065,7 +1164,7 @@ Texte standard : <code>Texte standard</code><br>
 
     </script>
     <script type="ojs-module-contents">
-    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"micro = require(\"micromodal@0.4.10\");\r\nmicro.init({\r\n  awaitOpenAnimation: true,\r\n  awaitCloseAnimation: true\r\n});\r\n"}]}
+    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"micro = require(\"micromodal@0.4.10\");\nmicro.init({\n  awaitOpenAnimation: true,\n  awaitCloseAnimation: true\n});\n"}]}
     </script>
     <script type="module">
     window._ojs.paths.runtimeToDoc = "../../..";
@@ -1074,6 +1173,44 @@ Texte standard : <code>Texte standard</code><br>
     window._ojs.selfContained = false;
     window._ojs.runtime.interpretFromScriptTags();
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -1204,6 +1341,22 @@ Texte standard : <code>Texte standard</code><br>
           });
         }
       }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+        var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              // default icon
+              link.classList.add("external");
+          }
+        }
     });
     </script>
     
