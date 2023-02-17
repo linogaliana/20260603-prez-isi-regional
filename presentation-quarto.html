@@ -405,7 +405,7 @@
 <div class="quarto-title-authors">
 </div>
 
-  <p class="date">16/02/2023</p>
+  <p class="date">17/02/2023</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Sommaire</h2>
@@ -498,7 +498,7 @@
 <b>texte en gras</b> : <code>&lt;b&gt;texte en gras&lt;/b&gt;</code><br>
 <strike>texte barré</strike> : <code>&lt;strike&gt;texte barré&lt;/strike&gt;</code><br>
 <u>texte souligné</u> : <code>&lt;u&gt;texte souligné&lt;/u&gt;</code><br>
-<br> <i><u>exemple de balises combinées</u></i> : <code>&lt;i&gt;&lt;u&gt;exemple de balises combinées&lt;/i&gt;&lt;/u&gt;</code></p>
+<br> <u><em>exemple de balises combinées avec markdown</em></u> : <code>&lt;u&gt;_exemple de balises combinées avec markdown_&lt;/u&gt;</code></p>
 </section>
 <section id="style-du-texte-1" class="slide level2 backgroundStandard" data-number="2.2">
 <h2><span class="header-section-number">2.2</span> Style du texte</h2>
@@ -589,11 +589,11 @@ Texte standard : <code>Texte standard</code><br>
 <p>Styles par défaut</p>
 </div>
 <h4 id="equation-sur-une-ligne">Equation sur une ligne</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a>  </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><span class="math display">\[TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1\]</span></p>
+<p><br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="sc">$</span><span class="er">$</span>TCAM<span class="ot">=</span>\sqrt[n]\frac{valeurfinale}{valeurinitiale}<span class="sc">-</span><span class="dv">1</span><span class="sc">$</span><span class="er">$</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br> <span class="math display">\[TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1\]</span></p>
 <h4 id="equation-sur-plusieurs-lignes">Equation sur plusieurs lignes</h4>
+<p><br></p>
 <div class="pull-left-50">
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="sc">$</span><span class="er">$</span>\begin{align}</span>
 <span id="cb2-2"><a href="#cb2-2"></a>(a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">3</span> <span class="sc">&amp;</span><span class="er">=</span>(a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">2</span>(a<span class="sc">+</span>b)\\</span>
@@ -722,11 +722,11 @@ Texte standard : <code>Texte standard</code><br>
 <div class="cell" data-include="false">
 <details class="hidden">
 <summary>Code</summary>
-<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="346" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 345;"><span id="cb8-346"><a href="#cb8-346"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
-<span id="cb8-347"><a href="#cb8-347"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
-<span id="cb8-348"><a href="#cb8-348"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb8-349"><a href="#cb8-349"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb8-350"><a href="#cb8-350"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="347" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 346;"><span id="cb8-347"><a href="#cb8-347"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
+<span id="cb8-348"><a href="#cb8-348"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
+<span id="cb8-349"><a href="#cb8-349"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb8-350"><a href="#cb8-350"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb8-351"><a href="#cb8-351"></a>})<span class="op">;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display hidden">
 <div>
@@ -1353,8 +1353,6 @@ Texte standard : <code>Texte standard</code><br>
           if (!isInternal(link.href)) {
               // target, if specified
               link.setAttribute("target", "_blank");
-              // default icon
-              link.classList.add("external");
           }
         }
     });

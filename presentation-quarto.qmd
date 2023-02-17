@@ -105,7 +105,7 @@ Styles par défaut
 <strike>texte barré</strike> : `<strike>texte barré</strike>`  
 <u>texte souligné</u> : `<u>texte souligné</u>`  
 <br>
-<i><u>exemple de balises combinées</i></u> :  `<i><u>exemple de balises combinées</i></u>`
+<u>_exemple de balises combinées avec markdown_</u> :  `<u>_exemple de balises combinées avec markdown_</u>`
 
 ## Style du texte {.backgroundStandard}
 
@@ -291,17 +291,18 @@ Styles par défaut
 :::
 
 #### Equation sur une ligne
+<br>
 
 ```r
-
   $$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
-  
 ```
-
+<br>
 $$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
 
 
 #### Equation sur plusieurs lignes
+
+<br>
 
 :::{.pull-left-50}
 

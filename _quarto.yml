@@ -13,7 +13,7 @@ toc-float: true
 number-sections: true
 number-depth: 2
 link-external-newwindow: true
-link-external-icon: true
+# link-external-icon: true
 code-fold: true
 code-summary: "Code"
 code-copy: true
