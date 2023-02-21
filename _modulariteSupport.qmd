@@ -55,7 +55,7 @@ Comment moduler la présentation ?
 - [Pour utiliser un mot clé présent dans les parties yml des fichiers (ex: *_quarto.yml*), il faudra utiliser le shortcode [meta]{.rouge_insee} :]{.puceListFleche}
 :::
 
-[[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partir du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
+[[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partie du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
 
 ## Intégration de code R dans le support{.backgroundStandard}
 
