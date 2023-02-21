@@ -57,7 +57,7 @@ Comment moduler la présentation ?
 
 [[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partie du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
 
-## Intégration de code R dans le support{.backgroundStandard}
+## Intégration statique de données et de code R {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -79,7 +79,7 @@ ggplot(airquality, aes(Temp, Ozone)) +
 ```
 
 
-## Intégration de code R dans le support (part2) {#ScriptR .backgroundStandard}
+## Intégration statique de données et de code R (part2) {#ScriptR .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -110,7 +110,7 @@ Some markdown content.
 Some additional markdown content.
 
 ````
-## Intégration de code R dans le support (part3) {.backgroundStandard .scrollable}
+## Intégration dynamique de données (part3) {.backgroundStandard .scrollable}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
