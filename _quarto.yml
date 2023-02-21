@@ -1,15 +1,18 @@
 project:
   title: "Présentation quarto-Insee"
+  render:
+    - "_documentation.qmd"
+    - "_fenetreModale.qmd"
+    - "_modulariteSupport.qmd"
+    - "_styleParDefaut.qmd"
+    - "presentation-quarto.qmd"
 lang: fr
-editor: visual
 slide-number: c/t
 controls-layout: bottom-right
 background-transition: fade
+transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
 navigation-mode: vertical
 transition-speed: slow
-toc-title: Sommaire
-toc-depth: 1
-toc-float: true
 number-sections: true
 number-depth: 2
 link-external-newwindow: true
@@ -36,3 +39,9 @@ revealjs-plugins:
   - verticator
 filters:
   - roughnotation
+format:
+  # choisissez le format : insee-vert-revealjs / insee-jaune-revealjs ou insee-rouge-revealjs
+  insee-rouge-revealjs:
+    embed-resources: true
+    # logo: img/logos/logoDeVotreService.png
+    css: css/stylePerso.css

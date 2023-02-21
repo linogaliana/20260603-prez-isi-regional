@@ -1,0 +1,63 @@
+
+# documentation {.backgroundTitre}
+
+## Sites de présentation {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+documentation
+:::
+
+#### Quarto :
+
+- [Présentation des fonctionnalités Quarto](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide){target="_blank" preview-link="false"}
+- [Code source associé à la présentation Quarto](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
+- [documentation quarto](https://quarto.org/docs/presentations/)
+- [quarto-tip_A_Day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/)
+
+
+#### Insee :
+
+- [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
+
+## Technologies utilisées {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+documentation
+:::
+
+- [Documentation markdown](https://quarto.org/docs/authoring/markdown-basics.html) pour la mise en page
+- [documentation revealjs](https://revealjs.com/)
+- [documentation scss](https://www.w3schools.com/sass/default.php)
+- [documentation css](https://www.w3schools.com/css/default.asp)
+
+
+## Extensions utilisées {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+documentation
+:::
+
+- **Pointer :** presser "q" pour changer le pointer de la souris
+- **Confetti :** presser "c" pour envoyer des confettis
+- **Verticator :**
+  - [exemple](https://martinomagnifico.github.io/reveal.js-verticator/demo.html#/)
+  - [code de l'exemple](https://github.com/Martinomagnifico/quarto-verticator/blob/main/example.qmd)
+- **roughtnotation :**
+  - [exemple](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide) 
+  - [code del'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
+- **fontawesome :**
+  - [liste des icones](https://fontawesome.com/search?o=r&m=free)
+    - [**Exemple :**]{.souligneRouge} {{< fa icons >}} (sans titre) ; {{< fa envelope title="Une envelope" >}} (avec titre)
+
+
+# titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {.backgroundTitre}
+
+## Sous-titre 3ème partie {.backgroundStandard}
+
+:::{.enteteAvecTitre}
+TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::

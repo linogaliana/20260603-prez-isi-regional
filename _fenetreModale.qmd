@@ -1,0 +1,74 @@
+# Utilisation d'une fenêtre modale {.backgroundTitre}
+
+## Les popups {#popups .backgroundStandard}
+
+:::{.enteteAvecTitre}
+utilisation d'une fenêtre modale
+:::
+
+
+<!-- here's the link that opens it. it can be anywhere!
+     it matches to the modal's id, #mymodal -->
+- **<a href="#/utilisation_modale" data-micromodal-trigger="mymodal" tabindex="0">Click to see a popup!</a>**
+
+- Ouverture d'une fenêtre modale pour y afficher une image comme le  [logo de l'Insee](#utilisation_modale){data-micromodal-trigger="logoInseeModal" tabindex="0"}
+
+>NB: Cette fonctionnalité n'apparait pas bien sur {{< var forge.interne >}} pour des raisons techniques mais apparait correctement quand vous lancez le support en local
+
+<!-- the rest of this stuff is for the popup! -->
+
+```{ojs}
+//| include: false
+micro = require("micromodal@0.4.10");
+micro.init({
+  awaitOpenAnimation: true,
+  awaitCloseAnimation: true
+});
+```
+
+<!-- and here's the popup itself! -->
+
+:::::: {#mymodal .modal .micromodal-slide aria-hidden="true"}
+::::: {.modal__overlay tabindex="-1" data-micromodal-close="true"}
+:::: {.modal__container role="dialog" aria-modal="true" aria-labelledby="mymodal-title"}
+
+<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+
+<header>
+### Première popup ! {#mymodal-title}
+</header>
+
+::: {#modal-1-content}
+I should probably tell you all about it
+:::
+
+::::
+:::::
+::::::
+
+<!-- end of stuff for this popup! -->
+
+<!-- and here's the popup itself! -->
+
+:::::: {#logoInseeModal .modal .micromodal-slide aria-hidden="true"}
+::::: {.modal__overlay tabindex="-1" data-micromodal-close="true"}
+:::: {.modal__container role="dialog" aria-modal="true" aria-labelledby="logoInseeModal-title"}
+
+<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+
+<header>
+### Deuxième popup ! {#logoInseeModal-title}
+</header>
+
+::: {#modal-2-content .centerImgModal}
+Les id de cette popup doivent être différents de la première.
+
+![Logo de l'insee](img/logos/Logo_Insee_SignatureAdroite.jpg "mon logo Insee"){width="50%" fig-alt="un logo de l'Insee" fig-align="center"}
+
+:::
+
+::::
+:::::
+::::::
+
+<!-- end of stuff for this popup! -->

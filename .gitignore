@@ -3,3 +3,7 @@
 data/*.csv
 data/*.xls
 data/*xlsx
+*_files/
+!presentation-quarto_files/
+*.hmtl
+!presentation-quarto.html

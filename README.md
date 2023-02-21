@@ -6,7 +6,7 @@ Template de support de présentation dynamique en quarto markdown (.qmd) et reve
 
 Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
 
-Pour changer de thème, vous devez remplacer, dans la partie de l'entête du fichier **presentation-quarto.qmd**, l'occurence de la couleur associée au thème de la charte graphique souhaitée.
+Pour changer de thème, vous devez remplacer, dans le fichier **_quarto.yml**, l'occurence de la couleur associée au thème de la charte graphique souhaitée.
 
 Exemple :
 
@@ -26,7 +26,7 @@ Le support de présentation est consultable sur internet via l'url suivante :
 
 <http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto/presentation-quarto.html>
 
-Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings &rarr; pages" à laquelle on concatène le nom du fichier html en output.
+Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings → pages" à laquelle on concatène le nom du fichier html en output.
 
 ## Contribution
 

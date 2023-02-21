@@ -1,0 +1,20 @@
+```{r chargement_des_données}
+
+library(dplyr)
+library(DT)
+
+moy_taille_poids_selon_sex <- starwars %>% 
+  group_by(sex) %>% 
+  summarise(avg_height = mean(height, na.rm = TRUE),
+            avg_mass = mean(mass, na.rm = TRUE))
+
+repartition_sex_genre <- starwars %>% count(sex, gender, sort = TRUE)
+
+
+moy_taille_poids_selon_espece <- starwars %>% 
+  group_by(species) %>% 
+  summarise(avg_height = mean(height, na.rm = TRUE),
+            avg_mass = mean(mass, na.rm = TRUE))
+
+
+```
