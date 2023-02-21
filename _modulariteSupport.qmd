@@ -1,3 +1,8 @@
+---
+description: |
+  exemple de modularité dans le support de présentation
+---
+
 # Comment moduler la présentation {.backgroundTitre}
 
 ## Modularité de fichiers quarto (.qmd) {.backgroundStandard}
@@ -50,7 +55,7 @@ Comment moduler la présentation ?
 - [Pour utiliser un mot clé présent dans les parties yml des fichiers (ex: *_quarto.yml*), il faudra utiliser le shortcode [meta]{.rouge_insee} :]{.puceListFleche}
 :::
 
-[[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Ce support a pour vocation de créer un {{< meta description >}}.]{.tiny}
+[[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partir du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
 
 ## Intégration de code R dans le support{.backgroundStandard}
 
@@ -105,15 +110,37 @@ Some markdown content.
 Some additional markdown content.
 
 ````
-## Intégration de code R dans le support (part3) {.backgroundStandard}
+## Intégration de code R dans le support (part3) {.backgroundStandard .scrollable}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
 :::
 
+::: {.panel-tabset}
+
+## Data
+
 ```{r}
 
-DT::datatable(moy_taille_poids_selon_sex)
+DT::datatable(moy_taille_poids_selon_espece,
+              # plugins = 'scrollResize',
+              extensions = c('Buttons','Responsive'),
+              class = 'cell-border stripe',
+              rownames = TRUE,
+              # fillContainer = TRUE,
+              caption = "Moyenne de la taille et du poids des espèces animales présentes dans Starwars",
+              options = list(
+                  columnDefs = list(list(className = 'dt-center', targets = 2:3)),
+                  language = fr,
+                  dom = 'flrBtip',
+                    pageLength = 10,
+                    lengthMenu = c(5, 10, 15, 20)
+              )
+) %>%
+  formatRound(c('avg_height','avg_mass'), 2)
 
 ```
 
+## Plot
+
+:::

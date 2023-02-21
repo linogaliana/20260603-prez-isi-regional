@@ -1,4 +1,4 @@
-/*Taille de la police*/
+/****************Taille de la police*********************/
 
 .Large { 
   font-size: 144%;
@@ -24,7 +24,7 @@
   font-size: 60%;
 }
 
-/*Style du texte*/
+/********************Style du texte*********************/
 
 .bold {
   font-weight: bold;
@@ -74,7 +74,7 @@
 }
 
 
-/*couleurs palettes Insee*/
+/******************couleurs palettes Insee**********************/
 
 .dot {
   height: 55px;
@@ -365,7 +365,7 @@
 }
 
 
-/*Content-box*/
+/****************Content-box***********************/
 
 .content-box { 
   box-sizing: content-box;
