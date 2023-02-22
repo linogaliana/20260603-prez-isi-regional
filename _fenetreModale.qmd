@@ -7,8 +7,7 @@ utilisation d'une fenêtre modale
 :::
 
 
-<!-- here's the link that opens it. it can be anywhere!
-     it matches to the modal's id, #mymodal -->
+<!-- here's the link that opens it. it can be anywhere! it matches to the modal's id, #mymodal -->
 - **<a href="#/utilisation_modale" data-micromodal-trigger="mymodal" tabindex="0">Click to see a popup!</a>**
 
 - Ouverture d'une fenêtre modale pour y afficher une image comme le  [logo de l'Insee](#utilisation_modale){data-micromodal-trigger="logoInseeModal" tabindex="0"}
@@ -35,7 +34,7 @@ micro.init({
 <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
 
 <header>
-### Première popup ! {#mymodal-title}
+### Première popup  {#mymodal-title}
 </header>
 
 ::: {#modal-1-content}

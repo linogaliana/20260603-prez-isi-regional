@@ -5,5 +5,5 @@ data/*.xls
 data/*xlsx
 *_files/
 !presentation-quarto_files/
-*.hmtl
+*.html
 !presentation-quarto.html

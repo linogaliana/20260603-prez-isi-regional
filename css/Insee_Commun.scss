@@ -467,17 +467,20 @@ blockquote {
   }
 }
 
-.centerImgModal img{
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.centerImgModal figcaption{
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 50%;
+.centerImgModal {
+  
+  img {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  figcaption {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50%;
+  }
 }
 
 /******************packages DT**********************/
