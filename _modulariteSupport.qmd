@@ -21,7 +21,7 @@ Comment moduler la présentation ?
 
 - [Ce "shortcode" doit apparaitre seul sur une ligne et doit être entouré de lignes vides.]{.puceListFleche}
 - [Cela revient à copier et coller le texte du fichier inclus dans le fichier principal.]{.puceListFleche}
-- [Pour que chaque partie intègre le style de la page principale, il faut ajouter ce fichier dans la partie **render** du fichier *_quarto.yml*
+- [Pour que chaque partie intègre le style de la page principale, il faut ajouter ce fichier dans la partie **render** du fichier [_quarto.yml]{.italic}
 ]{.puceListFleche}
 - Ce fichier doit être préfixé par un ["_"]{.rouge_insee} pour ne pas être ignoré par l'option render du fichier yml. 
 
@@ -39,7 +39,7 @@ Comment moduler la présentation ?
 
 :::{.listeSansPuceNiveau1}
 
-- [il est possible de récupérer et utiliser les variables présentes dans ce fichier avec le shortcode [var]{.rouge_insee}:]{.puceListFleche}
+- [il est possible de récupérer et utiliser les variables présentes dans ce fichier avec le shortcode [var]{.rouge_insee} :]{.puceListFleche}
 [{{{< var version >}}} : {{< var version >}}]{.center}
 :::
 
@@ -52,7 +52,7 @@ Comment moduler la présentation ?
 
 :::{.listeSansPuceNiveau1}
 
-- [Pour utiliser un mot clé présent dans les parties yml des fichiers (ex: *_quarto.yml*), il faudra utiliser le shortcode [meta]{.rouge_insee} :]{.puceListFleche}
+- [Pour utiliser un mot clé présent dans les parties yml des fichiers (ex: [_quarto.yml]{.italic}), il faudra utiliser le shortcode [meta]{.rouge_insee} :]{.puceListFleche}
 :::
 
 [[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partie du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
@@ -85,32 +85,52 @@ ggplot(airquality, aes(Temp, Ozone)) +
 Comment moduler la présentation ?
 :::
 
+::::{.columns}
+
+:::{.column}
+
 #### Exemple 1 : avec un chunk
 
 ```{r}
-#| layout: [1,1]
-repartition_sex_genre
+# repartition_sex_genre
 
 head(moy_taille_poids_selon_espece)
+
+knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = "style='width:100%;'")
 ```
 
+:::
+:::{.column}
+
 #### Exemple 2 : avec un chunk dans le chunk
+
+<br>
 
 ````
 ---
 title: "My document"
 ---
 
-Some markdown content.
+#### Exemple 1 : avec un chunk
 
 ```{{r}}
-1 + 1
+# repartition_sex_genre
+
+head(moy_taille_poids_selon_espece)
+
+knitr::kable(head(moy_taille_poids_selon_espece), 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+
 ```
 
 Some additional markdown content.
 
 ````
-## Intégration dynamique de données (part3) {.backgroundStandard .scrollable}
+:::
+::::
+
+## Intégration dynamique de données {.backgroundStandard .scrollable}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -118,7 +138,7 @@ Comment moduler la présentation ?
 
 ::: {.panel-tabset}
 
-## Data
+## avec le package DT
 
 ```{r}
 
@@ -141,6 +161,16 @@ DT::datatable(moy_taille_poids_selon_espece,
 
 ```
 
-## Plot
+## avec le package Plotly
+
+:::{.center}
+
+```{r}
+
+plot_taille_poids_par_sexe
+
+```
+
+:::
 
 :::

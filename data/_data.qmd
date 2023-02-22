@@ -2,6 +2,9 @@
 
 library(dplyr)
 library(DT)
+library(plotly)
+
+# View(starwars)
 
 fr <- list(
   sProcessing = "Traitement en cours...", sSearch = "Rechercher&nbsp;:", 
@@ -34,6 +37,26 @@ moy_taille_poids_selon_espece <- starwars %>%
   group_by(species) %>% 
   summarise(avg_height = mean(height, na.rm = TRUE),
             avg_mass = mean(mass, na.rm = TRUE))
+
+
+plot_taille_poids_par_sexe <- plot_ly(moy_taille_poids_selon_sex, 
+                                      x = moy_taille_poids_selon_sex$sex, 
+                                      y = moy_taille_poids_selon_sex$avg_height, 
+                                      type = 'bar', 
+                                      name = 'Taille (en cm)'
+                                      )
+
+plot_taille_poids_par_sexe <- plot_taille_poids_par_sexe %>% 
+  add_trace(y = moy_taille_poids_selon_sex$avg_mass, 
+            name = 'poids (en kg)')
+
+plot_taille_poids_par_sexe <- plot_taille_poids_par_sexe %>% 
+  layout(yaxis = list(title = 'Moyenne'), 
+         xaxis = list(title = 'Sexe'),
+         barmode = 'group',
+         title = "Poids et taille moyenne des personnages de Starwars selon le sexe",
+         legend = list(x = 100, y = 0.5))
+
 
 
 ```
