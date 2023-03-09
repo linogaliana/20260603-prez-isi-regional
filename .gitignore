@@ -3,7 +3,7 @@
 data/*.csv
 data/*.xls
 data/*xlsx
-!presentation-quarto_files/
+presentation-quarto_files/
 *.html
 !presentation-quarto.html
 *.tex
@@ -11,3 +11,5 @@ data/*xlsx
 *.log
 *.sty
 *.docx
+*.odt
+_output/

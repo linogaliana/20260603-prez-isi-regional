@@ -25,9 +25,9 @@ Le mode export PDF est activé quand le support passe en navigation verticale (s
 Comment faire un export du support de présentation ?
 :::
 
-Il est possible de faire des exports sous d'autres formats avec quarto, et de les cumuler au sein du projet. Par exemple, dans ce support, il est possible de faire un export (relativement sommaire) au format **.docx**, ouvrable avec la suite libreOffice. Pour ce faire :
+Il est possible de faire des exports sous d'autres formats avec quarto, et de les cumuler au sein du projet. Par exemple, dans ce support, il est possible de faire un export (relativement sommaire) au format **.odt**, ouvrable avec la suite libreOffice. Pour ce faire :
 
-- dans Rstudio, ouvrer le fichier .qmd, et cliquer sur la flèche déroulante acollée au bouton "render". Cliquer sur "Render MS Word".
+- dans Rstudio, ouvrer le fichier .qmd, et cliquer sur la flèche déroulante acollée au bouton "render". Cliquer sur "Render odt".
 
 
 

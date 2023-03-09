@@ -11,6 +11,7 @@ toc: true
 toc-title: Sommaire
 toc-depth: 1
 toc-float: true
+transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
 fig-cap-location: bottom
 # multiplex: true
 execute:
@@ -85,14 +86,14 @@ Retrouvez nous sur
 
 <!-- Ajout des autres parties du support -->
 
-{{< include _styleParDefaut.qmd >}}
+{{< include 01_styleParDefaut.qmd >}}
 
-{{< include _modulariteSupport.qmd >}}
+{{< include 02_modulariteSupport.qmd >}}
 
-{{< include _fenetreModale.qmd >}}
+{{< include 03_fenetreModale.qmd >}}
 
-{{< include _exportPdf.qmd >}}
+{{< include 04_exportPdf.qmd >}}
 
-{{< include _documentation.qmd >}}
+{{< include 05_documentation.qmd >}}
 
 

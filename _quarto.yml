@@ -1,21 +1,32 @@
 project:
   title: "Présentation quarto-Insee"
+  # output-dir: _output
   render:
-    - "_documentation.qmd"
-    - "_fenetreModale.qmd"
-    - "_modulariteSupport.qmd"
-    - "_styleParDefaut.qmd"
-    - "_exportPdf.qmd"
     - "presentation-quarto.qmd"
+    - "01_styleParDefaut.qmd"
+    - "02_modulariteSupport.qmd"
+    - "03_fenetreModale.qmd"
+    - "04_exportPdf.qmd"
+    - "05_documentation.qmd"
+    
+format:
+  # choisissez le format : insee-vert-revealjs / insee-jaune-revealjs ou insee-rouge-revealjs
+  insee-rouge-revealjs:
+    # logo: img/logos/logoDeVotreService.png
+    css: css/stylePerso.css
+  odt: 
+    prefer-html: true
+    
 header-includes: |
   <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 include-after-body: ["modulesCompl/footer.html"]
+
 df-print: paged
 lang: "fr"
 slide-number: c/t
+progress: true
 controls-layout: bottom-right
 background-transition: fade
-transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
 navigation-mode: vertical
 transition-speed: slow
 number-sections: true
@@ -32,7 +43,7 @@ menu:
   width: wide
 width: 1920
 height: 1080
-progress: true
+
 theme: css/Insee_Commun.scss
 css: [css/default.css, css/print.css]
 revealjs-plugins:
@@ -42,10 +53,3 @@ revealjs-plugins:
 filters:
   - roughnotation
 embed-resources: true
-format:
-  # choisissez le format : insee-vert-revealjs / insee-jaune-revealjs ou insee-rouge-revealjs
-  insee-rouge-revealjs:
-    # logo: img/logos/logoDeVotreService.png
-    css: css/stylePerso.css
-  docx: default
-  
