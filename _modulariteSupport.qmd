@@ -3,7 +3,7 @@ description: |
   exemple de modularité dans le support de présentation
 ---
 
-# Comment moduler la présentation {.backgroundTitre}
+# Comment moduler la présentation {#chapters_2 .backgroundTitre}
 
 ## Modularité de fichiers quarto (.qmd) {.backgroundStandard}
 
@@ -63,14 +63,15 @@ Comment moduler la présentation ?
 Comment moduler la présentation ?
 :::
 
-@fig-airquality further explores the impact of temperature on ozone level.
+::::{.columns}
+
+:::{.column .print_code}
 
 ```{r}
 #| echo: true
-#| label: fig-airquality
+#| output: false
 #| fig-cap: Temperature and ozone level.
 #| warning: false
-
 library(ggplot2)
 
 ggplot(airquality, aes(Temp, Ozone)) + 
@@ -78,33 +79,66 @@ ggplot(airquality, aes(Temp, Ozone)) +
   geom_smooth(method = "loess")
 ```
 
+:::
 
-## Intégration statique de données et de code R (part2) {#ScriptR .backgroundStandard}
+:::{.column}
+
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{r}
+#| echo: false
+#| output: true
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess")
+```
+
+:::
+::::
+
+## Intégration statique de données et de code R (part2) {.backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
 :::
 
+### Exemple 1 : avec un chunk
+
 ::::{.columns}
 
 :::{.column}
 
-#### Exemple 1 : avec un chunk
+#### {{< fa solid arrow-right >}} sans mise en forme
 
 ```{r}
 # repartition_sex_genre
 
 head(moy_taille_poids_selon_espece)
 
-knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = "style='width:100%;'")
 ```
 
 :::
 :::{.column}
 
-#### Exemple 2 : avec un chunk dans le chunk
+#### {{< fa solid arrow-right >}} avec une mise en forme (Kable)
 
-<br>
+```{r}
+# repartition_sex_genre
+
+knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = "style='width:100%;'")
+```
+
+:::
+::::
+
+## Intégration statique de données et de code R (part3) {.backgroundStandard}
+
+### Exemple 2 : avec un chunk dans le chunk
 
 ````
 ---
@@ -127,8 +161,7 @@ knitr::kable(head(moy_taille_poids_selon_espece),
 Some additional markdown content.
 
 ````
-:::
-::::
+
 
 ## Intégration dynamique de données {.backgroundStandard .scrollable}
 
@@ -163,7 +196,7 @@ DT::datatable(moy_taille_poids_selon_espece,
 
 ## avec le package Plotly
 
-:::{.center}
+:::{.centerWidget .widgetWidth60}
 
 ```{r}
 
