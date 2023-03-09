@@ -3,7 +3,11 @@
 data/*.csv
 data/*.xls
 data/*xlsx
-*_files/
 !presentation-quarto_files/
 *.html
 !presentation-quarto.html
+*.tex
+*.pdf
+*.log
+*.sty
+*.docx

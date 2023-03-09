@@ -1,4 +1,4 @@
-# Styles par défaut {.backgroundTitre}
+# Styles par défaut {#chapters_1 .backgroundTitre}
 
 ## Style du texte {.backgroundStandard}
 
@@ -212,7 +212,8 @@ Styles par défaut
   $$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
 ```
 <br>
-$$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
+
+$$TCAM=\sqrt[n] \frac{valeurfinale}{valeurinitiale}-1$$
 
 
 #### Equation sur plusieurs lignes
@@ -229,7 +230,8 @@ $$\begin{align}
 \end{align}$$
 ```
 :::
-:::{{.pull-right-50}}
+
+:::{.pull-right-50}
 
 $$\begin{align}
 (a+b)^3 &=(a+b)^2(a+b)\\

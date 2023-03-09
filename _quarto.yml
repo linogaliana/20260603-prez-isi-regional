@@ -5,8 +5,13 @@ project:
     - "_fenetreModale.qmd"
     - "_modulariteSupport.qmd"
     - "_styleParDefaut.qmd"
+    - "_exportPdf.qmd"
     - "presentation-quarto.qmd"
-lang: fr
+header-includes: |
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
+include-after-body: ["modulesCompl/footer.html"]
+df-print: paged
+lang: "fr"
 slide-number: c/t
 controls-layout: bottom-right
 background-transition: fade
@@ -27,21 +32,20 @@ menu:
   width: wide
 width: 1920
 height: 1080
-header-includes: |
-  <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 progress: true
-include-after-body: ["modulesCompl/footer.html"]
 theme: css/Insee_Commun.scss
-css: [css/default.css]
+css: [css/default.css, css/print.css]
 revealjs-plugins:
   - pointer
   - confetti
   - verticator
 filters:
   - roughnotation
+embed-resources: true
 format:
   # choisissez le format : insee-vert-revealjs / insee-jaune-revealjs ou insee-rouge-revealjs
   insee-rouge-revealjs:
-    embed-resources: true
     # logo: img/logos/logoDeVotreService.png
     css: css/stylePerso.css
+  docx: default
+  

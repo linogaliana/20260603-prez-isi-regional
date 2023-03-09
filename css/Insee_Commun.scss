@@ -222,7 +222,7 @@ p.date{
 }
 
 #TOC ul li:not(:last-child) {
-   margin-bottom: 5%;
+   margin-bottom: 4%;
 }
 
 /***********Page Titre ************/
@@ -285,8 +285,8 @@ div.backgroundStandard {
 }
 
 .enteteAvecTitre {
-  position: absolute;
-  top: 0;
+  top: -7em;
+  position: relative;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -389,47 +389,12 @@ img.logo {
 }
 
 
-/***************AUTRES*******************/
-
-.aside-footnotes {
-  font-size: medium !important;
-}
-
-blockquote {
-  font-size: 50%;
-  font-style: italic !important;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+/***************IMAGES*******************/
 
 .centerImage img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.listeSansPuceNiveau1 ul>li{
-  list-style-type: none;
-}
-
-
-.listeSansPuceNiveau2 ul>li>ul>li{
-  list-style-type: none;
-}
-
-.listeSansPuceNiveau3 ul>li>ul>li>ul>li {
-  list-style-type: disclosure-closed;
-}
-
-.puceListFleche::before {
-  content: "\2192";
-  color: #610316;
-  padding-right: 5px;
 }
 
 .imgWidth100 img{
@@ -451,6 +416,65 @@ blockquote {
 .imgWidth50 img{
   width: 50%;
 }
+
+/***************WIDGETS*******************/
+
+.centerWidget .html-widget{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widgetWidth100 .html-widget{
+  width: 100% !important;
+}
+
+.widgetWidth90 .html-widget{
+  width: 90% !important;
+}
+
+.widgetWidth85 .html-widget{
+  width: 85% !important;
+}
+
+.widgetWidth70 .html-widget{
+  width: 70% !important;
+}
+
+.widgetWidth60 .html-widget{
+  width: 60% !important;
+}
+
+.widgetWidth50 .html-widget{
+  width: 50% !important;
+}
+
+.plotly {
+  padding: 2%;
+}
+
+/***************AUTRES*******************/
+
+.aside-footnotes {
+  font-size: medium !important;
+}
+
+blockquote {
+  font-size: 50%;
+  font-style: italic !important;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+summary{
+  cursor: pointer;
+}
+
 
 /***************FENETRE MODALE*******************/
 

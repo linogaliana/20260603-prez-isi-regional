@@ -21,7 +21,7 @@ editor:
   render-on-save: true
 ---
 
-# titre de niveau 1 {.backgroundTitre}
+# titre de niveau 1 {#chapters_0 .backgroundTitre}
 
 <!-- :::{.logoTopRightTitre} -->
 <!-- ![](img/logos/logoDeVotreService.png) -->
@@ -47,12 +47,14 @@ titre de niveau 1
 
 ###### Titre de niveau 6
 
+
 - liste de niveau 1
   - liste de niveau 2
     - liste de niveau 3
       - liste de niveau 4
         - liste de niveau 5
           - liste de niveau 6
+
           
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
@@ -60,7 +62,7 @@ titre de niveau 1
  Merci de votre attention
 :::
 
-::: {.textFooter}
+::: {.textFooter .no-print-pdf}
 Retrouvez nous sur
 :::
 
@@ -89,4 +91,8 @@ Retrouvez nous sur
 
 {{< include _fenetreModale.qmd >}}
 
+{{< include _exportPdf.qmd >}}
+
 {{< include _documentation.qmd >}}
+
+

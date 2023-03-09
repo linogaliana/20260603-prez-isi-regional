@@ -1,5 +1,5 @@
 
-# documentation {.backgroundTitre}
+# documentation {#chapters_4 .backgroundTitre}
 
 ## Sites de présentation {.backgroundStandard}
 
@@ -25,7 +25,7 @@ documentation
 documentation
 :::
 
-- [Documentation markdown](https://quarto.org/docs/authoring/markdown-basics.html) pour la mise en page
+- [Documentation markdown](https://quarto.org/docs/authoring/markdown-basics.html)
 - [documentation revealjs](https://revealjs.com/)
 - [documentation scss](https://www.w3schools.com/sass/default.php)
 - [documentation css](https://www.w3schools.com/css/default.asp)
@@ -50,7 +50,7 @@ documentation
     - [**Exemple :**]{.souligneRouge} {{< fa icons >}} (sans titre) ; {{< fa envelope title="Une envelope" >}} (avec titre)
 
 
-# titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {.backgroundTitre}
+# titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {#chapters_5 .backgroundTitre}
 
 ## Sous-titre 3ème partie {.backgroundStandard}
 
@@ -60,4 +60,5 @@ TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
 
 ::: {.notes}
 Speaker notes go here.
+Rajouter cette div dans toutes les slides.
 :::
