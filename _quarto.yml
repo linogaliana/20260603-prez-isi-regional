@@ -45,7 +45,7 @@ width: 1920
 height: 1080
 
 theme: css/Insee_Commun.scss
-css: [css/default.css, css/print.css]
+css: [css/default.css, css/modal.css, css/print.css]
 revealjs-plugins:
   - pointer
   - confetti

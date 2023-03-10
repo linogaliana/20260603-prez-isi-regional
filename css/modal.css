@@ -83,3 +83,20 @@
 .modal__close::before {
   content: "\2715";
 }
+
+/*ajout css manuel*/
+
+.modal__container {
+  position: fixed;
+  top: 80px;
+  background-color: #fff;
+  padding: 15px;
+  padding-top: 15px;
+  padding-top: 10px;
+  min-width: 500px;
+  max-width: 90% !important;
+  max-height: 90vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
