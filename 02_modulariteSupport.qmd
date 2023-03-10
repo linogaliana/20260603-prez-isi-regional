@@ -5,7 +5,7 @@ description: |
 
 # Comment moduler la présentation {#chapters_2 .backgroundTitre}
 
-## Modularité de fichiers quarto (.qmd) {.backgroundStandard}
+## Modularité de fichiers quarto (.qmd) {#section_2_1 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -29,7 +29,7 @@ Comment moduler la présentation ?
 
 {{< include data/_data.qmd >}}
 
-## Utilisation de variables {.backgroundStandard}
+## Utilisation de variables {#section_2_2 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -57,7 +57,7 @@ Comment moduler la présentation ?
 
 [[*Exemple :*]{.souligneRouge} Pour ce support, les dimensions de la page sont de {{< meta height >}} (hauteur) x {{< meta width >}} (largeur). Cette partie du support a pour vocation de créer un {{< meta description >}}.]{.tiny}
 
-## Intégration statique de données et de code R {.backgroundStandard}
+## Intégration statique de données et de code R {#section_2_3 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -101,7 +101,7 @@ ggplot(airquality, aes(Temp, Ozone)) +
 :::
 ::::
 
-## Intégration statique de données et de code R (part2) {.backgroundStandard}
+## Intégration statique de données et de code R (part2) {#section_2_4 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
@@ -136,7 +136,7 @@ knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = 
 :::
 ::::
 
-## Intégration statique de données et de code R (part3) {.backgroundStandard}
+## Intégration statique de données et de code R (part3) {#section_2_5 .backgroundStandard}
 
 ### Exemple 2 : avec un chunk dans le chunk
 
@@ -163,7 +163,7 @@ Some additional markdown content.
 ````
 
 
-## Intégration dynamique de données {.backgroundStandard .scrollable}
+## Intégration dynamique de données {#section_2_6 .backgroundStandard .scrollable}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?

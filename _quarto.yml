@@ -1,6 +1,5 @@
 project:
   title: "Présentation quarto-Insee"
-  # output-dir: _output
   render:
     - "presentation-quarto.qmd"
     - "01_styleParDefaut.qmd"
@@ -10,10 +9,12 @@ project:
     - "05_documentation.qmd"
     
 format:
-  # choisissez le format : insee-vert-revealjs / insee-jaune-revealjs ou insee-rouge-revealjs
-  insee-rouge-revealjs:
+  insee-rouge-revealjs: default
     # logo: img/logos/logoDeVotreService.png
-    css: css/stylePerso.css
+  insee-jaune-revealjs: default
+    # logo: img/logos/logoDeVotreService.png
+  insee-vert-revealjs: default
+    # logo: img/logos/logoDeVotreService.png
   odt: 
     prefer-html: true
     
@@ -21,23 +22,28 @@ header-includes: |
   <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 include-after-body: ["modulesCompl/footer.html"]
 
+embed-resources: true
 df-print: paged
 lang: "fr"
+
 slide-number: c/t
 progress: true
 controls-layout: bottom-right
 background-transition: fade
 navigation-mode: vertical
+history: true
 transition-speed: slow
 number-sections: true
 number-depth: 2
+
 link-external-newwindow: true
 # link-external-icon: true
+
 code-fold: true
 code-summary: "Code"
 code-copy: true
 highlight-style: atom-one
-history: true
+
 menu:
   side: left
   width: wide
@@ -45,11 +51,11 @@ width: 1920
 height: 1080
 
 theme: css/Insee_Commun.scss
-css: [css/default.css, css/modal.css, css/print.css]
+css: [css/default.css, css/modal.css, css/stylePerso.css]
+
 revealjs-plugins:
   - pointer
   - confetti
   - verticator
 filters:
   - roughnotation
-embed-resources: true

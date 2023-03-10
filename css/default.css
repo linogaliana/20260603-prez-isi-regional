@@ -476,10 +476,109 @@
   padding-right: 5px;
 }
 
+.puceDiscNiveau1 ul li {
+  list-style-type: disc;
+}
+
+.puceTiretNiveau2 ul li ul li{
+  list-style-type: "- ";
+}
+
+.interligne1 ul li:not(:last-child) {
+   margin-bottom: 1% !important;
+}
+
+.interligne2 ul li:not(:last-child) {
+   margin-bottom: 2% !important;
+}
+
+.interligne3 ul li:not(:last-child) {
+   margin-bottom: 3% !important;
+}
+
+.interligne4 ul li:not(:last-child) {
+   margin-bottom: 3% !important;
+}
+
+.interligne5 ul li:not(:last-child) {
+   margin-bottom: 5% !important;
+}
 
 
+/***************IMAGES*******************/
+
+.centerImage img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgWidth100 img{
+  width: 100%;
+}
+
+.imgWidth90 img{
+  width: 90%;
+}
+
+.imgWidth85 img{
+  width: 85%;
+}
+
+.imgWidth70 img{
+  width: 70%;
+}
+
+.imgWidth50 img{
+  width: 50%;
+}
 
 
+/***************WIDGETS*******************/
 
+.centerWidget .html-widget{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widgetWidth100 .html-widget{
+  width: 100% !important;
+}
+
+.widgetWidth90 .html-widget{
+  width: 90% !important;
+}
+
+.widgetWidth85 .html-widget{
+  width: 85% !important;
+}
+
+.widgetWidth70 .html-widget{
+  width: 70% !important;
+}
+
+.widgetWidth60 .html-widget{
+  width: 60% !important;
+}
+
+.widgetWidth50 .html-widget{
+  width: 50% !important;
+}
+
+/***************AUTRES*******************/
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.no-print-pdf {
+  display: none !important;
+}
 
 

@@ -1,7 +1,7 @@
 
 # documentation {#chapters_4 .backgroundTitre}
 
-## Sites de présentation {.backgroundStandard}
+## Sites de présentation {#section_4_1 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentation
@@ -19,7 +19,7 @@ documentation
 
 - [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
 
-## Technologies utilisées {.backgroundStandard}
+## Technologies utilisées {#section_4_2 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentation
@@ -31,7 +31,7 @@ documentation
 - [documentation css](https://www.w3schools.com/css/default.asp)
 
 
-## Extensions utilisées {.backgroundStandard}
+## Extensions utilisées {#section_4_3 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 documentation
@@ -52,7 +52,7 @@ documentation
 
 # titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {#chapters_5 .backgroundTitre}
 
-## Sous-titre 3ème partie {.backgroundStandard}
+## Sous-titre 3ème partie {#section_5_1 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
@@ -60,5 +60,4 @@ TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
 
 ::: {.notes}
 Speaker notes go here.
-Rajouter cette div dans toutes les slides.
 :::

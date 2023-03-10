@@ -30,3 +30,9 @@
   bottom: 50px;
   position: relative;
 }
+
+#imageLogoInseeModal{
+  width: 70%;
+  left: 15%;
+  position: relative;
+}

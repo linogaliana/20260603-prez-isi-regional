@@ -5,14 +5,17 @@ date: today
 date-format: "DD/MM/YYYY"
 description: |
   template de support de présentation interactif intégrant la charte graphique de l'Insee
+
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
+transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
+fig-cap-location: bottom
+
 toc: true
 toc-title: Sommaire
 toc-depth: 1
 toc-float: true
-transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
-fig-cap-location: bottom
+
 # multiplex: true
 execute:
   echo: false
@@ -29,7 +32,7 @@ editor:
 <!-- ::: -->
 
 
-## Titre de niveau 2 {.backgroundStandard}
+## Titre de niveau 2 {#section_0_1 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 titre de niveau 1
@@ -38,7 +41,6 @@ titre de niveau 1
 <!-- :::{.logoTopRightStandard} -->
 <!-- ![](img/logos/logoDeVotreService.png) -->
 <!-- ::: -->
-
 
 ### Titre de niveau 3
 
@@ -56,6 +58,9 @@ titre de niveau 1
         - liste de niveau 5
           - liste de niveau 6
 
+::: {.notes}
+Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
+:::
           
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
