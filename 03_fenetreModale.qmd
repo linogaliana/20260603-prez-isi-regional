@@ -12,9 +12,9 @@ utilisation d'une fenêtre modale
 
 - Ouverture d'une fenêtre modale pour y afficher une image comme le  [logo de l'Insee](#utilisation_modale){data-micromodal-trigger="logoInseeModal" tabindex="0"}
 
->NB: Cette fonctionnalité n'apparait pas bien sur {{< var forge.interne >}} pour des raisons techniques mais apparait correctement quand vous lancez le support en local.
+>NB: Cette fonctionnalité apparait bien sur {{< var forge.interne >}} et fonctionne correctement quand vous lancez le support en local (avec quarto ou en double cliquant sur le fichier html)
 >
->Elle n'est pas non plus accessible lors de l'export en PDF ou .docx.
+>Par contre, elle n'est plus accessible lors de l'export en PDF ou .docx.
 
 <!-- the rest of this stuff is for the popup! -->
 
