@@ -1,29 +1,53 @@
+/*Positionnement du champ de saisie de la réunion*/
 
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      };      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
+var el1 = document.querySelector('#title-slide');
+
+el1.insertAdjacentHTML('beforeend', ' <div id=\'nomReunion\' w3-include-html="modulesCompl/customPremierePage.html"></div> ');
+
+includeHTML();
+
+/*Gestion de l'apparition du footer et du nom de la réunion*/
+
+  var $footerPerso = document.getElementById('footerPersonnalise');
+  var $pageDebut = document.getElementById('title-slide');
+  var $pageSommaire = document.getElementById('TOC');
+  var $pageFin = document.getElementById('pageDeFin');
+  var $nomReunion = document.getElementById('nomReunion');
+  var $logoParDefault = document.getElementsByClassName("slide-logo");
+
+  Reveal.on( 'slidechanged', event => {
+      
+    /*gestion footer*/
+
+    if (!$footerPerso.classList.contains("divCachee")) {
+      $footerPerso.classList.add("divCachee");
+    } 
+    
+    if ($pageDebut.classList.contains("present") 
+        || $pageSommaire.classList.contains("present")
+        || $pageFin.classList.contains("present")) {
+      $footerPerso.classList.remove("divCachee");
     }
-  }
-}
-  
+    
+    /*gestion nomReunion*/
+    
+    if (!$nomReunion.classList.contains("divCachee")) {
+      $nomReunion.classList.add("divCachee");
+    } 
+    
+    if ($pageDebut.classList.contains("present")) {
+      $nomReunion.classList.remove("divCachee");
+    }
+    
+    /*gestion logo*/
+    
+    if (!$logoParDefault[0].classList.contains("divCachee")) {
+      $logoParDefault[0].classList.add("divCachee");
+    }
+    
+    if ($pageDebut.classList.contains("present")
+        || $pageFin.classList.contains("present")) {
+      $logoParDefault[0].classList.remove("divCachee");
+    }
+    
+  });

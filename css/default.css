@@ -576,9 +576,9 @@
   width: 50%;
 }
 
-
-.no-print-pdf {
-  display: none !important;
+@media print {
+  .no-print-pdf {
+    display: none !important;
+  }
 }
-
 
