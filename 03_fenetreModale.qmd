@@ -14,7 +14,7 @@ utilisation d'une fenêtre modale
 
 >NB: Cette fonctionnalité apparait bien sur {{< var forge.interne >}} et fonctionne correctement quand vous lancez le support en local (avec quarto ou en double cliquant sur le fichier html)
 >
->Par contre, elle n'est plus accessible lors de l'export en PDF ou .docx.
+>Par contre, elle n'est plus accessible lors de l'export en PDF ou .odt.
 
 <!-- the rest of this stuff is for the popup! -->
 
