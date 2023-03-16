@@ -44,9 +44,13 @@ code-summary: "Code"
 code-copy: true
 highlight-style: atom-one
 
-menu:
-  side: left
-  width: wide
+menu: {
+  side: 'left',
+  width: 'wide',
+  markers: true,
+  transitions: true
+}
+  
 width: 1920
 height: 1080
 

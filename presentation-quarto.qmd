@@ -8,7 +8,7 @@ description: |
 
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
-transition: slide # mots clés : none ; fade ; slide ; convex ; concave ; zoom
+transition: slide
 fig-cap-location: bottom
 
 toc: true
