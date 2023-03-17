@@ -20,7 +20,7 @@ format:
     
 header-includes: |
   <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
-include-after-body: ["modulesCompl/footer.html"]
+include-after-body: ["modulesCompl/footer.html", "modulesCompl/customMenu.html"]
 
 embed-resources: true
 df-print: paged
