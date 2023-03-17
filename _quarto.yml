@@ -48,7 +48,14 @@ menu: {
   side: 'left',
   width: 'wide',
   markers: true,
-  transitions: true
+  transitions: true,
+  custom: [
+      {
+        title: 'Plugins',
+        icon: '<i class="fa-solid fa-circle-info"></i>',
+        src: 'modulesCompl/customMenu.html'
+      }
+    ]
 }
   
 width: 1920

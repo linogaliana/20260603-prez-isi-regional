@@ -367,6 +367,29 @@ div.backgroundPageFinale {
   content: "\f042" !important;
 }
 
+.defaultCursor {
+  li {
+    cursor: default !important;
+  }
+  a {
+    cursor: default;
+  }
+}
+
+.messageInfoMenu {
+  p {
+    color: #bebebe;
+  }
+  
+  ul {
+    padding-left: 5px;
+    li {
+      list-style-type: "- ";
+      color: #bebebe;
+    }
+  }
+}
+
 /************FOOTER PRINCIPAL**************/
 
 #footerPersonnalise {

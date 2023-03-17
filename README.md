@@ -23,6 +23,25 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 
 :warning: Ces feuilles de style n'intègrent pas toutes les classes qui sont à votre disposition. Quarto intègre nativement beaucoup de fonctionnalités dont l'utilisation présente des similitudes (ex: la classe **.fragment**). Rendez-vous sur la documentation officielle pour découvrir le champ des possibles :wink:
 
+## L'export en PDF
+
+Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `04_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
+
+Ces identifiants sont :
+- pour les slides des titres principaux : {+chapters_<numeroDuChapitre>+}
+- pour les slides des sections : {+section_<numeroDuChapitre>_<numeroDeLaSection>+}
+
+En voici des exemples :
+
+```md
+# titre de niveau 1 {#chapters_0 .backgroundTitre}
+
+## Titre de niveau 2 {#section_0_1 .backgroundStandard}
+
+```
+
+Un total de 10 chapitres, avec 10 sections dans chaque chapitre a été anticipé. Si cela n'est pas suffisant, il faudra rajouter les identifiants dans la feuille de style du thème choisi.
+
 ## Déploiement du support
 
 Le support de présentation est consultable sur internet via l'url suivante :
