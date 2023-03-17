@@ -52,7 +52,7 @@ Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings →
 
 ## Précaution d'usage
 
-- Rstudio plante si vous essayez de changer de projet R ou de quitter rStudio alors que le render est encore en cours d'exécution (onglet background Jobs). Pensez à stopper le processus avant de changer de projet R ou de quitter rStudio.
+- RStudio plante si vous essayez de changer de projet R ou de quitter RStudio alors que le render est encore en cours d'exécution (onglet background Jobs). Pensez à stopper le processus avant de changer de projet R ou de quitter RStudio.
 
 - Ce projet ne fonctionne pas encore sur AUS. Un problème de path empêche le projet de fonctionner. C'est en cours d'analyse. Le projet est donc à récupérer en local sur son ordinateur.
 
