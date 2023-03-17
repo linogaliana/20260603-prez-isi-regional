@@ -28,8 +28,8 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `04_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
 
 Ces identifiants sont :
-- pour les slides des titres principaux : {+chapters_<numeroDuChapitre>+}
-- pour les slides des sections : {+section_<numeroDuChapitre>_<numeroDeLaSection>+}
+- pour les slides des titres principaux : `chapters_<numeroDuChapitre>`
+- pour les slides des sections : `section_<numeroDuChapitre>_<numeroDeLaSection>`
 
 En voici des exemples :
 
