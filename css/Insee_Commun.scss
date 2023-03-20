@@ -183,12 +183,14 @@ p.date{
 /***********Page Sommaire ************/
 
 #TOC {
-  height: 95% !important;
+  height: 100% !important;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 #toc-title {
+  position: relative;
+  top: 4.4em;
   float: right;
   font-size: 0.7em;
   padding-right: 1%;
@@ -198,7 +200,7 @@ p.date{
 
 #TOC ul {
   font-size: 95%;
-  margin-top: 5%;
+  margin-top: 8%;
   list-style-type: none;
   padding-left: 15%;
 }

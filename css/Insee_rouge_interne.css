@@ -2,7 +2,7 @@
 
 /*Sommaire*/
 #TOC {
-  background-image: url(../img/com_interne/PageSommaire_16_9_rouge.PNG);
+  background-image: url(../img/com_interne/PageSommaire_16_9_rouge.svg);
 }
 
 /*page sommaire*/
@@ -58,6 +58,13 @@ html.print-pdf div#footerPersonnalise {
   visibility: hidden;
 }
 
+.pdf-page #toc-title{
+  top: 6.4em;
+}
+
+.pdf-page #TOC ul{
+  margin-top: 10%;
+}
 
 /*CSS de l'impression pdf du navigateur (ctrl+p) Il s'appuie en partie sur le mode export (ex : background)*/
 

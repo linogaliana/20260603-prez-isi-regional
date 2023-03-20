@@ -1,7 +1,7 @@
 
 /*Sommaire*/
 #TOC {
-  background-image: url(../img/com_entrepriseEtExperts/PageSommaire_16_9_vert.PNG);
+  background-image: url(../img/com_entrepriseEtExperts/PageSommaire_16_9_vert.svg);
 }
 
 /*page sommaire*/
@@ -53,6 +53,16 @@ div.backgroundPageFinale {
 .pdf-page div.textFooter {
   visibility: hidden;
 }
+
+.pdf-page #toc-title{
+  top: 6.4em;
+}
+
+.pdf-page #TOC ul{
+  margin-top: 10%;
+}
+
+
 
 html.print-pdf div#footerPersonnalise {
   visibility: hidden;

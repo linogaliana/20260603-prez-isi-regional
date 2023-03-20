@@ -10,7 +10,6 @@ includeHTML();
 
   var $footerPerso = document.getElementById('footerPersonnalise');
   var $pageDebut = document.getElementById('title-slide');
-  var $pageSommaire = document.getElementById('TOC');
   var $pageFin = document.getElementById('pageDeFin');
   var $nomReunion = document.getElementById('nomReunion');
   var $logoParDefault = document.getElementsByClassName("slide-logo");
@@ -23,8 +22,7 @@ includeHTML();
       $footerPerso.classList.add("divCachee");
     } 
     
-    if ($pageDebut.classList.contains("present") 
-        || $pageSommaire.classList.contains("present")
+    if ($pageDebut.classList.contains("present")
         || $pageFin.classList.contains("present")) {
       $footerPerso.classList.remove("divCachee");
     }
