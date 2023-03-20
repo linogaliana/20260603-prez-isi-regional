@@ -1,8 +1,8 @@
-# Presentation Quarto
+# Présentation Quarto
 
 Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant les chartes graphiques de communication interne, tout public et entreprises de l'Insee.
 
-## Changement de theme
+## Changement de thème
 
 Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
 
@@ -21,7 +21,7 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 - `modal.css` : Cette feuille est dédiée au fonctionnement des popups (fenêtre modale) présentées dans le support.
 - `stylePerso.css` : Feuille de style à priori dédiée à la customisation personnelle du support.
 
-:warning: Ces feuilles de style n'intègrent pas toutes les classes qui sont à votre disposition. Quarto intègre nativement beaucoup de fonctionnalités dont l'utilisation présente des similitudes (ex: la classe **.fragment**). Rendez-vous sur la documentation officielle pour découvrir le champ des possibles :wink:
+:warning: Ces feuilles de style n'intègrent pas toutes les classes qui sont à votre disposition. Quarto intègre nativement beaucoup de fonctionnalités dont l'utilisation présente des similitudes (ex: la classe **.fragment**). Rendez-vous sur la documentation officielle pour découvrir le champ des possibles. :wink:
 
 ## L'export en PDF
 
@@ -52,10 +52,12 @@ Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings →
 
 ## Précaution d'usage
 
-- RStudio plante si vous essayez de changer de projet R ou de quitter RStudio alors que le render est encore en cours d'exécution (onglet background Jobs). Pensez à stopper le processus avant de changer de projet R ou de quitter RStudio.
+- RStudio plante si vous essayez de changer de projet R ou de quitter RStudio alors que le render est encore en cours d'exécution (onglet {+ Background Jobs +} de RStudio). Pensez à stopper le processus avant de changer de projet R ou de quitter RStudio (bouton Stop).
+
+![](img/background_jobs_rstudio.png)
 
 - Ce projet ne fonctionne pas encore sur AUS. Un problème de path empêche le projet de fonctionner. C'est en cours d'analyse. Le projet est donc à récupérer en local sur son ordinateur.
 
 ## Contribution
 
-Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, hésitez pas à en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre.
+Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre.
