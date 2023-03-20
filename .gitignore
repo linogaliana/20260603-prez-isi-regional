@@ -6,6 +6,9 @@ data/*xlsx
 presentation-quarto_files/
 *.html
 !presentation-quarto.html
+!customMenu.html
+!customPremierePage.html
+!footer.html
 *.tex
 *.pdf
 *.log
