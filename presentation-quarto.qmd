@@ -59,7 +59,7 @@ titre de niveau 1
           - liste de niveau 6
 
 ::: {.notes}
-Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
+Taper ["s"]{.rouge_insee} sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Fermer la fenêtre qui s'ouvre. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
 :::
           
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
