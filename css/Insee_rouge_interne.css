@@ -32,39 +32,9 @@ div.backgroundPageFinale {
 
 
 
-/*CSS quand on passe en mode export view mode (tape e)*/
 
-.pdf-page {
-  position: relative !important;
-}
 
-.pdf-page>div.backgroundTitre{
-  position: relative !important;
-}
 
-.pdf-page>div.backgroundStandard{
-  position: relative !important;
-}
-
-.pdf-page>div.backgroundPageFinale{
-  position: relative !important;
-}
-
-.pdf-page div.textFooter {
-  visibility: hidden;
-}
-
-html.print-pdf div#footerPersonnalise {
-  visibility: hidden;
-}
-
-.pdf-page #toc-title{
-  top: 6.4em;
-}
-
-.pdf-page #TOC ul{
-  margin-top: 10%;
-}
 
 /*CSS de l'impression pdf du navigateur (ctrl+p) Il s'appuie en partie sur le mode export (ex : background)*/
 

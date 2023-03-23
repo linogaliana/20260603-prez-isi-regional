@@ -10,18 +10,16 @@ project:
     
 format:
   insee-rouge-revealjs: default
-    # logo: img/logos/logoDeVotreService.png
   insee-jaune-revealjs: default
-    # logo: img/logos/logoDeVotreService.png
   insee-vert-revealjs: default
-    # logo: img/logos/logoDeVotreService.png
   odt: 
     prefer-html: true
     
 header-includes: |
   <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 include-after-body: ["modulesCompl/footer.html"]
-
+# logo: img/logos/logoDeVotreService.png
+    
 embed-resources: true
 df-print: paged
 lang: "fr"

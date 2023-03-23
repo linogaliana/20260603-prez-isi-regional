@@ -475,3 +475,54 @@ summary{
   float: right !important;
   padding: 0 5px;
 }
+
+
+
+/******************PDF EXPORT VIEW MODE**********************/
+/*CSS quand on tape e*/
+
+.pdf-page {
+  position: relative !important;
+}
+
+.pdf-page>div.backgroundTitre{
+  position: relative !important;
+}
+
+.pdf-page>div.backgroundStandard{
+  position: relative !important;
+}
+
+.pdf-page>div.backgroundPageFinale{
+  position: relative !important;
+}
+
+.pdf-page div.textFooter {
+  visibility: hidden;
+}
+
+html.print-pdf div#footerPersonnalise {
+  visibility: hidden;
+}
+
+.pdf-page #toc-title{
+  top: 6.4em;
+}
+
+.pdf-page #TOC ul{
+  margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
