@@ -40,6 +40,14 @@ En voici des exemples :
 
 ```
 
+Il y a donc du CSS dédié au support quand on passe en PDF export Mode (quand on tape e sur le clavier). Celui-ci est réparti dans plusieurs feuilles de style et débute à chaque fois par les classes `.pdf-page` ou `.print-pdf`. Il y a également du css spécifique quand on lance l'impression du support en PDF. Celui-ci se situe dans le scope suivant :
+
+```css
+@media print{
+  ...
+}
+```
+
 Un total de 10 chapitres, avec 10 sections dans chaque chapitre a été anticipé. Si cela n'est pas suffisant, il faudra rajouter les identifiants dans la feuille de style du thème choisi.
 
 ## Déploiement du support
@@ -49,6 +57,13 @@ Le support de présentation est consultable sur internet via l'url suivante :
 <http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto/presentation-quarto.html>
 
 Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings → pages" à laquelle on concatène le nom du fichier html en output.
+
+La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` dans le snippet ci-après :
+
+```yml
+  only:
+    - main
+```
 
 ## Précaution d'usage
 
