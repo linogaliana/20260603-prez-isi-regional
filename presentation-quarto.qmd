@@ -31,6 +31,11 @@ editor:
 <!-- ![](img/logos/logoDeVotreService.png) -->
 <!-- ::: -->
 
+:::{.bandeauTitre}
+[Nom de la réunion (ou pas)]{.jaune_insee}
+:::
+
+
 
 ## Titre de niveau 2 {#section_0_1 .backgroundStandard}
 
@@ -41,6 +46,11 @@ titre de niveau 1
 <!-- :::{.logoTopRightStandard} -->
 <!-- ![](img/logos/logoDeVotreService.png) -->
 <!-- ::: -->
+
+:::{.bandeauStandard}
+[Nom de la réunion (ou pas)]{.jaune_insee}
+:::
+
 
 ### Titre de niveau 3
 
@@ -59,7 +69,7 @@ titre de niveau 1
           - liste de niveau 6
 
 ::: {.notes}
-Taper ["s"]{.rouge_insee} sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Fermer la fenêtre qui s'ouvre. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
+Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Fermer la fenêtre qui s'ouvre. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
 :::
           
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
@@ -86,6 +96,14 @@ Retrouvez nous sur
 :::
 
 ::::
+
+::: {.nomReunionFin}
+Nom de la réunion (ou pas)
+:::
+
+::: {.divDateFin}
+<p id="dateFin"></p>
+:::
 
 
 

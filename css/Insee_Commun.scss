@@ -180,6 +180,12 @@ p.date{
   background-color: #0f417a;
 }
 
+.slide-logo{
+  max-height: 20% !important;
+  right: 5% !important;
+  bottom: -10px !important;
+}
+
 /***********Page Sommaire ************/
 
 #TOC {
@@ -254,6 +260,13 @@ div.backgroundTitre{
   display: inline-block;
 }
 
+.logoTopRightTitre{
+  width: 125px;
+  top: -630%;
+  position: absolute;
+  right: 0%;
+}
+
 
 /***********Page Standard************/
 
@@ -274,12 +287,12 @@ div.backgroundStandard {
     font-size: 0.7em;
   }*/
   h2 {
-    margin-top: 9%;
+    margin-top: 6%;
   }
 }
 
 .enteteAvecTitre {
-  top: -7em;
+  top: -6em;
   position: relative;
   text-align: center;
   font-weight: bold;
@@ -289,6 +302,13 @@ div.backgroundStandard {
   p {
     color: $grey-color-endPage;
   }
+}
+
+.logoTopRightStandard{
+  width: 130px;
+  top: -7%;
+  position: absolute;
+  right: 0;
 }
 
 /***********Page de fin************/
@@ -336,28 +356,26 @@ div.backgroundPageFinale {
 }
 
 
-/*********LOGO**************/
-
-.slide-logo{
-  max-height: 20% !important;
-  right: 5% !important;
-  bottom: -10px !important;
+.nomReunionFin {
+  position: relative;
+  top: 10em;
+  font-size: 0.8em;
 }
 
-.logoTopRightStandard{
-  width: 130px;
-  top: -7%;
-  position: absolute;
-  right: 0;
+.nomReunionFin p {
+  color: #fdc218;
 }
 
-.logoTopRightTitre{
-  width: 125px;
-  top: -630%;
-  position: absolute;
-  right: 0%;
+.divDateFin {
+  position: relative;
+  text-align: right;
+  top: 8.4em;
+  font-size: 0.8em;
 }
 
+#dateFin {
+  color: #fdc218;
+}
 
 /******************MENU****************/
 
@@ -513,6 +531,48 @@ html.print-pdf div#footerPersonnalise {
   margin-top: 10%;
 }
 
+.print-pdf .slide-logo{
+  display: none !important;
+}
+
+.pdf-page .bandeauTitre{
+  display: none;
+}
+
+.pdf-page .logoTopRightTitre{
+  display: none;
+}
+
+.pdf-page .bandeauStandard{
+  display: none; 
+}
+
+.pdf-page .logoTopRightStandard{
+  display: none;
+}
+
+.pdf-page .nomReunionFin{
+  top: 18.5em !important;
+}
+
+.pdf-page .divDateFin{
+  top: 16.8em !important;
+}
+
+@media print {
+
+  .level2 h2 {
+    margin-top: 10%;
+  }
+  
+  .nomReunionFin{
+    display: none;
+  }
+
+  .divDateFin{
+    display: none;
+  }
+}
 
 
 
