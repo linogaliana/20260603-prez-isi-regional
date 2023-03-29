@@ -89,10 +89,10 @@ OU
 
 - forker le projet si vous souhaitez ultérieurement y contribuer via des merges request. Pour cela, voici les étapes à suivre :
 
-  1.Forker le projet template et ajouter le fork dans son groupe. Changer le nom du projet pour éviter toute confusion ultérieure entre les 2 projets (le projet forké et le projet initial qui s'appelle presentation-quarto).
-  2.Ouvrer le projet forké via RStudio.(File -> New Project.. -> Version Control -> Git).
-  3.Dans le terminal de RStudio, coller la ligne suivante : `git remote add upstream https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto.git`. Vous pouvez vérifier l'ajout de cette remote en tapant `git remote -v`.
-  4.Mettre à jour votre projet forké avec le projet initial en faisant : `git pull upstream main`. C'est via cette commande que vous pourrez rapatrier dans votre projet forké les corrections et évolutions faites sur ce projet.
-  5.Vérifier que vous avez bien récupéré la branche main du dépôt initial en tapant `git branch -a` : la ligne suivante apparaît dans la console ->  remotes/upstream/main.
-  6.Mettre à jour sa branche main du dépôt forké : `git push`
-  7.Réaliser votre ou vos propres supports de formation sur une ou plusieurs branches dédiées. Ne jamais travailler sur la branche main si vous souhaitez récupérer les possibles futures évolutions / corrections du dépôt initial.
+  1. Forker le projet template et ajouter le fork dans son groupe. Changer le nom du projet pour éviter toute confusion ultérieure entre les 2 projets (le projet forké et le projet initial qui s'appelle presentation-quarto).
+  2. Ouvrer le projet forké via RStudio.(File -> New Project.. -> Version Control -> Git).
+  3. Dans le terminal de RStudio, coller la ligne suivante : `git remote add upstream https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto.git`. Vous pouvez vérifier l'ajout de cette remote en tapant `git remote -v`.
+  4. Mettre à jour votre projet forké avec le projet initial en faisant : `git pull upstream main`. C'est via cette commande que vous pourrez rapatrier dans votre projet forké les corrections et évolutions faites sur ce projet.
+  5. Vérifier que vous avez bien récupéré la branche main du dépôt initial en tapant `git branch -a` : la ligne suivante apparaît dans la console ->  remotes/upstream/main.
+  6. Mettre à jour sa branche main du dépôt forké : `git push`
+  7. Réaliser votre ou vos propres supports de formation sur une ou plusieurs branches dédiées. Ne jamais travailler sur la branche main si vous souhaitez récupérer les possibles futures évolutions / corrections du dépôt initial.
