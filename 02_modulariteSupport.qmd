@@ -15,7 +15,7 @@ Comment moduler la présentation ?
 - [Il est possible d'externaliser une partie du support en créant un fichier quarto et en l'intégrant dans le fichier principal avec le code suivant :]{.puceListFleche}
 :::
 
-[`{{< include _modulariteSupport.qmd >}}`]{.center}
+[`{{< include 02_modulariteSupport.qmd >}}`]{.center}
 
 :::{.listeSansPuceNiveau1}
 
@@ -137,6 +137,10 @@ knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = 
 ::::
 
 ## Intégration statique de données et de code R (part3) {#section_2_5 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
 
 ### Exemple 2 : avec un chunk dans le chunk
 

@@ -20,6 +20,7 @@ $main-color-text: #0F417A !default;
 $second-color-text: #5B8ED4 !default;
 $yellow-color: #ffda5a !default;
 $grey-color-endPage: #646363 !default;
+$color-text-menu: #bebebe !default ;
 
 /*-- scss:rules --*/
 
@@ -292,12 +293,12 @@ div.backgroundStandard {
 }
 
 .enteteAvecTitre {
-  top: -6em;
+  top: -5.5em;
   position: relative;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  width: 100%;
+/*  width: 100%;*/
   
   p {
     color: $grey-color-endPage;
@@ -397,15 +398,17 @@ div.backgroundPageFinale {
 }
 
 .messageInfoMenu {
+  padding-bottom: 15px;
+  border-bottom: 2px dotted;
   p {
-    color: #bebebe;
+    color: $color-text-menu;
   }
   
   ul {
     padding-left: 5px;
     li {
       list-style-type: "- ";
-      color: #bebebe;
+      color: $color-text-menu;
     }
   }
 }

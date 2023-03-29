@@ -18,7 +18,7 @@ utilisation d'une fenêtre modale
 
 <!-- the rest of this stuff is for the popup! -->
 
-```{ojs}
+```{ojs gestionFenetreModale}
 //| include: false
 micro = require("micromodal@0.4.10");
 micro.init({
