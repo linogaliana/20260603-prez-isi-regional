@@ -213,7 +213,7 @@ Styles par défaut
 ```
 <br>
 
-$$TCAM=\sqrt[n] \frac{valeurfinale}{valeurinitiale}-1$$
+$$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
 
 
 #### Equation sur plusieurs lignes
