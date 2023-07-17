@@ -177,7 +177,7 @@ Comment moduler la présentation ?
 
 ## avec le package DT
 
-```{r}
+```{r tableDT}
 
 DT::datatable(moy_taille_poids_selon_espece,
               # plugins = 'scrollResize',

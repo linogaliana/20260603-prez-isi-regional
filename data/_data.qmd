@@ -1,4 +1,4 @@
-```{r chargement_des_données}
+```{r chargement_des_donnees}
 
 library(dplyr)
 library(DT)
