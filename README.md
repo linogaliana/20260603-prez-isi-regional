@@ -73,28 +73,11 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
 
 ![](img/background_jobs_rstudio.png)
 
-- Ce projet fonctionne désormais sur AUS. Cependant, il subsiste un problème de "Render" lorsqu'on essaye de kniter une table intégrée avec le package `DT` et / ou `plotly`. La résolution de ce problème est en cours. A priori, une montée de version de quarto (et/ou de Rstudio) résoudrait le pb. Le projet est donc pour le moment à récupérer en local sur son ordinateur.
-
-Voici la log erreur au moment de l'exécution : 
-
-```log
-Quitting from lines 181-199 [tableDT] (presentation-quarto.qmd)
-Error in `add_html_caption()`:
-! argument inutilis� (xfun::grep_sub("^[^<]*<[^>]+aria-labelledby[ ]*=[ ]*\"([^\"]+)\".*$", "\\1", x))
-Backtrace:
-  1. global .main()
-  2. execute(...)
-  3. rmarkdown::render(...)
-  4. knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet)
-  5. knitr:::process_file(text, output)
-     ...
- 14. sew(res, options)
- 15. knitr:::sew.list(x, options, ...)
- 16. base::lapply(x, sew, options, ...)
- 17. FUN(X[[i]], ...)
- 18. knitr:::sew.knit_asis(x, options, ...)
-Ex�cution arr�t�e
-```
+- Ce projet fonctionne désormais sur AUS. Cependant, il subsiste un problème de "Render" lorsqu'on utilise les fonctionnalités suivantes :
+  - mathJax pour les équations mathématiques
+  - les popups
+  
+Ces problèmes viennent du fait que la librairie mathJax et les pages javascript des popups sont récupérées sur des serveurs (cdn) via internet, ce qui est bloqué par défaut sur AUS.
 
 ## Contribution
 
