@@ -1,4 +1,5 @@
 https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/badges/main/pipeline.svg
+
 https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/badges/release.svg?order_by=release_at
 
 
