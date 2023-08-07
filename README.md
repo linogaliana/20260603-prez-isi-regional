@@ -1,3 +1,7 @@
+https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/badges/main/pipeline.svg
+https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/badges/release.svg?order_by=release_at
+
+
 # Présentation Quarto
 
 Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant les chartes graphiques de communication interne, tout public et entreprises de l'Insee.
