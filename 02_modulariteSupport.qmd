@@ -40,10 +40,10 @@ Comment moduler la présentation ?
 :::{.listeSansPuceNiveau1}
 
 - [il est possible de récupérer et utiliser les variables présentes dans ce fichier avec le shortcode [var]{.rouge_insee} :]{.puceListFleche}
-[{{{< var version >}}} : {{< var version >}}]{.center}
+[{{{< var variables.version >}}} : {{< var variables.version >}}]{.center}
 :::
 
-[[*Exemple :*]{.souligneRouge} Ainsi, au sein de l'{{< var organisation >}}, vous pouvez contacter le support technique via l'adresse mail suivante : {{< var supportTechnique >}}]{.tiny}
+[[*Exemple :*]{.souligneRouge} Ainsi, au sein de l'{{< var variables.organisation >}}, vous pouvez contacter le support technique via l'adresse mail suivante : {{< var variables.supportTechnique >}}]{.tiny}
 
 . . .
 

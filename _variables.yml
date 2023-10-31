@@ -1,9 +1,14 @@
-forge:
-  interne: gitlab
-  externe: github
-  
-version: 2.1
+variables:
 
-organisation: INSEE
+# variable permettant de définir le format déployé sur gitlab pages et utilisé dans le fichier .gitlab-ci.yml
+  COULEURFORMAT: "rouge" # valeur possible : rouge, jaune ou vert
 
-supportTechnique: support@example.com
+# variables utilisées dans les pages .qmd
+  forgeInterne: "gitlab"
+  forgeExterne: "github"
+
+  version: "2.1"
+
+  organisation: "INSEE"
+
+  supportTechnique: "support@example.com"

@@ -1,16 +1,24 @@
+include:
+  - "_variables.yml"
+
 variables:
-  # LC_ALL: C.UTF-8
   GIT_SSL_NO_VERIFY: "1"
+  
+image: gitlab-registry.insee.fr/datascience/registry-qf/onyxia-rstudio:r4.1.3
 
 pages:
   tags :
    - docker
 
   script:
+  - echo 'couleur du format choisie :'
+  - echo $COULEURFORMAT
   - echo 'Deploy presentation to Gitlab pages'
-  - mkdir public # on cree le repertoire public
-  - cp presentation-quarto.html public # on copie le fichier presentation-quarto.html dans le repertoire public
-  - cp -r data img _extensions css js modulesCompl *.qmd public # on copie les repertoires img et css (et leurs ss-rep) dans public
+  - Rscript -e 'install.packages(c("jsonlite", "htmltools", "digest", "knitr", "rmarkdown", "dplyr", "DT", "plotly"))'
+  - quarto render --to insee-$COULEURFORMAT-revealjs #Pour modifier le format sur gitlab, modifier la valeur de cette variable dans le fichier _variables.yml
+  
+  - mkdir -p public # on cree le repertoire public
+  - mv _output/* public/ # on copie les repertoires img et css (et leurs ss-rep) dans public
   artifacts:
     paths:
       - public

@@ -12,6 +12,18 @@ Pour changer de thème, vous devez sélectionner le render associé au thème de
 
 > Si ces options ne sont pas disponibles et que le render ne produit qu'un fichier texte, sans style, alors il vous faudra monter de version votre RStudio. L'intégration de quarto dans RStudio se fait à partir de la version `v2022.07` de RStudio.
 
+**Pour changer de thème dans la page gitlab**, il faut modifier la variable `COULEURFORMAT` présente dans le fichier `_variables.yml`.
+
+Ainsi, le thème choisi en local dans Rstudio peut être différent de celui qu'on publie sur gitlab.
+
+## Génération des outputs
+
+Le fait de faire l'action "Render" dans Rstudio entraîne, s'il n'existe pas, la création d'un dossier `_output/`, puis à chaque fois qu'on va générer le support, ce dossier sera mis à jour. Toutes les ressources dont ont besoin les fichiers html en sortie sont ainsi copiées dans ce dossier.
+
+:warning: Si vous souhaitez ajouter des images par exemple dans votre support, il faut les ajouter dans le dossier `img` à la racine du projet et non dans le dossier `_output/img/`.
+
+Si la génération de votre support de présentation échoue (page not found = page blanche dans le navigateur), alors il vous faudra copier dans le navigateur l'URL mentionnée dans l'onglet `Background Jobs` de Rstudio. 
+
 
 ## Les feuilles de style
 
@@ -56,9 +68,9 @@ Un total de 10 chapitres, avec 10 sections dans chaque chapitre a été anticip�
 
 Le support de présentation est consultable sur internet via l'url suivante :
 
-<http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto/presentation-quarto.html>
+<http://pole-bpe.gitlab-pages.insee.fr/presentations-formations/presentation-quarto>
 
-Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings → pages" à laquelle on concatène le nom du fichier html en output.
+Il s'agit de l'uri présente dans le dépôt à la page suivante : "settings → pages". Une redirection automatique est faite vers la page principale du support de présentation, à savoir `index.qmd` ou `index.html`.
 
 La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` dans le snippet ci-après :
 

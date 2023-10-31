@@ -1,12 +1,17 @@
 project:
   title: "Présentation quarto-Insee"
+  output-dir: _output
+  resources:
+    - "_extensions/"
+    - "css/"
+    - "data/"
+    - "img/"
+    - "js/"
+    - "modulesCompl/"
+    - "*.html"
+    - "*_files/"
   render:
-    - "presentation-quarto.qmd"
-    - "01_styleParDefaut.qmd"
-    - "02_modulariteSupport.qmd"
-    - "03_fenetreModale.qmd"
-    - "04_exportPdf.qmd"
-    - "05_documentation.qmd"
+    - "*.qmd"
     
 format:
   insee-rouge-revealjs: default
@@ -28,7 +33,7 @@ slide-number: c/t
 progress: true
 controls-layout: bottom-right
 background-transition: fade
-navigation-mode: vertical
+navigation-mode: vertical # linear/grid or vertical
 history: true
 transition-speed: slow
 number-sections: true
