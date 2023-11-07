@@ -1,4 +1,4 @@
-# Chargement des données pour illustrer le parametrage en entête de qmd ou en externalisation dans le fichier params.yml
+# Chargement des données pour illustrer le parametrage en externalisation dans le fichier params.yml
 
 # INITIALISATION PACKAGE --------------------
 
@@ -42,14 +42,10 @@ jeuDonnees <- read.csv2(file = "data/jeuDeDonnees_test_param.csv",
                         colClasses = "character")
 
 
-## CAS 1 : RECUPERATION DES PARAMETRES DANS ENTETE YML DU FICHIER QMD  --------------------
+## FILTRAGE DES DONNEES POUR AFFICHAGE DANS LE SUPPORT  --------------------
 
 
 donneesSelonAnneeEnParam <- filtrerParAnnee(jeuDonnees)
 donneesSelonDepartementEnParam <- filtrerParDepartement(jeuDonnees)
-
-
-## CAS 2 : RECUPERATION DES PARAMETRES DANS LE FICHIER PARAMS.YML  --------------------
-
 donneesSelonTypequEnParam <- filtrerParTypequ(jeuDonnees)
 

@@ -290,9 +290,5 @@ knitr::kable(donneesSelonTypequEnParam,
 ```
 
 ::: {.callout-note}
-Dans ce dernier exemple, ce ne sont pas les paramètres en entête du fichier rendu qui sont utilisés, mais ceux du fichier `params.yml`
-:::
-
-::: {.callout-important}
-Le contexte d'exécution des paramètres utilisés peut différer entre le "render" que vous faites sur votre machine, et celui qui est fait au moment du déploiement sur Gitlab si vous utilisez l'entête yml. Par souci de cohérence, il est préférable d'utiliser la même manière pour charger les paramètres.
+Le choix a été fait de gérer les paramètres d'exécution uniquement via le fichier `params.yml` pour faciliter leur gestion car l'usage de ce fichier permet de centraliser les variables et d'éviter de considérer les différences possibles entre l'usage des versions en local et leur surcharge après déploiement sur les pages gitlab dans le cas d'usage des paramètres en entête de fichier qmd.
 :::
