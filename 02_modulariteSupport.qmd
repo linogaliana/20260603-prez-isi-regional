@@ -50,7 +50,6 @@ Comment moduler la présentation ?
 
 [[*Exemple :*]{.souligneRouge} Ainsi, au sein de l'{{< var variables.organisation >}}, vous pouvez contacter le support technique via l'adresse mail suivante : {{< var variables.supportTechnique >}}]{.tiny}
 
-. . .
 
 
 #### Utilisation des métadonnées
@@ -228,9 +227,6 @@ Il existe plusieurs manières de procéder pour contextualiser et paramétrer l'
 :::{.listeSansPuceNiveau1}
 
 - [Utilisation d'un entête au format yaml dans le fichier qmd. Cet entête doit figurer sur le fichier .qmd sur lequel vous faites le render. Ici, index.qmd.]{.puceListFleche}
-- [Utilisation d'un fichier dédié appelé `params.yml`]{.puceListFleche}
-
-:::
 
 ```yaml
 ---
@@ -242,6 +238,10 @@ params:
 ---
 
 ```
+
+- [Utilisation d'un fichier dédié appelé `params.yml`]{.puceListFleche}
+
+:::
 
 ## Utilisation de paramètres d'exécution aux scripts R {#section_2_8 .backgroundStandard}
 
@@ -265,7 +265,7 @@ knitr::kable(donneesSelonAnneeEnParam,
 
 ```
 
-#### Exemple de jeu de données filtré sur le département
+#### [Exemple de jeu de données filtré sur le département :]{.espacementHaut5}
 
 ```{r parameterDepartement}
 
@@ -290,5 +290,25 @@ knitr::kable(donneesSelonTypequEnParam,
 ```
 
 ::: {.callout-note}
-Le choix a été fait de gérer les paramètres d'exécution uniquement via le fichier `params.yml` pour faciliter leur gestion car l'usage de ce fichier permet de centraliser les variables et d'éviter de considérer les différences possibles entre l'usage des versions en local et leur surcharge après déploiement sur les pages gitlab dans le cas d'usage des paramètres en entête de fichier qmd.
+Le choix a été fait ici de gérer par défaut les paramètres d'exécution en local uniquement via le fichier `params.yml` en récupérant ces paramètres avec la commande suivante : `params <- yaml::read_yaml("params.yml")`. Cela facilite leur gestion dans le projet, le fichier permet de centraliser les paramètres. La gestion en local permet d'éviter les différences possibles entre des versions en local des paramètres et leur surcharge possible à la volée lors du déploiement sur les pages gitlab.
+:::
+
+## Utilisation de paramètres d'exécution aux scripts R {#section_2_10 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+Pour information, il est donc possible (mais pas forcément souhaitable) de surcharger la valeur des paramètres présents dans le fichier `params.yml` :
+
+:::{.listeSansPuceNiveau1}
+- [en local si on utilise les entêtes yml dans le fichier .qmd à la place des paramètres du fichier `params.yml`.]{.puceListFleche}
+- [au moment du déploiement en modifiant le fichier `.gitlab-ci.yml` avec une ligne de commande comme suit :]{.puceListFleche}
+
+```bash
+- quarto render index.qmd -P annee:"2023" -P codeRegion:"75" # OU
+- Rscript -e 'quarto::quarto_render(input = "index.qmd", execute_params = list("annee" = "2023", "codeRegion" = "75"))'
+
+```
+
 :::
