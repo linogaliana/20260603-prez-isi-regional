@@ -23,6 +23,12 @@ execute:
   cache: false
 editor:
   render-on-save: true
+  
+params:
+  annee: "2023"
+  codeDepartement: "87"
+  codeRegion: "75"
+  typeEquipement: "G103"
 ---
 
 # titre de niveau 1 {#chapters_0 .backgroundTitre}

@@ -1,6 +1,11 @@
 ---
 description: |
   exemple de modularité dans le support de présentation
+# params:
+#   annee: "2023"
+#   codeDepartement: "87"
+#   codeRegion: "75"
+#   typeEquipement: "G103"
 ---
 
 # Comment moduler la présentation {#chapters_2 .backgroundTitre}
@@ -210,4 +215,84 @@ plot_taille_poids_par_sexe
 
 :::
 
+:::
+
+## Utilisation de paramètres d'exécution aux scripts R  {#section_2_7 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+Il existe plusieurs manières de procéder pour contextualiser et paramétrer l'exécution de ses scripts :
+
+:::{.listeSansPuceNiveau1}
+
+- [Utilisation d'un entête au format yaml dans le fichier qmd. Cet entête doit figurer sur le fichier .qmd sur lequel vous faites le render. Ici, index.qmd.]{.puceListFleche}
+- [Utilisation d'un fichier dédié appelé `params.yml`]{.puceListFleche}
+
+:::
+
+```yaml
+---
+params:
+  annee: "2023"
+  codeDepartement: "87"
+  codeRegion: "75"
+  typeEquipement: "G103"
+---
+
+```
+
+## Utilisation de paramètres d'exécution aux scripts R {#section_2_8 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+```{r initScriptR}
+
+source("data/gestionJeuDonnees.R", encoding = "UTF-8")
+
+```
+
+#### Exemple de jeu de données filtré sur l'année :
+
+```{r parameterAnnee}
+
+knitr::kable(donneesSelonAnneeEnParam, 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+
+```
+
+#### Exemple de jeu de données filtré sur le département
+
+```{r parameterDepartement}
+
+knitr::kable(donneesSelonDepartementEnParam, 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+```
+
+## Utilisation de paramètres d'exécution aux scripts R {#section_2_9 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+#### Exemple de jeu de données filtré sur le type d'équipement
+
+```{r parameterTypequ}
+
+knitr::kable(donneesSelonTypequEnParam, 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+```
+
+::: {.callout-note}
+Dans ce dernier exemple, ce ne sont pas les paramètres en entête du fichier rendu qui sont utilisés, mais ceux du fichier `params.yml`
+:::
+
+::: {.callout-important}
+Le contexte d'exécution des paramètres utilisés peut différer entre le "render" que vous faites sur votre machine, et celui qui est fait au moment du déploiement sur Gitlab si vous utilisez l'entête yml. Par souci de cohérence, il est préférable d'utiliser la même manière pour charger les paramètres.
 :::
