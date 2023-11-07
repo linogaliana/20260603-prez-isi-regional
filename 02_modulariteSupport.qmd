@@ -305,10 +305,15 @@ Pour information, il est donc possible (mais pas forcément souhaitable) de surc
 - [en local si on utilise les entêtes yml dans le fichier .qmd à la place des paramètres du fichier `params.yml`.]{.puceListFleche}
 - [au moment du déploiement en modifiant le fichier `.gitlab-ci.yml` avec une ligne de commande comme suit :]{.puceListFleche}
 
-```bash
-- quarto render index.qmd -P annee:"2023" -P codeRegion:"75" # OU
-- Rscript -e 'quarto::quarto_render(input = "index.qmd", execute_params = list("annee" = "2023", "codeRegion" = "75"))'
+:::
 
+```bash
+- quarto render index.qmd --to insee-$COULEURFORMAT-revealjs -P annee:"2023" -P codeRegion:"75" # OU
+- Rscript -e 'quarto::quarto_render(input = "index.qmd", output_format = "insee-$COULEURFORMAT-revealjs", execute_params = list("annee" = "2023", "codeRegion" = "75"))'
+
+
+# Si vous utilisez par défaut l'entête yml du fichier .qmd et que vous voulez surcharger sur la pages gitlab avec les valeurs du fichier params.yml
+- quarto render index.qmd --to insee-$COULEURFORMAT-revealjs --execute-params params.yml
 ```
 
-:::
+

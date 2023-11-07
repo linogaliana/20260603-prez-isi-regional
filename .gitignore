@@ -1,6 +1,7 @@
 /.quarto/
 .Rproj.user
-#*.csv
+*.csv
+!data/jeuDeDonnees_test_param.csv
 *.xls
 *xlsx
 *.html
