@@ -6,7 +6,7 @@ library(dplyr)
 
 ## RECUPERATION PARAMS.YML --------------------
 
-parametresYml <- yaml::read_yaml("params.yml")
+params <- yaml::read_yaml("params.yml")
 
 ## INITIALISATION FONCTIONS --------------------
 
@@ -28,7 +28,7 @@ filtrerParDepartement <- function(df){
 
 filtrerParTypequ <- function(df){
   
-  res <- df %>% dplyr::filter(TYPEQU == parametresYml$typeEquipement)
+  res <- df %>% dplyr::filter(TYPEQU == params$typeEquipement)
   
   return(res)
   

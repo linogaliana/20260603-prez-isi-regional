@@ -17,7 +17,7 @@ pages:
   - Rscript -e 'install.packages(c("jsonlite", "htmltools", "digest", "knitr", "rmarkdown", "dplyr", "DT", "plotly"))'
   
 #Pour modifier le format sur gitlab, modifier la valeur de cette variable dans le fichier _variables.yml
-  - quarto render --to insee-$COULEURFORMAT-revealjs --execute-params params.yml
+  - quarto render --to insee-$COULEURFORMAT-revealjs
   
   - mkdir -p public # on cree le repertoire public
   - mv _output/* public/ # on copie les repertoires img et css (et leurs ss-rep) dans public
