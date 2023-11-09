@@ -2,6 +2,8 @@
 
 Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant les chartes graphiques de communication interne, tout public et entreprises de l'Insee.
 
+> Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
+
 ## Changement de thème
 
 Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
