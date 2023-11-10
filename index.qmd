@@ -1,6 +1,8 @@
 ---
 title: "Titre de la présentation"
 subtitle: "Sous titre de la présentation"
+# institute: INSEE
+# author: Vous
 date: today
 date-format: "DD/MM/YYYY"
 description: |

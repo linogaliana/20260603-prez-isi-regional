@@ -26,13 +26,13 @@ Comment moduler la présentation ?
 
 - [Ce "shortcode" doit apparaitre seul sur une ligne et doit être entouré de lignes vides.]{.puceListFleche}
 - [Cela revient à copier et coller le texte du fichier inclus dans le fichier principal.]{.puceListFleche}
-- [Pour que chaque partie intègre le style de la page principale, il faut ajouter ce fichier dans la partie **render** du fichier [_quarto.yml]{.italic}
+- [Chaque partie lancée unitairement intègre automatiquement le style de la charte choisie, et cela grâce à l'option `*.qmd` présent dans la partie **render** du fichier [_quarto.yml]{.italic}
 ]{.puceListFleche}
 - Ce fichier doit être préfixé par un ["_"]{.rouge_insee} pour ne pas être ignoré par l'option render du fichier yml. 
 
 :::
 
-{{< include data/_data.qmd >}}
+{{< include R/data.qmd >}}
 
 ## Utilisation de variables {#section_2_2 .backgroundStandard}
 
@@ -226,7 +226,7 @@ Il existe plusieurs manières de procéder pour contextualiser et paramétrer l'
 
 :::{.listeSansPuceNiveau1}
 
-- [Utilisation d'un entête au format yaml dans le fichier qmd. Cet entête doit figurer sur le fichier .qmd sur lequel vous faites le render. Ici, index.qmd.]{.puceListFleche}
+- [Utilisation d'un entête au format yaml dans le fichier .qmd. Cet entête doit figurer sur le fichier .qmd sur lequel vous faites le render in fine, et non sur le fichier .qmd où vous allez utiliser ces variables.]{.puceListFleche}
 
 ```yaml
 ---
@@ -251,7 +251,7 @@ Comment moduler la présentation ?
 
 ```{r initScriptR}
 
-source("data/gestionJeuDonnees.R", encoding = "UTF-8")
+source("R/gestionJeuDonnees.R", encoding = "UTF-8")
 
 ```
 

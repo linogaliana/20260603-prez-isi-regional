@@ -7,6 +7,7 @@ project:
     - "data/"
     - "img/"
     - "js/"
+    - "R/"
     - "modulesCompl/"
     - "*.html"
     - "*_files/"

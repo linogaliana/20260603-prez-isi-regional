@@ -142,6 +142,10 @@ p {
 p.date{
   font-size: 65%;
   text-align: left;
+  position: absolute;
+  left: 0em;
+  top: 33.5em;
+  color: $yellow-color;
 }
 
 .reveal h1 {
@@ -179,13 +183,24 @@ p.date{
   color: $yellow-color;
   margin: 0;
   padding: 0 5px;
-  background-color: #0f417a;
+  background-color: $main-color-text;
 }
 
 .slide-logo{
   max-height: 20% !important;
   right: 5% !important;
   bottom: -10px !important;
+}
+
+.quarto-title-author{
+  position: absolute;
+  left: -1%;
+  top: 19em;
+  color: $main-color-text;
+}
+
+.quarto-title-affiliation{
+  color: $main-color-text;  
 }
 
 /***********Page Sommaire ************/
@@ -530,6 +545,14 @@ html.print-pdf div#footerPersonnalise {
 
 .pdf-page #nomReunion{
   top: 19.8em;
+}
+
+.pdf-page  p.date{
+  top: 30em;  
+}
+
+.pdf-page .quarto-title-author{
+  top: 17em;
 }
 
 .pdf-page #toc-title{
