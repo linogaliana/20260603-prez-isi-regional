@@ -13,6 +13,7 @@ project:
     - "*_files/"
   render:
     - "*.qmd"
+    - "!R/data.qmd"
     
 format:
   insee-rouge-revealjs: default
