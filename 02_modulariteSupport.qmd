@@ -302,7 +302,7 @@ Comment moduler la présentation ?
 
 Pour information, il est donc possible (mais pas forcément souhaitable) de surcharger la valeur des paramètres présents dans l'entête yaml au moment du déploiement en modifiant le fichier `.gitlab-ci.yml` et en remplaçant la ligne de commande 
 
-[`quarto render index.qmd --to insee-$COULEURFORMAT-revealjs`]{.center .small}
+[`quarto render index.qmd --to insee-$COULEURFORMAT-revealjs`]{.center .width70}
 
 par une ligne de commande suivante :
 
