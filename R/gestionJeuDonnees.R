@@ -6,7 +6,7 @@ library(dplyr)
 
 ## RECUPERATION PARAMS.YML --------------------
 
-params <- yaml::read_yaml("params.yml")
+# params <- yaml::read_yaml("params.yml")
 
 ## INITIALISATION FONCTIONS --------------------
 
@@ -42,7 +42,7 @@ jeuDonnees <- read.csv2(file = "data/jeuDeDonnees_test_param.csv",
                         colClasses = "character")
 
 
-## FILTRAGE DES DONNEES POUR AFFICHAGE DANS LE SUPPORT  --------------------
+## FILTRAGE DES DONNEES  --------------------
 
 
 donneesSelonAnneeEnParam <- filtrerParAnnee(jeuDonnees)
