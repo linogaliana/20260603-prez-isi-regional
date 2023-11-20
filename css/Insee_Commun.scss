@@ -223,7 +223,7 @@ p.date{
 
 #TOC ul {
   font-size: 95%;
-  margin-top: 8%;
+  margin-top: 10%;
   list-style-type: none;
   padding-left: 15%;
 }
@@ -326,6 +326,10 @@ div.backgroundStandard {
   top: -7%;
   position: absolute;
   right: 0;
+}
+
+.titreTransparent h2{
+  opacity: 0;
 }
 
 /***********Page de fin************/
@@ -551,6 +555,10 @@ html.print-pdf div#footerPersonnalise {
   top: 30em;  
 }
 
+.pdf-page #TOC{
+  top: 0 !important;
+}
+
 .pdf-page .quarto-title-author{
   top: 17em;
 }
@@ -560,7 +568,7 @@ html.print-pdf div#footerPersonnalise {
 }
 
 .pdf-page #TOC ul{
-  margin-top: 10%;
+  margin-top: 13%;
 }
 
 .print-pdf .slide-logo{

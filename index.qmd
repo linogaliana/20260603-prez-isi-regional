@@ -79,6 +79,27 @@ titre de niveau 1
 ::: {.notes}
 Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Fermer la fenêtre qui s'ouvre. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
 :::
+
+
+## Titre transparent {#section_0_2 .backgroundStandard .titreTransparent data-menu-title="Slide sans titre ni numérotation"}
+
+:::{.enteteAvecTitre}
+titre de niveau 1
+:::
+
+:::{.bandeauStandard}
+[Nom de la réunion (ou pas)]{.jaune_insee}
+:::
+
+[Exercice :]{.bold}
+
+:::{.listeSansPuceNiveau1}
+- [Slide avec titre de niveau 2 caché]{.puceListFleche}
+:::
+
+:::{.callout-note}
+Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher que de ne pas en mettre du tout. Si on n'en met pas, ça fait remonter l'entête avec titre de la slide car ce dernier est positionné par rapport au titre de niveau 2.
+:::
           
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
