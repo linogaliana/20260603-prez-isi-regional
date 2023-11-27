@@ -4,7 +4,7 @@ Template de support de présentation dynamique en quarto markdown (.qmd) et reve
 
 > Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
 
-## Changement de thème
+## :one: Changement de thème
 
 Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
 
@@ -18,7 +18,7 @@ Pour changer de thème, vous devez sélectionner le render associé au thème de
 
 Ainsi, le thème choisi en local dans Rstudio peut être différent de celui qu'on publie sur gitlab.
 
-## Génération des outputs
+## :two: Génération des outputs
 
 Le fait de faire l'action "Render" dans Rstudio entraîne, s'il n'existe pas, la création d'un dossier `_output/`, puis à chaque fois qu'on va générer le support, ce dossier sera mis à jour. Toutes les ressources dont ont besoin les fichiers html en sortie sont ainsi copiées dans ce dossier.
 
@@ -27,7 +27,7 @@ Le fait de faire l'action "Render" dans Rstudio entraîne, s'il n'existe pas, la
 Si la génération de votre support de présentation échoue (page not found = page blanche dans le navigateur), alors il vous faudra copier dans le navigateur l'URL mentionnée dans l'onglet `Background Jobs` de Rstudio. 
 
 
-## Les feuilles de style
+## :three: Les feuilles de style
 
 Les feuilles de style en cascade (CSS) permettent la mise en forme du support. Cette mise en forme est répartie comme suit :
 
@@ -39,7 +39,7 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 
 :warning: Ces feuilles de style n'intègrent pas toutes les classes qui sont à votre disposition. Quarto intègre nativement beaucoup de fonctionnalités dont l'utilisation présente des similitudes (ex: la classe **.fragment**). Rendez-vous sur la documentation officielle pour découvrir le champ des possibles. :wink:
 
-## L'export en PDF
+## :four: L'export en PDF
 
 Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `04_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
 
@@ -66,7 +66,7 @@ Il y a donc du CSS dédié au support quand on passe en PDF export Mode (quand o
 
 Un total de 10 chapitres, avec 10 sections dans chaque chapitre a été anticipé. Si cela n'est pas suffisant, il faudra rajouter les identifiants dans la feuille de style du thème choisi.
 
-## Déploiement du support
+## :five: Déploiement du support
 
 Le support de présentation est consultable sur internet via l'url suivante :
 
@@ -81,7 +81,7 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
     - main
 ```
 
-## Précaution d'usage
+## :six: Précaution d'usage
 
 - RStudio plante si vous essayez de changer de projet R ou de quitter RStudio alors que le render est encore en cours d'exécution (onglet {+ Background Jobs +} de RStudio). Pensez à stopper le processus avant de changer de projet R ou de quitter RStudio (bouton Stop).
 
@@ -93,11 +93,11 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
   
 Ces problèmes viennent du fait que la librairie mathJax et les pages javascript des popups sont récupérées sur des serveurs (cdn) via internet, ce qui est bloqué par défaut sur AUS.
 
-## Contribution
+## :seven: Contribution
 
 Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre. Pour cela, vous pouvez faire une issue dans ce dépôt gitlab.
 
-## Récupération du projet
+## :eight: Récupération du projet
 
 Pour récupérer le projet, vous pouvez :
 
