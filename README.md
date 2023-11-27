@@ -12,7 +12,7 @@ Pour changer de thème, vous devez sélectionner le render associé au thème de
 
 ![](img/renders_quarto.png)
 
-> Si ces options ne sont pas disponibles et que le render ne produit qu'un fichier texte, sans style, alors il vous faudra monter de version votre RStudio. L'intégration de quarto dans RStudio se fait à partir de la version `v2022.07` de RStudio.
+> Si ces options ne sont pas disponibles et que le render ne produit qu'un fichier texte, sans style, alors il vous faudra monter de version votre RStudio. L'intégration de quarto dans RStudio se fait à partir de la version `v2022.07` de RStudio. De plus, il est {-fortement recommandé-} d'utiliser a minima la version `v2023.06` de Rstudio pour faire du quarto.
 
 **Pour changer de thème dans la page gitlab**, il faut modifier la variable `COULEURFORMAT` présente dans le fichier `_variables.yml`.
 
