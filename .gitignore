@@ -13,3 +13,4 @@
 *.docx
 *.odt
 _output/
+!modulesCompl/*
