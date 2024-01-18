@@ -52,7 +52,8 @@ plot_taille_poids_par_sexe <- plot_taille_poids_par_sexe %>%
             name = 'poids (en kg)')
 
 plot_taille_poids_par_sexe <- plot_taille_poids_par_sexe %>% 
-  layout(yaxis = list(title = 'Moyenne'), 
+  layout(width = 1500, height = 500,
+         yaxis = list(title = 'Moyenne'), 
          xaxis = list(title = 'Sexe'),
          barmode = 'group',
          title = "Poids et taille moyenne des personnages de Starwars selon le sexe",

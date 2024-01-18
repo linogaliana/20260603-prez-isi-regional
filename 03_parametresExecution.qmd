@@ -1,0 +1,121 @@
+---
+params:
+  annee: "2023"
+  codeDepartement: "87"
+  codeRegion: "75"
+  typeEquipement: "G103"
+---
+
+# Paramétrer l'exécution de scripts R {#chapters_3 .backgroundTitre}
+
+## Utilisation de paramètres d'exécution aux scripts R  {#section_3_1 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Paramétrer l'exécution de scripts R
+:::
+
+Il existe plusieurs manières de procéder pour contextualiser et paramétrer l'exécution de ses scripts :
+
+:::{.listeSansPuceNiveau1}
+
+- [Utilisation d'un entête au format yaml dans le fichier .qmd. Cet entête doit figurer sur le fichier .qmd sur lequel vous faites le render in fine, et non sur le fichier .qmd où vous allez utiliser ces variables.]{.puceListFleche}
+
+```yaml
+---
+params:
+  annee: "2023"
+  codeDepartement: "87"
+  codeRegion: "75"
+  typeEquipement: "G103"
+---
+
+```
+
+- [Utilisation d'un fichier dédié appelé `params.yml`]{.puceListFleche}
+
+:::
+
+## Utilisation de paramètres d'exécution aux scripts R {#section_3_2 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Paramétrer l'exécution de scripts R
+:::
+
+```{r initScriptR}
+
+source("R/gestionJeuDonnees.R", encoding = "UTF-8")
+
+```
+
+#### Exemple de jeu de données filtré sur l'année :
+
+```{r parameterAnnee}
+
+knitr::kable(donneesSelonAnneeEnParam, 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+
+```
+
+#### [Exemple de jeu de données filtré sur le département :]{.espacementHaut5}
+
+```{r parameterDepartement}
+
+knitr::kable(donneesSelonDepartementEnParam, 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+```
+
+## Utilisation de paramètres d'exécution aux scripts R {#section_3_3 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Paramétrer l'exécution de scripts R
+:::
+
+#### Exemple de jeu de données filtré sur le type d'équipement
+
+```{r parameterTypequ}
+
+knitr::kable(donneesSelonTypequEnParam, 
+        format = "html", 
+        table.attr = "style='width:100%;'")
+```
+
+<br/>
+
+::: {.callout-note}
+Le choix a été fait ici de gérer par défaut les paramètres d'exécution en local via l'entête yaml du fichier `index.qmd`. Ainsi, les valeurs des paramètres fixées dans l'entête sont également déployées sur la page de gitlab. Cependant, il est possible aussi d'externaliser la valorisation de ces paramètres dans le fichier `params.yml` en récupérant ces paramètres avec la ligne de commande suivante :
+
+[`params <- yaml::read_yaml("params.yml")`]{.center}
+
+commentée dans le fichier `gestionJeuDonnees.R`.
+:::
+
+## Utilisation de paramètres d'exécution aux scripts R {#section_3_4 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Paramétrer l'exécution de scripts R
+:::
+
+Pour information, il est donc possible (mais pas forcément souhaitable) de surcharger la valeur des paramètres présents dans l'entête yaml au moment du déploiement en modifiant le fichier `.gitlab-ci.yml` et en remplaçant la ligne de commande 
+
+[`quarto render index.qmd --to insee-$COULEURFORMAT-revealjs`]{.center .width70}
+
+par une ligne de commande suivante :
+
+<br/>
+
+```bash
+
+- quarto render index.qmd --to insee-$COULEURFORMAT-revealjs -P annee:"2024" -P codeRegion:"76" # OU
+
+- quarto render index.qmd --to insee-$COULEURFORMAT-revealjs --execute-params params.yml 
+
+# Ou si vous avez installé quarto dans l'image déployée sur gitlab :
+
+- Rscript -e 'quarto::quarto_render(input = "index.qmd", 
+                                    output_format = "insee-$COULEURFORMAT-revealjs", 
+                                    execute_params = list("annee" = "2024", "codeRegion" = "76"))' 
+
+```
+

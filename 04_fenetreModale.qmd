@@ -1,6 +1,6 @@
-# Utilisation d'une fenêtre modale {#chapters_3 .backgroundTitre}
+# Utilisation d'une fenêtre modale {#chapters_4 .backgroundTitre}
 
-## Les popups {#section_3_1 .backgroundStandard}
+## Les popups {#section_4_1 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 utilisation d'une fenêtre modale

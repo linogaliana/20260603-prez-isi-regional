@@ -66,7 +66,7 @@ Comment moduler la présentation ?
 
 :::{.column .print_code}
 
-```{r}
+```{r airQualityCode}
 #| echo: true
 #| output: false
 #| fig-cap: Temperature and ozone level.
@@ -77,15 +77,13 @@ ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() + 
   geom_smooth(method = "loess")
 ```
-
 :::
 
 :::{.column}
 
-
 @fig-airquality further explores the impact of temperature on ozone level.
 
-```{r}
+```{r airQualityGraph}
 #| echo: false
 #| output: true
 #| label: fig-airquality
@@ -96,7 +94,6 @@ ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() + 
   geom_smooth(method = "loess")
 ```
-
 :::
 ::::
 
@@ -114,7 +111,7 @@ Comment moduler la présentation ?
 
 #### {{< fa solid arrow-right >}} sans mise en forme
 
-```{r}
+```{r repartition_sex_genre1}
 # repartition_sex_genre
 
 head(moy_taille_poids_selon_espece)
@@ -126,7 +123,7 @@ head(moy_taille_poids_selon_espece)
 
 #### {{< fa solid arrow-right >}} avec une mise en forme (Kable)
 
-```{r}
+```{r repartition_sex_genre2}
 # repartition_sex_genre
 
 knitr::kable(head(moy_taille_poids_selon_espece), format = "html", table.attr = "style='width:100%;'")
@@ -199,127 +196,128 @@ DT::datatable(moy_taille_poids_selon_espece,
 
 ## avec le package Plotly
 
-:::{.centerWidget .widgetWidth60}
-
-```{r}
+:::{.centerWidget .widgetWidth80}
+```{r Plot_taillePoid}
 
 plot_taille_poids_par_sexe
 
 ```
-
 :::
 
 :::
 
-## Utilisation de paramètres d'exécution aux scripts R  {#section_2_7 .backgroundStandard}
+## Mise en page de graphiques générés avec Plotly {#section_2_7 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
 :::
 
-Il existe plusieurs manières de procéder pour contextualiser et paramétrer l'exécution de ses scripts :
+La mise en forme de l'élément interactif dépend de la nature de l'élément.
+
+
+- La **div** qui contient le graphique **plotly** de la slide précédente est centrée dans la slide à l'aide de classes CSS.(`{.centerWidget .widgetWidth80}`). Différentes tailles sont possibles (cf. **default.css**).
+- Cependant, la taille du graphique est fixée dans le code R, à la **ligne 55** du fichier `R/data.qmd`. Si la taille n'est pas fixée ainsi, alors la taille du graphique (scale ou size) va être déformée quand vous entrerez ou sortirez du mode plein écran.
+
 
 :::{.listeSansPuceNiveau1}
-
-- [Utilisation d'un entête au format yaml dans le fichier .qmd. Cet entête doit figurer sur le fichier .qmd sur lequel vous faites le render in fine, et non sur le fichier .qmd où vous allez utiliser ces variables.]{.puceListFleche}
-
-```yaml
----
-params:
-  annee: "2023"
-  codeDepartement: "87"
-  codeRegion: "75"
-  typeEquipement: "G103"
----
-
-```
-
-- [Utilisation d'un fichier dédié appelé `params.yml`]{.puceListFleche}
-
+- [Il vous faudra donc ajuster la taille de la div au graphique ou inversement pour que la mise en page soit propre.]{.puceListFleche}
 :::
 
-## Utilisation de paramètres d'exécution aux scripts R {#section_2_8 .backgroundStandard}
+## Mise en page de graphiques générés avec Plotly {#section_2_8 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
 :::
 
-```{r initScriptR}
+:::{.listeSansPuceNiveau1}
+- Exemple de graphique plotly centré mais dont la taille n'est pas fixée dans le layout. Passez en mode plein écran pour voir la différence.
+:::
 
-source("R/gestionJeuDonnees.R", encoding = "UTF-8")
+:::{.centerWidget .widgetWidth60}
+```{r plotBubble, fig.width=10, fig.height=6}
 
-```
+source(file = "R/taillePlotlyNonFixee.R", encoding = "UTF-8")
 
-#### Exemple de jeu de données filtré sur l'année :
-
-```{r parameterAnnee}
-
-knitr::kable(donneesSelonAnneeEnParam, 
-        format = "html", 
-        table.attr = "style='width:100%;'")
+ggplotly(p)
 
 ```
+:::
 
-#### [Exemple de jeu de données filtré sur le département :]{.espacementHaut5}
 
-```{r parameterDepartement}
-
-knitr::kable(donneesSelonDepartementEnParam, 
-        format = "html", 
-        table.attr = "style='width:100%;'")
-```
-
-## Utilisation de paramètres d'exécution aux scripts R {#section_2_9 .backgroundStandard}
+## Mise en page de graphiques générés avec ggplot2 {#section_2_9 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
 :::
 
-#### Exemple de jeu de données filtré sur le type d'équipement
-
-```{r parameterTypequ}
-
-knitr::kable(donneesSelonTypequEnParam, 
-        format = "html", 
-        table.attr = "style='width:100%;'")
-```
-
-<br/>
-
-::: {.callout-note}
-Le choix a été fait ici de gérer par défaut les paramètres d'exécution en local via l'entête yaml du fichier `index.qmd`. Ainsi, les valeurs des paramètres fixées dans l'entête sont également déployées sur la page de gitlab. Cependant, il est possible aussi d'externaliser la valorisation de ces paramètres dans le fichier `params.yml` en récupérant ces paramètres avec la ligne de commande suivante :
-
-[`params <- yaml::read_yaml("params.yml")`]{.center}
-
-commentée dans le fichier `gestionJeuDonnees.R`.
+:::{.listeSansPuceNiveau1}
+- La mise en page du même graphique est différente si celui-ci est généré avec gglot2 seulement :
 :::
 
-## Utilisation de paramètres d'exécution aux scripts R {#section_2_10 .backgroundStandard}
+```{r graph3, fig.width=10, fig.height=6, fig.align='center'}
+
+p
+
+```
+
+
+## Mise en page de cartes générées avec leaflet {#section_2_10 .backgroundStandard}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?
 :::
 
-Pour information, il est donc possible (mais pas forcément souhaitable) de surcharger la valeur des paramètres présents dans l'entête yaml au moment du déploiement en modifiant le fichier `.gitlab-ci.yml` et en remplaçant la ligne de commande 
+:::{.listeSansPuceNiveau1}
+- La mise en page d'une carte peut être faite au niveau du chunk ou à l'intérieur du chunk :
+:::
 
-[`quarto render index.qmd --to insee-$COULEURFORMAT-revealjs`]{.center .width70}
 
-par une ligne de commande suivante :
+:::{.border}
 
-<br/>
+```{r cartePleineSlide, fig.width=20, fig.height=7}
+# #| fig-width: 20
+# #| fig-height: 7
+ 
+source(file = "R/generateMap.R", encoding = "UTF-8")
 
-```bash
-
-- quarto render index.qmd --to insee-$COULEURFORMAT-revealjs -P annee:"2024" -P codeRegion:"76" # OU
-
-- quarto render index.qmd --to insee-$COULEURFORMAT-revealjs --execute-params params.yml 
-
-# Ou si vous avez installé quarto dans l'image déployée sur gitlab :
-
-- Rscript -e 'quarto::quarto_render(input = "index.qmd", 
-                                    output_format = "insee-$COULEURFORMAT-revealjs", 
-                                    execute_params = list("annee" = "2024", "codeRegion" = "76"))' 
+output_map
 
 ```
+:::
+
+
+## Mise en page de plusieurs éléments côte à côte {#section_2_11 .backgroundStandard}
+
+:::{.enteteAvecTitre}
+Comment moduler la présentation ?
+:::
+
+```{r carteEtGraph}
+#| layout: [[1,1]]
+#| fig-width: 9
+#| fig-height: 8
+##| fig-asp: .50
+
+# voir sur la doc quarto pages "figures" ou "article layout"  
+# ou sur les [options des chunks](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) 
+# pour les différentes configurations possibles.
+
+source(file = "R/taillePlotlyFixee.R", encoding = "UTF-8")
+
+output_map
+
+fig
+
+```
+
+
+
+
+
+
+
+
+
+
 
 

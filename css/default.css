@@ -540,34 +540,42 @@
 
 /***************WIDGETS*******************/
 
-.centerWidget .html-widget{
+.centerWidget {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.widgetWidth100 .html-widget{
+.widgetWidth100 {
   width: 100% !important;
 }
 
-.widgetWidth90 .html-widget{
+.widgetWidth90 {
   width: 90% !important;
 }
 
-.widgetWidth85 .html-widget{
+.widgetWidth85 {
   width: 85% !important;
 }
 
-.widgetWidth70 .html-widget{
+.widgetWidth80 {
+  width: 80% !important;
+}
+
+.widgetWidth70 {
   width: 70% !important;
 }
 
-.widgetWidth60 .html-widget{
+.widgetWidth60 {
   width: 60% !important;
 }
 
-.widgetWidth50 .html-widget{
+.widgetWidth50 {
   width: 50% !important;
+}
+
+.widgetWidth40 {
+  width: 40% !important;
 }
 
 /***************AUTRES*******************/

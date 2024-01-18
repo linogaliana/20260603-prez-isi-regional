@@ -142,10 +142,12 @@ Nom de la réunion (ou pas)
 
 {{< include 02_modulariteSupport.qmd >}}
 
-{{< include 03_fenetreModale.qmd >}}
+{{< include 03_parametresExecution.qmd >}}
 
-{{< include 04_exportPdf.qmd >}}
+{{< include 04_fenetreModale.qmd >}}
 
-{{< include 05_documentation.qmd >}}
+{{< include 05_exportPdf.qmd >}}
+
+{{< include 06_documentation.qmd >}}
 
 
