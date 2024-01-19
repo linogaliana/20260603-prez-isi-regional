@@ -1,6 +1,7 @@
 ---
 description: |
   exemple de modularité dans le support de présentation
+code-fold: show
 ---
 
 # Comment moduler la présentation {#chapters_2 .backgroundTitre}
