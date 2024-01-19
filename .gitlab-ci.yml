@@ -14,7 +14,7 @@ pages:
   - echo 'couleur du format choisie :'
   - echo $COULEURFORMAT
   - echo 'Deploy presentation to Gitlab pages'
-  - Rscript -e 'install.packages(c("yaml", "jsonlite", "htmltools", "digest", "knitr", "rmarkdown", "dplyr", "DT", "plotly"))'
+  - Rscript -e 'install.packages(c("yaml", "jsonlite", "htmltools", "digest", "knitr", "rmarkdown", "dplyr", "DT", "plotly","leaflet","RColorBrewer","sf","gapminder"))'
   - Rscript -e 'print(getwd())'
   
 #Pour modifier le format sur gitlab, modifier la valeur de cette variable dans le fichier _variables.yml
