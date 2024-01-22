@@ -8,3 +8,8 @@ install.packages("rmarkdown")
 install.packages("dplyr")
 install.packages("DT")
 install.packages("plotly")
+
+install.packages("leaflet")
+install.packages("RColorBrewer")
+install.packages("sf")
+install.packages("gapminder")
