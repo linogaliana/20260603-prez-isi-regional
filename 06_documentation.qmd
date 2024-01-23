@@ -54,9 +54,16 @@ documentation
 
 ## Sous-titre 3ème partie {#section_7_1 .backgroundStandard}
 
-:::{.enteteAvecTitre}
-TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
+:::{.enteteAvecTitreSur2lignes}
+TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG <br/> POUR RENTRER SUR 2 LIGNES
 :::
+
+::: {.listeSansPuceNiveau1 .interligne2}
+- [Le retour à la ligne dans l'entête de cette page standard est permis grâce à l'insertion d'une balise `<br/>`.]{.puceListFleche}
+- [Il est repositionné correctement grâce à l'utilisation de la classe `.enteteAvecTitreSur2lignes` à la place de la classe `.enteteAvecTitre`.]{.puceListFleche}
+
+:::
+
 
 ::: {.notes}
 Speaker notes go here.

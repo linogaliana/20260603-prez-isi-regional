@@ -321,6 +321,19 @@ div.backgroundStandard {
   }
 }
 
+.enteteAvecTitreSur2lignes {
+  top: -6.5em;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+/*  width: 100%;*/
+  
+  p {
+    color: $grey-color-endPage;
+  }
+}
+
 .logoTopRightStandard{
   width: 130px;
   top: -7%;
@@ -330,6 +343,15 @@ div.backgroundStandard {
 
 .titreTransparent h2{
   opacity: 0;
+}
+
+
+.rehausserContenuSansTitre {
+  margin-top: -7%;
+}
+
+.rehausserContenuAvecTitre {
+    margin-top: -3%;
 }
 
 /***********Page de fin************/
