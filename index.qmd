@@ -13,6 +13,8 @@ chalkboard: false # press the B key to toggle chalkboard
 transition: slide
 fig-cap-location: bottom
 
+embed-resources: false
+
 toc: true
 toc-title: Sommaire
 toc-depth: 1
