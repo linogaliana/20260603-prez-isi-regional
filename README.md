@@ -4,6 +4,8 @@ Template de support de présentation dynamique en quarto markdown (.qmd) et reve
 
 > Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
 
+{+Important :+} Si vous utilisez ce support **dans l'environnement LS3**, une image configurée et contenant l'ensemble des dépendances nécessaires au support est disponible [ici](https://onyxia.datascience.kube.insee.fr/launcher/ide/rstudio?version=0.2.0&autoLaunch=true&rstudio.service.image.custom.enabled=true&rstudio.service.image.custom.version=). Cette image vous évite de devoir faire tourner le script dev.R au préalable.
+
 ## :one: Changement de thème
 
 Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
