@@ -25,7 +25,7 @@ format:
 header-includes: |
   <link rel="icon" type="image/png" sizes="32x32" href="img/logos/png/Logo_Insee_TailleMINI.jpg">
 include-after-body: ["modulesCompl/footer.html"]
-# logo: img/logos/logoDeVotreService.png
+# logo: img/logos/logoDeVotreService.png ## uncomment here to add license logo for instance
     
 embed-resources: true
 df-print: paged
