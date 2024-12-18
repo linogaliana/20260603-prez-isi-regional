@@ -95,11 +95,19 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
   
 Ces problèmes viennent du fait que la librairie mathJax et les pages javascript des popups sont récupérées sur des serveurs (cdn) via internet, ce qui est bloqué par défaut sur AUS.
 
-## :seven: Contribution
+## :seven: Licence
 
-Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre. Pour cela, vous pouvez faire une issue dans ce dépôt gitlab.
+Si vous souhaitez mettre le support sous licence libre, il est possible de faire apparaître le logo de la licence que vous aurez choisi dans la page de garde du diaporama. Pour cela, vous pouvez faire une issue dans ce dépôt gitlab. Une licence _open source_ permet de rendre le code source de votre présentation accessible, modifiable et redistribuable tout en respectant certaines conditions définies par la licence que vous aurez choisie, comme par exemple l'affichage de l'origine du code. Vous pouvez trouver des explications détaillées sur le principe des licences et le choix de l'une d'entre elles [ici](https://zestedesavoir.com/tutoriels/261/le-droit-dauteur-creative-commons-et-les-licences-sur-zeste-de-savoir/). Par exemple, pour indiquer que votre support est sous licence Common Creative BY-SA, vous pouvez modifier le fichier `_quarto.yml` en décommentant et modifiant la ligne 28 de la manière suivante :
 
-## :eight: Récupération du projet
+```
+logo: img/logos/licences/cc/png/by-sa.png
+```
+
+## :eight: Contribution
+
+Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre. 
+
+## :nine: Récupération du projet
 
 Pour récupérer le projet, vous pouvez :
 
