@@ -247,7 +247,6 @@ p.date{
 div.backgroundTitre{
   max-width: 100%;
   height: auto;
-/*  background-size: cover;*/
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -339,19 +338,6 @@ div.backgroundStandard {
   top: -7%;
   position: absolute;
   right: 0;
-}
-
-.titreTransparent h2{
-  opacity: 0;
-}
-
-
-.rehausserContenuSansTitre {
-  margin-top: -7%;
-}
-
-.rehausserContenuAvecTitre {
-    margin-top: -3%;
 }
 
 /***********Page de fin************/
@@ -543,7 +529,7 @@ summary{
 
 
 /******************PDF EXPORT VIEW MODE**********************/
-/*CSS quand on tape e*/
+/*CSS quand on tape sur la touche e*/
 
 .pdf-page {
   position: relative !important;
@@ -597,17 +583,9 @@ html.print-pdf div#footerPersonnalise {
   display: none !important;
 }
 
-/*.pdf-page .bandeauTitre{
-  display: none;
-}*/
-
 .pdf-page .logoTopRightTitre{
   display: none;
 }
-
-/*.pdf-page .bandeauStandard{
-  display: none; 
-}*/
 
 .pdf-page .logoTopRightStandard{
   display: none;

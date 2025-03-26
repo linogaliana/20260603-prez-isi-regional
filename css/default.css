@@ -1,3 +1,47 @@
+/****************Positionnement des éléments*********************/
+
+.titreTransparent h2{
+  opacity: 0;
+}
+
+
+.rehausserContenuSansTitre {
+  margin-top: -7%;
+}
+
+.rehausserContenuAvecTitre {
+    margin-top: -3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /****************Taille de la police*********************/
 
 .Large { 
@@ -467,7 +511,7 @@
 }
 
 .listeSansPuceNiveau3 ul>li>ul>li>ul>li {
-  list-style-type: disclosure-closed;
+  list-style-type: none;
 }
 
 .puceListFleche::before {
@@ -504,6 +548,29 @@
    margin-bottom: 5% !important;
 }
 
+.interligne1 ol li:not(:last-child) {
+   margin-bottom: 1% !important;
+}
+
+.interligne2 ol li:not(:last-child) {
+   margin-bottom: 2% !important;
+}
+
+.interligne3 ol li:not(:last-child) {
+   margin-bottom: 3% !important;
+}
+
+.interligne4 ol li:not(:last-child) {
+   margin-bottom: 3% !important;
+}
+
+.interligne5 ol li:not(:last-child) {
+   margin-bottom: 5% !important;
+}
+
+
+
+
 .espacementHaut5{
   padding-top: 5%;
   display: block;
@@ -531,6 +598,10 @@
 
 .imgWidth70 img{
   width: 70%;
+}
+
+.imgWidth60 img{
+  width: 60%;
 }
 
 .imgWidth50 img{
