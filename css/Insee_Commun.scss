@@ -461,6 +461,16 @@ img.logo {
   margin-bottom: -1% !important;
 }
 
+.slide-logo {
+  height: 50px !important;
+  width: unset !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  margin-bottom: 2% !important;
+  margin-right: 1% !important;
+  image-resolution: from-image;
+}
+
 .divCachee{
   display: none !important;
 }

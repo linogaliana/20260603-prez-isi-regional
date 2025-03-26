@@ -4,6 +4,8 @@ Template de support de présentation dynamique en quarto markdown (.qmd) et reve
 
 > Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
 
+{+Important :+} Si vous utilisez ce support **dans l'environnement LS3**, une image configurée et contenant l'ensemble des dépendances nécessaires au support est disponible [ici](https://onyxia.datascience.kube.insee.fr/launcher/ide/rstudio?name=presentation-quarto&version=0.2.0&rstudio.service.image.custom.enabled=true&rstudio.service.image.custom.version=%C2%ABgitlab-registry.insee.fr%2Fdatascience%2Fregistry-prod-custom%2Fonyxia-rstudio-presentations-quarto%3A0.0.1%C2%BB&rstudio.kubernetes.role=%C2%ABadmin%C2%BB&rstudio.init.personalInit=%C2%ABhttps%3A%2F%2Fgitlab.insee.fr%2Fe9lc05%2Fmonrstudio%2F-%2Fraw%2Fmaster%2Finit_rstudio.sh%3Fref_type%3Dheads%C2%BB&autoLaunch=true). Cette image vous évite de devoir faire tourner le script dev.R au préalable.
+
 ## :one: Changement de thème
 
 Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
@@ -41,7 +43,7 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 
 ## :four: L'export en PDF
 
-Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `04_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
+Pour exporter le support en PDF, il faut suivre les instructions écrites dans les slides dédiées (fichier `05_exportPdf.qmd`). En plus de ces instructions, il faut aussi garder dans les titres des slides leurs identifiants techniques car il y a un repositionnement des éléments composant les slides qui est effectué pour l'export.
 
 Ces identifiants sont :
 - pour les slides des titres principaux : `chapters_<numeroDuChapitre>`
@@ -63,8 +65,6 @@ Il y a donc du CSS dédié au support quand on passe en PDF export Mode (quand o
   ...
 }
 ```
-
-Un total de 10 chapitres, avec 10 sections dans chaque chapitre a été anticipé. Si cela n'est pas suffisant, il faudra rajouter les identifiants dans la feuille de style du thème choisi.
 
 ## :five: Déploiement du support
 
@@ -93,11 +93,19 @@ La branche déployée sur gitlab est définie dans le fichier `.gitlab-ci.yml` d
   
 Ces problèmes viennent du fait que la librairie mathJax et les pages javascript des popups sont récupérées sur des serveurs (cdn) via internet, ce qui est bloqué par défaut sur AUS.
 
-## :seven: Contribution
+## :seven: Licence
 
-Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre. Pour cela, vous pouvez faire une issue dans ce dépôt gitlab.
+Si vous souhaitez mettre le support sous licence libre, il est possible de faire apparaître le logo de la licence que vous aurez choisi dans la page de garde du diaporama. Pour cela, vous pouvez faire une issue dans ce dépôt gitlab. Une licence _open source_ permet de rendre le code source de votre présentation accessible, modifiable et redistribuable tout en respectant certaines conditions définies par la licence que vous aurez choisie, comme par exemple l'affichage de l'origine du code. Vous pouvez trouver des explications détaillées sur le principe des licences et le choix de l'une d'entre elles [ici](https://zestedesavoir.com/tutoriels/261/le-droit-dauteur-creative-commons-et-les-licences-sur-zeste-de-savoir/). Par exemple, pour indiquer que votre support est sous licence Common Creative BY-SA, vous pouvez modifier le fichier `_quarto.yml` en décommentant et modifiant la ligne 28 de la manière suivante :
 
-## :eight: Récupération du projet
+```
+logo: img/logos/licences/cc/png/by-sa.png
+```
+
+## :eight: Contribution
+
+Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélioration, n'hésitez pas à m'en faire part et à transmettre ces informations. Tout enrichissement est bon à prendre. 
+
+## :nine: Récupération du projet
 
 Pour récupérer le projet, vous pouvez :
 
