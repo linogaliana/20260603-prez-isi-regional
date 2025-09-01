@@ -10,6 +10,8 @@ description: |
 
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
+jump-to-slide: true #press "g" to jump and the number of slide
+mouse-wheel: false
 transition: slide
 fig-cap-location: bottom
 

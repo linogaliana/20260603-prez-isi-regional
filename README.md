@@ -36,7 +36,6 @@ Les feuilles de style en cascade (CSS) permettent la mise en forme du support. C
 - `Insee_Commun.scss` : Style commun aux 3 thèmes. Ce fichier, au format SCSS, permet de respecter la charte graphique de base de l'Insee.
 - `Insee_Jaune_toutPublic.css` / `Insee_rouge_interne.css` / `Insee_Vert_entreprises_experts.css` : Ces feuilles CSS sont dédiées aux styles propres à chacun des 3 thèmes permettant de respecter la charte graphique de l'Insee.
 - `default.css` : Ce fichier CSS regroupe l'ensemble des classes mises à votre disposition pouvant être utilisées pour modifier le style du support (couleurs, box, etc..) C'est probablement dans cette feuille que je rajouterai de nouveaux styles si besoin.
-- `modal.css` : Cette feuille est dédiée au fonctionnement des popups (fenêtre modale) présentées dans le support.
 - `stylePerso.css` : Feuille de style à priori dédiée à la customisation personnelle du support.
 
 :warning: Ces feuilles de style n'intègrent pas toutes les classes qui sont à votre disposition. Quarto intègre nativement beaucoup de fonctionnalités dont l'utilisation présente des similitudes (ex: la classe **.fragment**). Rendez-vous sur la documentation officielle pour découvrir le champ des possibles. :wink:
