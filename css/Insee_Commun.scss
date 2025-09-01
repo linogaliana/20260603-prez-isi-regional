@@ -499,26 +499,8 @@ summary{
 
 /***************FENETRE MODALE*******************/
 
-.modal {
-  header{
-   border-bottom: solid 2px gray;
-  }
-}
-
-.centerImgModal {
-  
-  img {
-    display: block;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  figcaption {
-    display: block;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 50%;
-  }
+.taille_iframe iframe{
+  height: 500px;
 }
 
 /******************packages DT**********************/
@@ -606,7 +588,7 @@ html.print-pdf div#footerPersonnalise {
 @media print {
 
   .level2 h2 {
-    margin-top: 10%;
+    margin-top: 6%;
   }
   
   .nomReunionFin{

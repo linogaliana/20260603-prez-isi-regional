@@ -6,70 +6,54 @@
 utilisation d'une fenêtre modale
 :::
 
+- Utilisation du plugin multimodal dont la documentation est accessible sur [le dépôt GitHub](https://github.com/martinomagnifico/quarto-multimodal){target="_blank"}
 
-<!-- here's the link that opens it. it can be anywhere! it matches to the modal's id, #mymodal -->
-- **<a href="#/utilisation_modale" data-micromodal-trigger="mymodal" tabindex="0">Click to see a popup!</a>**
+- Les fenêtres modales peuvent être utilisées pour :
+  * montrer [une image](#){data-modal-type="image" data-modal-url="img/logos/Logo_Insee_SignatureAdroite.jpg"}
+  * montrer [une image (code différent)](img/logos/Logo_Insee_SignatureAdroite.jpg){data-modal-type="image"}
+  * montrer [une video stockée dans le projet](#){data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
+  * intégration d'une [video hébergée sur youtube dans une fenêtre modale](#){data-modal-type="html" data-modal-padding="1em" data-modal-class="taille_iframe" data-modal-url="#somehiddendiv_2"}
+  * afficher du [contenu HTML](#){data-modal-type="html" data-modal-url="#somehiddendiv"}
+  * accueillir un [lien vers un site](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_et_des_%C3%A9tudes_%C3%A9conomiques){data-modal-type="iframe"} ou une [vidéo youtube](#){data-modal-type="iframe" data-modal-url="https://www.youtube.com/watch?v=E8AJ9eBIY58"}
 
-- Ouverture d'une fenêtre modale pour y afficher une image comme le  [logo de l'Insee](#utilisation_modale){data-micromodal-trigger="logoInseeModal" tabindex="0"}
+::: {#somehiddendiv .hidden}
+<h2>Exemple de contenu HTML</h2>
+Il est possible d'appeler un fichier externe et de l'intégrer dans la popup en modifiant le paramètre suivant comme suit :
+
+- `data-modal-url="demo_files/externalhtml.html"`
+- `data-modal-url="demo_files/externalmd.md"`(les attributs quarto ne fonctionnent pas dans ce cas)
+:::
+
+::: {#somehiddendiv_2 .hidden}
+<h2>Vidéo de présentation de l'Insee</h2>
+{{< video https://www.youtube.com/watch?v=QPa5e9Gz0Vs >}}
+:::
 
 >NB: Cette fonctionnalité apparait bien sur {{< var variables.forgeInterne >}} et fonctionne correctement quand vous lancez le support en local (avec quarto ou en double cliquant sur le fichier html)
 >
 >Par contre, elle n'est plus accessible lors de l'export en PDF ou .odt.
 
-<!-- the rest of this stuff is for the popup! -->
 
-```{ojs gestionFenetreModale}
-//| include: false
-micro = require("micromodal@0.4.10");
-micro.init({
-  awaitOpenAnimation: true,
-  awaitCloseAnimation: true
-});
-```
+## Les attributs {#section_4_2 .backgroundStandard}
 
-<!-- and here's the popup itself! -->
+:::{.enteteAvecTitre}
+utilisation d'une fenêtre modale
+:::
 
-:::::: {#mymodal .modal .micromodal-slide aria-hidden="true"}
-::::: {.modal__overlay tabindex="-1" data-micromodal-close="true"}
-:::: {.modal__container role="dialog" aria-modal="true" aria-labelledby="mymodal-title"}
+::::{.rehausserContenuAvecTitre}
 
-<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+- `data-modal-navblock` : si valorisé à "true", alors bloque la navigation tant que la popup est ouverte.
+- `data-modal-overlaycolor` : modifie la couleur de fond derrière la popup
+- `data-modal-background` : change la couleur de fond dans la popup
+- `data-modal-padding` : ajoute un écart entre la bordure de la popup et l'image, la vidéo ou le texte présent dans la popup.
+- `data-modal-class` : permet d'ajouter une classe (ou plusieurs en les séparant par un espace ou une virgule) CSS à la fenêtre modale
 
-<header>
-### Première popup  {#mymodal-title}
-</header>
+[Exemple :]{.souligneRouge} [Show modal](#){data-modal-type="image" data-modal-url="img/logos/Logo_Insee_SignatureAdroite.jpg" data-modal-overlaycolor="#CA987F" data-modal-background="gray" data-modal-padding="2em" data-modal-class="bordureRouge"}
 
-::: {#modal-1-content}
-I should probably tell you all about it
+:::{.example .tiny}
+[![](img/logos/Logo_Insee_SignatureAdroite.jpg)](#){.play_icone data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
 :::
 
 ::::
-:::::
-::::::
 
-<!-- end of stuff for this popup! -->
 
-<!-- and here's the popup itself! -->
-
-:::::: {#logoInseeModal .modal .micromodal-slide aria-hidden="true"}
-::::: {.modal__overlay tabindex="-1" data-micromodal-close="true"}
-:::: {.modal__container role="dialog" aria-modal="true" aria-labelledby="logoInseeModal-title"}
-
-<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-
-<header>
-### Deuxième popup ! {#logoInseeModal-title}
-</header>
-
-::: {#modal-2-content .centerImgModal}
-Les id de cette popup doivent être différents de la première.
-
-![Logo de l'insee](img/logos/Logo_Insee_SignatureAdroite.jpg "mon logo Insee"){width="50%" fig-alt="un logo de l'Insee" fig-align="center"}
-
-:::
-
-::::
-:::::
-::::::
-
-<!-- end of stuff for this popup! -->

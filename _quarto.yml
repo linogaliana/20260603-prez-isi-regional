@@ -6,6 +6,7 @@ project:
     - "css/"
     - "data/"
     - "img/"
+    - "videos/"
     - "js/"
     - "R/"
     - "modulesCompl/"
@@ -34,6 +35,8 @@ lang: "fr"
 slide-number: c/t
 progress: true
 controls-layout: bottom-right
+controls-tutorial: true
+controls-back-arrows: faded
 background-transition: fade
 navigation-mode: vertical # linear/grid or vertical
 history: true
@@ -67,11 +70,12 @@ width: 1920
 height: 1080
 
 theme: css/Insee_Commun.scss
-css: [css/default.css, css/modal.css, css/stylePerso.css]
+css: [css/default.css, css/stylePerso.css]
 
 revealjs-plugins:
   - pointer
   - confetti
   - verticator
+  - multimodal
 filters:
   - roughnotation
