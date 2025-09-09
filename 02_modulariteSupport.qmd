@@ -87,7 +87,7 @@ ggplot(airquality, aes(Temp, Ozone)) +
 ```{r airQualityGraph}
 #| echo: false
 #| output: true
-#| label: fig-airquality 2
+# label: fig-airquality
 #| fig-cap: Temperature and ozone level.
 #| warning: false
 
