@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bk" data-name="Parc attraction" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+      }
+
+      .bu, .bv {
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="bu" d="M250.64,266.44c-37.5-7.6-65.73-40.75-65.73-80.49,0-45.36,36.77-82.13,82.13-82.13,42.43,0,77.34,32.17,81.67,73.45"/>
+  <circle class="bv" cx="276.61" cy="109.77" r="21.62"/>
+  <circle class="bv" cx="190.79" cy="148.38" r="21.62"/>
+  <circle class="bv" cx="199.98" cy="234.19" r="21.62"/>
+  <circle class="bv" cx="340.58" cy="147.36" r="21.62"/>
+  <polygon class="bu" points="267.03 305.82 392.07 305.82 327.8 260.49 267.03 305.82"/>
+  <polygon class="bu" points="395.53 373.15 261.86 373.15 274.86 305.82 383.52 305.82 395.53 373.15"/>
+  <path class="bu" d="M419.52,133.15s-56.55,21-134.78,103.33c-78.22,82.33-197.56,97.33-244.89,25.67"/>
+  <line class="bu" x1="53.94" y1="279.06" x2="53.94" y2="345.82"/>
+  <line class="bu" x1="83.86" y1="299.06" x2="83.86" y2="345.82"/>
+  <line class="bu" x1="114.19" y1="309.06" x2="114.19" y2="345.82"/>
+  <line class="bu" x1="149.86" y1="309.06" x2="149.86" y2="345.82"/>
+  <line class="bu" x1="194.19" y1="299.06" x2="194.19" y2="345.82"/>
+  <line class="bu" x1="237.86" y1="279.06" x2="237.86" y2="345.82"/>
+  <line class="bu" x1="292.19" y1="231.06" x2="292.19" y2="283.81"/>
+  <line class="bu" x1="347.19" y1="180.53" x2="347.19" y2="274.29"/>
+</svg>

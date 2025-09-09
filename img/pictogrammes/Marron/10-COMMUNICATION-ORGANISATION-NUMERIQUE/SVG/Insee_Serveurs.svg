@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="w" data-name="Serveur" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        stroke-linecap: round;
+      }
+
+      .ar, .as {
+        fill: none;
+        stroke: #8A5301;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="as" x="37.48" y="77.28" width="379.36" height="73.97" rx="12" ry="12"/>
+  <rect class="as" x="37.48" y="191.72" width="379.36" height="73.97" rx="12" ry="12"/>
+  <rect class="as" x="37.48" y="304.45" width="379.36" height="73.97" rx="12" ry="12"/>
+  <line class="ar" x1="75.7" y1="114.27" x2="226.13" y2="114.27"/>
+  <line class="ar" x1="75.7" y1="228.7" x2="226.13" y2="228.7"/>
+  <line class="ar" x1="75.7" y1="341.43" x2="226.13" y2="341.43"/>
+  <circle class="aq" cx="304.65" cy="115.36" r="7.33"/>
+  <circle class="aq" cx="341.43" cy="115.36" r="7.33"/>
+  <circle class="aq" cx="378.21" cy="115.36" r="7.33"/>
+  <circle class="aq" cx="304.65" cy="227.23" r="7.33"/>
+  <circle class="aq" cx="341.43" cy="227.23" r="7.33"/>
+  <circle class="aq" cx="378.21" cy="227.23" r="7.33"/>
+  <circle class="aq" cx="303.35" cy="340.2" r="7.33"/>
+  <circle class="aq" cx="340.13" cy="340.2" r="7.33"/>
+  <circle class="aq" cx="376.91" cy="340.2" r="7.33"/>
+  <line class="as" x1="226.13" y1="150.77" x2="226.13" y2="188.55"/>
+  <line class="as" x1="226.13" y1="264.12" x2="226.13" y2="301.91"/>
+</svg>

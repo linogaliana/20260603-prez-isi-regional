@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="aa" data-name="petite entreprise" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="ak" x="45.34" y="122.04" width="251.21" height="216.31"/>
+    <rect class="ak" x="72.84" y="159.34" width="66.22" height="110.63"/>
+    <rect class="ak" x="170.94" y="159.34" width="90.53" height="179.01"/>
+    <rect class="ak" x="191.64" y="189.87" width="48.95" height="32.92"/>
+  </g>
+  <circle class="ak" cx="376.42" cy="165.77" r="19.7"/>
+  <path class="ak" d="M384.83,202.73h-16.86c-12.89,0-23.34,10.45-23.34,23.34v42.96c0,1.54.98,2.91,2.44,3.4l7.77.21,6.03,62.09c.19,1.96,2.29,3.47,4.82,3.47h21.53c2.53,0,4.64-1.52,4.82-3.48l5.81-62.09,7.86-.21c1.47-.49,2.46-1.86,2.46-3.41v-42.95c0-12.89-10.45-23.34-23.34-23.34Z"/>
+</svg>

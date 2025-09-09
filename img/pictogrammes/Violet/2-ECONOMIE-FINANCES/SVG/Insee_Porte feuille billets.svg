@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ab" data-name="Porte- feuille billets" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ag {
+        fill: #fff;
+      }
+
+      .ag, .ah, .ai {
+        stroke: #5F1972;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .ah {
+        stroke-linecap: round;
+      }
+
+      .ah, .ai {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="ai" d="M158.16,134.41l-73.9.12h-18.66c-12.52,0-22.68,10.15-22.68,22.68v211.42c0,12.52,10.15,22.68,22.68,22.68h306.53c12.52,0,22.68-10.15,22.68-22.68v-211.42c0-12.52-10.15-22.68-22.68-22.68h-24.12"/>
+    <polygon class="ai" points="339.32 87.44 91.6 134.52 348.02 134.52 339.32 87.44"/>
+  </g>
+  <polygon class="ah" points="296 95.47 127.6 124.63 277.43 52.83 296 95.47"/>
+  <g>
+    <path class="ag" d="M323.44,223.31h81.11c2.12,0,3.85,1.72,3.85,3.85v82.02c0,2.12-1.72,3.85-3.85,3.85h-81.11c-24.76,0-44.86-20.1-44.86-44.86h0c0-24.76,20.1-44.86,44.86-44.86Z"/>
+    <circle class="ag" cx="332.16" cy="268.16" r="21.7"/>
+  </g>
+</svg>

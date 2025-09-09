@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="d" data-name="Diagramme_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: none;
+        stroke: #008280;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="aq" x="42.95" y="244.42" width="58.62" height="168.56" rx="8.11" ry="8.11"/>
+  <rect class="aq" x="145.54" y="198.96" width="58.62" height="214.02" rx="8.11" ry="8.11"/>
+  <rect class="aq" x="248.12" y="244.42" width="58.62" height="168.56" rx="8.11" ry="8.11"/>
+  <rect class="aq" x="350.7" y="151" width="58.62" height="261.98" rx="8.11" ry="8.11"/>
+  <circle class="aq" cx="71.55" cy="157.2" r="30.16"/>
+  <circle class="aq" cx="226.26" cy="78.73" r="30.16"/>
+  <circle class="aq" cx="374.82" cy="78.73" r="30.16"/>
+  <line class="aq" x1="97.48" y1="141.8" x2="198.98" y2="91.61"/>
+  <line class="aq" x1="256.42" y1="78.73" x2="344.65" y2="78.73"/>
+</svg>

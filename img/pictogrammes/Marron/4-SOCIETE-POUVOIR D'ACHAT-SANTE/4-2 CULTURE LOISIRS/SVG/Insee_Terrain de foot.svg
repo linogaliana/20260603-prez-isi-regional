@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bj" data-name="Terrain foot" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+      }
+
+      .bu, .bv {
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="bu" x="93.73" y="39.6" width="268" height="378.67"/>
+  <line class="bu" x1="95.51" y1="228.6" x2="361.73" y2="228.6"/>
+  <circle class="bv" cx="227.9" cy="229.06" r="37.46"/>
+  <path class="bu" d="M322.05,417.26c0-20.69,16.77-37.46,37.46-37.46"/>
+  <path class="bu" d="M132.09,417.26c0-20.69-16.77-37.46-37.46-37.46"/>
+  <path class="bu" d="M323.05,39.6c0,20.69,16.77,37.9,37.46,37.9"/>
+  <path class="bu" d="M133.09,39.6c0,20.69-16.77,37.9-37.46,37.9"/>
+  <rect class="bv" x="174.78" y="376.15" width="101.62" height="42.11"/>
+  <rect class="bv" x="175.96" y="39.6" width="101.62" height="42.67"/>
+</svg>

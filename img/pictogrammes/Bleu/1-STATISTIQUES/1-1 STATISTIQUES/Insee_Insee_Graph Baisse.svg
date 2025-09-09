@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="al" data-name="Données" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        stroke-width: 18.31px;
+      }
+
+      .aq, .ar {
+        fill: none;
+        stroke: #144179;
+        stroke-miterlimit: 10;
+      }
+
+      .as {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="ar" points="39.57 67.99 39.57 410.19 417.38 410.19"/>
+  <g>
+    <polyline class="aq" points="358.35 214.47 282.24 146.94 207.83 190.46 81.46 62.69"/>
+    <polygon class="as" points="368.09 193.82 381.93 235.39 339.01 226.6 368.09 193.82"/>
+  </g>
+  <g>
+    <polygon class="as" points="378.3 270 378.3 368.38 330.3 368.38 330.3 227.41 378.3 270"/>
+    <polygon class="as" points="294.17 195.35 294.17 368.38 246.17 368.38 246.17 201.5 279.28 182.14 294.17 195.35"/>
+    <polygon class="as" points="210.04 222.63 210.04 368.38 162.04 368.38 162.04 194.57 197.22 230.14 210.04 222.63"/>
+    <polygon class="as" points="125.92 158.04 125.92 368.38 77.92 368.38 77.92 109.51 125.92 158.04"/>
+  </g>
+</svg>

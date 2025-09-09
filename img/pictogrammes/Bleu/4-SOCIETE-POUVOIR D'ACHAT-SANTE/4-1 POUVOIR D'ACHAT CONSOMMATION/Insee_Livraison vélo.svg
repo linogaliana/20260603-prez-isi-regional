@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="az" data-name="Livraison vélo" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu, .bv {
+        stroke-linejoin: round;
+      }
+
+      .bu, .bv, .bw, .bx {
+        stroke: #144179;
+        stroke-width: 12px;
+      }
+
+      .bu, .bv, .bx {
+        stroke-linecap: round;
+      }
+
+      .bu, .bw, .bx {
+        fill: none;
+      }
+
+      .bv {
+        fill: #144179;
+      }
+
+      .bw, .bx {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="bw" cx="97.78" cy="316.55" r="55.72"/>
+    <circle class="bw" cx="320.42" cy="316.55" r="55.72"/>
+    <circle class="bw" cx="99.27" cy="315.3" r="18.69"/>
+    <circle class="bw" cx="319.99" cy="315.3" r="18.69"/>
+    <polyline class="bx" points="117.91 316.55 209.39 316.55 294.11 221.32"/>
+    <polyline class="bx" points="105.45 297.66 165.78 216.32 291.11 216.32"/>
+    <line class="bx" x1="209.39" y1="316.55" x2="162.11" y2="201.32"/>
+    <polyline class="bx" points="313.81 297.66 286.01 186.92 250.78 186.92"/>
+    <rect class="bx" x="130.98" y="170.99" width="56.46" height="23.67" rx="11.48" ry="11.48"/>
+  </g>
+  <polyline class="bu" points="317.52 120.44 317.52 212.32 414.37 212.32"/>
+  <rect class="bv" x="339.52" y="110.44" width="82.67" height="80"/>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="af" data-name="Eglise" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        stroke-linejoin: round;
+      }
+
+      .ap, .aq {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .aq {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <line class="aq" x1="213.69" y1="152.32" x2="241.69" y2="152.32"/>
+  <line class="aq" x1="213.69" y1="169.9" x2="241.69" y2="169.9"/>
+  <line class="aq" x1="213.69" y1="187.88" x2="241.69" y2="187.88"/>
+  <line class="aq" x1="378.16" y1="412.77" x2="74.27" y2="412.77"/>
+  <polygon class="ap" points="228.8 102.74 266.49 139.44 266.49 218.77 338.71 259.44 338.71 411.44 118.28 411.44 118.28 259.44 190.49 218.77 190.49 139.44 228.19 102.74 228.8 102.74"/>
+  <line class="ap" x1="228.8" y1="102.74" x2="228.8" y2="44.44"/>
+  <line class="aq" x1="214.06" y1="63.27" x2="242.06" y2="63.27"/>
+  <path class="aq" d="M175.23,331.37c0-29.14,23.62-52.77,52.77-52.77s52.77,23.62,52.77,52.77"/>
+  <line class="aq" x1="175.23" y1="331.37" x2="175.23" y2="406.26"/>
+  <line class="aq" x1="280.77" y1="331.37" x2="280.77" y2="409.27"/>
+</svg>

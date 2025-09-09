@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="t" data-name="Parcousup" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+      }
+
+      .z, .aa {
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ab {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .aa {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="z" x="44.17" y="141.67" width="332.12" height="220.83" rx="14.17" ry="14.17"/>
+  <polygon class="ab" points="250.94 408.78 169.53 408.78 177.14 368.36 245.09 368.36 250.94 408.78"/>
+  <line class="z" x1="139.65" y1="409.95" x2="280.82" y2="409.95"/>
+  <line class="z" x1="48.57" y1="326.19" x2="247.89" y2="326.19"/>
+  <g>
+    <path class="aa" d="M305.85,214.91c0-21.69,17.59-39.28,39.28-39.28s39.28,17.59,39.28,39.28-17.58,39.29-39.28,39.29-39.28-17.59-39.28-39.29"/>
+    <path class="aa" d="M413.85,327.87c-.44-32.61-27-58.93-59.73-58.93h-18c-32.72,0-59.29,26.31-59.72,58.93h137.45Z"/>
+  </g>
+  <polyline class="z" points="97.68 259.38 132.94 259.38 132.94 294.65"/>
+  <polyline class="z" points="131.86 223.03 167.12 223.03 167.12 258.3"/>
+  <polyline class="z" points="166.04 186.68 201.3 186.68 201.3 221.95"/>
+</svg>

@@ -1,5 +1,5 @@
 ---
-title: "Titre de la présentation"
+title: "Titre de la présentation sur deux lignes ou trois lignes"
 subtitle: "Sous titre de la présentation"
 # institute: INSEE
 # author: Vous
@@ -17,10 +17,7 @@ fig-cap-location: bottom
 
 embed-resources: false
 
-toc: true
-toc-title: Sommaire
-toc-depth: 1
-toc-float: true
+custom-toc: true
 
 # multiplex: true
 execute:
@@ -37,30 +34,20 @@ params:
   typeEquipement: "G103"
 ---
 
-# titre de niveau 1 {#chapters_0 .backgroundTitre}
+# Titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
 
-<!-- :::{.logoTopRightTitre} -->
-<!-- ![](img/logos/logoDeVotreService.png) -->
-<!-- ::: -->
-
-:::{.bandeauTitre}
-[Nom de la réunion (ou pas)]{.jaune_insee}
+:::{.logoTopRightTitre}
+![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
-
-
-## Titre de niveau 2 {#section_0_1 .backgroundStandard}
+## Titre de niveau 2 {#section_0_1 .backgroundStandard_bleu}
 
 :::{.enteteAvecTitre}
 titre de niveau 1
 :::
 
-<!-- :::{.logoTopRightStandard} -->
-<!-- ![](img/logos/logoDeVotreService.png) -->
-<!-- ::: -->
-
-:::{.bandeauStandard}
-[Nom de la réunion (ou pas)]{.jaune_insee}
+:::{.logoTopLeftStandard}
+![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
 :::
 
 
@@ -91,9 +78,6 @@ Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture
 titre de niveau 1
 :::
 
-:::{.bandeauStandard}
-[Nom de la réunion (ou pas)]{.jaune_insee}
-:::
 
 ::::{.rehausserContenuSansTitre}
 
@@ -108,7 +92,7 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 :::
 
 :::{.listeSansPuceNiveau1}
-- Pour ré-hausser le contenu de votre slide si celle-ci est chargée, vous pouvez encapsuler le contenu de la slide en utilisant les classes CSS suivantes sur une div (encadrement avec "::::") :
+- Pour ré-hausser le contenu de votre slide si celle-ci est chargée, vous pouvez encapsuler le contenu de la slide en utilisant les classes CSS suivantes sur une div (encadrement avec `::::`) :
   - `.rehausserContenuSansTitre` si vous ne mettez pas de titre à votre section (comme c'est le cas ici)
   - `.rehausserContenuAvecTitre` si vous mettez un titre de section visible.
 :::
@@ -117,15 +101,7 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
           
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
-::: {.textPageFinale}
- Merci de votre attention
-:::
-
-::: {.textFooter .no-print-pdf}
-Retrouvez nous sur
-:::
-
-:::: {.columns}
+:::: {.columns .coordonneesFinales}
 
 ::: {.column .coordonnees width=50%}
 - Prénom Nom
@@ -139,15 +115,6 @@ Retrouvez nous sur
 :::
 
 ::::
-
-::: {.nomReunionFin}
-Nom de la réunion (ou pas)
-:::
-
-::: {.divDateFin}
-<p id="dateFin"></p>
-:::
-
 
 
 <!-- Ajout des autres parties du support -->

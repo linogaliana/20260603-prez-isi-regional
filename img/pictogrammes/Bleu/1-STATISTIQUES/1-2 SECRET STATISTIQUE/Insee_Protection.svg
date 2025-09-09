@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="i" data-name="Protection" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="aq" d="M228.29,51.83s92.73,55.01,161.01,55.01v141.81s-2.6,94.17-161.01,159.03h-.68c-154.97-61.36-161.01-159.03-161.01-159.03V106.84c68.28,0,161.01-55.01,161.01-55.01h.68Z"/>
+  <path class="aq" d="M228.19,107.28s63.83,37.87,110.83,37.87v97.61s-4.62,66.35-110.83,109.46h-.47c-110.65-43.55-110.83-109.46-110.83-109.46v-97.61c47,0,110.83-37.87,110.83-37.87h.47Z"/>
+</svg>

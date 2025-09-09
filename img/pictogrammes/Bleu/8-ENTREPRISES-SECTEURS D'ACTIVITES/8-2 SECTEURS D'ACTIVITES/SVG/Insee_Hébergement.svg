@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ai" data-name="Hébergement" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="ak" d="M41.56,402.31h37.79v-20.37h302.29v20.37h37.79v-113.36s-16.45-25.57-38.33,0v37.79H79.35l-.54-39.36s-18.35-25.33-37.25,1.57v113.36Z"/>
+  <path class="ak" d="M192.16,326.74v-75.57s57.02-3.64,151.68,37.79l-.54,37.79h-151.14Z"/>
+  <circle class="ak" cx="135.35" cy="270.09" r="23.21"/>
+  <polygon class="ak" points="41.56 175.59 41.02 137.81 230.49 62.24 419.15 137.81 419.15 175.59 229.95 100.02 41.56 175.59"/>
+</svg>

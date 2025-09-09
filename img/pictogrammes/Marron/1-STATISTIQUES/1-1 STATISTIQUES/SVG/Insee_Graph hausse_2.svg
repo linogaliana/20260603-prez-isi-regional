@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="aj" data-name="évolution 2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        stroke-linecap: round;
+      }
+
+      .ar, .as {
+        fill: none;
+        stroke: #8A5301;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="as" points="48.8 291.88 48.8 405.79 104.38 405.79 104.38 242.56 48.8 291.88"/>
+    <polygon class="as" points="146.21 205.44 146.21 405.79 201.79 405.79 201.79 212.56 163.46 190.14 146.21 205.44"/>
+    <polygon class="as" points="243.63 237.03 243.63 405.79 299.21 405.79 299.21 204.54 258.48 245.72 243.63 237.03"/>
+    <polygon class="as" points="341.04 162.24 341.04 405.79 396.62 405.79 396.62 106.04 341.04 162.24"/>
+  </g>
+  <g>
+    <polyline class="ar" points="45.23 247.91 169.37 137.76 262.04 191.96 400.03 52.44"/>
+    <polygon class="aq" points="409.7 69.89 419.41 32.85 382.48 42.96 409.7 69.89"/>
+  </g>
+</svg>

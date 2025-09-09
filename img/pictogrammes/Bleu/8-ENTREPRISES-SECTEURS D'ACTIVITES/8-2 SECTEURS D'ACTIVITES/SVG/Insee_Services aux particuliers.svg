@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="k" data-name="Services aux particuliers" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="ak" d="M66.33,261.31v-115L217.48,32.96l151.14,113.36v37.79l-.34,37.22-37.45.57s-76.18-4.31-111.62,39.53l-152.88-.1Z"/>
+  <rect class="ak" x="335.03" y="273.7" width="74.82" height="135.93"/>
+  <path class="ak" d="M330.83,296.27s-74.76-13.52-112.82,37.79h-64.65s-18.84-1.5-18.5,17.64c.33,19.14,17.34,17,17.34,17l75.83,3.14"/>
+  <path class="ak" d="M333.7,381.92l-113.78,38.22s-25.03,10.79-63.78-4.22l-109.46-60.22s-10.73-8.44-4.76-19.33c5.98-10.89,17.56-6.67,17.56-6.67l73.56,25.33"/>
+</svg>

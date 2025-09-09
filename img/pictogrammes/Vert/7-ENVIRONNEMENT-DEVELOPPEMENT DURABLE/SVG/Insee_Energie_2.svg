@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="r" data-name="Energie_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .ak, .al {
+        fill: none;
+        stroke-width: 12px;
+      }
+
+      .al {
+        stroke: #008280;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="al" d="M276.8,179.11h-97.49l11.96-123.14c.22-8.52-11.16-11.59-15.26-4.12l-115.23,210.18c-4.7,8.57,1.5,19.04,11.28,19.04h95.39l-11.96,123.14c-.22,8.52,11.16,11.59,15.26,4.12l116.24-212.03c4.24-7.74-1.36-17.2-10.19-17.2Z"/>
+  <line class="ak" x1="311.1" y1="40.97" x2="269.77" y2="100.64"/>
+  <line class="ak" x1="395.72" y1="124.93" x2="329.26" y2="154.12"/>
+  <line class="ak" x1="394.02" y1="258.13" x2="325.4" y2="234.47"/>
+</svg>

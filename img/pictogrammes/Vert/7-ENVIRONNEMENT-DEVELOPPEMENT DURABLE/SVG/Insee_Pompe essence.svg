@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="aa" data-name="Pompe essence" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        stroke-width: 11.51px;
+      }
+
+      .ak, .al {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .al {
+        stroke-width: 12.36px;
+      }
+    </style>
+  </defs>
+  <path class="ak" d="M151,44.54h150.5c15.45,0,28,12.55,28,28v276.44H123V72.54c0-15.45,12.55-28,28-28Z"/>
+  <line class="ak" x1="37.5" y1="410.77" x2="414.84" y2="410.77"/>
+  <rect class="ak" x="98.39" y="348.99" width="256" height="61.78" rx="12" ry="12"/>
+  <rect class="ak" x="146.5" y="68.1" width="158.67" height="62.22" rx="12" ry="12"/>
+  <rect class="ak" x="154.84" y="160.63" width="29.78" height="87.47" rx="12" ry="12"/>
+  <path class="al" d="M330.64,209.97c1.98-.54,4.07-.83,6.23-.83,13.01,0,23.56,10.55,23.56,23.56l-.59,62.74c0,13.01,11.55,23.56,24.56,23.56s23.56-10.55,23.56-23.56l-.08-180.88-53.41-53.41"/>
+  <polyline class="al" points="407.87 139.21 377.13 139.21 377.13 110.32 390.09 97.32"/>
+</svg>

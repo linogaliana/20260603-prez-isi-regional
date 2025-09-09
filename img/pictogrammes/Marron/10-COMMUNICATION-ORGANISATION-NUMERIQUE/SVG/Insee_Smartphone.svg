@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bp" data-name="Smartphone" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .bu, .bv {
+        fill: none;
+        stroke: #8A5301;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="bv" x="117" y="37.98" width="224.65" height="378.32" rx="12" ry="12"/>
+  <line class="bu" x1="183.66" y1="73.94" x2="274.99" y2="73.94"/>
+</svg>

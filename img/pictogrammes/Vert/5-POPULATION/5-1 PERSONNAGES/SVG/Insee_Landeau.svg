@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bw" data-name="Landeau" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .cb {
+        fill: #008280;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <ellipse class="ca" cx="310.13" cy="367.57" rx="40.93" ry="41.7"/>
+  <ellipse class="ca" cx="151.7" cy="368.57" rx="40.93" ry="41.7"/>
+  <ellipse class="cb" cx="151.7" cy="369.77" rx="14.19" ry="14.45"/>
+  <ellipse class="cb" cx="310.13" cy="369.77" rx="14.19" ry="14.45"/>
+  <path class="ca" d="M153.92,369.77s25.9-40.17,76.49-40.47c51.73-.31,77.95,40.47,77.95,40.47"/>
+  <line class="ca" x1="310.13" y1="369.77" x2="266.1" y2="318.39"/>
+  <path class="ca" d="M79.27,189.24s19.31,130.51,151.2,130.73,151.09-130.73,151.09-130.73H79.27Z"/>
+  <path class="ca" d="M156.14,187.15s-6.84-32.3-39.09-34.07c-32.25-1.78-49.58,7.56-49.58,7.56"/>
+  <path class="ca" d="M229.95,188.64V41.04s147.94-14.07,152.08,147.6h-152.08Z"/>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="am" data-name="Statistiques données" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: none;
+      }
+
+      .aq, .ar {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .ar {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="aq" x="107.81" y="153.39" width="29.48" height="49.69" rx="2.44" ry="2.44"/>
+      <rect class="aq" x="172.19" y="112.74" width="33.81" height="90.34" rx="2.44" ry="2.44"/>
+      <rect class="aq" x="240.8" y="84.73" width="37.28" height="118.34" rx="2.44" ry="2.44"/>
+    </g>
+    <rect class="aq" x="69.32" y="45.49" width="247.25" height="314.98" rx="9.19" ry="9.19"/>
+    <line class="aq" x1="259.91" y1="263.27" x2="107.81" y2="263.27"/>
+    <line class="aq" x1="107.81" y1="312.46" x2="259.91" y2="312.46"/>
+    <g>
+      <circle class="ar" cx="269.3" cy="300.09" r="78.33"/>
+      <line class="ar" x1="327.73" y1="357.54" x2="383.97" y2="413.78"/>
+    </g>
+  </g>
+  <polyline class="aq" points="324.06 314.93 303.07 265.23 276.5 314.63 269.88 295.85 255.52 331.2 233.43 280.39 225.7 304.69"/>
+</svg>

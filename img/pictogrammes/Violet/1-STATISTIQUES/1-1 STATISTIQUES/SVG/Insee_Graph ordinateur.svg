@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ac" data-name="Ordi" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="aq" d="M87.83,180.66h276.04c5.97,0,10.81,4.85,10.81,10.81v182.11H77.02v-182.11c0-5.97,4.85-10.81,10.81-10.81Z"/>
+  <line class="aq" x1="43.58" y1="408.72" x2="412.08" y2="408.72"/>
+  <g>
+    <rect class="aq" x="120.53" y="288.38" width="36.47" height="58.99" rx="10.74" ry="10.74"/>
+    <rect class="aq" x="200.17" y="240.12" width="41.83" height="107.25" rx="10.74" ry="10.74"/>
+    <rect class="aq" x="285.05" y="206.87" width="46.12" height="140.5" rx="10.74" ry="10.74"/>
+  </g>
+</svg>

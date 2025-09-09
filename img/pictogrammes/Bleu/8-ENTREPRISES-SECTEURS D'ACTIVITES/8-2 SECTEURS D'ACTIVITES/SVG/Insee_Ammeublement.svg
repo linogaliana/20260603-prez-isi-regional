@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ah" data-name="Meuble" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        stroke-width: 13.49px;
+      }
+
+      .ak, .al {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .al {
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="al" x="113.44" y="112.14" width="226.67" height="74.67"/>
+    <line class="al" x1="190.44" y1="149.47" x2="263.1" y2="149.47"/>
+  </g>
+  <g>
+    <rect class="al" x="113.44" y="220.69" width="226.67" height="74.67"/>
+    <line class="al" x1="190.44" y1="258.02" x2="263.1" y2="258.02"/>
+  </g>
+  <g>
+    <g>
+      <line class="ak" x1="420.44" y1="73.47" x2="33.1" y2="73.47"/>
+      <rect class="al" x="73.1" y="73.47" width="306.67" height="304.67"/>
+      <line class="al" x1="73.1" y1="378.14" x2="73.1" y2="410.47"/>
+    </g>
+    <line class="al" x1="379.77" y1="378.14" x2="379.77" y2="410.17"/>
+  </g>
+</svg>

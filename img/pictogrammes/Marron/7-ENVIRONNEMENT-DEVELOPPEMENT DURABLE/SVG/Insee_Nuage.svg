@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="m" data-name="Nuage" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        fill: none;
+        stroke: #8A5301;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="ak" d="M343.38,216.53c-10.66-54.67-58.14-95.71-115.18-95.71-45.29,0-84.62,25.99-104.21,64.02-47.17,5.07-83.84,45.48-83.84,94.44,0,52.45,42.15,95.07,94.02,95.07h203.71c43.25,0,78.35-35.49,78.35-79.23s-32.12-75.74-72.87-78.59Z"/>
+</svg>

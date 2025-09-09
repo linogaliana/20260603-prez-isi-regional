@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="l" data-name="Boite aux lettres" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        stroke-width: 10.72px;
+      }
+
+      .am, .an {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .an {
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="an" d="M42.69,299.07h376.89v-165.56s0-75.77-68-75.77H104.47s-59.46,5.13-59.46,59.46-2.32,181.88-2.32,181.88Z"/>
+  <rect class="an" x="206.47" y="299.07" width="51" height="111.11" rx="2.66" ry="2.66"/>
+  <path class="an" d="M132.91,57.74s43.13,17.12,43.13,78.56v162.78"/>
+  <rect class="am" x="68.03" y="164.18" width="78.55" height="26.8" rx="2.53" ry="2.53"/>
+  <rect class="an" x="238.25" y="139.07" width="115.56" height="76"/>
+  <polyline class="an" points="238.25 139.07 293.8 177.07 353.8 139.07"/>
+</svg>

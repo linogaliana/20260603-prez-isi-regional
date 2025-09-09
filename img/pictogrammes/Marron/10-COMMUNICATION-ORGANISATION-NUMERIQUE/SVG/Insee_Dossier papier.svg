@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="h" data-name="Dossier papier" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="am" x="330.53" y="50.95" width="92.31" height="318.69" rx="12.18" ry="12.18"/>
+  <rect class="am" x="213.96" y="50.95" width="92.31" height="318.69" rx="12.18" ry="12.18"/>
+  <rect class="am" x="70.83" y="47.48" width="92.31" height="318.69" rx="12.18" ry="12.18" transform="translate(56.67 -23.01) rotate(14.79)"/>
+  <circle class="am" cx="374.95" cy="306.72" r="18.97"/>
+  <circle class="am" cx="260.11" cy="306.72" r="18.97"/>
+  <circle class="am" cx="92.24" cy="300.55" r="18.97"/>
+  <rect class="am" x="355.98" y="88.41" width="37.94" height="129.78" rx="2.58" ry="2.58"/>
+  <rect class="am" x="241.14" y="88.41" width="37.94" height="129.78" rx="2.58" ry="2.58"/>
+  <rect class="am" x="114.26" y="86.79" width="37.94" height="129.78" rx="2.58" ry="2.58" transform="translate(43.13 -28.98) rotate(14.79)"/>
+</svg>

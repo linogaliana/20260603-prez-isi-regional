@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="o" data-name="Tour Eiffel" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="am" d="M345.73,411.83s-50.11-73.84-73.73-148.35c-20.71-65.32-25.65-141.1-25.65-166.15s-32.91-23.8-32.91,0c0,27.36-5.36,100.83-26.07,166.15-23.62,74.5-73.73,148.35-73.73,148.35"/>
+  <line class="am" x1="229.69" y1="34.56" x2="229.69" y2="75.85"/>
+  <line class="am" x1="190.46" y1="131.61" x2="267.93" y2="131.61"/>
+  <line class="am" x1="167.38" y1="242.05" x2="286.72" y2="242.05"/>
+  <line class="am" x1="130.79" y1="316.23" x2="321.34" y2="316.23"/>
+  <path class="am" d="M176.49,412.95c0-32.68,22.8-59.17,50.57-59.17s50.57,26.49,50.57,59.17"/>
+</svg>

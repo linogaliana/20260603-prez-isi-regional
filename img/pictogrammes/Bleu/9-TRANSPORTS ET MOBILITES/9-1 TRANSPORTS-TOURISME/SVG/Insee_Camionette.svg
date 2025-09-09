@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="s" data-name="Camionette" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: #fff;
+      }
+
+      .z, .aa {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path class="aa" d="M411.39,389.44H46.4c-3.13,0-5.67-2.54-5.67-5.67v-178.99c0-3.13,2.54-5.67,5.67-5.67h267.53c1.95,0,3.76,1,4.8,2.65l49.47,78.63c.57.9,1.38,1.63,2.35,2.09l43.31,20.79c1.97.94,3.22,2.93,3.22,5.11v75.39c0,3.13-2.54,5.67-5.67,5.67Z"/>
+  <circle class="z" cx="333.98" cy="387.4" r="26.42"/>
+  <circle class="z" cx="155.47" cy="387.4" r="26.42"/>
+  <path class="aa" d="M319.36,286.1h-61.97c-4.97,0-9-4.03-9-9v-38c0-4.97,4.03-9,9-9h41.61c3.32,0,6.37,1.83,7.93,4.75l20.36,38c3.21,6-1.13,13.25-7.93,13.25Z"/>
+</svg>

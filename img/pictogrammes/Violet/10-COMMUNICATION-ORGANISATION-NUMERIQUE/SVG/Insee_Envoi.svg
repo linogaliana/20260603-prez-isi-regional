@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="o" data-name="Envoi" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polygon class="am" points="419.06 108.63 55.48 113.45 174.27 248.8 230.79 419.4 419.06 108.63"/>
+  <line class="am" x1="419.06" y1="108.63" x2="174.27" y2="248.8"/>
+</svg>

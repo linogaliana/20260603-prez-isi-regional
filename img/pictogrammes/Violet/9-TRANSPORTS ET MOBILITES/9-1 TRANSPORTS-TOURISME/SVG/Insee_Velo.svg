@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="m" data-name="Velo" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z, .aa {
+        fill: none;
+        stroke: #5F1972;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <circle class="z" cx="115.72" cy="319.33" r="55.72"/>
+  <circle class="z" cx="338.37" cy="319.33" r="55.72"/>
+  <circle class="z" cx="117.21" cy="318.08" r="18.69"/>
+  <circle class="z" cx="337.93" cy="318.08" r="18.69"/>
+  <polyline class="aa" points="135.86 319.33 227.33 319.33 312.06 224.11"/>
+  <polyline class="aa" points="123.39 300.44 183.72 219.1 309.06 219.1"/>
+  <line class="aa" x1="227.33" y1="319.33" x2="180.06" y2="204.1"/>
+  <polyline class="aa" points="331.75 300.44 303.96 189.7 268.72 189.7"/>
+  <rect class="aa" x="148.92" y="173.77" width="56.46" height="23.67" rx="11.48" ry="11.48"/>
+</svg>

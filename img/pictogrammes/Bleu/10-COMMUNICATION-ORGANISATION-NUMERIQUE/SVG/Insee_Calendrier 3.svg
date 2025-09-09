@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ak" data-name="Megaphone" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+      }
+
+      .am, .an {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ao {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+
+      .an {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="am" x="37.83" y="334.9" width="356.26" height="73.46"/>
+      <path class="an" d="M419.9,373.84H66.75c-16.92,0-23.76-12.03-26.77-28.67-1.32-7.29-2.15-29.39-2.15-40.84V92.29h356.82v212.04c0,56.55,25.25,69.51,25.25,69.51Z"/>
+      <line class="an" x1="37.83" y1="142.88" x2="394.09" y2="142.88"/>
+    </g>
+    <rect class="an" x="114.73" y="59.96" width="35.06" height="55.1" rx="10.65" ry="10.65"/>
+    <rect class="an" x="286.29" y="59.96" width="35.06" height="55.1" rx="10.65" ry="10.65"/>
+  </g>
+  <g>
+    <circle class="ao" cx="82.65" cy="258.9" r="7.26"/>
+    <circle class="ao" cx="148.64" cy="258.9" r="7.26"/>
+    <circle class="ao" cx="214.64" cy="258.9" r="7.26"/>
+    <circle class="ao" cx="280.64" cy="258.9" r="7.26"/>
+    <circle class="ao" cx="346.63" cy="258.9" r="7.26"/>
+  </g>
+  <g>
+    <circle class="ao" cx="82.65" cy="319.8" r="7.26"/>
+    <circle class="ao" cx="148.64" cy="319.8" r="7.26"/>
+    <circle class="ao" cx="214.64" cy="319.8" r="7.26"/>
+    <circle class="ao" cx="280.64" cy="319.8" r="7.26"/>
+  </g>
+  <g>
+    <circle class="ao" cx="148.64" cy="198" r="7.26"/>
+    <circle class="ao" cx="214.64" cy="198" r="7.26"/>
+    <circle class="ao" cx="280.64" cy="198" r="7.26"/>
+    <circle class="ao" cx="346.63" cy="198" r="7.26"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ag" data-name="Téléphone" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        stroke: #5F1972;
+        stroke-linejoin: round;
+      }
+
+      .aq, .ar {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .ar {
+        stroke: #5F1972;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="ar" x="116.88" y="37.97" width="218.67" height="372" rx="14.11" ry="14.11"/>
+  <line class="ar" x1="196.49" y1="78.5" x2="268.08" y2="78.5"/>
+  <g>
+    <path class="aq" d="M226.3,268.59v-68.84c-24.33,0-45.48,11.72-58.38,32.36-13.7,21.92-14.36,47.24-1.83,69.85,18.43,33.25,60.33,45.26,93.58,26.83l-33.37-60.21Z"/>
+    <path class="aq" d="M226.3,268.59l60.2-33.37c18.43,33.25,6.42,75.15-26.83,93.58h0l-33.37-60.2Z"/>
+    <path class="aq" d="M244.91,234.83v-68.84c25.85,0,47.67,12.85,60.2,35.46l-60.2,33.37Z"/>
+  </g>
+</svg>

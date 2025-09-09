@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="m" data-name="Ecole française" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        stroke-width: 11.89px;
+      }
+
+      .z, .aa {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .aa {
+        stroke-width: 12px;
+      }
+
+      .ab {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="ab" cx="84.54" cy="294.54" r="5.51"/>
+  <circle class="ab" cx="106.5" cy="294.54" r="5.51"/>
+  <circle class="ab" cx="106.5" cy="338.61" r="5.51"/>
+  <circle class="ab" cx="106.5" cy="382.61" r="5.51"/>
+  <circle class="ab" cx="84.54" cy="382.61" r="5.51"/>
+  <circle class="ab" cx="84.54" cy="338.58" r="5.51"/>
+  <circle class="ab" cx="348.73" cy="294.54" r="5.51"/>
+  <circle class="ab" cx="370.69" cy="294.54" r="5.51"/>
+  <circle class="ab" cx="370.69" cy="338.61" r="5.51"/>
+  <circle class="ab" cx="370.69" cy="382.61" r="5.51"/>
+  <circle class="ab" cx="348.73" cy="382.61" r="5.51"/>
+  <circle class="ab" cx="348.73" cy="338.58" r="5.51"/>
+  <rect class="aa" x="322.8" y="258.21" width="75" height="151.62"/>
+  <rect class="aa" x="57.56" y="258.21" width="75" height="151.62"/>
+  <polyline class="z" points="321.8 221.47 321.8 409.83 132.56 409.83 132.56 221.47"/>
+  <polyline class="z" points="113.8 234.88 227.77 151.88 340.14 234.88"/>
+  <circle class="aa" cx="228.06" cy="239" r="26.41"/>
+  <rect class="aa" x="200.47" y="334.42" width="54" height="75.41"/>
+  <path class="z" d="M227.77,151.88V32.48s8.7,12.79,47.7,3.43,52.73,0,52.73,0v67.79s-14.09-8.82-54.39,1.85c-40.31,10.67-46-4.67-46-4.67"/>
+  <rect class="ab" x="294.8" y="31.75" width="30.72" height="69.13"/>
+  <rect class="ab" x="228.06" y="38.21" width="34.78" height="68"/>
+</svg>

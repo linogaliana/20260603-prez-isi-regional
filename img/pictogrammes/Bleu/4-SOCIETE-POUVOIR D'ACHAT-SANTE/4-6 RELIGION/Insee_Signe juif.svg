@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="al" data-name="Signe juif" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+        stroke: #144179;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle class="ap" cx="226.96" cy="228.02" r="180.58"/>
+  <g>
+    <polygon class="ap" points="226.96 120.37 274.67 203 322.37 285.62 226.96 285.62 131.55 285.62 179.26 203 226.96 120.37"/>
+    <polygon class="ap" points="226.96 335.66 179.26 253.04 131.55 170.41 226.96 170.41 322.37 170.41 274.67 253.04 226.96 335.66"/>
+  </g>
+</svg>

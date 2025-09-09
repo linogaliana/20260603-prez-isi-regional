@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="c" data-name="Diagramme" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        fill: none;
+        stroke: #8A5301;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="aq" x="37.78" y="238.11" width="60.33" height="179.98" rx="8.5" ry="8.5"/>
+  <rect class="aq" x="143.36" y="189.56" width="60.33" height="228.52" rx="8.5" ry="8.5"/>
+  <rect class="aq" x="248.93" y="238.11" width="60.33" height="179.98" rx="8.5" ry="8.5"/>
+  <rect class="aq" x="354.51" y="138.36" width="60.33" height="279.73" rx="8.5" ry="8.5"/>
+  <circle class="ar" cx="72.18" cy="156.11" r="30.16"/>
+  <circle class="ar" cx="226.89" cy="77.64" r="30.16"/>
+  <circle class="ar" cx="375.45" cy="77.64" r="30.16"/>
+  <line class="ar" x1="98.11" y1="140.71" x2="199.61" y2="90.52"/>
+  <line class="ar" x1="257.05" y1="77.64" x2="345.28" y2="77.64"/>
+</svg>

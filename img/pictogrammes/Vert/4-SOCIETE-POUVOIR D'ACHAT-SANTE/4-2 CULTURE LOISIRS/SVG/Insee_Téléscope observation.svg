@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bq" data-name="Téléscope" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: #fff;
+      }
+
+      .bu, .bv {
+        stroke-miterlimit: 10;
+      }
+
+      .bu, .bv, .bw {
+        stroke: #008280;
+        stroke-width: 12px;
+      }
+
+      .bv, .bw {
+        fill: none;
+      }
+
+      .bw {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="bv" x="167.71" y="102.51" width="176.17" height="79.19" transform="translate(-36.78 146.93) rotate(-30)"/>
+    <path class="bw" d="M374.95,130.37l-1.91,1.1c-12.68,7.32-22.06-.97-29.38-13.65l-24.68-42.75c-7.32-12.68-9.82-24.95,2.87-32.27l1.91-1.1,51.2,88.68Z"/>
+    <g>
+      <rect class="bv" x="94.76" y="182.92" width="90.05" height="50.66" transform="translate(-85.39 97.79) rotate(-30)"/>
+      <rect class="bv" x="84.76" y="220.17" width="18.08" height="34.61" transform="translate(-106.17 78.71) rotate(-30)"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <polyline class="bw" points="316.05 409.03 232.18 206.97 148.66 409.03"/>
+      <line class="bw" x1="232.18" y1="206.97" x2="232.18" y2="409.34"/>
+    </g>
+    <circle class="bu" cx="232.36" cy="201.66" r="15.56"/>
+  </g>
+</svg>

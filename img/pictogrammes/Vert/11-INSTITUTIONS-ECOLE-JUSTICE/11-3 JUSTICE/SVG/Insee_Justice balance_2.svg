@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="j" data-name="Balance justice_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: #fff;
+      }
+
+      .z, .aa, .ab {
+        stroke: #008280;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .z, .ab {
+        stroke-linecap: round;
+      }
+
+      .aa, .ab {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="aa" d="M154.54,327.56H45.46s54.54-138.31,54.54-138.31l54.54,138.31Z"/>
+    <path class="aa" d="M154.59,327.43c-1.75,76.55-109.08,77.11-109.13,0"/>
+  </g>
+  <g>
+    <path class="aa" d="M408.24,264.84h-109.08s54.54-138.31,54.54-138.31l54.54,138.31Z"/>
+    <path class="aa" d="M408.29,264.72c-1.75,76.55-109.08,77.11-109.13,0"/>
+  </g>
+  <g>
+    <line class="ab" x1="101.19" y1="188.02" x2="352.37" y2="124.81"/>
+    <circle class="z" cx="226.78" cy="155.17" r="26.88"/>
+    <g>
+      <line class="ab" x1="155.21" y1="413.67" x2="304.87" y2="413.67"/>
+      <line class="ab" x1="227.02" y1="413.1" x2="227.02" y2="185.76"/>
+    </g>
+  </g>
+</svg>

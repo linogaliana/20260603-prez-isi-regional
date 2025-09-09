@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="n" data-name="Voiture de profil" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .z, .aa {
+        fill: none;
+        stroke: #008280;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle class="aa" cx="327.81" cy="341.61" r="31"/>
+  <circle class="aa" cx="116.19" cy="341.61" r="31"/>
+  <line class="z" x1="166.42" y1="344.71" x2="276.44" y2="344.71"/>
+  <path class="z" d="M379.17,346.4h35.23s13.98-10.11,7.43-33.3c-6.54-23.19-11.6-7.43-12.49-44.6h-25.27s-37.47-56.2-112.4-56.2h-46.09s-51.23,6.84-82.56,52.33c0,0-90.5-1.78-105.66,37.76,0,0-2.08,20.81-6.84,28.55,0,0-4.62,15.46,8.62,15.46h26.61"/>
+  <line class="aa" x1="270.49" y1="212.3" x2="270.49" y2="265.23"/>
+  <line class="aa" x1="143.03" y1="264.63" x2="377.83" y2="264.63"/>
+  <line class="z" x1="134.19" y1="288.51" x2="149.77" y2="288.51"/>
+  <path class="z" d="M117.65,332.58s9.51-.27,7.73,12.13"/>
+  <path class="z" d="M328.31,332.62s9.51-.27,7.73,12.13"/>
+</svg>

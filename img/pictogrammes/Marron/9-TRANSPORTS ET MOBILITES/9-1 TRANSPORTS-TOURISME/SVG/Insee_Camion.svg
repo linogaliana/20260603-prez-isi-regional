@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="r" data-name="Camion" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: #fff;
+      }
+
+      .z, .aa {
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect class="aa" x="33.27" y="365.44" width="377.67" height="25.67"/>
+  <rect class="aa" x="33.27" y="258.77" width="278.33" height="106.67"/>
+  <rect class="aa" x="333.27" y="258.77" width="77.67" height="106.33"/>
+  <rect class="aa" x="356.85" y="259.44" width="54.09" height="66.33"/>
+  <line class="aa" x1="263.26" y1="282.77" x2="263.26" y2="338.86"/>
+  <line class="aa" x1="82.12" y1="282.77" x2="82.12" y2="338.86"/>
+  <line class="aa" x1="127.41" y1="282.77" x2="127.41" y2="338.86"/>
+  <line class="aa" x1="172.69" y1="282.77" x2="172.69" y2="338.86"/>
+  <line class="aa" x1="217.98" y1="282.77" x2="217.98" y2="338.86"/>
+  <circle class="z" cx="356.89" cy="394.68" r="19.91"/>
+  <circle class="z" cx="294.27" cy="394.68" r="19.91"/>
+  <circle class="z" cx="245.19" cy="394.68" r="19.91"/>
+  <circle class="z" cx="127.58" cy="394.68" r="19.91"/>
+  <circle class="z" cx="78.49" cy="394.68" r="19.91"/>
+</svg>

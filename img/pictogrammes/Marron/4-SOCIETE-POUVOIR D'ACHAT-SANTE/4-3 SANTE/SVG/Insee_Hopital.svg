@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="g" data-name="Hopital" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="ap" x="44.51" y="44.63" width="101.78" height="364.95"/>
+  <rect class="ap" x="310.25" y="44.63" width="101.78" height="364.95"/>
+  <rect class="ap" x="146.28" y="189.1" width="163.97" height="220.48"/>
+  <rect class="ap" x="190.02" y="307.33" width="75.67" height="101.84"/>
+  <rect class="ap" x="190.12" y="113.02" width="72.61" height="75.64"/>
+  <line class="ap" x1="226.77" y1="307.33" x2="226.77" y2="406.44"/>
+  <line class="ap" x1="227.16" y1="136.22" x2="227.16" y2="165.09"/>
+  <line class="ap" x1="241.76" y1="150.73" x2="212.88" y2="150.73"/>
+  <line class="ap" x1="76.76" y1="80.25" x2="76.76" y2="106.88"/>
+  <line class="ap" x1="76.76" y1="156.03" x2="76.76" y2="182.66"/>
+  <line class="ap" x1="76.76" y1="231.82" x2="76.76" y2="258.45"/>
+  <line class="ap" x1="76.76" y1="307.6" x2="76.76" y2="334.23"/>
+  <line class="ap" x1="114.55" y1="80.25" x2="114.55" y2="106.88"/>
+  <line class="ap" x1="114.55" y1="156.03" x2="114.55" y2="182.66"/>
+  <line class="ap" x1="114.55" y1="231.82" x2="114.55" y2="258.45"/>
+  <line class="ap" x1="114.55" y1="307.6" x2="114.55" y2="334.23"/>
+  <line class="ap" x1="342.24" y1="80.25" x2="342.24" y2="106.88"/>
+  <line class="ap" x1="342.24" y1="156.03" x2="342.24" y2="182.66"/>
+  <line class="ap" x1="342.24" y1="231.82" x2="342.24" y2="258.45"/>
+  <line class="ap" x1="342.24" y1="307.6" x2="342.24" y2="334.23"/>
+  <line class="ap" x1="380.03" y1="80.25" x2="380.03" y2="106.88"/>
+  <line class="ap" x1="380.03" y1="156.03" x2="380.03" y2="182.66"/>
+  <line class="ap" x1="380.03" y1="231.82" x2="380.03" y2="258.45"/>
+  <line class="ap" x1="380.03" y1="307.6" x2="380.03" y2="334.23"/>
+  <line class="ap" x1="190.12" y1="231.25" x2="190.12" y2="257.88"/>
+  <line class="ap" x1="227.91" y1="231.25" x2="227.91" y2="257.88"/>
+  <line class="ap" x1="265.59" y1="231.25" x2="265.59" y2="257.88"/>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="b" data-name="Aire ubaine_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <line class="am" x1="324.52" y1="361.69" x2="324.52" y2="405.97"/>
+      <path class="am" d="M325.4,356.38c-26.9,0-48.71-41.24-48.71-92.11s48.71-92.11,48.71-92.11c0,0,48.71,41.24,48.71,92.11"/>
+      <path class="am" d="M374.11,264.27c0,50.87-21.81,92.11-48.71,92.11"/>
+    </g>
+    <polyline class="am" points="202.35 410.17 202.35 302.65 121.49 226.78 91.98 253.87 91.98 234.37 58.26 234.37 58.26 284.94 58.26 284.84 38.87 302.65 38.87 409.7"/>
+    <polyline class="am" points="98.38 409.7 98.38 343.95 135.87 343.95 135.87 409.7"/>
+    <line class="am" x1="166.99" y1="322.01" x2="166.99" y2="372.36"/>
+    <line class="am" x1="202.35" y1="410.17" x2="417.38" y2="410.17"/>
+  </g>
+  <line class="am" x1="38.87" y1="410.1" x2="248.81" y2="410.1"/>
+</svg>

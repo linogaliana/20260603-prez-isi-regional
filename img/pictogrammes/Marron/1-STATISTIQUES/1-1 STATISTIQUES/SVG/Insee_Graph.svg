@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ap" data-name="évolution 3" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: none;
+        stroke: #8A5301;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="aq" x="44.4" y="248.27" width="96" height="164"/>
+  <rect class="aq" x="180.1" y="129.38" width="96" height="282.89"/>
+  <rect class="aq" x="315.79" y="70.27" width="96" height="342"/>
+</svg>

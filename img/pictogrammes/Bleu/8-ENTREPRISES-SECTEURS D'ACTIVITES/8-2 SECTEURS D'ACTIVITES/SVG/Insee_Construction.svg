@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="z" data-name="Construction" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak, .al, .am, .an {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .ak, .al, .am, .an, .ao {
+        stroke: #144179;
+      }
+
+      .ak, .al, .am, .ao {
+        fill: none;
+      }
+
+      .ak, .an, .ao {
+        stroke-width: 12px;
+      }
+
+      .al {
+        stroke-width: 11.91px;
+      }
+
+      .am {
+        stroke-width: 11.93px;
+      }
+
+      .an {
+        fill: #fff;
+      }
+
+      .ao {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="al" x="34.96" y="387.66" width="179.97" height="29.67" rx="2.83" ry="2.83"/>
+  <rect class="am" x="-57.34" y="176.02" width="344.6" height="76.81" rx="6.31" ry="6.31" transform="translate(-99.47 329.38) rotate(-90)"/>
+  <polyline class="am" points="81.59 385.88 147.37 327.89 82.59 266.06 149.36 203.44 83.59 140.66 151.59 73.88"/>
+  <rect class="an" x="54.51" y="69.11" width="348.85" height="47.89" rx="5.01" ry="5.01"/>
+  <rect class="ak" x="287.81" y="116.77" width="62.67" height="40.22" rx="2.83" ry="2.83"/>
+  <path class="ao" d="M357,302.75c0,20.37-16.51,36.87-36.87,36.87s-36.87-16.51-36.87-36.87,16.51-36.87,36.87-36.87"/>
+  <line class="an" x1="319.14" y1="156.99" x2="319.14" y2="265.88"/>
+</svg>

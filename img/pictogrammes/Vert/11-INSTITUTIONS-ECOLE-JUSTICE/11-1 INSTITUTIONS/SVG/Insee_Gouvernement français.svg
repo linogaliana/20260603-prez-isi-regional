@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="e" data-name="Gouvernement français" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .k {
+        stroke-width: 12px;
+      }
+
+      .k, .l {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .l {
+        stroke-width: 13px;
+      }
+
+      .m {
+        fill: #008280;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <line class="k" x1="234.53" y1="114.15" x2="234.53" y2="30.6"/>
+  <path class="k" d="M234.53,36.38s19.48,4.89,43.48,0c24-4.89,44-1.31,44-1.31v59.06s-8.22-7.3-44.44,1.14c-36.22,8.44-43.04-4.22-43.04-4.22v-54.67Z"/>
+  <rect class="m" x="293.35" y="33.8" width="25.56" height="57.02"/>
+  <rect class="m" x="237.13" y="36.92" width="28.89" height="58.13"/>
+  <rect class="l" x="144.8" y="234.42" width="26.56" height="119.56"/>
+  <rect class="l" x="220.01" y="234.42" width="26.56" height="119.56"/>
+  <rect class="l" x="295.33" y="234.42" width="26.56" height="119.56"/>
+  <rect class="k" x="138.86" y="203.13" width="38.44" height="31.53"/>
+  <rect class="k" x="214.07" y="203.13" width="38.44" height="31.53"/>
+  <rect class="k" x="289.39" y="203.13" width="38.44" height="31.53"/>
+  <rect class="k" x="138.86" y="353.58" width="38.44" height="31.53"/>
+  <rect class="k" x="214.07" y="353.58" width="38.44" height="31.53"/>
+  <rect class="k" x="289.39" y="353.58" width="38.44" height="31.53"/>
+  <rect class="k" x="113.2" y="385.11" width="241" height="28.04"/>
+  <line class="k" x1="385.2" y1="413.15" x2="82.2" y2="413.15"/>
+  <polygon class="k" points="238.87 115.33 355.87 173.99 355.87 203.13 235.77 203.13 233.29 203.13 113.2 203.13 113.2 173.99 230.2 115.33 238.87 115.33"/>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="v" data-name="Organigramme" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #5F1972;
+        stroke-miterlimit: 10;
+        stroke-width: 12.09px;
+      }
+    </style>
+  </defs>
+  <rect class="am" x="114.78" y="44.25" width="220.12" height="220.12" rx="110.06" ry="110.06"/>
+  <rect class="am" x="44.28" y="319.63" width="89.23" height="89.23" rx="44.62" ry="44.62"/>
+  <rect class="am" x="185.33" y="319.63" width="89.23" height="89.23" rx="44.62" ry="44.62"/>
+  <rect class="am" x="326.38" y="319.63" width="89.23" height="89.23" rx="44.62" ry="44.62"/>
+  <line class="am" x1="227.77" y1="267.58" x2="227.77" y2="320.05"/>
+  <line class="am" x1="159.48" y1="247.78" x2="90.33" y2="319.66"/>
+  <line class="am" x1="288.88" y1="247.78" x2="358.03" y2="319.66"/>
+</svg>

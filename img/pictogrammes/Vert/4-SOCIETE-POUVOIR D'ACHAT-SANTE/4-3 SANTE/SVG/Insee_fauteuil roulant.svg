@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="f" data-name="Fauteuil roulant" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: #fff;
+      }
+
+      .ap, .aq {
+        stroke-miterlimit: 10;
+      }
+
+      .ap, .aq, .ar {
+        stroke: #008280;
+        stroke-width: 12px;
+      }
+
+      .aq, .ar {
+        fill: none;
+      }
+
+      .as {
+        fill: #008280;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <path class="ap" d="M134.42,157h138.95c18.77,0,34.02,15.24,34.02,34.02v82.3c0,18.77-15.24,34.02-34.02,34.02h-138.95c-6.48,0-11.75-5.26-11.75-11.75v-126.84c0-6.48,5.26-11.75,11.75-11.75Z"/>
+  <circle class="ap" cx="162.87" cy="303.12" r="108.99"/>
+  <circle class="aq" cx="161.81" cy="302.96" r="83.19"/>
+  <circle class="aq" cx="161.81" cy="302.07" r="11.73"/>
+  <path class="ar" d="M122.67,198v-122.48s-3.68-25.37-24.74-25.37"/>
+  <polyline class="ar" points="307.39 269 360 269 360 347 404.33 347"/>
+  <line class="ar" x1="307.39" y1="273.32" x2="307.39" y2="347"/>
+  <circle class="aq" cx="307.16" cy="379.83" r="11.73"/>
+  <circle class="aq" cx="307.16" cy="379.83" r="30.59"/>
+  <rect class="as" x="62.33" y="38.72" width="42.81" height="19.52" rx="2.83" ry="2.83"/>
+  <line class="ap" x1="162.87" y1="194.12" x2="229" y2="194.12"/>
+  <rect class="as" x="222.98" y="184.36" width="42.81" height="19.52" rx="2.83" ry="2.83"/>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="b" data-name="Immeuble" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <line class="z" x1="38.08" y1="414.14" x2="414.17" y2="413.92"/>
+  <polygon class="z" points="111.34 74.06 339.01 74.06 338.06 413.92 111.88 413.92 111.34 74.06"/>
+  <polygon class="z" points="149.67 36.44 300.81 36.44 300.81 73.49 149.67 74.06 149.67 36.44"/>
+  <polygon class="z" points="186.91 413.92 186.91 300.78 263.02 300.36 262.48 413.92 186.91 413.92"/>
+  <line class="z" x1="224.7" y1="300.78" x2="224.7" y2="413.92"/>
+  <line class="z" x1="147.94" y1="132.85" x2="147.94" y2="166.59"/>
+  <line class="z" x1="187.63" y1="132.85" x2="187.63" y2="166.59"/>
+  <line class="z" x1="227.31" y1="132.85" x2="227.31" y2="166.59"/>
+  <line class="z" x1="267" y1="132.85" x2="267" y2="166.59"/>
+  <line class="z" x1="306.68" y1="132.85" x2="306.68" y2="166.59"/>
+  <line class="z" x1="147.94" y1="208.42" x2="147.94" y2="242.16"/>
+  <line class="z" x1="187.63" y1="208.42" x2="187.63" y2="242.16"/>
+  <line class="z" x1="227.31" y1="208.42" x2="227.31" y2="242.16"/>
+  <line class="z" x1="267" y1="208.42" x2="267" y2="242.16"/>
+  <line class="z" x1="306.68" y1="208.42" x2="306.68" y2="242.16"/>
+</svg>

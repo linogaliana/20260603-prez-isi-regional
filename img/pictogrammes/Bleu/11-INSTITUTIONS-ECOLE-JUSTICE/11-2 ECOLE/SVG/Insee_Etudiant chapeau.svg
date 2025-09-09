@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="r" data-name="Etudiant chapeau" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="aa" d="M401.52,305.25h-.07s-.07,0-.11-.01l.08-.19.1.2Z"/>
+  <g>
+    <polygon class="z" points="18.67 176.45 208.94 98.81 397.07 176.45 208.14 251.32 18.67 176.45"/>
+    <polyline class="z" points="397.07 176.45 397.07 251.32 359.28 289.33 434.87 289.1 397.07 251.32"/>
+    <path class="z" d="M94.51,251.32l.27,75.8s31.46,38.01,112.44,37.79c80.98-.23,113.73-37.79,113.73-37.79v-75.57"/>
+  </g>
+</svg>

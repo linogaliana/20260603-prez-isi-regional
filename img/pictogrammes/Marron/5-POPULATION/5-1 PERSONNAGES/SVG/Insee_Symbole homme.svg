@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="o" data-name="Symbole homme" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="ca" points="317.32 44.68 410.55 44.68 410.55 141.79"/>
+  <line class="ca" x1="317.58" y1="124.19" x2="409.41" y2="46.46"/>
+  <circle class="ca" cx="230.72" cy="198.86" r="111.92"/>
+</svg>

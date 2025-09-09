@@ -1,7 +1,7 @@
 
-# documentation {#chapters_6 .backgroundTitre}
+# Documentation {#chapters_6 .backgroundTitre_jaune}
 
-## Sites de présentation {#section_6_1 .backgroundStandard}
+## Sites de présentation {#section_6_1 .backgroundStandard_jaune}
 
 :::{.enteteAvecTitre}
 documentation
@@ -19,7 +19,7 @@ documentation
 
 - [charte graphique Insee](https://intranet.insee.fr/jcms/c_2182990/la-charte-graphique-editoriale)
 
-## Technologies utilisées {#section_6_2 .backgroundStandard}
+## Technologies utilisées {#section_6_2 .backgroundStandard_multi}
 
 :::{.enteteAvecTitre}
 documentation
@@ -44,18 +44,23 @@ documentation
   - [code de l'exemple](https://github.com/Martinomagnifico/quarto-verticator/blob/main/example.qmd)
 - **roughtnotation :**
   - [exemple](https://emilhvitfeldt.github.io/quarto-roughnotation/#/title-slide) 
-  - [code del'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
+  - [code de l'exemple](https://github.com/EmilHvitfeldt/quarto-roughnotation/blob/main/example.qmd)
 - **fontawesome :**
   - [liste des icones](https://fontawesome.com/search?o=r&m=free)
     - [**Exemple :**]{.souligneRouge} {{< fa icons >}} (sans titre) ; {{< fa envelope title="Une envelope" >}} (avec titre)
+- **[Emoji](https://emojibase.dev/shortcodes/?) :** prendre le texte de la colonne "Github"
 
 
-# titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {#chapters_7 .backgroundTitre}
+# Titre de troisième partie qui doit être super long pour rentrer sur 2 lignes {#chapters_7 .backgroundTitre_vert}
 
 ## Sous-titre 3ème partie {#section_7_1 .backgroundStandard}
 
+:::{.logoTopLeftStandard}
+![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+:::
+
 :::{.enteteAvecTitreSur2lignes}
-TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG <br/> POUR RENTRER SUR 2 LIGNES
+TITRE DE TROISIEME PARTIE QUI DOIT ÊTRE SUPER LONG POUR RENTRER SUR 2 LIGNES
 :::
 
 ::: {.listeSansPuceNiveau1 .interligne2}

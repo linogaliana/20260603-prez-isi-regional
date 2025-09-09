@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bs" data-name="Montagne" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline class="bu" points="174.57 122.55 174.57 202.07 237.58 308.49 213.15 290.27 184.49 310.26 156.06 282.72 98.68 320.87 40.35 412.43 98.68 320.87 174.5 201.88 299.77 413.32"/>
+    <polygon class="bu" points="270.06 164.37 174.56 164.37 174.56 122.39 270.06 122.39 231.42 143.51 270.06 164.37"/>
+  </g>
+  <g>
+    <polyline class="bu" points="302.85 361.98 334.71 340.79 340.78 357.86 358.99 344.53 379.98 355.1"/>
+    <polyline class="bu" points="285.03 388.33 302.85 361.98 344.95 295.89 414.52 413.32"/>
+  </g>
+</svg>

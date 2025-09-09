@@ -1,6 +1,6 @@
 # Présentation Quarto
 
-Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant les chartes graphiques de communication interne, tout public et entreprises de l'Insee.
+Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+***la charte graphique de l'Insee 2025***.+}
 
 > Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
 
@@ -8,7 +8,11 @@ Template de support de présentation dynamique en quarto markdown (.qmd) et reve
 
 ## :one: Changement de thème
 
-Par défaut, la présentation est "branchée" sur la charte graphique interne (Insee rouge).
+Il n'y a plus de thème selon le public auquel on s'adresse. En effet, il n'y a désormais qu'un thème clair et un thème sombre.
+
+Par défaut, la présentation est "branchée" sur la charte graphique du thème clair (Insee-clair). Un thème sombre verra peut être le jour ultérieurement.
+
+Les images des licences, des logos de chaque région et les pictogrammes Insee sont disponibles dans le dossier `img/`.
 
 Pour changer de thème, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante : 
 
@@ -33,8 +37,8 @@ Si la génération de votre support de présentation échoue (page not found = p
 
 Les feuilles de style en cascade (CSS) permettent la mise en forme du support. Cette mise en forme est répartie comme suit :
 
-- `Insee_Commun.scss` : Style commun aux 3 thèmes. Ce fichier, au format SCSS, permet de respecter la charte graphique de base de l'Insee.
-- `Insee_Jaune_toutPublic.css` / `Insee_rouge_interne.css` / `Insee_Vert_entreprises_experts.css` : Ces feuilles CSS sont dédiées aux styles propres à chacun des 3 thèmes permettant de respecter la charte graphique de l'Insee.
+- `Insee_Commun.scss` : Style commun aux différents thèmes. Ce fichier, au format SCSS, permet de respecter la charte graphique de base de l'Insee.
+- `Insee_clair.css` : Ces feuilles CSS sont dédiées aux styles propres à chacun des thèmes permettant de respecter la charte graphique de l'Insee.
 - `default.css` : Ce fichier CSS regroupe l'ensemble des classes mises à votre disposition pouvant être utilisées pour modifier le style du support (couleurs, box, etc..) C'est probablement dans cette feuille que je rajouterai de nouveaux styles si besoin.
 - `stylePerso.css` : Feuille de style à priori dédiée à la customisation personnelle du support.
 
@@ -51,7 +55,7 @@ Ces identifiants sont :
 En voici des exemples :
 
 ```md
-# titre de niveau 1 {#chapters_0 .backgroundTitre}
+# titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
 
 ## Titre de niveau 2 {#section_0_1 .backgroundStandard}
 
@@ -97,7 +101,7 @@ Ces problèmes viennent du fait que la librairie mathJax et les pages javascript
 Si vous souhaitez mettre le support sous licence libre, il est possible de faire apparaître le logo de la licence que vous aurez choisi dans la page de garde du diaporama. Pour cela, vous pouvez faire une issue dans ce dépôt gitlab. Une licence _open source_ permet de rendre le code source de votre présentation accessible, modifiable et redistribuable tout en respectant certaines conditions définies par la licence que vous aurez choisie, comme par exemple l'affichage de l'origine du code. Vous pouvez trouver des explications détaillées sur le principe des licences et le choix de l'une d'entre elles [ici](https://zestedesavoir.com/tutoriels/261/le-droit-dauteur-creative-commons-et-les-licences-sur-zeste-de-savoir/). Par exemple, pour indiquer que votre support est sous licence Common Creative BY-SA, vous pouvez modifier le fichier `_quarto.yml` en décommentant et modifiant la ligne 28 de la manière suivante :
 
 ```
-logo: img/logos/licences/cc/png/by-sa.png
+logo: img/licences/cc/png/by-sa.png
 ```
 
 ## :eight: Contribution

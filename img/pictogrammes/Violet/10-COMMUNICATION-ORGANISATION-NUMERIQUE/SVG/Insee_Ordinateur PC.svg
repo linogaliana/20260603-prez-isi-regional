@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="i" data-name="Ordinateur PC" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #5F1972;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <line class="bu" x1="123.5" y1="336.74" x2="329.82" y2="336.74"/>
+  <rect class="bu" x="43.03" y="79.66" width="367.26" height="219.34"/>
+  <rect class="bv" x="189.94" y="296.57" width="72.66" height="40.17"/>
+  <line class="bu" x1="336.84" y1="119.8" x2="116.49" y2="263.29"/>
+</svg>

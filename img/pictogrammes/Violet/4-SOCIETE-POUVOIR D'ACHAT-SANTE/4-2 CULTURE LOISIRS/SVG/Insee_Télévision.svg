@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bf" data-name="Télévision" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu, .bv {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .bu, .bv, .bw {
+        stroke: #5F1972;
+        stroke-width: 12px;
+      }
+
+      .bu, .bw {
+        fill: none;
+      }
+
+      .bv {
+        fill: #5F1972;
+      }
+
+      .bw {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="bu" points="45.88 187.91 46.21 225.92 417.1 225.69 417.1 187.91 45.88 187.91"/>
+  <polygon class="bu" points="115.15 151.68 115.56 38.64 343.75 38.64 343.34 151.85 115.15 151.68"/>
+  <circle class="bw" cx="120.57" cy="307.57" r="31.58"/>
+  <circle class="bw" cx="338.07" cy="308.28" r="31.58"/>
+  <circle class="bw" cx="229.33" cy="308.28" r="31.58"/>
+  <line class="bu" x1="192.15" y1="182.88" x2="268.26" y2="182.88"/>
+  <polygon class="bv" points="215.54 183.33 215.54 153.21 245.21 153.03 245.21 183.33 215.54 183.33"/>
+  <path class="bu" d="M353.27,350.03l-32.28.1s-18.28.26-35.29,10.09c-9.3-6.12-22.09-10.21-39.7-10.18l-32.28.1s-19.39.28-36.81,11c-9.36-6.42-22.39-10.77-40.52-10.74l-32.28.1s-63.87.89-63.88,63.5h160.27s.01.22.02,0h216.86s5.22-64.04-64.11-63.95Z"/>
+</svg>

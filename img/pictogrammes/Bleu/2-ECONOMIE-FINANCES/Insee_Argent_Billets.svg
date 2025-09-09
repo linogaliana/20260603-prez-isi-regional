@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="f" data-name="Argent_billets" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ag {
+        fill: none;
+      }
+
+      .ag, .ah {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ah, .ai {
+        fill: #fff;
+      }
+
+      .ai {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <line class="ag" x1="37.38" y1="279.47" x2="37.86" y2="361.7"/>
+  <path class="ag" d="M70.96,213.72s-.61,25.48,63.55,26.45c0,0,53.73.62,63.55-26.45"/>
+  <line class="ag" x1="412.23" y1="283.34" x2="412.26" y2="200.04"/>
+  <polygon class="ah" points="37.86 361.7 156.34 416.05 412.23 283.69 287.06 243.99 37.86 361.7"/>
+  <polygon class="ah" points="37.38 279.47 155.82 326.3 412.23 198.81 285.52 167.04 37.38 279.47"/>
+  <line class="ag" x1="156.34" y1="416.05" x2="155.82" y2="326.3"/>
+  <polygon class="ai" points="43.65 288.67 149.22 330.02 149.22 405.2 43.14 359.2 43.65 288.67"/>
+  <polyline class="ai" points="162.22 405.2 161.98 330.02 406.3 208.47 406.3 280.69"/>
+  <polyline class="ag" points="118.69 241.69 234.65 284.84 234.65 370.46"/>
+  <polyline class="ag" points="187.69 211.37 299.28 254.77 299.28 340.38"/>
+  <polyline class="ag" points="39.88 324.37 155.27 370.45 234.65 333.23"/>
+  <line class="ag" x1="299.28" y1="301.83" x2="412.26" y2="243.32"/>
+  <ellipse class="ag" cx="132.28" cy="93.11" rx="61.59" ry="26.45"/>
+  <line class="ag" x1="70.87" y1="94.47" x2="70.87" y2="263.22"/>
+  <line class="ag" x1="193.64" y1="95.75" x2="193.64" y2="208.56"/>
+  <path class="ag" d="M70.84,173.11s-.58,25.48,61.18,26.45c0,0,51.72.62,61.18-26.45"/>
+  <path class="ag" d="M71.07,133.11s-.58,25.48,61.21,26.45c0,0,51.75.62,61.21-26.45"/>
+</svg>

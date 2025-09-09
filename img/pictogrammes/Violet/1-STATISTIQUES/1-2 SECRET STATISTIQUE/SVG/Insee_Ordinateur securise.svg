@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="o" data-name="Ordinateur securise" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        stroke-miterlimit: 10;
+      }
+
+      .aq, .ar {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .ar {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <rect class="ar" x="76.24" y="140.73" width="302.55" height="196.09"/>
+  <path class="ar" d="M227.62,293.97s49.88-16.26,49.88-53.66c0-37.4,0-41.46,0-41.46,0,0-30.04-2.19-49.98-19.06-10.98,11.92-49.98,19.06-49.98,19.06v41.46c0,37.4,49.88,53.66,49.88,53.66"/>
+  <polyline class="ar" points="206.54 237.12 220.87 251.45 248.5 222.8"/>
+  <line class="aq" x1="43.27" y1="373.21" x2="411.77" y2="373.21"/>
+</svg>

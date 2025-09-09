@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" data-name="Aire urbaine commune" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke-width: 11.98px;
+      }
+
+      .am, .an {
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .an {
+        fill: #fff;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <line class="am" x1="43.47" y1="411.32" x2="413.24" y2="411.32"/>
+  <polygon class="an" points="264.76 411.16 42.71 411.16 42.71 278.38 156.15 189.86 264.76 278.38 264.76 411.16"/>
+  <g>
+    <line class="an" x1="360.52" y1="355.64" x2="360.52" y2="403.5"/>
+    <path class="an" d="M361.46,349.9c-28.67,0-51.92-44.57-51.92-99.54s51.92-99.54,51.92-99.54c0,0,51.92,44.57,51.92,99.54"/>
+    <path class="an" d="M413.38,250.36c0,54.98-23.25,99.54-51.92,99.54"/>
+  </g>
+</svg>

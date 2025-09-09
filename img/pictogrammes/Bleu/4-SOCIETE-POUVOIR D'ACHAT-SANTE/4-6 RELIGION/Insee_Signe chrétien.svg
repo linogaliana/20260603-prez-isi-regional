@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ak" data-name="Signe chrétien" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+        stroke: #144179;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle class="ap" cx="228.09" cy="230.36" r="180.68"/>
+  <polygon class="ap" points="306.09 177.81 245.61 177.81 245.61 122.92 210.57 122.92 210.57 177.81 150.09 177.81 150.09 212.84 210.57 212.84 210.57 337.8 245.61 337.8 245.61 212.84 306.09 212.84 306.09 177.81"/>
+</svg>

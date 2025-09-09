@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="v" data-name="Bail" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+      }
+
+      .z, .aa {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="z" points="263.83 40.1 89.39 40.1 89.39 412.99 364.37 412.99 363.37 140.28 263.83 40.1"/>
+  <polygon class="z" points="264.13 40.58 264.13 140.77 362.67 140.77 264.13 40.58"/>
+  <polygon class="aa" points="234.76 123.95 175.55 67.2 116.34 123.95 129.04 123.95 129.04 186.24 222.32 186.24 222.32 123.95 234.76 123.95"/>
+  <line class="z" x1="116.8" y1="186.24" x2="235.05" y2="186.24"/>
+  <line class="z" x1="114.85" y1="255.75" x2="339.23" y2="255.75"/>
+  <line class="z" x1="114.85" y1="296.37" x2="339.23" y2="296.37"/>
+  <line class="z" x1="114.85" y1="336.99" x2="339.23" y2="336.99"/>
+</svg>

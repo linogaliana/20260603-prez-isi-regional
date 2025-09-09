@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="w" data-name="Voiture_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle class="z" cx="353.57" cy="345.14" r="32.48"/>
+  <circle class="z" cx="98.78" cy="345.14" r="32.48"/>
+  <line class="z" x1="152.37" y1="349.73" x2="298.71" y2="349.73"/>
+  <line class="z" x1="139.51" y1="294.19" x2="172.04" y2="294.19"/>
+  <path class="z" d="M414.37,347.44v-39.33c0-21.72-17.61-39.33-39.33-39.33h-219.26l-60.07,6.33s-57.33,12.25-57.33,74.62"/>
+  <path class="z" d="M155.78,268.77l43.79-55.81c2.4-3.06,6.08-4.85,9.98-4.85h163.5"/>
+  <line class="z" x1="277.04" y1="208.11" x2="277.04" y2="268.77"/>
+  <path class="z" d="M349.37,208.11s33.57,26.09,33.95,61.55"/>
+</svg>

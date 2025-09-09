@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="u" data-name="Buste" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle class="ca" cx="230.31" cy="154.42" r="90.09"/>
+  <path class="ca" d="M387.93,412.77c-1.01-74.8-61.93-135.14-136.97-135.14h-41.29c-75.04,0-135.96,60.34-136.97,135.14h315.24Z"/>
+</svg>

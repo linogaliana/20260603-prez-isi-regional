@@ -1,6 +1,6 @@
-# Comment faire un export du support de présentation ? {#chapters_5 .backgroundTitre}
+# Comment faire un export du support de présentation ? {#chapters_5 .backgroundTitre_violet}
 
-## PDF : Mode opératoire {#section_5_1 .backgroundStandard}
+## PDF : Mode opératoire {#section_5_1 .backgroundStandard_violet}
 
 :::{.enteteAvecTitre}
 Comment faire un export du support de présentation ?

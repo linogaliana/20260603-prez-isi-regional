@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="x" data-name="Boisson" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aa {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polygon class="aa" points="295.3 414.04 145.7 414.04 126.35 189.09 319.86 189.09 295.3 414.04"/>
+  <g>
+    <polygon class="aa" points="336.52 139.81 345.24 187.95 100.98 187.95 109.69 139.81 336.52 139.81"/>
+    <polyline class="aa" points="254.93 139.35 290.49 66.9 354.93 41.57"/>
+  </g>
+</svg>

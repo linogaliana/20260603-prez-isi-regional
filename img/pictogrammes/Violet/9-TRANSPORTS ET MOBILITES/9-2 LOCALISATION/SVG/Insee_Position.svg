@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="j" data-name="Position" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+      }
+
+      .z, .aa {
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ab {
+        fill: #5F1972;
+        stroke-width: 0px;
+      }
+
+      .aa {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <ellipse class="z" cx="225.8" cy="359.89" rx="126.44" ry="49.54"/>
+  <path class="aa" d="M164.88,151.47c0-33.51,27.41-60.92,60.92-60.92s60.92,27.41,60.92,60.92-27.41,60.92-60.92,60.92-60.92-27.41-60.92-60.92ZM192.9,323.87c15.23,24.37,32.9,51.78,32.9,51.78,0,0,18.28-27.41,32.9-51.78l7.31-11.57c30.46-51.17,69.45-124.28,69.45-160.83,0-60.31-49.35-109.66-109.66-109.66s-109.66,49.35-109.66,109.66c0,36.55,38.99,109.66,69.45,160.83l7.31,11.57Z"/>
+  <circle class="ab" cx="226.35" cy="150.22" r="61.11"/>
+</svg>

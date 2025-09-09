@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="o" data-name="Tracteur" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ab {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle class="ab" cx="146.92" cy="275.39" r="44.73"/>
+  <circle class="ab" cx="373.62" cy="313.04" r="37.79"/>
+  <circle class="ab" cx="373.62" cy="313.18" r="12.84"/>
+  <circle class="ab" cx="146.84" cy="275.39" r="82.26"/>
+  <path class="ab" d="M40.13,275.39c0-58.93,47.77-106.7,106.7-106.7s106.7,47.77,106.7,106.7c0,13.29-2.43,26.01-6.87,37.75h65.1"/>
+  <line class="ab" x1="109.12" y1="86.32" x2="71.41" y2="199.92"/>
+  <path class="ab" d="M77.43,86.32h144.4l38.43,113.6h113.36s24.14,4.3,24.14,37.79c0,39.18,0,8.3,0,8.3"/>
+  <line class="ab" x1="260.27" y1="199.92" x2="221.83" y2="199.92"/>
+  <path class="ab" d="M363.39,124.11s-24.14,4.3-24.14,37.79c0,39.18,0,37.78,0,37.78"/>
+  <polyline class="ab" points="397.77 237.71 373.62 237.71 373.62 199.92"/>
+</svg>

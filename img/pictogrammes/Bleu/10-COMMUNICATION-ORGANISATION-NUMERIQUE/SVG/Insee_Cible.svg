@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="aj" data-name="Cible1" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: #fff;
+      }
+
+      .am, .an, .ao {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .am, .ao {
+        stroke-width: 12px;
+      }
+
+      .an {
+        stroke-width: 11.69px;
+      }
+
+      .an, .ao {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <circle class="ao" cx="226.27" cy="227.33" r="159.33"/>
+  <circle class="an" cx="226.27" cy="227.33" r="100.63"/>
+  <line class="ao" x1="226.27" y1="34.58" x2="226.27" y2="420.09"/>
+  <line class="ao" x1="419.03" y1="227.33" x2="33.52" y2="227.33"/>
+  <circle class="am" cx="226.27" cy="227.33" r="37.2"/>
+</svg>

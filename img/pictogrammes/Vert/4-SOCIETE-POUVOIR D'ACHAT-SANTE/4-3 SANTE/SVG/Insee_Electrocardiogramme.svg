@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="s" data-name="Electrocardiogramme" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: #008280;
+        stroke-width: 0px;
+      }
+
+      .aq {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="aq" x="43.22" y="38.69" width="368.75" height="368.75" rx="32.93" ry="32.93"/>
+  <circle class="aq" cx="265.64" cy="359.65" r="28.82"/>
+  <circle class="aq" cx="350.96" cy="359.65" r="28.82"/>
+  <polyline class="aq" points="78.55 189.68 133.89 189.68 185.48 110.91 185.48 274.63 236.82 193.55 377.22 193.55"/>
+  <circle class="ap" cx="120.63" cy="358.13" r="8.43"/>
+  <circle class="ap" cx="148.9" cy="357.83" r="8.43"/>
+  <circle class="ap" cx="177.16" cy="358.13" r="8.43"/>
+  <rect class="aq" x="75.18" y="71.67" width="304.6" height="241.54" rx="12" ry="12"/>
+</svg>
