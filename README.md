@@ -1,3 +1,8 @@
+# Changelog
+
+::include{file=CHANGELOG}
+
+
 # Présentation Quarto
 
 Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+***la charte graphique de l'Insee 2025***.+}
