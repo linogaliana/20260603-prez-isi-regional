@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="w" data-name="Fast food" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aa {
+        stroke-width: 12px;
+      }
+
+      .aa, .ab {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .ac {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+
+      .ab {
+        stroke-width: 10.15px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="ab" points="301.55 374.13 379.07 374.13 395.44 183.88 280.78 183.88 301.55 374.13"/>
+    <g>
+      <polygon class="ab" points="266.69 157.21 259.32 182.91 416.9 182.91 409.53 157.21 266.69 157.21"/>
+      <polyline class="ab" points="335.69 156.81 335.62 115.54 287.69 56.79"/>
+    </g>
+  </g>
+  <line class="ab" x1="284.93" y1="221.89" x2="391.46" y2="221.89"/>
+  <line class="ab" x1="290.47" y1="272.6" x2="387.66" y2="272.6"/>
+  <g>
+    <path class="ac" d="M224.62,339.44H74.09c-.14,0-.28,0-.42.02h151.37c-.14-.02-.28-.02-.42-.02Z"/>
+    <rect class="aa" x="61.57" y="339.44" width="175.56" height="34.69" rx="12.06" ry="12.06"/>
+    <rect class="aa" x="51.22" y="294.82" width="196.25" height="45.08" rx="22.54" ry="22.54"/>
+    <path class="aa" d="M150.25,294.24h85.67s1.05-74.71-71.15-74.71h-30.84c-72.2,0-71.15,74.71-71.15,74.71h87.47Z"/>
+    <ellipse class="ac" cx="94.37" cy="273.82" rx="5.56" ry="5.24"/>
+    <ellipse class="ac" cx="129.26" cy="246.71" rx="5.56" ry="5.24"/>
+    <ellipse class="ac" cx="150.18" cy="273.82" rx="5.56" ry="5.24"/>
+    <ellipse class="ac" cx="173.16" cy="246.71" rx="5.56" ry="5.24"/>
+    <ellipse class="ac" cx="206.53" cy="273.82" rx="5.56" ry="5.24"/>
+  </g>
+</svg>

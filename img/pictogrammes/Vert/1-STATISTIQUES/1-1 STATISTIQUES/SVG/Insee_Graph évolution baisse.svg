@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ak" data-name="Baisse 1" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq, .ar {
+        stroke-linecap: round;
+      }
+
+      .aq, .ar, .as {
+        stroke: #008280;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .aq, .as {
+        fill: none;
+      }
+
+      .ar {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polyline class="aq" points="402.94 233.31 295.26 137.76 202.59 191.96 45.23 32.85"/>
+  <g>
+    <polygon class="as" points="396.62 291.88 396.62 405.79 341.04 405.79 341.04 242.56 396.62 291.88"/>
+    <polygon class="as" points="299.21 205.44 299.21 405.79 243.63 405.79 243.63 212.56 281.96 190.14 299.21 205.44"/>
+    <polygon class="as" points="201.79 237.03 201.79 405.79 146.21 405.79 146.21 204.54 186.94 245.72 201.79 237.03"/>
+    <polygon class="as" points="104.38 162.24 104.38 405.79 48.8 405.79 48.8 106.04 104.38 162.24"/>
+  </g>
+  <circle class="ar" cx="52.12" cy="39.01" r="17.03"/>
+  <circle class="ar" cx="200.77" cy="189.2" r="17.03"/>
+  <circle class="ar" cx="296.77" cy="137.33" r="17.03"/>
+  <circle class="ar" cx="405.15" cy="232.56" r="17.03"/>
+</svg>

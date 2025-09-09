@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" data-name="Nuit" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="z" d="M44.56,240.08h17.12c6.33,0,11.48,5.14,11.48,11.48v158.57h-40.08v-158.57c0-6.33,5.14-11.48,11.48-11.48Z"/>
+  <path class="z" d="M372.92,279.68h15.56c6.77,0,12.26,5.49,12.26,12.26v118.2h-40.08v-118.2c0-6.77,5.49-12.26,12.26-12.26Z"/>
+  <rect class="z" x="73.16" y="339.59" width="287.51" height="32.34"/>
+  <ellipse class="z" cx="115.81" cy="296.1" rx="26.01" ry="26.42"/>
+  <path class="z" d="M170.31,277.43h128.68c34.04,0,61.68,27.64,61.68,61.68v.48h-190.36v-62.16h0Z"/>
+</svg>

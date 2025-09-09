@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bi" data-name="Centre loisirs" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="bu" x="226.77" y="222.17" width="189.58" height="189.58"/>
+  <rect class="bu" x="37.78" y="222.17" width="189.58" height="189.58"/>
+  <rect class="bu" x="131.98" y="33.44" width="189.58" height="188.73"/>
+  <circle class="bu" cx="132.4" cy="316.77" r="57.24"/>
+  <path class="bu" d="M220.82,78.06l-48.16,98.4c-1.82,3.76.92,8.14,5.1,8.14h98.54c4.19,0,6.93-4.39,5.09-8.16l-48.63-98.4c-2.47-4.92-9.5-4.9-11.95.02Z"/>
+  <rect class="bu" x="280.62" y="275.4" width="84.03" height="84.03" rx="17.05" ry="17.05" transform="translate(-129.95 321.11) rotate(-45)"/>
+</svg>

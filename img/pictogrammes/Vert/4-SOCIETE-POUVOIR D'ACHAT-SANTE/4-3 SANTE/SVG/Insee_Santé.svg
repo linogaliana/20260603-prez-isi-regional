@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="q" data-name="Sante" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="ap" points="40.2 254.16 133.2 254.16 173.2 177.16 187.2 289.16 227.2 221.16 251.2 356.16 326.2 106.16 363.2 177.16"/>
+  <path class="ap" d="M364.2,303.16s-77.61-52.81-48.12-87.96c21.65-25.82,48.12,3.82,48.12,3.82,0,0,26.47-29.64,48.12-3.82,29.49,35.16-48.12,87.96-48.12,87.96Z"/>
+</svg>

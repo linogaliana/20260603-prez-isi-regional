@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ad" data-name="Buste policier" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+      }
+
+      .ca, .cb {
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .cc {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .cb {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polyline class="cb" points="199.4 281.29 225.34 322.44 184.99 348.38 173.46 293.62 199.4 281.69"/>
+  <polyline class="cb" points="251.28 281.69 277.22 293.62 265.69 348.38 225.34 322.44 251.28 281.29"/>
+  <g>
+    <circle class="ca" cx="224.85" cy="150.22" r="90.09"/>
+    <path class="ca" d="M382.47,412.57c-1.01-74.8-61.93-135.14-136.97-135.14h-41.29c-75.04,0-135.96,60.34-136.97,135.14h315.24Z"/>
+  </g>
+  <g>
+    <polygon class="cb" points="133.03 55 101.32 101.12 141.67 127.06 154.17 130.07 225.26 147.23 300.19 127.06 349.19 101.12 317.97 55 225.26 19.45 133.03 55"/>
+    <path class="cc" d="M256.96,59.33h-60.84s-8.65,31.7,5.76,43.23c14.41,11.53,20.48,14.41,23.37,14.41s11.53-2.88,25.94-14.41c14.41-11.53,5.76-43.23,5.76-43.23Z"/>
+  </g>
+</svg>

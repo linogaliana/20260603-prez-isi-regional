@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="br" data-name="Transat parasol" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="bu" points="413.1 269.64 311.41 364.3 42.44 364.3"/>
+  <line class="bu" x1="282.21" y1="364.3" x2="312.92" y2="416.3"/>
+  <line class="bu" x1="100.44" y1="364.3" x2="69.73" y2="416.3"/>
+  <line class="bu" x1="184.21" y1="414.53" x2="308.33" y2="43.3"/>
+  <path class="bu" d="M127.37,128.76c20.27-54.7,72.91-93.68,134.66-93.68,79.28,0,143.56,64.27,143.56,143.56,0,14.09-2.03,27.7-5.81,40.56h-2.22S127.33,128.75,127.33,128.75l.04.02Z"/>
+  <path class="bu" d="M307.44,42.8s-57.24-20-108.01,110.08"/>
+  <path class="bu" d="M309.38,43.45s58.47,18.29,21.59,152.98"/>
+</svg>

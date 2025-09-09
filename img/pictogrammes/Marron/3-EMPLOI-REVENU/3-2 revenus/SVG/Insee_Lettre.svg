@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="e" data-name="Lettre" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .j {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polygon class="j" points="95.49 415.27 366.72 415.27 366.72 38.27 171.01 38.27 95.49 112.44 95.49 415.27"/>
+  <line class="j" x1="209.01" y1="113.14" x2="323.74" y2="113.14"/>
+  <line class="j" x1="137.01" y1="187.14" x2="332.74" y2="187.14"/>
+  <line class="j" x1="137.01" y1="261.14" x2="332.74" y2="261.14"/>
+  <line class="j" x1="137.01" y1="335.14" x2="332.74" y2="335.14"/>
+  <polygon class="j" points="170.74 113.27 95.74 113.27 170.74 38.27 170.74 113.27"/>
+</svg>

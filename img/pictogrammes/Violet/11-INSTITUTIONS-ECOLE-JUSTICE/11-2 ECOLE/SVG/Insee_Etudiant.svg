@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="s" data-name="Etudiant diplome" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: #fff;
+      }
+
+      .z, .aa, .ab {
+        stroke: #5F1972;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        stroke-linecap: round;
+      }
+
+      .aa, .ab {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="z" points="368.54 102.86 222.11 166.4 69.74 102.86 219.45 45.1 368.54 102.86"/>
+    <path class="ab" d="M296.39,176.09c.19,2.23.29,4.49.29,6.77,0,42.59-34.52,77.11-77.11,77.11s-77.11-34.52-77.11-77.11c0-2.04.08-4.06.23-6.06"/>
+    <path class="aa" d="M138.78,131.65v40.79s28.23,19.33,80.79,19.33,81.07-19.81,81.07-19.81v-39.63l-78.53,34.08-83.32-34.75Z"/>
+    <polyline class="aa" points="368.54 102.86 368.54 168.09 353.84 196.65 381.93 196.65 369.14 168.33"/>
+  </g>
+  <path class="aa" d="M383.45,415.45c-1.01-74.8-61.93-135.14-136.97-135.14h-41.29c-75.04,0-135.96,60.34-136.97,135.14h315.24Z"/>
+</svg>

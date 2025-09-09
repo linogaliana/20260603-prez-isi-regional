@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="by" data-name="Perso face à face" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="ca" d="M154.69,361.57h143.86s4.69-57.17-57.54-57.09l-28.98.09s-57.33.8-57.34,57Z"/>
+    <circle class="ca" cx="228.05" cy="253.13" r="34.74"/>
+  </g>
+  <polyline class="ca" points="155.48 361.57 145.19 361.57 145.19 410.53"/>
+  <polyline class="ca" points="296.54 361.57 306.83 361.57 306.83 410.53"/>
+  <polyline class="ca" points="104.69 313.32 55.39 313.32 103.99 167.51 347.37 167.21 396.32 313.32 347.37 313.32"/>
+  <circle class="ca" cx="226.81" cy="69.3" r="31.21"/>
+  <path class="ca" d="M209.35,115.71l18.81,22.88,19.85-22.63h0c45.84,5.46,42.13,50.75,42.13,50.75h-129.24c0-43.01,37.38-49.9,48.45-51h0Z"/>
+</svg>

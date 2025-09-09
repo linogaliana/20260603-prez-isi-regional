@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="r" data-name="Euro_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ag {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ah {
+        fill: #5F1972;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="ah" cx="228.56" cy="227.05" r="152.54"/>
+  <g>
+    <path class="ag" d="M286.71,280.08c-13.95,14.56-33.59,23.63-55.35,23.63-42.34,0-76.66-34.32-76.66-76.66s34.32-76.66,76.66-76.66c20.18,0,38.55,7.8,52.24,20.55"/>
+    <line class="ag" x1="132.41" y1="207.1" x2="260.91" y2="207.1"/>
+    <line class="ag" x1="132.41" y1="246.7" x2="260.91" y2="246.7"/>
+  </g>
+</svg>

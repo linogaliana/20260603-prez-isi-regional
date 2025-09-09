@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="k" data-name="Genre symbole" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        stroke: #8A5301;
+      }
+
+      .ca, .cb {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .cb {
+        stroke: #8A5301;
+      }
+
+      .cc {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cc" d="M440.15,220.06v-1.19c0-.08,0-.16-.01-.23.09.47.09.96.01,1.43Z"/>
+  <path class="cc" d="M200.78,318.23c-.23.01-.46.01-.69.01-.26,0-.52,0-.78-.01.24-.03.48-.05.73-.05s.5.02.74.05Z"/>
+  <g>
+    <line class="ca" x1="73.08" y1="304.93" x2="165.75" y2="304.93"/>
+    <line class="ca" x1="119.41" y1="347.51" x2="119.41" y2="258.97"/>
+    <circle class="cb" cx="119.41" cy="185.18" r="72.17"/>
+  </g>
+  <g>
+    <polyline class="cb" points="353.74 120.63 415.4 120.63 415.4 184.87"/>
+    <line class="cb" x1="353.91" y1="173.22" x2="414.65" y2="121.81"/>
+    <circle class="cb" cx="296.46" cy="222.61" r="74.03"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="q" data-name="Couverts-poulet" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aa, .ab {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .aa, .ab, .ac {
+        stroke: #008280;
+        stroke-width: 12px;
+      }
+
+      .aa, .ac {
+        fill: none;
+      }
+
+      .ab {
+        fill: #fff;
+      }
+
+      .ac {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <circle class="ac" cx="232.02" cy="200.75" r="98.44"/>
+  <line class="aa" x1="60.62" y1="90.28" x2="60.62" y2="145.93"/>
+  <line class="aa" x1="82.39" y1="90.28" x2="82.39" y2="145.93"/>
+  <path class="aa" d="M105.24,87.84v67.39c0,5.62-1.63,11.17-4.95,15.7-3.42,4.67-9.04,9.07-18.04,9.07v157.94s-1.12,10.29-11.51,10.29h1.25c-10.39,0-11.51-10.29-11.51-10.29v-157.94c-9,0-14.61-4.4-18.04-9.07s-4.95-10.08-4.95-15.7v-67.39"/>
+  <path class="aa" d="M350.46,238.97h29.44v91.65c0,10.24,8.38,18.62,18.62,18.62s18.62-8.38,18.62-18.62V86.35s-74.68-16.09-66.68,152.62Z"/>
+  <rect class="aa" x="117.82" y="336.23" width="69.5" height="36.07" rx="18.03" ry="18.03" transform="translate(197.58 -28.82) rotate(30)"/>
+  <rect class="aa" x="150.76" y="304.93" width="39.72" height="36.15" transform="translate(184.36 -42.04) rotate(30)"/>
+  <path class="ab" d="M179.47,307.98l-16.01-9.56s2.65-128.43,73.22-110.68c3.13.79,6.09,2.12,8.81,3.84l3.72,2.36c.89.56,1.74,1.18,2.51,1.89,54.96,49.75-55.76,121.86-55.76,121.86l-16.5-9.7Z"/>
+</svg>

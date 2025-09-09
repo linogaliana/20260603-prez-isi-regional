@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="b" data-name="Urne" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .k {
+        fill: none;
+      }
+
+      .k, .l {
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .l {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="k" x="125.66" y="243.67" width="203.67" height="123"/>
+  <rect class="k" x="84.66" y="202.67" width="286.67" height="204"/>
+  <line class="k" x1="132.39" y1="162.17" x2="323.16" y2="162.17"/>
+  <polygon class="k" points="84.66 202.67 125.66 121.67 330.32 121.67 371.32 202.67 84.66 202.67"/>
+  <polygon class="l" points="262.99 38.33 322.16 91.67 264.99 162.17 163.32 162.17 262.99 38.33"/>
+</svg>

@@ -1,7 +1,7 @@
 variables:
 
 # variable à garder, permettant de définir le format déployé sur gitlab pages et utilisée dans le fichier .gitlab-ci.yml
-  COULEURFORMAT: "rouge" # valeur possible : rouge, jaune ou vert
+  COULEURFORMAT: "clair" # valeur possible : clair ou sombre
 
 # variables utilisées dans les pages .qmd
   forgeInterne: "gitlab"

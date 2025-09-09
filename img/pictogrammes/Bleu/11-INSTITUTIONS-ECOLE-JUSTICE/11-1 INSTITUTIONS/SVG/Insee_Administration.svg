@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="g" data-name="Administration" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .k {
+        fill-rule: evenodd;
+      }
+
+      .k, .l {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .m {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="k" d="M57.71,402.94v-24.22c0-3.27,2.65-5.92,5.92-5.92h326.34c3.27,0,5.92,2.65,5.92,5.92v24.22c0,3.27-2.65,5.92-5.92,5.92H63.63c-3.27,0-5.92-2.65-5.92-5.92h0ZM94.35,351.84v-128.98h58.49v128.98h-58.49ZM197.55,351.84v-128.98h58.49v128.98h-58.49ZM300.75,351.84v-128.98h58.51v128.98h-58.51ZM72.65,200.41h-15.71c-3.25,0-5.9-2.67-5.9-5.92,0-2.24,1.22-4.17,3.04-5.19l169.41-115.21c2.09-1.43,4.75-1.32,6.69.06l169.77,115.45c2.69,1.82,3.4,5.49,1.58,8.19-1.15,1.67-2.99,2.57-4.88,2.57v.04H72.65Z"/>
+    <g>
+      <rect class="l" x="307.4" y="45.18" width="66.6" height="38.34"/>
+      <line class="l" x1="307.4" y1="83.52" x2="307.4" y2="122.69"/>
+    </g>
+  </g>
+  <rect class="m" x="351.69" y="46.99" width="21.78" height="32"/>
+  <rect class="m" x="308.2" y="48.33" width="21.78" height="32"/>
+</svg>

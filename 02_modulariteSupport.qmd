@@ -4,9 +4,9 @@ description: |
 code-fold: show
 ---
 
-# Comment moduler la présentation {#chapters_2 .backgroundTitre}
+# Comment moduler la présentation {#chapters_2 .backgroundTitre_jaune}
 
-## Modularité de fichiers quarto (.qmd) {#section_2_1 .backgroundStandard}
+## Modularité de fichiers quarto (.qmd) {#section_2_1 .backgroundStandard_jaune}
 
 :::{.enteteAvecTitre}
 Comment moduler la présentation ?

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="f" data-name="Tableau courbe" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        stroke: #fff;
+        stroke-width: 9px;
+      }
+
+      .aq, .ar {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .as {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        stroke: #8A5301;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="ar" points="121.49 257.15 159.01 205.9 195.07 228.68 271.69 140.02 299.71 167.41 356.75 107.51"/>
+  <circle class="as" cx="275.27" cy="168.07" r="61.56"/>
+  <line class="ar" x1="41.05" y1="40.26" x2="417.71" y2="40.26"/>
+  <line class="ar" x1="41.05" y1="303.81" x2="417.71" y2="303.81"/>
+  <line class="ar" x1="78.82" y1="45.15" x2="78.82" y2="299.81"/>
+  <line class="ar" x1="380.16" y1="41.17" x2="380.16" y2="302.04"/>
+  <line class="ar" x1="132.16" y1="379.81" x2="326.38" y2="379.81"/>
+  <line class="ar" x1="155.71" y1="304.26" x2="112.6" y2="416.26"/>
+  <line class="ar" x1="305.05" y1="304.26" x2="348.16" y2="416.26"/>
+  <g>
+    <path class="aq" d="M301.93,193.26c-6.41,6.69-15.43,10.85-25.43,10.85-19.45,0-35.21-15.76-35.21-35.21s15.76-35.21,35.21-35.21c9.27,0,17.71,3.58,23.99,9.44"/>
+    <line class="aq" x1="231.06" y1="159.74" x2="290.09" y2="159.74"/>
+    <line class="aq" x1="231.06" y1="177.92" x2="290.09" y2="177.92"/>
+  </g>
+</svg>

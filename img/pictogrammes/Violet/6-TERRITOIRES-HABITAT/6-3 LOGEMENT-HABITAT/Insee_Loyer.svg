@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="x" data-name="Loyer" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z, .aa {
+        fill: none;
+      }
+
+      .z, .aa, .ab {
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .z, .ab {
+        stroke-width: 12px;
+      }
+
+      .aa {
+        stroke-width: 13px;
+      }
+
+      .ab {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="aa" x1="20.54" y1="375.58" x2="317.78" y2="375.58"/>
+    <polygon class="aa" points="168.22 76.38 108.05 134.05 108.05 103.01 54.97 103.01 54.97 184.29 55.64 184.29 19.39 219.02 51.31 219.02 51.31 375.58 285.79 375.58 285.79 219.02 317.05 219.02 168.22 76.38"/>
+  </g>
+  <rect class="ab" x="233.61" y="236.38" width="175.5" height="101.33" rx="12" ry="12"/>
+  <line class="z" x1="259.04" y1="308.38" x2="359.3" y2="308.38"/>
+  <polygon class="z" points="336.53 250.14 363.49 277.1 323.96 290.38 336.53 250.14"/>
+  <polyline class="ab" points="428.21 212.38 401.25 185.42 336.53 250.14 363.49 277.1 428.21 212.38"/>
+  <path class="z" d="M401.24,185.42c3.52-4.37,8.92-7.17,14.98-7.17,10.61,0,19.22,8.6,19.22,19.22,0,6.06-3.18,11.24-7.22,14.92"/>
+</svg>

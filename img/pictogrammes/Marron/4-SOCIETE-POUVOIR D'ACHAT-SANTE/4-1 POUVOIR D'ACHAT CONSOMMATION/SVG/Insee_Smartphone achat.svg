@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bb" data-name="Smartphone achat" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <polyline class="bu" points="157.27 174.76 171.14 174.76 185.37 258.95 273.77 258.95 288.34 194.82 178.09 194.82"/>
+  <circle class="bv" cx="201.76" cy="287.5" r="11.31"/>
+  <circle class="bv" cx="256.53" cy="287.5" r="11.31"/>
+  <rect class="bu" x="123.23" y="45.04" width="204.78" height="364.67" rx="18.49" ry="18.49"/>
+  <line class="bu" x1="190.62" y1="81.24" x2="263.84" y2="81.24"/>
+</svg>

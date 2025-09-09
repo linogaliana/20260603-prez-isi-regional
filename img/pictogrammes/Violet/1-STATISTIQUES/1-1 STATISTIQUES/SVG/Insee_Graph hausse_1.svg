@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ai" data-name="évolution 1" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        stroke-width: 18.31px;
+      }
+
+      .aq, .ar {
+        fill: none;
+        stroke: #5F1972;
+        stroke-miterlimit: 10;
+      }
+
+      .as {
+        fill: #5F1972;
+        stroke-width: 0px;
+      }
+
+      .ar {
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="ar" points="34.04 75.4 34.04 417.59 411.84 417.59"/>
+  <g>
+    <polyline class="aq" points="72.38 241.66 172.07 153.2 246.48 196.73 350.68 91.38"/>
+    <polygon class="as" points="361.75 111.34 372.85 68.96 330.59 80.53 361.75 111.34"/>
+  </g>
+  <g>
+    <polygon class="as" points="77.14 277.4 77.14 375.78 125.14 375.78 125.14 234.81 77.14 277.4"/>
+    <polygon class="as" points="161.27 202.75 161.27 375.78 209.27 375.78 209.27 208.91 176.16 189.54 161.27 202.75"/>
+    <polygon class="as" points="245.4 230.04 245.4 375.78 293.4 375.78 293.4 201.98 258.23 237.54 245.4 230.04"/>
+    <polygon class="as" points="329.53 165.45 329.53 375.78 377.53 375.78 377.53 116.91 329.53 165.45"/>
+  </g>
+</svg>

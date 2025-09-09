@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bt" data-name="Bibliothèque" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+      }
+
+      .bu, .bv {
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #144179;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="bu" points="167.87 39.13 203.87 39.13 221.61 46.93 239.36 39.03 275.36 39.03 275.1 104.42 239.48 104.32 221.74 114.4 203.61 104.32 168.12 104.42 167.87 39.13"/>
+    <line class="bu" x1="189.97" y1="61.45" x2="216.71" y2="61.45"/>
+    <line class="bu" x1="189.82" y1="83" x2="222.7" y2="83.1"/>
+    <polygon class="bv" points="222.58 46.93 222.7 114.4 238.91 104.32 271.43 104.42 271.67 39.03 238.79 39.03 222.58 46.93"/>
+  </g>
+  <g>
+    <polyline class="bu" points="301.44 268.23 405.2 268.43 405.54 409.83 37.52 409.83 37.85 268.43 145.96 268.43"/>
+    <line class="bu" x1="146.43" y1="409.67" x2="146.56" y2="219.03"/>
+    <line class="bu" x1="297.08" y1="408.15" x2="297.08" y2="219.44"/>
+    <polyline class="bu" points="112.52 244.65 221.89 153.56 330.89 244.83"/>
+    <rect class="bv" x="74.68" y="342.64" width="29.99" height="65.37"/>
+    <rect class="bv" x="207.59" y="305.75" width="29.99" height="99.32"/>
+    <rect class="bv" x="206.09" y="209.75" width="29.99" height="66.22" transform="translate(-21.78 463.94) rotate(-90)"/>
+    <rect class="bv" x="338.98" y="342.64" width="29.99" height="61.77"/>
+  </g>
+</svg>

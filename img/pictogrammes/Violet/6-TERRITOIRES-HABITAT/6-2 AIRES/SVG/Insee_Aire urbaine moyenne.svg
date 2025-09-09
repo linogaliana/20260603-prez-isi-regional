@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="d" data-name="Aire urbaine moyenne" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="am" x="107.28" y="221.54" width="120.3" height="196.82"/>
+    <line class="am" x1="142.07" y1="255.87" x2="142.07" y2="284.17"/>
+    <line class="am" x1="167.43" y1="255.87" x2="167.43" y2="284.17"/>
+    <line class="am" x1="192.78" y1="255.87" x2="192.78" y2="284.17"/>
+    <line class="am" x1="142.07" y1="316.04" x2="142.07" y2="344.34"/>
+    <line class="am" x1="167.43" y1="316.04" x2="167.43" y2="344.34"/>
+    <line class="am" x1="192.78" y1="316.04" x2="192.78" y2="344.34"/>
+  </g>
+  <g>
+    <rect class="am" x="227.56" y="116.17" width="138.17" height="302.19"/>
+    <line class="am" x1="271.29" y1="143.04" x2="271.29" y2="171.34"/>
+    <line class="am" x1="296.64" y1="143.04" x2="296.64" y2="171.34"/>
+    <line class="am" x1="322" y1="143.04" x2="322" y2="171.34"/>
+    <line class="am" x1="271.29" y1="203.22" x2="271.29" y2="231.52"/>
+    <line class="am" x1="296.64" y1="203.22" x2="296.64" y2="231.52"/>
+    <line class="am" x1="322" y1="203.22" x2="322" y2="231.52"/>
+    <line class="am" x1="271.29" y1="261.95" x2="271.29" y2="290.24"/>
+    <line class="am" x1="296.64" y1="261.95" x2="296.64" y2="290.24"/>
+    <line class="am" x1="322" y1="261.95" x2="322" y2="290.24"/>
+    <line class="am" x1="271.29" y1="322.12" x2="271.29" y2="350.42"/>
+    <line class="am" x1="296.64" y1="322.12" x2="296.64" y2="350.42"/>
+    <line class="am" x1="322" y1="322.12" x2="322" y2="350.42"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="aa" data-name="Porte-feuille ouvert" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ag {
+        fill: #fff;
+      }
+
+      .ag, .ah {
+        stroke: #144179;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .ah {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect class="ah" x="45.72" y="111.13" width="350.66" height="255.87" rx="22.6" ry="22.6"/>
+  <g>
+    <path class="ag" d="M328.57,194.37h80.82c2.12,0,3.83,1.72,3.83,3.83v81.73c0,2.12-1.72,3.83-3.83,3.83h-80.82c-24.67,0-44.7-20.03-44.7-44.7h0c0-24.67,20.03-44.7,44.7-44.7Z"/>
+    <circle class="ag" cx="337.26" cy="239.06" r="21.62"/>
+  </g>
+  <path class="ah" d="M70.36,111.51l228.68-53.64c12.17-2.69,24.21,5,26.9,17.16l9.5,36.1"/>
+</svg>

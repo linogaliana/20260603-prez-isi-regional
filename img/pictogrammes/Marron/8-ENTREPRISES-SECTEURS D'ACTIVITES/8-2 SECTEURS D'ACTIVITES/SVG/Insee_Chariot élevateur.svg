@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ac" data-name="Chariot élevateur" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        stroke-width: 12px;
+      }
+
+      .ak, .al {
+        fill: none;
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .al {
+        stroke-width: 12.04px;
+      }
+    </style>
+  </defs>
+  <circle class="ak" cx="204.63" cy="335.73" r="35.15"/>
+  <circle class="ak" cx="320.14" cy="334.63" r="35.15"/>
+  <polyline class="ak" points="131.81 171.25 131.81 358.72 47.35 358.72"/>
+  <polyline class="al" points="295.14 263.71 164.47 263.62 256.47 79.76 358.47 79.76 358.47 189.48 295.14 189.48 295.14 263.67"/>
+  <path class="ak" d="M379.56,335.73c6.55,0,12.15,1.81,12.15-7.13,0,0-.08-39.11,0-39.11.12,0,0-50.68,0-68.93s-4.24-31.08-29.42-31.08h-67.16v74.19h-150.87c-6.55,0-11.91,3.21-11.91,7.13v57.8c0,8.5,5.36,7.13,11.91,7.13h7.87"/>
+  <rect class="ak" x="232.14" y="217.09" width="43" height="28.33" rx="2.83" ry="2.83"/>
+</svg>

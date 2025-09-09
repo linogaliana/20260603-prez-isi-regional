@@ -1,18 +1,14 @@
-/*Positionnement du champ de saisie de la réunion*/
-
-var el1 = document.querySelector('#title-slide');
-
-el1.insertAdjacentHTML('beforeend', ' <div id=\'nomReunion\' w3-include-html="modulesCompl/customPremierePage.html"></div> ');
-
-includeHTML();
 
 /*Gestion de l'apparition du footer et du nom de la réunion*/
 
   var $footerPerso = document.getElementById('footerPersonnalise');
   var $pageDebut = document.getElementById('title-slide');
   var $pageFin = document.getElementById('pageDeFin');
-  var $nomReunion = document.getElementById('nomReunion');
+  var $toc = document.getElementById("custom-toc-slide");
   var $logoParDefault = document.getElementsByClassName("slide-logo");
+  var $header = document.getElementsByClassName("reveal-header");
+  
+  /*reveal-header*/
 
   Reveal.on( 'slidechanged', event => {
       
@@ -27,16 +23,6 @@ includeHTML();
       $footerPerso.classList.remove("divCachee");
     }
     
-    /*gestion nomReunion*/
-    
-    if (!$nomReunion.classList.contains("divCachee")) {
-      $nomReunion.classList.add("divCachee");
-    } 
-    
-    if ($pageDebut.classList.contains("present")) {
-      $nomReunion.classList.remove("divCachee");
-    }
-    
     /*gestion logo*/
     
     if (!$logoParDefault[0].classList.contains("divCachee")) {
@@ -49,16 +35,46 @@ includeHTML();
     }
     
   });
-  
-  
-const today = new Date();
-const yyyy = today.getFullYear();
-let mm = today.getMonth() + 1; // Months start at 0!
-let dd = today.getDate();
 
-if (dd < 10) dd = '0' + dd;
-if (mm < 10) mm = '0' + mm;
 
-const formattedToday = dd + '/' + mm + '/' + yyyy;
+//  modif_number_titre1
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('h1 .header-section-number').forEach(function(el) {
+        let num = el.textContent.trim();
+        if (num.length === 1) {
+            el.textContent = '0' + num;
+        }
+    });
+});
 
-document.getElementById("dateFin").innerHTML = formattedToday;
+
+// modif_libellé_titre1
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.reveal h1').forEach(function(h1) {
+        // On cherche le numéro de section (supposé être le premier enfant ou dans un .slide-number)
+        let numberElement = h1.querySelector('.header-section-number');
+        let numberText = numberElement ? numberElement.textContent.trim() : '';
+        let fullText = h1.textContent.trim();
+
+        // Si le numéro est présent, on le sépare du reste du titre
+        if (numberElement) {
+            // On extrait le libellé du titre (après le numéro)
+            let titleText = fullText.replace(numberText, '').trim();
+
+            // On vide le h1
+            h1.innerHTML = '';
+
+            // On ajoute le numéro (déjà dans un .slide-number)
+            h1.appendChild(numberElement);
+
+            // On ajoute un saut de ligne (br) pour séparer visuellement
+            h1.appendChild(document.createElement('br'));
+
+            // On enveloppe le libellé dans une span avec la classe title-text
+            let titleSpan = document.createElement('span');
+            titleSpan.className = 'title-text';
+            titleSpan.textContent = titleText;
+            h1.appendChild(titleSpan);
+        }
+    });
+});

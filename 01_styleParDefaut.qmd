@@ -1,6 +1,6 @@
-# Styles par défaut {#chapters_1 .backgroundTitre}
+# Styles par défaut {#chapters_1 .backgroundTitre_violet}
 
-## Style du texte {#section_1_1 .backgroundStandard}
+## Style du texte {#section_1_1 .backgroundStandard_violet}
 
 :::{.enteteAvecTitre}
 Styles par défaut
@@ -82,7 +82,7 @@ Styles par défaut
 :::: columns
 ::: {.column style="text-align: center;"}
 
-#### Couleurs principales {style="margin: 5%; text-align: center;"}
+#### Couleurs principales {style="margin: 5%; text-align: center; border: none;"}
 
 [B6]{.nomPaletteCouleur .dot .B6}
 [B5]{.nomPaletteCouleur .dot .B5}
@@ -111,7 +111,7 @@ Styles par défaut
 :::
 ::: {.column style="text-align: center;"}
 
-#### Couleurs complémentaires {style="margin: 5%; text-align: center;"}
+#### Couleurs complémentaires {style="margin: 5%; text-align: center; border: none;"}
 
 [R5]{.nomPaletteCouleur .dot .R5}
 [R4]{.nomPaletteCouleur .dot .R4}
@@ -213,7 +213,9 @@ Styles par défaut
 ```
 <br>
 
-$$TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1$$
+$$
+TCAM=\sqrt[n]\frac{valeurfinale}{valeurinitiale}-1
+$$
 
 
 #### Equation sur plusieurs lignes

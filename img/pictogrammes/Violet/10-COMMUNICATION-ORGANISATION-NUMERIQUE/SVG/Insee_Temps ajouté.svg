@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ad" data-name="Temps ajouté" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: #fff;
+      }
+
+      .am, .an {
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .an {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <polyline class="an" points="406.97 225.37 377.94 260.81 343.34 231.84"/>
+  <path class="an" d="M273.21,382.1c-18.61,7.2-38.84,11.16-60,11.16-91.81,0-166.24-74.43-166.24-166.24S121.4,60.78,213.21,60.78s166.24,74.43,166.24,166.24c0,10.47-.97,20.71-2.82,30.64"/>
+  <g>
+    <line class="an" x1="325.98" y1="304.01" x2="325.98" y2="345.4"/>
+    <line class="an" x1="346.68" y1="324.7" x2="305.29" y2="324.7"/>
+  </g>
+  <circle class="an" cx="325.98" cy="324.7" r="51.89"/>
+  <polyline class="an" points="307.62 130.22 214.31 223.45 130.28 223.45"/>
+  <line class="an" x1="215.72" y1="88.16" x2="215.72" y2="109.9"/>
+  <line class="an" x1="78.87" y1="225.59" x2="100.61" y2="225.59"/>
+  <circle class="am" cx="215.72" cy="225.37" r="19.81"/>
+</svg>

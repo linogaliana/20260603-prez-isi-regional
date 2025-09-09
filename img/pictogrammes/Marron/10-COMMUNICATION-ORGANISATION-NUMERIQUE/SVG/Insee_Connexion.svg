@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ag" data-name="Connexion" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #8A5301;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="am" x="153" y="150.74" width="148.69" height="148.69" rx="74.35" ry="74.35"/>
+  <g>
+    <rect class="am" x="192.81" y="343.54" width="69.07" height="69.07" rx="34.53" ry="34.53"/>
+    <line class="am" x1="225.66" y1="302.97" x2="225.66" y2="344.15"/>
+  </g>
+  <g>
+    <rect class="am" x="346" y="190.55" width="69.07" height="69.07" rx="34.53" ry="34.53"/>
+    <line class="am" x1="305.44" y1="224.9" x2="346.61" y2="224.9"/>
+  </g>
+  <g>
+    <rect class="am" x="40.89" y="190.55" width="69.07" height="69.07" rx="34.53" ry="34.53" transform="translate(150.84 450.17) rotate(180)"/>
+    <line class="am" x1="150.51" y1="224.9" x2="109.34" y2="224.9"/>
+  </g>
+  <g>
+    <rect class="am" x="192.81" y="44.09" width="69.07" height="69.07" rx="34.53" ry="34.53" transform="translate(454.7 157.24) rotate(180)"/>
+    <line class="am" x1="229.04" y1="153.72" x2="229.04" y2="112.55"/>
+  </g>
+</svg>

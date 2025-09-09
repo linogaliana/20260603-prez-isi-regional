@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" data-name="Smartphone internet" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .an {
+        fill: #144179;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="am" cx="229.52" cy="225.31" r="74.92"/>
+    <ellipse class="am" cx="229.52" cy="225.31" rx="31.3" ry="74.92"/>
+    <ellipse class="am" cx="229.52" cy="225.31" rx="74.92" ry="31.3"/>
+  </g>
+  <rect class="am" x="112.84" y="44.3" width="226.71" height="379.21" rx="19.84" ry="19.84"/>
+  <line class="am" x1="189.59" y1="66.62" x2="262.8" y2="66.62"/>
+  <circle class="an" cx="226.25" cy="396.45" r="12.45"/>
+  <line class="am" x1="112.84" y1="372.74" x2="339.55" y2="372.74"/>
+  <line class="am" x1="112.84" y1="88.43" x2="339.55" y2="88.43"/>
+</svg>

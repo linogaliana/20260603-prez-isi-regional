@@ -10,6 +10,7 @@ $h4-font-size: 0.9em;
 $h5-font-size: 0.6em;
 $h6-font-size: 0.5em;
 
+
 // colors
 $body-bg: #f0f1eb !default;
 $body-color: #000 !default;
@@ -33,15 +34,21 @@ h1{
 .level2{
   h2{
   font-size: $h2-font-size ;
-  padding-top: 1%;
+/*  padding-top: 1%;*/
 }
 
   h3{
     font-size: $h3-font-size;
+    font-weight: normal;
+    border-left: solid 5px #268DFF;
+    padding-left: 40px;
   }
   
   h4{
     font-size: $h4-font-size;
+    font-weight: normal;
+    border-left: solid 5px #9827B5;
+    padding-left: 40px;
   }
   
   h5{
@@ -60,7 +67,7 @@ li {
 }
 
 p {
-  color: black;
+  color: $body-color;
 }
 
 .reveal {
@@ -82,19 +89,22 @@ p {
   color: $main-color-text;
   }
   h2 {
-    color: $second-color-text;
+    color: $body-color;
   }
   h3 {
-    color: #B0AEAE;
+    color: $body-color;
+  }
+  h4 {
+    color: $body-color;
   }
 }
 
 .slide-number{
-  top: 2%;
+  top: 2%; 
   height: fit-content;
-  background-color: $main-color-text !important;
-  color: $yellow-color !important;
+  color: $body-color !important;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .level2{
@@ -145,45 +155,36 @@ p.date{
   position: absolute;
   left: 0em;
   top: 33.5em;
-  color: $yellow-color;
+  color: $second-color-text;
 }
 
 .reveal h1 {
   font-style: normal;
   font-weight: normal;
   text-align: left;
-  font-size: 1.5em;
+/*  font-size: 1.5em;*/
 }
 
 #title-slide{
   hyphens: auto;
   width: 100%;
   height: 100%;
+  left: 2%;
 }
 
 .reveal .title {
-  padding-top: 15%;
+  padding-top: 20%;
+  font-weight: bold;
+  color: $body-color;
+  width: 50%;
+  font-size: 2em;
 }
 
 .reveal .subtitle {
   text-align: left;
   font-weight: bold;
+  padding-top: 2%;
   color: $second-color-text;
-}
-
-#nomReunion{
-  top: 22em;
-  position: absolute;
-  right: 0em; 
-}
-
-#nomReunion p {
-  font-size: 0.7em;
-  text-align: right;
-  color: $yellow-color;
-  margin: 0;
-  padding: 0 5px;
-  background-color: $main-color-text;
 }
 
 .slide-logo{
@@ -195,7 +196,7 @@ p.date{
 .quarto-title-author{
   position: absolute;
   left: -1%;
-  top: 19em;
+  top: 19.5em;
   color: $main-color-text;
 }
 
@@ -203,105 +204,110 @@ p.date{
   color: $main-color-text;  
 }
 
+
 /***********Page Sommaire ************/
 
-#TOC {
+#custom-toc-slide {
   height: 100% !important;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-#toc-title {
+#custom-toc-slide h2{
+  color: $body-color;
+  margin-top: 1%;
+  text-align: left;
+  padding-left: 8%;
+}
+
+.card-number{
+  text-align: left;
+  padding-left: 20%;
+  font-size: 235% !important;
   position: relative;
-  top: 4.4em;
-  float: right;
-  font-size: 0.7em;
-  padding-right: 1%;
-  padding-top: 0.5%;
-  color: $yellow-color;
-}
-
-#TOC ul {
-  font-size: 95%;
-  margin-top: 10%;
-  list-style-type: none;
-  padding-left: 15%;
-}
-
-#TOC ul li {
-  list-style-position: outside;
-  text-indent: -1em;
-  text-transform: uppercase;
-}
-
-#TOC ul li a {
+  min-height: 30px; /* Assure que l'icône a de l'espace */
   font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
-#TOC ul li:not(:last-child) {
-   margin-bottom: 4%;
+.card-title{
+  text-align: left;
+  font-size: xx-large;
 }
+
 
 /***********Page Titre ************/
 
-div.backgroundTitre{
+div.backgroundTitre_bleu, div.backgroundTitre_violet, div.backgroundTitre_jaune, div.backgroundTitre_vert{
   max-width: 100%;
   height: auto;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-.bandeauTitre{
-  top: -473%;
-  position: absolute;
-  width: 535px;
-  right: -8%;
-  font-size: 0.7em;
+section.backgroundTitre_violet h1 span.header-section-number, section.backgroundTitre_violet h1 span.title-text{
+  color: #5F1972 !important; 
 }
 
+section.backgroundTitre_jaune h1 span.header-section-number, section.backgroundTitre_jaune h1 span.title-text{
+  color: #A36914 !important; 
+}
+
+section.backgroundTitre_vert h1 span.header-section-number, section.backgroundTitre_vert h1 span.title-text{
+  color: #069F9C !important; 
+}
+
+
+
+
 .level1 {
-  display: flex !important;
+/*  display: flex !important;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   
   h1 {
     font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .header-section-number{
+    font-size: 7em;
+    top: -0.28em;
+    position: relative;
+    left: .35em;
+  }
+  .title-text{
+    font-size: 1.7em;
+    position: relative;
+    top: -1em;
+    display: block;
+    margin-top: 0;
   }
 }
 
-.header-section-number{
-  text-decoration: none;
-  display: inline-block;
-}
 
 .logoTopRightTitre{
-  width: 125px;
-  top: -630%;
+  width: 20%;
+  top: -40%;
   position: absolute;
-  right: 0%;
+  right: -2em;
 }
 
 
 /***********Page Standard************/
 
-div.backgroundStandard {
+div.backgroundStandard, div.backgroundStandard_bleu, div.backgroundStandard_violet
+,div.backgroundStandard_jaune, div.backgroundStandard_vert, div.backgroundStandard_multi {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.bandeauStandard{
-  position: absolute;
-  right: 0;
-  font-size: 0.7em;
-  top: 7%;
-}
 
 .level2 {
-/*  ul li, p {
-    font-size: 0.7em;
-  }*/
   h2 {
     margin-top: 6%;
   }
@@ -313,7 +319,8 @@ div.backgroundStandard {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-/*  width: 100%;*/
+  left: 6.5em;
+  width: 65%;
   
   p {
     color: $grey-color-endPage;
@@ -326,18 +333,19 @@ div.backgroundStandard {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-/*  width: 100%;*/
+  left: 6.5em;
+  width: 65%;
   
   p {
     color: $grey-color-endPage;
   }
 }
 
-.logoTopRightStandard{
-  width: 130px;
-  top: -7%;
+.logoTopLeftStandard{
+  width: 15%;
+  top: -9%;
   position: absolute;
-  right: 0;
+  left: -1em;
 }
 
 /***********Page de fin************/
@@ -347,30 +355,10 @@ div.backgroundPageFinale {
   background-size: cover;
 }
 
-.textPageFinale {
-  text-align: center;
-  font-weight: bold;
-  border-bottom: solid 5px $main-color-text;
-  width: 80%;
-  font-size: 1.8em;
-  
-  p {
-    color: $main-color-text;
-    font-size: 0.7em;
-  }
-}
-
-
-.textFooter {
-  bottom: 3%;
-  position: fixed;
-  left: 40%;
-  font-size: 0.8em;
-  
-  p {
-    color: $grey-color-endPage;
-    font-weight: bold;
-  }
+.coordonneesFinales{
+  position: relative;
+  top: 12em;
+  left: 2em;
 }
 
 .coordonnees {
@@ -378,34 +366,12 @@ div.backgroundPageFinale {
   margin-top: 2em;
   
   ul li {
-    color: $grey-color-endPage;
+    color: white;
     font-weight: bold;
     list-style-type: none;
   }
 }
 
-
-.nomReunionFin{
-  position: absolute;
-  top: 27em;
-  font-size: .8em;
-}
-
-.nomReunionFin p {
-  color: #fdc218;
-}
-
-.divDateFin{
-  position: absolute;
-  text-align: right;
-  top: 27em;
-  font-size: .8em;
-  right: 50px;
-}
-
-#dateFin {
-  color: #fdc218;
-}
 
 /******************MENU****************/
 
@@ -459,6 +425,10 @@ img.logo {
   width: 40px !important;
   height: 40px !important;
   margin-bottom: -1% !important;
+}
+
+img.logo.logo_insee{
+  width: 70px !important;
 }
 
 .slide-logo {
@@ -519,6 +489,40 @@ summary{
 }
 
 
+/******************SCROLL VIEW MODE**********************/
+
+.scroll-page-content #title-slide{
+  left: 51% !important;
+}
+
+.scroll-page-content .toc-cards {
+  left: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.scroll-page-content .toc-card {
+    flex: 0 0 calc(20% - 1rem); /* 5 cartes par ligne */
+/*    background: #f8f9fa;*/
+    background: none;
+    border-radius: 8px;
+    padding: 1rem;
+/*    box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.scroll-page-content h1:not(.title) {
+  top: 3em;
+  position: relative;
+}
+
+/*****FIN Scroll View Mode******/
+
+
 
 /******************PDF EXPORT VIEW MODE**********************/
 /*CSS quand on tape sur la touche e*/
@@ -527,48 +531,27 @@ summary{
   position: relative !important;
 }
 
-.pdf-page>div.backgroundTitre{
-  position: relative !important;
-}
-
-.pdf-page>div.backgroundStandard{
-  position: relative !important;
+.pdf-page #title-slide{
+  left: 7% !important;
 }
 
 .pdf-page>div.backgroundPageFinale{
   position: relative !important;
 }
 
-.pdf-page div.textFooter {
-  visibility: hidden;
-}
-
 html.print-pdf div#footerPersonnalise {
   visibility: hidden;
 }
 
-.pdf-page #nomReunion{
-  top: 19.8em;
-}
 
 .pdf-page  p.date{
   top: 30em;  
 }
 
-.pdf-page #TOC{
-  top: 0 !important;
-}
-
 .pdf-page .quarto-title-author{
-  top: 17em;
-}
-
-.pdf-page #toc-title{
-  top: 6.4em;
-}
-
-.pdf-page #TOC ul{
-  margin-top: 13%;
+  position: relative;
+  top: 1em;
+  left: -23em;
 }
 
 .print-pdf .slide-logo{
@@ -579,7 +562,7 @@ html.print-pdf div#footerPersonnalise {
   display: none;
 }
 
-.pdf-page .logoTopRightStandard{
+.pdf-page .logoTopLeftStandard{
   display: none;
 }
 
@@ -591,32 +574,25 @@ html.print-pdf div#footerPersonnalise {
     margin-top: 6%;
   }
   
-  .nomReunionFin{
-    top: 23em;
-  }
-
-  .divDateFin{
-    top: 23em;
-  }
-  
-  .bandeauTitre{
-    top: -16em;
-  }
-  
-  .bandeauStandard{
-    display: none;
-  }
+  [id^="chapters_"] {
+  top: 7em !important;
+  left: 2em;
+  position: relative !important;
 }
 
+  #pageDeFin{
+    position: relative !important;
+    top: -28em !important;
+  }
+  
 
-
-
-
-
-
-
-
-
-
-
+  .print_code details{
+    display: contents !important;
+  }
+  
+  .no-print-pdf {
+    display: none !important;
+  }
+  
+}
 

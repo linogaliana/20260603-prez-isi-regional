@@ -6,9 +6,9 @@ params:
   typeEquipement: "G103"
 ---
 
-# Paramétrer l'exécution de scripts R {#chapters_3 .backgroundTitre}
+# Paramétrer l'exécution de scripts R {#chapters_3 .backgroundTitre_vert}
 
-## Utilisation de paramètres d'exécution aux scripts R  {#section_3_1 .backgroundStandard}
+## Utilisation de paramètres d'exécution aux scripts R  {#section_3_1 .backgroundStandard_vert}
 
 :::{.enteteAvecTitre}
 Paramétrer l'exécution de scripts R

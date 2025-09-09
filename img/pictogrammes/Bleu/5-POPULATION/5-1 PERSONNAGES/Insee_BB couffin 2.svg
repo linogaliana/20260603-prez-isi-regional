@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="b" data-name="BB couffin 2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        stroke-width: 0px;
+      }
+
+      .ca, .cb {
+        fill: #144179;
+      }
+
+      .cb {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cb, .cc, .cd {
+        stroke: #144179;
+      }
+
+      .cc {
+        stroke-width: 12.3px;
+      }
+
+      .cc, .cd {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cd {
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="cd" x="127.5" y="45.71" width="196.66" height="369.19" rx="98.33" ry="98.33"/>
+  <line class="cd" x1="128.99" y1="230.66" x2="318.3" y2="347.71"/>
+  <line class="cd" x1="324.16" y1="229.71" x2="226.83" y2="291.49"/>
+  <circle class="cc" cx="225.73" cy="147.97" r="68.03"/>
+  <path class="cb" d="M240.77,137.01c1.64-.9,6.87,4.93,14.07,4.93,7.2,0,12.43-5.83,14.07-4.93,1.64.9-3.01,11.72-14.07,11.72-11.06,0-15.72-10.81-14.07-11.72Z"/>
+  <path class="cb" d="M183.15,137.01c1.64-.9,6.87,4.93,14.07,4.93,7.2,0,12.43-5.83,14.07-4.93s-3.01,11.72-14.07,11.72c-11.06,0-15.72-10.81-14.07-11.72Z"/>
+  <path class="ca" d="M206.7,170.87c2.05-.95,8.59,5.19,17.6,5.19s15.54-6.14,17.6-5.19c2.05.95-3.77,12.33-17.6,12.33s-19.65-11.38-17.6-12.33Z"/>
+</svg>

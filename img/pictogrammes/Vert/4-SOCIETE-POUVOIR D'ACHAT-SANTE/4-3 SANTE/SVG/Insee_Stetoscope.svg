@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="o" data-name="Stetoscope" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <rect class="ap" x="197.02" y="45.85" width="28.3" height="65.26" rx="14.15" ry="14.15"/>
+  <rect class="ap" x="84.94" y="45.89" width="28.3" height="65.26" rx="14.15" ry="14.15"/>
+  <ellipse class="ap" cx="381.74" cy="192.54" rx="33.76" ry="34.07"/>
+  <path class="ap" d="M154.49,307c3.24,60.44,52.33,105.57,113.65,105.57s114.81-51.4,114.81-114.81"/>
+  <line class="ap" x1="382.95" y1="297.76" x2="382.95" y2="227.24"/>
+  <path class="ap" d="M225.32,79.77s42.9-7.67,42.9,40.78.66,59.55,0,69.43c-1.23,18.35-27.9,112.83-114.23,115.79"/>
+  <path class="ap" d="M84.1,79.77s-42.9-7.67-42.9,40.78c0,48.44-.66,59.55,0,69.43,1.23,18.35,27.9,112.83,114.23,115.79"/>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="bv" data-name="Cercueil" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polygon class="ca" points="285.57 418.84 172.21 418.84 132.84 154.34 170.37 40.98 285.57 40.98 323.82 154.34 285.57 418.84"/>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="l" data-name="sécurité informatique" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aq {
+        fill: #fff;
+      }
+
+      .aq, .ar {
+        stroke: #008280;
+        stroke-linejoin: round;
+        stroke-width: 13.61px;
+      }
+
+      .aq, .ar, .as {
+        stroke-linecap: round;
+      }
+
+      .ar, .at {
+        fill: #008280;
+      }
+
+      .at {
+        stroke-width: 0px;
+      }
+
+      .as, .au {
+        fill: none;
+        stroke: #008280;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="au" x="39.44" y="78.14" width="262.9" height="51.26" rx="8.32" ry="8.32"/>
+    <rect class="au" x="39.44" y="157.44" width="262.9" height="51.26" rx="8.32" ry="8.32"/>
+    <rect class="au" x="39.44" y="235.57" width="262.9" height="51.26" rx="8.32" ry="8.32"/>
+    <line class="as" x1="65.93" y1="103.77" x2="170.18" y2="103.77"/>
+    <line class="as" x1="65.93" y1="183.07" x2="170.18" y2="183.07"/>
+    <line class="as" x1="65.93" y1="261.2" x2="170.18" y2="261.2"/>
+    <circle class="at" cx="224.6" cy="104.53" r="5.08"/>
+    <circle class="at" cx="251.08" cy="104.53" r="5.08"/>
+    <circle class="at" cx="223.7" cy="260.34" r="5.08"/>
+    <circle class="at" cx="249.18" cy="260.34" r="5.08"/>
+    <circle class="at" cx="277.56" cy="104.53" r="5.08"/>
+    <circle class="at" cx="224.6" cy="183.07" r="5.08"/>
+    <circle class="at" cx="251.08" cy="183.07" r="5.08"/>
+    <circle class="at" cx="277.56" cy="183.07" r="5.08"/>
+  </g>
+  <g>
+    <path class="aq" d="M316.77,205.83s53.38,31.67,92.69,31.67v81.63s-1.5,54.21-92.69,91.55h-.39c-89.21-35.32-92.69-91.55-92.69-91.55v-81.63c39.31,0,92.69-31.67,92.69-31.67h.39Z"/>
+    <path class="ar" d="M316.71,237.75s36.74,21.8,63.8,21.8v56.19s-2.66,38.2-63.8,63.01h-.27c-63.69-25.07-63.8-63.01-63.8-63.01v-56.19c27.06,0,63.8-21.8,63.8-21.8h.27Z"/>
+  </g>
+</svg>

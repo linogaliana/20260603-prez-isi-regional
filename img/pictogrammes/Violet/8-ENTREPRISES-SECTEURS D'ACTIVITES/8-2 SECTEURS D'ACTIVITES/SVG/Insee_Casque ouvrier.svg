@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ag" data-name="Casque" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        fill: none;
+      }
+
+      .ak, .al {
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .al {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="ak" d="M72,301.3c0-91.68,71.15-165.99,158.92-165.99s158.92,74.32,158.92,165.99H72Z"/>
+  <line class="ak" x1="418.75" y1="301.3" x2="42.94" y2="301.3"/>
+  <path class="al" d="M181.02,241.81l-6.32-94.3c-.98-14.56,10.07-26.93,24.04-26.93h64.37c13.97,0,25.01,12.37,24.04,26.93l-6.32,94.3"/>
+  <path class="ak" d="M45.9,312.99s138.55,16.97,368.86,0"/>
+</svg>

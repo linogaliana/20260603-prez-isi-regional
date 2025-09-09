@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="v" data-name="Arbres" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ab, .ac, .ad, .ae {
+        stroke: #008280;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ab, .ae {
+        fill: none;
+      }
+
+      .ac, .ad {
+        fill: #fff;
+      }
+
+      .ac, .ae {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="ab" cx="338.56" cy="248.07" r="76.91"/>
+    <g>
+      <polyline class="ae" points="338.46 252.58 338.46 275.99 338.46 365.42"/>
+      <line class="ae" x1="366.49" y1="266.54" x2="338.66" y2="289.57"/>
+    </g>
+  </g>
+  <g>
+    <circle class="ab" cx="108.03" cy="255.32" r="59.42"/>
+    <g>
+      <polyline class="ae" points="108.11 258.8 108.11 276.89 108.11 363.92"/>
+      <line class="ae" x1="86.44" y1="269.59" x2="107.95" y2="287.38"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <circle class="ad" cx="223.01" cy="194" r="102.66"/>
+      <g>
+        <polyline class="ac" points="223.14 163.34 223.14 213.91 223.14 364.27"/>
+        <line class="ac" x1="273.04" y1="170.42" x2="223.14" y2="213.91"/>
+        <line class="ac" x1="273.04" y1="220.65" x2="223.14" y2="264.14"/>
+        <line class="ac" x1="172.97" y1="188.54" x2="222.87" y2="232.03"/>
+      </g>
+    </g>
+    <line class="ae" x1="40.51" y1="365.75" x2="408.91" y2="365.75"/>
+  </g>
+</svg>

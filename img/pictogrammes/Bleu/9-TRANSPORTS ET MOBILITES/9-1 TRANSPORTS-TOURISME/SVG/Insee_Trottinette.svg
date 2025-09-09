@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="e" data-name="Trottinette" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle class="z" cx="89.81" cy="375.25" r="37.39"/>
+  <circle class="z" cx="360.86" cy="375.93" r="37.39"/>
+  <path class="z" d="M89.81,375.25l210.78,1.13s2.49-45.77,46.9-57.1"/>
+  <polyline class="z" points="251.64 47.94 290.16 47.36 359.73 375.7"/>
+</svg>

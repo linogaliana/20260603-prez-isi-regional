@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="a" data-name="Grande entreprise" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        stroke-linejoin: round;
+      }
+
+      .ak, .al {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .al {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="ak" points="35.86 412.11 35.86 74.78 260.51 74.78 262.04 219.73 413.21 220.57 413.72 412.09 35.86 412.11"/>
+  <line class="ak" x1="262.04" y1="215.21" x2="262.58" y2="408.33"/>
+  <line class="ak" x1="299.82" y1="260.32" x2="317.71" y2="260.32"/>
+  <line class="ak" x1="299.82" y1="298.1" x2="317.71" y2="298.1"/>
+  <line class="ak" x1="299.82" y1="335.89" x2="317.71" y2="335.89"/>
+  <line class="ak" x1="299.82" y1="373.68" x2="317.71" y2="373.68"/>
+  <line class="ak" x1="356.96" y1="260.32" x2="374.85" y2="260.32"/>
+  <line class="ak" x1="356.96" y1="298.1" x2="374.85" y2="298.1"/>
+  <line class="ak" x1="356.96" y1="335.89" x2="374.85" y2="335.89"/>
+  <line class="ak" x1="356.96" y1="373.68" x2="374.85" y2="373.68"/>
+  <rect class="ak" x="73.92" y="262.38" width="32.61" height="32.17"/>
+  <path class="al" d="M108.85,411.55v-42.9s1.4-29.97,36.33-30.83c37.21-.92,38.08,32.81,38.08,32.81v38.95"/>
+  <polyline class="ak" points="185.74 73.12 185.74 27.69 336.88 27.69 336.88 219.53"/>
+  <line class="ak" x1="300.36" y1="94.25" x2="300.36" y2="76.36"/>
+  <line class="ak" x1="299.82" y1="159.23" x2="299.82" y2="141.34"/>
+  <rect class="ak" x="187" y="262.04" width="32.61" height="32.17"/>
+  <rect class="ak" x="75.64" y="183.12" width="32.61" height="32.17"/>
+  <rect class="ak" x="188.73" y="182.78" width="32.61" height="32.17"/>
+  <rect class="ak" x="75.64" y="109.01" width="32.61" height="32.17"/>
+  <rect class="ak" x="188.73" y="108.68" width="32.61" height="32.17"/>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="t" data-name="Ambulance" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: #008280;
+        stroke: #008280;
+      }
+
+      .ap, .aq {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aq {
+        fill: none;
+        stroke: #008280;
+      }
+    </style>
+  </defs>
+  <ellipse class="aq" cx="135.51" cy="337.11" rx="38.67" ry="40"/>
+  <ellipse class="aq" cx="315.88" cy="337.11" rx="38.67" ry="40"/>
+  <path class="aq" d="M82.1,345.65s-44.8,9.02-44.8-36.54.11-87.48.11-87.48l59.44-103.91h281.07s36.65.99,36.65,36.05v155.34s2.65,37.55-44.91,37.27"/>
+  <line class="aq" x1="190.99" y1="345.27" x2="261.65" y2="345.27"/>
+  <path class="aq" d="M141.07,115.06c0-13.16,10.67-23.83,23.83-23.83s23.83,10.67,23.83,23.83"/>
+  <rect class="aq" x="300.76" y="137.38" width="78.67" height="71.06" rx="12" ry="12"/>
+  <polyline class="aq" points="37.4 221.63 164.32 221.63 164.32 117.73"/>
+  <polygon class="ap" points="264.76 162.77 244.57 162.77 244.57 142.57 223.34 142.57 223.34 162.77 203.14 162.77 203.14 184 223.34 184 223.34 204.19 244.57 204.19 244.57 184 264.76 184 264.76 162.77"/>
+</svg>

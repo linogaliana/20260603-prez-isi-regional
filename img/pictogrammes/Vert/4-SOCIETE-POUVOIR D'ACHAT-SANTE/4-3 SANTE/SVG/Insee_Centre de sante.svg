@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="h" data-name="Centre de sante" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <line class="ap" x1="42.52" y1="412.55" x2="412.74" y2="412.55"/>
+  <rect class="ap" x="114.35" y="113.88" width="228.14" height="298.67"/>
+  <rect class="ap" x="152.07" y="38.31" width="151.36" height="75.57"/>
+  <rect class="ap" x="190.65" y="303.05" width="75.68" height="109.3"/>
+  <line class="ap" x1="227.82" y1="305.88" x2="227.82" y2="412.35"/>
+  <line class="ap" x1="227.8" y1="61.87" x2="227.8" y2="93.63"/>
+  <line class="ap" x1="243.86" y1="77.83" x2="212.1" y2="77.83"/>
+  <line class="ap" x1="153.07" y1="159.34" x2="153.07" y2="185.97"/>
+  <line class="ap" x1="190.84" y1="159.34" x2="190.84" y2="185.97"/>
+  <line class="ap" x1="228.61" y1="159.34" x2="228.61" y2="185.97"/>
+  <line class="ap" x1="266.38" y1="159.34" x2="266.38" y2="185.97"/>
+  <line class="ap" x1="304.15" y1="159.34" x2="304.15" y2="185.97"/>
+  <line class="ap" x1="153.07" y1="233.9" x2="153.07" y2="260.53"/>
+  <line class="ap" x1="190.84" y1="233.9" x2="190.84" y2="260.53"/>
+  <line class="ap" x1="228.61" y1="233.9" x2="228.61" y2="260.53"/>
+  <line class="ap" x1="266.38" y1="233.9" x2="266.38" y2="260.53"/>
+  <line class="ap" x1="304.15" y1="233.9" x2="304.15" y2="260.53"/>
+  <line class="ap" x1="304.15" y1="310.51" x2="304.15" y2="337.14"/>
+  <line class="ap" x1="153.07" y1="310.51" x2="153.07" y2="337.14"/>
+</svg>

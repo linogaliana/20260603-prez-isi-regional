@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="g" data-name="Logement vacant" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .z {
+        fill: none;
+      }
+
+      .z, .aa {
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aa {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="aa" points="404.68 217.25 221.42 41.61 38.16 217.25 77.46 217.25 77.46 410.04 366.19 410.04 366.19 217.25 404.68 217.25"/>
+  <line class="z" x1="39.57" y1="410.04" x2="405.59" y2="410.04"/>
+  <line class="aa" x1="148.06" y1="337.2" x2="290.53" y2="194.73"/>
+  <line class="aa" x1="297.1" y1="337.2" x2="154.63" y2="194.73"/>
+</svg>

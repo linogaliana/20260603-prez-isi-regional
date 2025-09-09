@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ah" data-name="Panier" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        stroke-linejoin: round;
+      }
+
+      .bu, .bv, .bw {
+        fill: none;
+        stroke: #008280;
+        stroke-width: 12px;
+      }
+
+      .bu, .bw {
+        stroke-linecap: round;
+      }
+
+      .bv, .bw {
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <line class="bw" x1="172.49" y1="259.23" x2="172.49" y2="378.74"/>
+  <line class="bw" x1="225.37" y1="259.23" x2="225.37" y2="378.74"/>
+  <line class="bw" x1="278.24" y1="259.23" x2="278.24" y2="378.74"/>
+  <g>
+    <g>
+      <rect class="bu" x="164.85" y="103.92" width="173.56" height="42.23" rx="21.12" ry="21.12" transform="translate(39.54 309.33) rotate(-67.41)"/>
+      <path class="bu" d="M377.15,186.24h-127.9l-3.12,7.5c-4.48,10.77-16.84,15.86-27.61,11.39h0c-7.91-3.29-12.74-10.84-12.98-18.88H76.39c-11.66,0-21.12,9.45-21.12,21.12h0c0,11.66,9.45,21.12,21.12,21.12h300.76c11.66,0,21.12-9.45,21.12-21.12h0c0-11.66-9.45-21.12-21.12-21.12Z"/>
+    </g>
+    <path class="bv" d="M353.99,228.29l-12.4,157.75c-1.07,13.67-12.48,24.22-26.2,24.22h-179.47c-13.62,0-24.98-10.4-26.18-23.97l-13.94-158"/>
+  </g>
+</svg>

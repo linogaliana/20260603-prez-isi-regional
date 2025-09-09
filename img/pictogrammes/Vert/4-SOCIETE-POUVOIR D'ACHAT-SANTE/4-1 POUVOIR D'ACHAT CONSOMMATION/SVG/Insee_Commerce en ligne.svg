@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="aw" data-name="Commerce en ligne" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #008280;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="bu" d="M85.51,136.52h285.55c4.69,0,8.5,3.81,8.5,8.5v197.95H77.01v-197.95c0-4.69,3.81-8.5,8.5-8.5Z"/>
+  <line class="bu" x1="40.45" y1="370.24" x2="415.01" y2="370.24"/>
+  <polyline class="bu" points="156.02 181.46 169.89 181.46 184.12 265.65 272.52 265.65 287.1 201.52 176.84 201.52"/>
+  <circle class="bv" cx="200.51" cy="294.2" r="11.31"/>
+  <circle class="bv" cx="255.28" cy="294.2" r="11.31"/>
+</svg>

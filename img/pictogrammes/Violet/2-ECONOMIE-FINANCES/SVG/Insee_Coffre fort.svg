@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="g" data-name="Coffre fort" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ag {
+        stroke-width: 12.17px;
+      }
+
+      .ag, .ah {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .ai {
+        fill: #5F1972;
+        stroke-width: 0px;
+      }
+
+      .ah {
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <polygon class="ah" points="320.29 414.44 347.77 414.44 347.77 351.01 287.02 351.01 320.29 414.44"/>
+      <polygon class="ah" points="129.94 414.44 102.47 414.44 102.47 351.01 163.21 351.01 129.94 414.44"/>
+    </g>
+    <rect class="ag" x="44" y="49.19" width="367.56" height="301.63"/>
+  </g>
+  <g>
+    <g>
+      <circle class="ah" cx="261.38" cy="201.44" r="34.76"/>
+      <g>
+        <line class="ah" x1="261.42" y1="241.33" x2="261.43" y2="256.44"/>
+        <line class="ah" x1="233.23" y1="229.64" x2="222.52" y2="240.37"/>
+        <line class="ah" x1="222.93" y1="201.48" x2="206.37" y2="201.49"/>
+        <line class="ah" x1="222.45" y1="162.58" x2="235.47" y2="175.59"/>
+        <line class="ah" x1="261.32" y1="146.43" x2="261.34" y2="166.05"/>
+        <line class="ah" x1="286.41" y1="176.36" x2="300.23" y2="162.51"/>
+        <line class="ah" x1="298.11" y1="201.4" x2="316.38" y2="201.39"/>
+        <line class="ah" x1="288.68" y1="228.69" x2="300.31" y2="240.3"/>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect class="ai" x="107.87" y="157.27" width="19.56" height="29.03" rx="5.37" ry="5.37"/>
+        <rect class="ai" x="107.87" y="216.58" width="19.56" height="29.03" rx="5.37" ry="5.37"/>
+      </g>
+      <rect class="ah" x="107.87" y="109.15" width="237.9" height="184.58"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="f" data-name="Ecran plat" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .bu {
+        fill: none;
+      }
+
+      .bu, .bv {
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .bv {
+        fill: #008280;
+      }
+    </style>
+  </defs>
+  <polygon class="bu" points="42.01 295.79 42.68 109.93 414.96 109.93 414.29 296.07 42.01 295.79"/>
+  <line class="bu" x1="275.35" y1="336.13" x2="181.62" y2="336.13"/>
+  <rect class="bv" x="210.21" y="296.03" width="36.54" height="40.1"/>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="s" data-name="Carotte" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aa {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="aa" d="M247.16,281.94l-62.76,114.72c-14.76,26.97-55.83,10.39-47.75-19.3l49.24-179.63,14.02-51.13c4.12-14.93,20.37-22.93,34.72-17.15l10.23,4.12,41.32,16.74c14.43,5.77,20.54,22.85,13.03,36.45l-52.04,95.17Z"/>
+  <line class="aa" x1="185.88" y1="197.73" x2="223.49" y2="216.45"/>
+  <line class="aa" x1="214.83" y1="263.96" x2="247.16" y2="281.94"/>
+  <line class="aa" x1="245.1" y1="46.23" x2="244.85" y2="133.57"/>
+  <line class="aa" x1="309.84" y1="43.67" x2="265.8" y2="137.85"/>
+  <line class="aa" x1="356.6" y1="85.98" x2="287.82" y2="146.51"/>
+</svg>

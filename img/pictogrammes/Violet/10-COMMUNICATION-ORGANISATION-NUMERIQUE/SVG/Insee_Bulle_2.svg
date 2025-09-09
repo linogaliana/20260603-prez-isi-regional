@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="s" data-name="Bulle_2" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #5F1972;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .an {
+        fill: #5F1972;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="am" d="M362.79,84.74H89.39c-27.89,0-50.49,22.61-50.49,50.49v171.29c0,27.89,22.61,50.49,50.49,50.49h3.96v23.66c0,12.2,14.75,18.31,23.38,9.68l33.35-33.35h212.71c27.89,0,50.49-22.61,50.49-50.49v-171.29c0-27.89-22.61-50.49-50.49-50.49Z"/>
+  <circle class="an" cx="130.7" cy="211.17" r="23.94"/>
+  <circle class="an" cx="226.44" cy="211.17" r="23.94"/>
+  <circle class="an" cx="322.19" cy="211.17" r="23.94"/>
+</svg>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="w" data-name="Entreprise" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak, .al, .am, .an, .ao {
+        stroke: #008280;
+      }
+
+      .ak, .al, .am, .ao {
+        fill: none;
+      }
+
+      .ak, .al, .an, .ao {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .ak, .an {
+        stroke-width: 12px;
+      }
+
+      .al {
+        stroke-width: 11.64px;
+      }
+
+      .am {
+        stroke-miterlimit: 10;
+        stroke-width: 13px;
+      }
+
+      .an {
+        fill: #fff;
+      }
+
+      .ao {
+        stroke-width: 10.97px;
+      }
+    </style>
+  </defs>
+  <polygon class="ak" points="378.52 319.52 303.99 319.52 325.41 43.08 357.93 43.08 378.52 319.52"/>
+  <rect class="ak" x="64.39" y="258.3" width="202.84" height="151.74"/>
+  <rect class="an" x="266.95" y="287.62" width="147.1" height="122.41"/>
+  <rect class="ak" x="39.68" y="230.28" width="249.29" height="26.32"/>
+  <line class="ao" x1="324.94" y1="86.71" x2="358.47" y2="86.71"/>
+  <rect class="ak" x="110.75" y="346.75" width="111.1" height="63.1"/>
+  <g>
+    <rect class="ak" x="91.58" y="284" width="60.39" height="37.94"/>
+    <rect class="ak" x="180.62" y="284" width="60.39" height="37.94"/>
+  </g>
+  <rect class="al" x="290.77" y="316.84" width="120.13" height="58.06"/>
+  <line class="am" x1="348.01" y1="317.23" x2="348.01" y2="374"/>
+  <line class="am" x1="291.29" y1="345.1" x2="412.58" y2="345.1"/>
+</svg>

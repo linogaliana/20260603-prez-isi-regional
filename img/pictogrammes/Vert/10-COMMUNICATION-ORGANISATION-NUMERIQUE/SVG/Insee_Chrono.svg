@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ac" data-name="Chrono" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <path class="am" d="M313.94,318.19c-24.07,46.82-72.85,78.85-129.12,78.85-80.13,0-145.08-64.96-145.08-145.08S104.69,106.87,184.82,106.87c54.7,0,102.33,30.27,127.05,74.98"/>
+  <g>
+    <line class="am" x1="289.48" y1="225.36" x2="400.76" y2="225.36"/>
+    <line class="am" x1="289.48" y1="251.61" x2="420.32" y2="251.61"/>
+    <line class="am" x1="289.48" y1="279.29" x2="377.71" y2="279.29"/>
+  </g>
+  <polygon class="am" points="233.73 60.9 136.9 60.9 136.9 86.54 163.09 86.54 163.09 105.84 207.53 105.84 207.53 86.54 233.73 86.54 233.73 60.9"/>
+  <polyline class="am" points="185.65 208.7 185.68 253.11 128.09 312.67"/>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="ah" data-name="Liste" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .am {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .an {
+        fill: #144179;
+      }
+
+      .an, .ao {
+        stroke-width: 0px;
+      }
+
+      .ao {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="am" x="105.6" y="71.85" width="245.45" height="338.83"/>
+  <line class="am" x1="197.28" y1="166.9" x2="298.65" y2="166.9"/>
+  <line class="am" x1="197.28" y1="225.43" x2="298.65" y2="225.43"/>
+  <line class="am" x1="197.28" y1="283.96" x2="298.65" y2="283.96"/>
+  <line class="am" x1="197.28" y1="342.49" x2="298.65" y2="342.49"/>
+  <path class="an" d="M161.6,69.86h133.45v24.2c0,8.01-6.5,14.51-14.51,14.51h-104.42c-8.01,0-14.51-6.5-14.51-14.51v-24.2h0Z"/>
+  <rect class="an" x="192.84" y="37.6" width="70.97" height="51.61" rx="17.77" ry="17.77"/>
+  <circle class="ao" cx="226.77" cy="60.72" r="9.14"/>
+  <circle class="an" cx="153.07" cy="166.9" r="6.92"/>
+  <circle class="an" cx="153.07" cy="225.27" r="6.92"/>
+  <circle class="an" cx="153.07" cy="283.64" r="6.92"/>
+  <circle class="an" cx="153.07" cy="342" r="6.92"/>
+</svg>

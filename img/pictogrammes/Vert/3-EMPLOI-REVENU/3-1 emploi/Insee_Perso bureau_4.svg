@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="as" data-name="Perso bureau_4" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ca {
+        fill: none;
+      }
+
+      .ca, .cb {
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .cb, .cc {
+        fill: #008280;
+      }
+
+      .cc {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <polygon class="ca" points="37.91 226.94 37.91 415.87 416.31 415.87 415.77 227.17 37.91 226.94"/>
+  <g>
+    <path class="cc" d="M75.24,192.31h151.06s4.92-60.03-60.42-59.94l-30.43.09s-60.2.84-60.21,59.85Z"/>
+    <circle class="cc" cx="152.27" cy="78.45" r="36.48"/>
+  </g>
+  <path class="cb" d="M264.63,189.15l36.46-72.41c.98-1.94,2.97-3.17,5.14-3.17h110.08l-35.68,71.37c-1.29,2.58-3.92,4.2-6.8,4.2h-109.2Z"/>
+</svg>

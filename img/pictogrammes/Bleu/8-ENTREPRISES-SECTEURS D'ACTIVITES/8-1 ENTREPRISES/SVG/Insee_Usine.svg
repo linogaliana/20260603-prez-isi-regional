@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="d" data-name="Usine" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ak {
+        fill: none;
+        stroke: #144179;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <line class="ak" x1="44.9" y1="414.43" x2="407.37" y2="414.43"/>
+  <rect class="ak" x="271.61" y="314.3" width="64.92" height="100.13"/>
+  <polygon class="ak" points="377.27 414.43 377.27 43.09 315.43 43.09 315.43 149.91 246.74 196.11 246.74 131.19 166.6 196.11 166.6 131.19 74.99 203.86 74.99 414.43 377.27 414.43"/>
+  <rect class="ak" x="112.86" y="259.3" width="45.39" height="45.39"/>
+  <rect class="ak" x="196.04" y="259.3" width="45.39" height="45.39"/>
+</svg>

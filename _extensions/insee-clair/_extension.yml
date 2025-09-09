@@ -1,0 +1,19 @@
+title: insee-clair
+author: Romain Puyau
+contributes:
+  format:
+    revealjs:
+      css: [css/insee_clair.css]
+      title-slide-attributes:
+        data-background-image: _extensions/insee-clair/ressources/1_Template-INSEE-Clair_premiere-page.svg
+        data-background-size: contain
+        data-background-opacity: "1"
+      toc: false
+      toc-title: Sommaire
+      toc-depth: 1
+      template-partials:
+        - "_extensions/insee-clair/toc-slide.html"
+        - "_extensions/insee-clair/toc-style.html"
+      filters:
+        - "toc-filter.lua"
+        

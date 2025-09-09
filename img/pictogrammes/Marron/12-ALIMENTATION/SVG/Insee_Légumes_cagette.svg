@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="k" data-name="Légumes_cagette" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .aa {
+        fill: none;
+      }
+
+      .aa, .ab {
+        stroke: #8A5301;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .ac {
+        fill: #8A5301;
+        stroke-width: 0px;
+      }
+
+      .ab {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="aa" d="M251.16,303.91l41.63-151.9c2.7-9.85,13.38-15.14,22.85-11.31l33.94,13.72c9.47,3.83,13.48,15.05,8.58,24.01l-75.58,138.19c-9.72,17.76-36.78,6.83-31.43-12.7Z"/>
+  <line class="aa" x1="283.57" y1="185.65" x2="308.3" y2="197.98"/>
+  <line class="aa" x1="302.61" y1="229.26" x2="323.9" y2="241.08"/>
+  <line class="aa" x1="322.52" y1="85.94" x2="322.38" y2="143.42"/>
+  <line class="aa" x1="365.17" y1="84.23" x2="336.17" y2="146.22"/>
+  <line class="aa" x1="395.94" y1="112.1" x2="350.67" y2="151.91"/>
+  <circle class="aa" cx="171.84" cy="267.32" r="65.12"/>
+  <path class="ac" d="M195.24,177.9c8.37-8.37,12.06-19.52,11.4-30.47-10.94-.65-22.1,3.03-30.47,11.4-8.37,8.37-12.06,19.53-11.4,30.47,10.95.66,22.11-3.03,30.47-11.4Z"/>
+  <line class="aa" x1="157.02" y1="199.68" x2="145.65" y2="177.46"/>
+  <rect class="ab" x="37.54" y="251.97" width="376.5" height="161.52"/>
+  <line class="ab" x1="45.81" y1="332.72" x2="410.74" y2="332.72"/>
+  <circle class="ac" cx="67.63" cy="292.53" r="8.04"/>
+  <circle class="ac" cx="387.9" cy="292.53" r="8.04"/>
+  <circle class="ac" cx="67.63" cy="372.92" r="8.04"/>
+  <circle class="ac" cx="387.9" cy="372.92" r="8.04"/>
+  <rect class="aa" x="37.54" y="211.91" width="55.68" height="40.01"/>
+  <rect class="aa" x="358.37" y="211.91" width="55.68" height="40.01"/>
+</svg>

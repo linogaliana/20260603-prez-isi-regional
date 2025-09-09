@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" id="w" data-name="LitMédical" viewBox="0 0 453.54 453.54">
+  <defs>
+    <style>
+      .ap {
+        fill: none;
+      }
+
+      .ap, .aq {
+        stroke: #008280;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12px;
+      }
+
+      .aq {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="ap" d="M44.05,409.52h34.83v-18.78h296.1v18.78h34.83v-104.48s-15.16-23.57-35.32,0v34.83H78.88l-.5-36.27s-16.91-23.35-34.33,1.45v104.48Z"/>
+    <path class="ap" d="M183.55,339.87v-69.65s52.56-3.36,139.8,34.83l-.5,34.83h-139.31Z"/>
+    <circle class="ap" cx="132.71" cy="287.66" r="21.39"/>
+  </g>
+  <g>
+    <polyline class="ap" points="349.64 340.25 349.64 130.46 307.39 130.46 307.39 193"/>
+    <rect class="aq" x="293.87" y="149.29" width="25.59" height="33.05"/>
+  </g>
+</svg>
