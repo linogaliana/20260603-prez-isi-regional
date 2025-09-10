@@ -1,4 +1,4 @@
-# ACTUALITE
+## :one: Actualités
 
 **V1 - Nouvelle présentation quarto avec nouvelle charte graphique**
 
@@ -12,18 +12,19 @@ Dès le mois d'août 2025, des contacts avec le Pôle Communication de la direct
      
 **Principales nouveautés :**    
 
-- **Sommaire:** Transformation en table des matières en colonne.
+- **Sommaire:** Transformation de la table des matières en colonne.
 - **Conformité:** Intégration des éléments principaux selon la [charte éditoriale 2024](https://intranet.insee.fr/jcms/39120610_DBFileDocument/fr/insee-charte-graphique-editoriale-2024).
 - **Couleurs:** Utilisation exclusive des couleurs de la nouvelle charte graphique, assurant une conformité totale.
-- **Exemples:** Slides illustrative pour les éléments inchangés.
+- **Exemples:** Slides illustratives pour les éléments inchangés.
+- **Plugins:** Intégration du plugin *"multimodal"* pour simplifier l'utilisation des popups dans le support.
+- La mise à disposition des logos des différents SSM
 
 Si des éléments sont demeurés inchangés alors ils ont été conservés et des slides _exemples_ vous permettent d'illustrer ce qu'il est possible de faire
 
 
-## A VENIR
+## :two: À venir
 
-- la mise à disposition des logos des différents SSM
 - La génération de supports Impress et ODT est en cours de développement et sera intégrée dans les prochaines versions.
-
+- Un thème sombre (éventuellement)
 
  **Pour en savoir plus sur le détail des modifications, consultez la partie [releases](https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/releases)**

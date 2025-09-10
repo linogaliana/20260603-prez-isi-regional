@@ -5,7 +5,7 @@
 
 # Présentation Quarto
 
-Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+***la charte graphique de l'Insee 2025***.+}
+Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+ ***la charte graphique de l'Insee 2025***. +}
 
 > Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
 
@@ -17,7 +17,7 @@ Il n'y a plus de thème selon le public auquel on s'adresse. En effet, il n'y a 
 
 Par défaut, la présentation est "branchée" sur la charte graphique du thème clair (Insee-clair). Un thème sombre verra peut être le jour ultérieurement.
 
-Les images des licences, des logos de chaque région et les pictogrammes Insee sont disponibles dans le dossier `img/`.
+:arrow_right: Les images des licences, des logos de chaque région et de chaque SSM, et les pictogrammes Insee sont disponibles dans le dossier `img/`.
 
 Pour changer de thème, vous devez sélectionner le render associé au thème de la charte graphique de l'Insee que vous souhaitez utiliser, comme le montre l'image suivante : 
 
