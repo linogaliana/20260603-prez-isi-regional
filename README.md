@@ -5,7 +5,7 @@
 
 # Présentation Quarto
 
-Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+ ***la charte graphique de l'Insee 2025***. +}
+Template de support de présentation dynamique en quarto markdown (.qmd) et reveal.js intégrant désormais {+la charte graphique de l'Insee 2025.+}
 
 > Les dépendances dont a besoin ce template pour fonctionner correctement en local sont listées dans le fichier `dev.R`.
 
@@ -117,7 +117,7 @@ Si vous avez remarqué des bugs, des dysfonctionnalités ou des points d'amélio
 
 Pour récupérer le projet, vous pouvez :
 
-- télécharger le .zip en cliquant ici : <https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/archive/main/presentation-quarto-main.zip>
+- télécharger le .zip en cliquant ici : <https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/archive/main/presentation-quarto-main.zip> ou en vous rendant sur la page suivante : <https://gitlab.insee.fr/pole-bpe/presentations-formations/presentation-quarto/-/releases>
 
 et à partir de ce zip, initier (ou pas) un nouveau dépôt sur gitlab dans votre groupe. Ce projet sera indépendant de celui-ci.
 
