@@ -98,18 +98,7 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 :::
 
 ::::
-          
-## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
-:::: {.columns .coordonneesFinales}
-
-::: {.column .coordonnees width=50%}
-- Prénom Nom
-- fonction
-- Service
-- Numéro de téléphone
-- Mél
-:::
 
 ::: {.column .droite width=40%}
 :::
@@ -131,4 +120,15 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 
 {{< include 06_documentation.qmd >}}
 
+          
+## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
+:::: {.columns .coordonneesFinales}
+
+::: {.column .coordonnees width=50%}
+- Prénom Nom
+- fonction
+- Service
+- Numéro de téléphone
+- Mél
+:::
