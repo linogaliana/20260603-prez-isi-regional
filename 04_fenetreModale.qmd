@@ -14,7 +14,7 @@ utilisation d'une fenêtre modale
   * montrer [une video stockée dans le projet](#){data-modal-type="video" data-modal-url="videos/presentation_nouveauLogo.mp4"}
   * intégration d'une [video hébergée sur youtube dans une fenêtre modale](#){data-modal-type="html" data-modal-padding="1em" data-modal-class="taille_iframe" data-modal-url="#somehiddendiv_2"}
   * afficher du [contenu HTML](#){data-modal-type="html" data-modal-url="#somehiddendiv"}
-  * accueillir un [lien vers un site](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_et_des_%C3%A9tudes_%C3%A9conomiques){data-modal-type="iframe"} ou une [vidéo youtube](#){data-modal-type="iframe" data-modal-url="https://www.youtube.com/watch?v=E8AJ9eBIY58"}
+  * accueillir un [lien vers un site](https://fr.wikipedia.org/wiki/Institut_national_de_la_statistique_et_des_%C3%A9tudes_%C3%A9conomiques){data-modal-type="iframe"}
 
 ::: {#somehiddendiv .hidden}
 <h2>Exemple de contenu HTML</h2>

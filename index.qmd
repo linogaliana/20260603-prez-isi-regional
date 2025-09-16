@@ -100,12 +100,6 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 ::::
 
 
-::: {.column .droite width=40%}
-:::
-
-::::
-
-
 <!-- Ajout des autres parties du support -->
 
 {{< include 01_styleParDefaut.qmd >}}
@@ -132,3 +126,8 @@ Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher qu
 - Numéro de téléphone
 - Mél
 :::
+
+::: {.column .droite width=40%}
+:::
+
+::::
