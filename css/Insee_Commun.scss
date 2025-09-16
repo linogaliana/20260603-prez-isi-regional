@@ -154,7 +154,7 @@ p.date{
   text-align: left;
   position: absolute;
   left: 0em;
-  top: 33.5em;
+  top: 35em;
   color: $second-color-text;
 }
 
@@ -193,14 +193,18 @@ p.date{
   bottom: -10px !important;
 }
 
+.quarto-title-authors{
+  position: relative;
+  left: -0.5em;
+  justify-content: left !important;
+}
+
 .quarto-title-author{
-  position: absolute;
-  left: -1%;
-  top: 19.5em;
   color: $main-color-text;
 }
 
 .quarto-title-affiliation{
+  text-align: left;
   color: $main-color-text;  
 }
 
@@ -545,13 +549,7 @@ html.print-pdf div#footerPersonnalise {
 
 
 .pdf-page  p.date{
-  top: 30em;  
-}
-
-.pdf-page .quarto-title-author{
-  position: relative;
-  top: 1em;
-  left: -23em;
+  top: 35em;  
 }
 
 .print-pdf .slide-logo{
