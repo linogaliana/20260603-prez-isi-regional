@@ -13,8 +13,7 @@ project:
     - "*.html"
     - "*_files/"
   render:
-    - "*.qmd"
-    - "!R/data.qmd"
+    - "index.qmd"
     
 format:
   insee-clair-revealjs: default

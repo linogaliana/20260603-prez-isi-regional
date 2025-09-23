@@ -1,13 +1,12 @@
 ---
-title: "Titre de la présentation sur deux lignes ou trois lignes"
-subtitle: "Sous titre de la présentation"
-# institute: INSEE
-# author: Vous
-date: today
-date-format: "DD/MM/YYYY"
+title: "Imputation des variables de temps"
+subtitle: "Sous GT SIASP #1"
+institute: Insee
+author: "Léna Esbelin, Lino Galiana, Téo Moreau"
+date: "2025-09-15"
+# date-format: "DD/MM/YYYY"
 description: |
-  template de support de présentation interactif intégrant la charte graphique de l'Insee
-
+  Présentation pour le sous GT
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
 jump-to-slide: true #press "g" to jump and the number of slide
@@ -24,110 +23,330 @@ execute:
   echo: false
   warning: false
   cache: false
-editor:
-  render-on-save: true
-
-params:
-  annee: "2023"
-  codeDepartement: "87"
-  codeRegion: "75"
-  typeEquipement: "G103"
 ---
 
-# Titre de niveau 1 {#chapters_0 .backgroundTitre_bleu}
+# Objectif {#chapters_0 .backgroundTitre_bleu}
 
 :::{.logoTopRightTitre}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
-## Titre de niveau 2 {#section_0_1 .backgroundStandard_bleu}
+
+
+## Objectif du sous-GT {#section_0_1 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-titre de niveau 1
+Objectif sous GT
 :::
 
 :::{.logoTopLeftStandard}
-![](img/logo_Regions/LOGOS_NOUVELLE-AQUTAINE_SIGNATURE_CMJN.jpg)
+![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
+Détermination du caractère annexe d'un poste dépend de :
 
-### Titre de niveau 3
+* Rémunération: Si > 3 x SMIC, poste non annexe
+* **Nombre d'heures** (`nb_heures`) ou **durée** (`duree`) est suffisant ; 
 
-#### Titre de niveau 4
+::::: {.columns}
 
-##### Titre de niveau 5
+:::: {.column width="40%"}
 
-###### Titre de niveau 6
+<br><br>
 
+::: {.callout-important}
+## `nb_heures` partiellement renseigné
 
-- liste de niveau 1
-  - liste de niveau 2
-    - liste de niveau 3
-      - liste de niveau 4
-        - liste de niveau 5
-          - liste de niveau 6
-
-::: {.notes}
-Taper "s" sur le clavier pour ouvrir le mode speaker view. Autoriser l'ouverture de la fenêtre bloquée la première fois par firefox. Fermer la fenêtre qui s'ouvre. Puis retaper sur "s" pour voir apparaitre les notes sur cette slide.
-:::
-
-
-## Titre transparent {#section_0_2 .backgroundStandard .titreTransparent data-menu-title="Slide sans titre ni numérotation"}
-
-:::{.enteteAvecTitre}
-titre de niveau 1
-:::
-
-
-::::{.rehausserContenuSansTitre}
-
-[Exercice :]{.bold}
-
-:::{.listeSansPuceNiveau1}
-- [Slide avec titre de niveau 2 caché]{.puceListFleche}
-:::
-
-:::{.callout-note}
-Sur une page standard, il vaut mieux mettre un titre de niveau 2 et le cacher que de ne pas en mettre du tout. Si on n'en met pas, ça fait remonter l'entête avec titre de la slide car ce dernier est positionné par rapport au titre de niveau 2.
-:::
-
-:::{.listeSansPuceNiveau1}
-- Pour ré-hausser le contenu de votre slide si celle-ci est chargée, vous pouvez encapsuler le contenu de la slide en utilisant les classes CSS suivantes sur une div (encadrement avec `::::`) :
-  - `.rehausserContenuSansTitre` si vous ne mettez pas de titre à votre section (comme c'est le cas ici)
-  - `.rehausserContenuAvecTitre` si vous mettez un titre de section visible.
-:::
+Beaucoup de redressements
+::: 
 
 ::::
 
+::: {.column width="60%"}
+<!-----
+Code: 
+> base_postes_N %>% group_by(domempl_empl, ir_nbheur) %>% tally() %>% collect()
 
-<!-- Ajout des autres parties du support -->
+------>
 
-{{< include 01_styleParDefaut.qmd >}}
+```{python}
+import pandas as pd
+import duckdb 
 
-{{< include 02_modulariteSupport.qmd >}}
+# Création du DataFrame
+df = pd.DataFrame({
+    "domempl_empl": ["FPT", "FPT", "FPE", "FPE", "FPH", "FPH"],
+    "ir_nbheur": ["Renseignées", "Redressées", "Renseignées", "Redressées", "Renseignées", "Redressées"],
+    "n": [2618788, 577173, 3281933, 800724, 1443776, 374364]
+})
 
-{{< include 03_parametresExecution.qmd >}}
+df["part"] = df["n"] / df.groupby("domempl_empl")["n"].transform("sum")
+df["part_temp"] = df["part"]
+```
 
-{{< include 04_fenetreModale.qmd >}}
+```{python}
+from great_tables import *
 
-{{< include 05_exportPdf.qmd >}}
 
-{{< include 06_documentation.qmd >}}
+(
+    GT(
+        df.sort_values("domempl_empl"),
+        rowname_col="ir_nbheur",
+        groupname_col="domempl_empl",
+    )
+    .tab_header(
+        title=md("Etat de la variable `nbheur`"),
+        subtitle=md("Sur le millésime temporaire 2024 (`V2`)"),
+    )
+    .tab_source_note(
+        source_note=md(
+            "_Reproductibilité_: Sur la V2, `base_postes_N %>% group_by(domempl_empl, ir_nbheur) %>% tally() %>% collect()`"
+        )
+    )
+    .fmt_nanoplot(columns="part_temp", plot_type="line")
+    .fmt_percent(columns="part")
+    .fmt_number(columns="n", decimals=0, sep_mark=" ")
+    .cols_label(
+        n="Nombre de postes",
+        part="%",
+        part_temp=""
+    )
+)
+```
 
-          
+:::
+
+:::::
+
+
+
+
+
+## Objectif du sous-GT {#section_0_2 .backgroundStandard_bleu .unnumbered}
+
+
+* Effet de bord: le redressement peut affecter le caractère annexe d'un poste
+  * Donc les effectifs, EQTP... 
+
+. . .
+
+* Quelques sous-populations ont un recalage _ad hoc_:
+  * Exemple: militaires (quotité à 100% d'office)
+
+. . .
+
+* Cas général: imputation par _hotdeck_
+  * Validité statistique globale
+  * Mais sous-populations problématiques ?
+  * Lesquelles ? Quelles solutions envisageables ?
+
+::: {.callout-important}
+## Objectif aujourd'hui
+
+* Présenter les choix faits jusqu'à présent ; 
+* Réfléchir collectivement aux contrôles à mettre en oeuvre et correctifs possibles.
+
+:::
+
+# Revue de l'existant {#chapters_1 .backgroundTitre_bleu}
+
+## Traitements des données dans la chaîne de production {#section_1_0 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Revue de l'existant
+:::
+
+. . .
+
+* **Durée de travail annuelle**:
+  *  Périodes d'activité déclarées (_salaires bruts servant aux calculs des droits de l'assurance chômage_)
+
+. . .
+
+* **Taux de quotité**:
+  * Estimation par les variables de quotité
+    * Arbre de décision basé principalement sur la nature du poste (_modalité d'exercice, statut d'emploi, unité de mesure ..._)
+  * Estimation par les volumes d'activités
+    * Si l'estimation par les variables de quotité est nulle ou manquante **et que le mois est complet**
+    -> ratio entre le nombre d'heures déclaré et le nombre d'heures théorique réalisé sur un mois à temps plein sur un poste à temps complet (_151,67 heures_)
+
+. . .
+
+* **Nombre d'heures rémunérées**
+  * Si il existe un volume de travail déclaré -> règle d'uniformisation des différentes unités de mesure
+  * Sinon -> imputation à partir de la quotité moyenne (_en référence à un temps plein théorique de 35H hebdomadaires_)
+
+## Redressements hors chaîne de production {#section_1_1 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Revue de l'existant
+:::
+
+. . .
+
+**Traitements spécifiques sur certaines sous-populations**
+
+. . .
+
+* Critère conventionnel du SMIC brut
+  * ASMA, ELUS, VOLM
+
+. . .
+
+* Critère conventionnel du temps plein
+  * APPR, ELEV, SCIV, INTE, MILT, MILC
+
+. . .
+
+* Critère conventionnel du temps de travail des PU-PH
+  * 50/50 entre FPE et FPH
+
+## Redressements hors chaîne de production {#section_1_11 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Revue de l'existant
+:::
+
+**Repérage des cas aberrants et incohérents**
+
+. . .
+
+* Critère prédictif
+
+. . .
+
+![](./critere_predictif_declare.png) _vs_ ![](./critere_predictif_regresse.png)
+
+. . .
+
+* Critère de filtre
+  * filtre de cohérence sur les très hautes rémunérations (_salaire horaire brut supérieur à un tiers du SMIC brut mensuel_)
+  * filtre de cohérence sur les salaires bruts inférieurs au SMIC (_salaire mensuel brut en EQTP inférieur à deux tiers du SMIC mensuel brut_)
+  * filtre des MAIT à salaires très élevés (_durée supérieure à 300 jours et EQTP inférieur à 0,3_)
+
+## Redressements hors chaîne de production {#section_1_12 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Revue de l'existant
+:::
+
+**Imputation statistique**
+
+. . .
+
+* **Variables imputées** : durée, quotité moyenne et nombre d’heures.
+
+. . .
+
+* **Variables prédictives** : sexe, age, grade, catégorie juridique du lieu de travail, code APE du lieu de travail, département d’implantation du lieu de travail, salaire net, salaire brut, traitement indiciaire et indice majoré.
+
+. . .
+
+* Algorithme **MICE** 
+  * imputation réalisée indépendamment pour chaque couple versant*statut/contrat
+
+## Redressements hors chaîne de production {#section_1_13 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Revue de l'existant
+:::
+
+**Post-traitements**
+
+. . .
+
+* Bornage du nombre d'heures, de la quotité moyenne et de la durée
+
+. . .
+
+* Détermination des EQTP :
+
+. . .
+
+![](./determination_eqtp.png)
+
+## Présentation de la documentation {#section_1_2 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Revue de l'existant
+:::
+
+![](./memes_reading.png)
+
+# Sujets supplémentaires {#chapters_2 .backgroundTitre_bleu}
+
+## Mayotte {#section_2_0 .backgroundStandard_bleu .unnumbered}
+
+* Champ des _Insee Première_ privé **élargi à Mayotte**
+
+. . .
+
+* Intention de **faire de même pour public**
+  * DSN estimées d'assez bonne qualité pour le faire
+  * Pas de figure ou tableau spéifique à Mayotte 
+
+::: {.callout-warning}
+Attention à la CSG différente de la France héxagonale
+
+* Vigilance à contrôler implémentation dans les équations de salaire 
+:::
+
+## Tchap SIASP - FPE 💬
+
+* Projet de création d'un `Tchap` pour échanger en multilatéral sur les sujets spécifiques à la FPE
+
+::: {.callout-note}
+## Exemple
+
+Question SSMSI sur nomenclature de ventilation budgétaire
+:::
+
+## Déclarations CISIRH {#section_2_1 .backgroundStandard_bleu .unnumbered}
+
+* Prévision d'un échange "Qualité" sur les remontées CISIRH avec DGFiP
+
+. . .
+
+* Quels contrôles qualité mettre en oeuvre?
+
+::: {.callout-tip}
+## Exemple de problème déjà identifié
+
+Manque d'uniformisation des rubriques (pas toujours volume d'heure mensuel):
+
+* Quotité de travail (`S21.G00.40.013`)
+* Quotité de travail de référence (`S21.G00.40.012`)
+
+Incomplétude de :
+
+* Modalité d'exercice du temps de travail (`S21.G00.40.014`) pour donner une info sur temps partiel / temps plein
+* Taux de travail à temps partiel (`S21.G00.40.055`)
+
+Incohérences dans ces 4 variables
+:::
+
+## Correctifs éducation nationale {#section_2_4 .backgroundStandard_bleu .unnumbered}
+
+:::{.enteteAvecTitre}
+Sujets supplémentaires 
+:::
+
+* Un correctif proposé pour l'éducation nationale pour millésime 2023 a été remonté dans la chaine
+  * Pas d'incohérence ?
+
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
 :::: {.columns .coordonneesFinales}
 
 ::: {.column .coordonnees width=50%}
-- Prénom Nom
-- fonction
-- Service
-- Numéro de téléphone
-- Mél
+- Léna Esbelin, Lino Galiana, Téo Moreau
+- Section expertise de la fonction publique
+- <siasp@insee.fr>
 :::
 
 ::: {.column .droite width=40%}
 :::
 
 ::::
+
+
