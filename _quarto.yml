@@ -48,7 +48,6 @@ link-external-newwindow: true
 code-fold: true
 code-summary: "Code"
 code-copy: true
-highlight-style: atom-one
 
 menu: {
   side: 'left',
