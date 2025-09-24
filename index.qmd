@@ -1,12 +1,12 @@
 ---
-title: "Imputation des variables de temps"
-subtitle: "Sous GT SIASP #1"
+title: "Groupe de travail #2"
+subtitle: "Campagne 2025"
 institute: Insee
 author: "Léna Esbelin, Lino Galiana, Téo Moreau"
-date: "2025-09-15"
+date: "2025-09-29"
 # date-format: "DD/MM/YYYY"
 description: |
-  Présentation pour le sous GT
+  Présentation pour le GT #2
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
 jump-to-slide: true #press "g" to jump and the number of slide
