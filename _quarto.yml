@@ -35,7 +35,7 @@ controls-layout: bottom-right
 controls-tutorial: true
 controls-back-arrows: faded
 background-transition: fade
-navigation-mode: vertical # linear/grid or vertical
+navigation-mode: linear # linear/grid or vertical
 history: true
 transition-speed: slow
 number-sections: true

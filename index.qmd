@@ -17,12 +17,6 @@ fig-cap-location: bottom
 embed-resources: false
 
 custom-toc: true
-
-# multiplex: true
-execute:
-  echo: false
-  warning: false
-  cache: false
 ---
 
 # Programme de la séance {#intro .backgroundTitre_bleu}
@@ -31,128 +25,40 @@ execute:
 ![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
-* Tour de table ;
+## Programme {.backgroundStandard_bleu .unnumbered}
+
+
+* **Tour de table** ;
 * Calendrier prévisionnel et organisation de la campagne ;
 * Evolutions depuis le premier GT ;
 * Tableaux temporaires des publications ;
 * Retours d'expertises ;
 * Chantiers conceptuels à venir. 
 
+# Calendrier prévisionnel {#calendrier .backgroundTitre_violet}
 
-## Objectif du sous-GT {#section_0_1 .backgroundStandard_bleu .unnumbered}
+
+## Calendrier prévisionnel {.backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Objectif sous GT
+Calendrier prévisionnel
 :::
 
 :::{.logoTopLeftStandard}
 ![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
-Détermination du caractère annexe d'un poste dépend de :
 
-* Rémunération: Si > 3 x SMIC, poste non annexe
-* **Nombre d'heures** (`nb_heures`) ou **durée** (`duree`) est suffisant ; 
-
-::::: {.columns}
-
-:::: {.column width="40%"}
-
-<br><br>
-
-::: {.callout-important}
-## `nb_heures` partiellement renseigné
-
-Beaucoup de redressements
-::: 
-
-::::
-
-::: {.column width="60%"}
-<!-----
-Code: 
-> base_postes_N %>% group_by(domempl_empl, ir_nbheur) %>% tally() %>% collect()
-
------->
-
-```{python}
-import pandas as pd
-import duckdb 
-
-# Création du DataFrame
-df = pd.DataFrame({
-    "domempl_empl": ["FPT", "FPT", "FPE", "FPE", "FPH", "FPH"],
-    "ir_nbheur": ["Renseignées", "Redressées", "Renseignées", "Redressées", "Renseignées", "Redressées"],
-    "n": [2618788, 577173, 3281933, 800724, 1443776, 374364]
-})
-
-df["part"] = df["n"] / df.groupby("domempl_empl")["n"].transform("sum")
-df["part_temp"] = df["part"]
-```
-
-```{python}
-from great_tables import *
+## Programme {.backgroundStandard_bleu .unnumbered}
 
 
-(
-    GT(
-        df.sort_values("domempl_empl"),
-        rowname_col="ir_nbheur",
-        groupname_col="domempl_empl",
-    )
-    .tab_header(
-        title=md("Etat de la variable `nbheur`"),
-        subtitle=md("Sur le millésime temporaire 2024 (`V2`)"),
-    )
-    .tab_source_note(
-        source_note=md(
-            "_Reproductibilité_: Sur la V2, `base_postes_N %>% group_by(domempl_empl, ir_nbheur) %>% tally() %>% collect()`"
-        )
-    )
-    .fmt_nanoplot(columns="part_temp", plot_type="line")
-    .fmt_percent(columns="part")
-    .fmt_number(columns="n", decimals=0, sep_mark=" ")
-    .cols_label(
-        n="Nombre de postes",
-        part="%",
-        part_temp=""
-    )
-)
-```
+* Tour de table ;
+* Calendrier prévisionnel et organisation de la campagne ;
+* **Evolutions depuis le premier GT** ;
+* Tableaux temporaires des publications ;
+* Retours d'expertises ;
+* Chantiers conceptuels à venir. 
 
-:::
-
-:::::
-
-
-
-
-
-## Objectif du sous-GT {#section_0_2 .backgroundStandard_bleu .unnumbered}
-
-
-* Effet de bord: le redressement peut affecter le caractère annexe d'un poste
-  * Donc les effectifs, EQTP... 
-
-. . .
-
-* Quelques sous-populations ont un recalage _ad hoc_:
-  * Exemple: militaires (quotité à 100% d'office)
-
-. . .
-
-* Cas général: imputation par _hotdeck_
-  * Validité statistique globale
-  * Mais sous-populations problématiques ?
-  * Lesquelles ? Quelles solutions envisageables ?
-
-::: {.callout-important}
-## Objectif aujourd'hui
-
-* Présenter les choix faits jusqu'à présent ; 
-* Réfléchir collectivement aux contrôles à mettre en oeuvre et correctifs possibles.
-
-:::
 
 # Traitements disponibles dans la V2 du millésime 2024 {#chapters_1 .backgroundTitre_bleu}
 
@@ -162,24 +68,23 @@ from great_tables import *
 Traitements disponibles dans la V2 du millésime 2024
 :::
 
-. . .
-
 **Ajout du net social pour l'année 2024**
 
-* Le montant du net social directement issu de la DSN (_S21.G00.50.078_) -> **net_social**
+* Le montant du net social directement issu de la DSN (_S21.G00.50.078_) -> `net_social`
 
 . . .
 
 **Ajout d'une variable isolant les postes principaux annexes et non annexes au 31/12 pour les deux années**
 
-* Caractère annexe du poste principal au 3112 -> **pps_3112_a_na**
+* Caractère annexe du poste principal au 3112 -> `pps_3112_a_na`
 
-. . .
 
-* Modalités :  
-  * _"0"_: Poste non principal au 31/12
-  * _"1"_: Poste principal au 31/12 non annexe
-  * _"2"_: Poste principal au 31/12 annexe
+| Modalité | Signification                           |
+|----------|------------------------------------------|
+| 0      | Poste non principal au 31/12             |
+| 1      | Poste principal au 31/12 non annexe      |
+| 2      | Poste principal au 31/12 annexe          |
+
 
 ## Sujets effectifs {#section_1_1 .backgroundStandard_bleu .unnumbered}
 
@@ -240,8 +145,6 @@ Traitements disponibles dans la V2 du millésime 2024
 Evolutions envisagées pour la V3 du millésime 2024
 :::
 
-. . .
-
 * **Rajout de la variable nb_per pour les deux années**
   * **nb_per**: le nombre de périodes au sein d'un poste. 
 
@@ -283,66 +186,104 @@ Evolutions envisagées pour la V3 du millésime 2024
 
 * **Mise à jour du code de création de la variable fp_statut_contrat**
 
-# Sujets supplémentaires {#chapters_3 .backgroundTitre_bleu}
+## Programme {.backgroundStandard_bleu .unnumbered}
 
-## Mayotte {#section_3_0 .backgroundStandard_bleu .unnumbered}
 
-* Champ des _Insee Première_ privé **élargi à Mayotte**
+* Tour de table ;
+* Calendrier prévisionnel et organisation de la campagne ;
+* Evolutions depuis le premier GT ;
+* **Tableaux temporaires des publications** ;
+* Retours d'expertises ;
+* Chantiers conceptuels à venir. 
+
+## Tableaux temporaires des publications {.backgroundStandard_bleu .unnumbered}
+
+## Programme {.backgroundStandard_bleu .unnumbered}
+
+
+* Tour de table ;
+* Calendrier prévisionnel et organisation de la campagne ;
+* Evolutions depuis le premier GT ;
+* Tableaux temporaires des publications ;
+* **Retours d'expertises** ;
+* Chantiers conceptuels à venir. 
+
+# Retours d'expertise {#retex .backgroundTitre_violet}
+
+## Programme {.backgroundStandard_bleu .unnumbered}
+
+
+* Tour de table ;
+* Calendrier prévisionnel et organisation de la campagne ;
+* Evolutions depuis le premier GT ;
+* Tableaux temporaires des publications ;
+* Retours d'expertises ;
+* **Chantiers conceptuels à venir**. 
+
+# Chantiers conceptuels {#chantiers .backgroundTitre_violet}
+
+## Lancement d'un GT méthodo sur les concepts
+
+* Volonté de faire converger les concepts d'emploi pour harmoniser les chiffres publiés:
+  * Champ Mayotte
+  * Sujet des indemnitaires
+  * Notion de temps de travail et d'emploi principal
 
 . . .
 
-* Intention de **faire de même pour public**
-  * DSN estimées d'assez bonne qualité pour le faire
-  * Pas de figure ou tableau spéifique à Mayotte 
-
-::: {.callout-warning}
-Attention à la CSG différente de la France héxagonale
-
-* Vigilance à contrôler implémentation dans les équations de salaire 
-:::
-
-## Tchap SIASP - FPE 💬
-
-* Projet de création d'un `Tchap` pour échanger en multilatéral sur les sujets spécifiques à la FPE
-
-::: {.callout-note}
-## Exemple
-
-Question SSMSI sur nomenclature de ventilation budgétaire
-:::
-
-## Déclarations CISIRH {#section_3_1 .backgroundStandard_bleu .unnumbered}
-
-* Prévision d'un échange "Qualité" sur les remontées CISIRH avec DGFiP
+* Chantier de moyen terme 
 
 . . .
 
-* Quels contrôles qualité mettre en oeuvre?
+* Lancement d'un GT sur les concepts 
+  * Appel à volontaires
+  * Horizon du GT: début 2026
 
-::: {.callout-tip}
-## Exemple de problème déjà identifié
+## Intégration de Mayotte
 
-Manque d'uniformisation des rubriques (pas toujours volume d'heure mensuel):
+* Privé: intègre Mayotte dans le champ cette année
 
-* Quotité de travail (`S21.G00.40.013`)
-* Quotité de travail de référence (`S21.G00.40.012`)
+. . . 
 
-Incomplétude de :
+* Public: On a déjà les emplois localisés à Mayotte
 
-* Modalité d'exercice du temps de travail (`S21.G00.40.014`) pour donner une info sur temps partiel / temps plein
-* Taux de travail à temps partiel (`S21.G00.40.055`)
+. . . 
 
-Incohérences dans ces 4 variables
-:::
+* Vérifications à faire pour s'assurer que la chaîne est prête pour Mayotte
+    * Question CSG -> Karnaugh des salaires à adapter
 
-## Correctifs éducation nationale {#section_3_2 .backgroundStandard_bleu .unnumbered}
+## Indemnitaires
 
-:::{.enteteAvecTitre}
-Sujets supplémentaires 
-:::
+* Situations où un même poste génère des rémunérations dans le même établissement mais sur plusieurs versants ou public/privé
+  * Exemple: les indemnités de cantine des instituteurs
 
-* Un correctif proposé pour l'éducation nationale pour millésime 2023 a été remonté dans la chaine
-  * Pas d'incohérence ?
+. . . 
+
+* Chaîne pas prévue pour cela
+
+. . . 
+
+* Enjeu de les identifier au plus tôt
+  * Trouver des pistes pour cela
+
+
+## Convergence des concepts
+
+* L'Insee a d'autres productions à partir des DSN:
+  * Estimations trimestrielles d'emploi (ETE) ;
+  * Estimations annuelles d'emploi (EAE) ;
+  * Base "Tous salariés"...
+
+. . .
+
+* Estimations d'effectifs différentes:
+  * Différences de champs
+  * Différences de concepts
+
+. . . 
+
+* Réflexion sur ces différences et les voies d'harmonisation
+
 
 ## {#pageDeFin data-menu-title="Page finale" .unnumbered .backgroundPageFinale}
 
