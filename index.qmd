@@ -27,6 +27,7 @@ custom-toc: true
 
 ## Tour de table {.backgroundStandard_bleu .unnumbered}
 
+[Image à insérer]
 
 # Calendrier prévisionnel {#calendrier .backgroundTitre_violet}
 
@@ -261,6 +262,7 @@ df_total = pl.from_pandas(df_total)
 
 ## Retours d'expertise
 
+[Image à insérer]
 
 # Chantiers conceptuels {#chantiers .backgroundTitre_violet}
 
