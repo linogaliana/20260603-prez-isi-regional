@@ -154,134 +154,138 @@ from great_tables import *
 
 :::
 
-# Revue de l'existant {#chapters_1 .backgroundTitre_bleu}
+# Traitements disponibles dans la V2 du millésime 2024 {#chapters_1 .backgroundTitre_bleu}
 
-## Traitements des données dans la chaîne de production {#section_1_0 .backgroundStandard_bleu .unnumbered}
+## Structure des bases du millésime 2024 {#section_1_0 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Revue de l'existant
+Traitements disponibles dans la V2 du millésime 2024
 :::
 
 . . .
 
-* **Durée de travail annuelle**:
-  *  Périodes d'activité déclarées (_salaires bruts servant aux calculs des droits de l'assurance chômage_)
+**Ajout du net social pour l'année 2024**
+
+* Le montant du net social directement issu de la DSN (_S21.G00.50.078_) -> **net_social**
 
 . . .
 
-* **Taux de quotité**:
-  * Estimation par les variables de quotité
-    * Arbre de décision basé principalement sur la nature du poste (_modalité d'exercice, statut d'emploi, unité de mesure ..._)
-  * Estimation par les volumes d'activités
-    * Si l'estimation par les variables de quotité est nulle ou manquante **et que le mois est complet**
-    -> ratio entre le nombre d'heures déclaré et le nombre d'heures théorique réalisé sur un mois à temps plein sur un poste à temps complet (_151,67 heures_)
+**Ajout d'une variable isolant les postes principaux annexes et non annexes au 31/12 pour les deux années**
+
+* Caractère annexe du poste principal au 3112 -> **pps_3112_a_na**
 
 . . .
 
-* **Nombre d'heures rémunérées**
-  * Si il existe un volume de travail déclaré -> règle d'uniformisation des différentes unités de mesure
-  * Sinon -> imputation à partir de la quotité moyenne (_en référence à un temps plein théorique de 35H hebdomadaires_)
+* Modalités :  
+  * _"0"_: Poste non principal au 31/12
+  * _"1"_: Poste principal au 31/12 non annexe
+  * _"2"_: Poste principal au 31/12 annexe
 
-## Redressements hors chaîne de production {#section_1_1 .backgroundStandard_bleu .unnumbered}
+## Sujets effectifs {#section_1_1 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Revue de l'existant
+Traitements disponibles dans la V2 du millésime 2024
 :::
 
 . . .
 
-**Traitements spécifiques sur certaines sous-populations**
+**Mise à jour de la table de correspondance entre siren et codes ministères**
+
+* La V1 a été générée avec la **table 2023**
+* A partir de la V2 on utilise **table 2024**
 
 . . .
 
-* Critère conventionnel du SMIC brut
-  * ASMA, ELUS, VOLM
+**Identification des pompiers militaires de Marseille en 2024**
+
+* En l'absence de codes CREDO, il n'est plus possible d'identifier précisément les pompiers militaires de Marseille
+* Substitut utilisé à partir de la V2: on isole **les militaires dont le lieu de résidence est Marseille et dont le matricule indique la Marine**
 
 . . .
 
-* Critère conventionnel du temps plein
-  * APPR, ELEV, SCIV, INTE, MILT, MILC
+**Redressement de la quotité des militaires contractuels (MILC) à partir de la V2**
 
-. . .
+* Dans la V1 la quotité des MILC n'était pas forcée à 100
 
-* Critère conventionnel du temps de travail des PU-PH
-  * 50/50 entre FPE et FPH
-
-## Redressements hors chaîne de production {#section_1_11 .backgroundStandard_bleu .unnumbered}
+## Sujets salaires {#section_1_2 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Revue de l'existant
+Traitements disponibles dans la V2 du millésime 2024
 :::
 
-**Repérage des cas aberrants et incohérents**
+**Révision du Karnaugh des salaires en 2024**
 
 . . .
 
-* Critère prédictif
+* En **norme DSN 2023**, les déclarants étaient censés **intégrer les montants liés aux heures supplémentaires exonérées dans le net fiscal**, qui sert de base à l’estimation du salaire net. 
+  * Millésime 2023: mise en place d'un correctif pour intégrer au net fiscal les montants liés aux heures supplémentaires exonérées non déclarées.
 
 . . .
 
-![](./critere_predictif_declare.png) _vs_ ![](./critere_predictif_regresse.png)
+* À l’inverse, dans la **norme DSN 2024**, il a été décidé de **ne plus inclure les heures supplémentaires exonérées dans le net fiscal** -> création d'une rubrique à part entière !
 
 . . .
 
-* Critère de filtre
-  * filtre de cohérence sur les très hautes rémunérations (_salaire horaire brut supérieur à un tiers du SMIC brut mensuel_)
-  * filtre de cohérence sur les salaires bruts inférieurs au SMIC (_salaire mensuel brut en EQTP inférieur à deux tiers du SMIC mensuel brut_)
-  * filtre des MAIT à salaires très élevés (_durée supérieure à 300 jours et EQTP inférieur à 0,3_)
+* **V2: Adaptation du Karnaugh à la norme DSN 2024**
 
-## Redressements hors chaîne de production {#section_1_12 .backgroundStandard_bleu .unnumbered}
+. . .
+
+* **V3: Adaptation du Karnaugh à la norme DSN 2024 + suppression du correctif mis en place lors du millésime 2023**
+
+# Evolutions envisagées pour la V3 du millésime 2024 {#chapters_2 .backgroundTitre_bleu}
+
+## Structure des bases du millésime 2024 {#section_2_0 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Revue de l'existant
+Evolutions envisagées pour la V3 du millésime 2024
 :::
 
-**Imputation statistique**
-
 . . .
 
-* **Variables imputées** : durée, quotité moyenne et nombre d’heures.
+* **Rajout de la variable nb_per pour les deux années**
+  * **nb_per**: le nombre de périodes au sein d'un poste. 
 
-. . .
-
-* **Variables prédictives** : sexe, age, grade, catégorie juridique du lieu de travail, code APE du lieu de travail, département d’implantation du lieu de travail, salaire net, salaire brut, traitement indiciaire et indice majoré.
-
-. . .
-
-* Algorithme **MICE** 
-  * imputation réalisée indépendamment pour chaque couple versant*statut/contrat
-
-## Redressements hors chaîne de production {#section_1_13 .backgroundStandard_bleu .unnumbered}
+## Sujets effectifs {#section_2_1 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Revue de l'existant
+Evolutions envisagées pour la V3 du millésime 2024
 :::
 
-**Post-traitements**
+. . .
+
+* **Intégration des déclarations décalées de la FPT en 2024**
+  * Prévision pour la V3: +0,3% en évolution annuelle (_yc. contrats aidés_)
 
 . . .
 
-* Bornage du nombre d'heures, de la quotité moyenne et de la durée
+* **Augmentation des effectifs des militaires au 31/12 en 2024**
 
 . . .
 
-* Détermination des EQTP :
+* **Baisse du volume d'emploi des "Autres catégories et statuts" dans la FPE en 2024**
 
-. . .
-
-![](./determination_eqtp.png)
-
-## Présentation de la documentation {#section_1_2 .backgroundStandard_bleu .unnumbered}
+## Autres sujets {#section_2_2 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
-Revue de l'existant
+Evolutions envisagées pour la V3 du millésime 2024
 :::
 
-![](./memes_reading.png)
+. . .
 
-# Sujets supplémentaires {#chapters_2 .backgroundTitre_bleu}
+* **Forcer le redressement de la quotité moyenne des agents titulaires**
+  * Lorsque la quotité moyenne est incohérente au regard du traitement indiciaire on force le redressement:
 
-## Mayotte {#section_2_0 .backgroundStandard_bleu .unnumbered}
+    * FPE on passerait de 9,5% à **14,2%** (_part des postes pour lesquels la quotité moyenne est redressée_)
+    * FPT on passerait de 2,9% à **13,7%** (_part des postes pour lesquels la quotité moyenne est redressée_)
+    * FPH on passerait de 4,3% à **13,9%** (_part des postes pour lesquels la quotité moyenne est redressée_)
+
+. . .
+
+* **Mise à jour du code de création de la variable fp_statut_contrat**
+
+# Sujets supplémentaires {#chapters_3 .backgroundTitre_bleu}
+
+## Mayotte {#section_3_0 .backgroundStandard_bleu .unnumbered}
 
 * Champ des _Insee Première_ privé **élargi à Mayotte**
 
@@ -307,7 +311,7 @@ Attention à la CSG différente de la France héxagonale
 Question SSMSI sur nomenclature de ventilation budgétaire
 :::
 
-## Déclarations CISIRH {#section_2_1 .backgroundStandard_bleu .unnumbered}
+## Déclarations CISIRH {#section_3_1 .backgroundStandard_bleu .unnumbered}
 
 * Prévision d'un échange "Qualité" sur les remontées CISIRH avec DGFiP
 
@@ -331,7 +335,7 @@ Incomplétude de :
 Incohérences dans ces 4 variables
 :::
 
-## Correctifs éducation nationale {#section_2_4 .backgroundStandard_bleu .unnumbered}
+## Correctifs éducation nationale {#section_3_2 .backgroundStandard_bleu .unnumbered}
 
 :::{.enteteAvecTitre}
 Sujets supplémentaires 

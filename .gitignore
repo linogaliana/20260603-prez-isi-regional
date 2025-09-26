@@ -13,6 +13,7 @@
 *.sty
 *.docx
 *.odt
+uv.lock
 _output/
 !modulesCompl/*
 **/*.quarto_ipynb
