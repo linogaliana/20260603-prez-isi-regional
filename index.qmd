@@ -1,6 +1,6 @@
 ---
 title: "Groupe de travail #2"
-subtitle: "Campagne 2025"
+subtitle: "Campagne SIASP 2024"
 institute: Insee
 author: "Léna Esbelin, Lino Galiana, Téo Moreau"
 date: "2025-09-29"
@@ -25,12 +25,18 @@ execute:
   cache: false
 ---
 
-# Objectif {#chapters_0 .backgroundTitre_bleu}
+# Programme de la séance {#intro .backgroundTitre_bleu}
 
 :::{.logoTopRightTitre}
 ![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
+* Tour de table ;
+* Calendrier prévisionnel et organisation de la campagne ;
+* Evolutions depuis le premier GT ;
+* Tableaux temporaires des publications ;
+* Retours d'expertises ;
+* Chantiers conceptuels à venir. 
 
 
 ## Objectif du sous-GT {#section_0_1 .backgroundStandard_bleu .unnumbered}
