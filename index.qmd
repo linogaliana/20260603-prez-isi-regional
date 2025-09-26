@@ -19,23 +19,20 @@ embed-resources: false
 custom-toc: true
 ---
 
-# Programme de la séance {#intro .backgroundTitre_bleu}
+# Tour de table {.backgroundTitre_bleu}
 
 :::{.logoTopRightTitre}
 ![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
-## Programme {.backgroundStandard_bleu .unnumbered}
+## Tour de table {.backgroundStandard_bleu .unnumbered}
 
-
-* **Tour de table** ;
-* Calendrier prévisionnel et organisation de la campagne ;
-* Evolutions depuis le premier GT ;
-* Tableaux temporaires des publications ;
-* Retours d'expertises ;
-* Chantiers conceptuels à venir. 
 
 # Calendrier prévisionnel {#calendrier .backgroundTitre_violet}
+
+## Calendrier prévisionnel {.backgroundStandard_bleu .unnumbered}
+
+![](gantt.png)
 
 
 ## Calendrier prévisionnel {.backgroundStandard_bleu .unnumbered}
@@ -48,19 +45,24 @@ Calendrier prévisionnel
 ![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
 :::
 
+* _Deadline_ fin 2025 pour les **effectifs**:
+  * Anticiper la publication de l'_Insee Première_ en décembre   
 
-## Programme {.backgroundStandard_bleu .unnumbered}
+. . .
 
+* _Deadline_ début 2026 pour les **salaires**:
+  * Anticiper des _Insee Première_ autour d'Avril 2026  
 
-* Tour de table ;
-* Calendrier prévisionnel et organisation de la campagne ;
-* **Evolutions depuis le premier GT** ;
-* Tableaux temporaires des publications ;
-* Retours d'expertises ;
-* Chantiers conceptuels à venir. 
+. . .
 
+* Accélération du calendrier à anticiper l'an prochain
+  * Phase de préparation de la campagne: avoir tous les _inputs_ de la chaine
 
-# Traitements disponibles dans la V2 du millésime 2024 {#chapters_1 .backgroundTitre_bleu}
+<!----
+Partie bilan
+------>
+
+# `V2` du millésime 2024 {#chapters_1 .backgroundTitre_bleu}
 
 ## Structure des bases du millésime 2024 {#section_1_0 .backgroundStandard_bleu .unnumbered}
 
@@ -137,7 +139,7 @@ Traitements disponibles dans la V2 du millésime 2024
 
 * **V3: Adaptation du Karnaugh à la norme DSN 2024 + suppression du correctif mis en place lors du millésime 2023**
 
-# Evolutions envisagées pour la V3 du millésime 2024 {#chapters_2 .backgroundTitre_bleu}
+# Evolutions envisagées pour la `V3` {#chapters_2 .backgroundTitre_bleu}
 
 ## Structure des bases du millésime 2024 {#section_2_0 .backgroundStandard_bleu .unnumbered}
 
@@ -157,6 +159,7 @@ Evolutions envisagées pour la V3 du millésime 2024
 . . .
 
 * **Intégration des déclarations décalées de la FPT en 2024**
+  * ~~Baisse des effectifs de 1.7%~~
   * Prévision pour la V3: +0,3% en évolution annuelle (_yc. contrats aidés_)
 
 . . .
@@ -184,64 +187,104 @@ Evolutions envisagées pour la V3 du millésime 2024
 
 . . .
 
-* **Mise à jour du code de création de la variable fp_statut_contrat**
+* **Mise à jour du code de création de la variable `fp_statut_contrat`**
 
-## Programme {.backgroundStandard_bleu .unnumbered}
-
-
-* Tour de table ;
-* Calendrier prévisionnel et organisation de la campagne ;
-* Evolutions depuis le premier GT ;
-* **Tableaux temporaires des publications** ;
-* Retours d'expertises ;
-* Chantiers conceptuels à venir. 
 
 ## Tableaux temporaires des publications {.backgroundStandard_bleu .unnumbered}
 
-## Programme {.backgroundStandard_bleu .unnumbered}
+<br>
+<br>
 
+```{python}
+import pandas as pd
+from great_tables import *
+import polars as pl
 
-* Tour de table ;
-* Calendrier prévisionnel et organisation de la campagne ;
-* Evolutions depuis le premier GT ;
-* Tableaux temporaires des publications ;
-* **Retours d'expertises** ;
-* Chantiers conceptuels à venir. 
+data = [
+    ["FPE", 2576.9, 2599.8],
+    ["FPT", 2033.1, 2039.2],
+    ["FPH", 1243.8, 1248.2]
+]
+
+df = pd.DataFrame(data, columns=["Versant", "2023", "2024"])
+df["evol"] = (df["2024"]-df["2023"])/df["2023"]
+df["evol_temp"] = df["evol"]
+
+total_2023 = df["2023"].sum()
+total_2024 = df["2024"].sum()
+total_evol = (total_2024 - total_2023) / total_2023
+
+total_row = pd.DataFrame({
+    "Versant": ["Total"],
+    "2023": [total_2023],
+    "2024": [total_2024],
+    "evol": [total_evol],
+    "evol_temp": [total_evol]
+})
+
+df_total = pd.concat([df, total_row], ignore_index=True)
+df_total = pl.from_pandas(df_total)
+
+(
+  GT(df_total)
+  .tab_header(
+    title="Effectifs et évolution par versant de la fonction publique",
+    subtitle="Effectifs au 31/12 (milliers)"
+    )
+  .tab_source_note("Champ: IP Effectifs, y.c. contrats aidés")
+  .fmt_percent(columns="evol")
+  .fmt_nanoplot(columns="evol_temp")
+  .tab_spanner(
+        label="Evolution sur un an",
+        columns=["evol", "evol_temp"]
+    )
+  .cols_label(
+    {"evol": "", "evol_temp": ""} 
+  )
+  .tab_style(
+        style=[style.text(weight="bold"), style.fill(color="papayawhip")],
+        locations=loc.body(rows=pl.col("Versant") == "Total"),
+  )
+  .tab_style(
+    style.fill(color="aliceblue"),
+    loc.column_labels()
+  )
+  .tab_style(
+    style.fill(color="aliceblue"),
+    loc.spanner_labels(ids=["Evolution sur un an"])
+  )
+)
+```
+
 
 # Retours d'expertise {#retex .backgroundTitre_violet}
 
-## Programme {.backgroundStandard_bleu .unnumbered}
+## Retours d'expertise
 
-
-* Tour de table ;
-* Calendrier prévisionnel et organisation de la campagne ;
-* Evolutions depuis le premier GT ;
-* Tableaux temporaires des publications ;
-* Retours d'expertises ;
-* **Chantiers conceptuels à venir**. 
 
 # Chantiers conceptuels {#chantiers .backgroundTitre_violet}
 
 ## Lancement d'un GT méthodo sur les concepts
 
-* Volonté de faire converger les concepts d'emploi pour harmoniser les chiffres publiés:
+* **Faire converger les concepts** pour harmoniser les chiffres publiés:
   * Champ Mayotte
   * Sujet des indemnitaires
   * Notion de temps de travail et d'emploi principal
 
 . . .
 
-* Chantier de moyen terme 
+* Chantiers de **moyen terme**
 
 . . .
 
-* Lancement d'un GT sur les concepts 
+* Lancement d'un **GT sur les concepts** 
   * Appel à volontaires
   * Horizon du GT: début 2026
 
 ## Intégration de Mayotte
 
-* Privé: intègre Mayotte dans le champ cette année
+
+* BTS privée: intègre Mayotte dans le champ cette année
 
 . . . 
 
@@ -249,21 +292,24 @@ Evolutions envisagées pour la V3 du millésime 2024
 
 . . . 
 
-* Vérifications à faire pour s'assurer que la chaîne est prête pour Mayotte
-    * Question CSG -> Karnaugh des salaires à adapter
+* Vérifications à faire pour s'assurer que la chaîne est prête pour Mayotte:
+    * Par ex., CSG : Karnaugh des salaires à adapter
+
 
 ## Indemnitaires
 
-* Situations où un même poste génère des rémunérations dans le même établissement mais sur plusieurs versants ou public/privé
+<br>
+
+* Situation où un même poste génère des rémunérations dans le même établissement mais sur plusieurs versants ou public/privé
   * Exemple: les indemnités de cantine des instituteurs
 
 . . . 
 
-* Chaîne pas prévue pour cela
+* Chaîne n'avait pas prévue ce cas
 
 . . . 
 
-* Enjeu de les identifier au plus tôt
+* Enjeu d'identifier ces profils au plus tôt
   * Trouver des pistes pour cela
 
 

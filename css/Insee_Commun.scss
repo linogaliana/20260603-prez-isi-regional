@@ -27,6 +27,22 @@ $color-text-menu: #bebebe !default ;
 
 /**************GENERIQUE*******************/
 
+/*
+p {
+  font-family: $font-family-sans-serif;
+  color: $main-color-text;
+}
+
+li {
+  font-family: $font-family-sans-serif;
+  color: $main-color-text;
+}
+*/
+
+.gt_table {
+  font-size: 30px !important;
+}
+
 h1{
   font-size: $h1-font-size;
 }
