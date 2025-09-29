@@ -27,7 +27,7 @@ custom-toc: true
 
 ## Tour de table {.backgroundStandard_bleu .unnumbered}
 
-[Image à insérer]
+![](/img/roundtable2.png)
 
 # Calendrier prévisionnel {#calendrier .backgroundTitre_violet}
 
@@ -57,7 +57,7 @@ Calendrier prévisionnel
 . . .
 
 * Accélération du calendrier à anticiper l'an prochain
-  * Phase de préparation de la campagne: avoir tous les _inputs_ de la chaine
+  * Phase de préparation de la campagne: avoir tous les _inputs_ de la chaine tôt dans l'année
 
 <!----
 Partie bilan
@@ -262,7 +262,7 @@ df_total = pl.from_pandas(df_total)
 
 ## Retours d'expertise
 
-[Image à insérer]
+![](/img/roundtable2.png)
 
 # Chantiers conceptuels {#chantiers .backgroundTitre_violet}
 
