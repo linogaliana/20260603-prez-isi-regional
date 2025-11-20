@@ -1,0 +1,36 @@
+# Retour sur les nouveautés {.backgroundTitre_bleu}
+
+:::{.logoTopRightTitre}
+![](_extensions/insee-clair/ressources/logos/png/Logo_Insee_TailleMINI.jpg)
+:::
+
+
+## Principale évolution: les statuts de réservistes {.backgroundStandard_bleu .unnumbered}
+
+* statut contrat RESC et RESM 
+
+. . .
+
+* relocalisation des militaires
+
+. . .
+
+* Point spécifique avec SSMSI & OED sur les PCS des gendarmes et la modalité VOLM
+
+## Le redressement de `fp_tx_quotite_moyen` pour les titulaires {.backgroundStandard_bleu}
+
+* Décrire le redressement
+* Evoquer le fait qu'on ajoutera une indicatrice dans le futur ?
+
+
+## Points secondaires
+
+* Ajout variable `nb_per`
+
+* Qui utilise la variable `filt_siasp`
+
+## Prochaines évolutions à venir
+
+* postes annexes et secondaires incohérents (mail olivier): sujet avancé d'investigation
+	* Censure des trop hauts revenus (>1M)
+	* Mayotte: point sur ce sujet

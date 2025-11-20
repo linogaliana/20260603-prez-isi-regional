@@ -14,7 +14,10 @@ project:
     - "*_files/"
   render:
     - "index.qmd"
-    
+    - "fpe.qmd"
+    - "fpt.qmd"
+    - "fph.qmd"
+
 format:
   insee-clair-revealjs: default
   odt: 

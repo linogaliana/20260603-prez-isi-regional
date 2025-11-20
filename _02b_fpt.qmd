@@ -1,0 +1,13 @@
+# Enjeux spécifiques à la FPT {#fpt .backgroundTitre_violet}
+
+## Sujets réglés
+
+* Décalage des déclarations
+* marins pompiers de Marseille
+
+## Sujets encore présents
+
+<!----
+cette slide ou direct l'expertise ?
+----->
+
