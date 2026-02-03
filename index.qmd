@@ -18,13 +18,57 @@ embed-resources: false
 custom-toc: true
 ---
 
-## GT par versants
+## Résultat principal
 
-* [GT FPE](/fpe.html)
-* [GT FPT](/fpt.html)
-* [GT FPH](/fph.html)
+```{python}
+import polars as pl
+from main import import_fig1
+import polars.selectors as cs
+from great_tables import *
+from plotnine import *
 
+fig1_eff = import_fig1()
 
+(
+    GT(
+        fig1_eff.select(["versant", cs.ends_with("yca")])
+    )
+    .fmt_percent(
+        cs.contains(["evol"]),
+        scale_values=False
+    )
+    .fmt_number(
+        cs.contains(["2023", "2024"]),
+        decimals = 0,
+        sep_mark = " "
+    )
+    .tab_style(
+      style=style.fill(color="#c5eceb"),
+      locations=loc.body(
+          rows = (pl.col("versant").str.contains("Ensemble de la fonction publique"))
+      )
+   )
+)
+```
 
+```{python}
+ojs_define(fig1_eff = fig1_eff.to_pandas())
+```
 
-
+```{ojs}
+Plot.plot({
+  height: 420,
+  x: {
+    label: "Versant",
+    domain: ["FPE", "FPT", "FPH"]
+  },
+  marks: [
+    Plot.waffleY(fig1_eff, {
+      x: "versant",
+      y: "2024_yca",
+      fill: "versant",
+      tip: true
+    })
+  ]
+})
+```
