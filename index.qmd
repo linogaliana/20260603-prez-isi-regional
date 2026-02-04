@@ -33,7 +33,7 @@ fig1_eff = import_fig1()
 
 (
     GT(
-        fig1_eff.select(["versant", cs.ends_with("yca")])
+        fig1_eff
     )
     .fmt_percent(
         cs.contains(["evol"]),
@@ -44,6 +44,8 @@ fig1_eff = import_fig1()
         decimals = 0,
         sep_mark = " "
     )
+    .fmt_nanoplot(columns="2024_yca_bar", plot_type="bar")
+    .fmt_nanoplot(columns="evol_yca_bar", plot_type="bar")
     .tab_style(
       style=style.fill(color="#c5eceb"),
       locations=loc.body(
