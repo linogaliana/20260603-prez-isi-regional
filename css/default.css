@@ -1,3 +1,10 @@
+.u-red {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+
 /****************Positionnement des éléments*********************/
 
 .titreTransparent h2{

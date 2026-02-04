@@ -12,15 +12,39 @@ jump-to-slide: true #press "g" to jump and the number of slide
 mouse-wheel: false
 transition: slide
 fig-cap-location: bottom
-
 embed-resources: false
-
 custom-toc: true
 execute: 
   cache: true
 ---
 
-## Résultat principal
+# Introduction
+
+## En avant-première
+
+```{ojs}
+viewof choice_slide1 = Inputs.radio(["Tableau", "Figure"], {value: "Tableau"})
+```
+
+
+```{ojs}
+tabs = {
+   const tabs = {
+      Tableau: html`${tab_eff_string}`,
+      Figure: fig1
+   }
+
+   return tabs
+}
+```
+
+
+```{ojs}
+html`${tabs[choice_slide1]}`
+```
+
+
+
 
 ```{python}
 import polars as pl
@@ -31,7 +55,7 @@ from plotnine import *
 
 fig1_eff = import_fig1()
 
-(
+tab_eff = (
     GT(
         fig1_eff
     )
@@ -44,19 +68,58 @@ fig1_eff = import_fig1()
         decimals = 0,
         sep_mark = " "
     )
-    .fmt_nanoplot(columns="2024_yca_bar", plot_type="bar")
-    .fmt_nanoplot(columns="evol_yca_bar", plot_type="bar")
+    .fmt_nanoplot(
+      columns="2024_yca_bar", plot_type="bar",
+    )
+    .fmt_nanoplot(
+      columns="evol_yca_bar", plot_type="bar",
+      options=nanoplot_options(
+        data_bar_stroke_color="green",
+        data_bar_fill_color="limegreen"
+      )
+    )
+    .tab_spanner(
+      md("**2024**"), ["2024_yca", "2024_yca_bar"]
+    )
+    .tab_spanner(
+      md("**2023**"), ["2023_yca"]
+    )
+    .tab_spanner(
+      md("**Evolution 2023-2024**"), cs.contains("evol_yca")
+    )
+    .cols_label(
+      **{
+        "2023_yca": "",
+        "2024_yca": "",
+        "2024_yca_bar": "",
+        "versant": "",
+        "evol_yca": "",        
+        "evol_yca_bar": "",
+        }
+    )
     .tab_style(
       style=style.fill(color="#c5eceb"),
       locations=loc.body(
           rows = (pl.col("versant").str.contains("Ensemble de la fonction publique"))
       )
    )
+   .tab_style(
+    style=style.text(weight="bold"),
+    locations=loc.body(columns="versant")
+  )
+  .tab_source_note(
+    source_note = md(
+      "Source: `SIASP 2024 V16.1 / V4.1`<br><br>Champ: France hors Mayotte, effectifs au 31/12 (postes principaux) en milliers d'agents, y compris contrats aidés<br><br>Résultats **sous embargo** avant publication le 10/02/26. "
+    )
+  )
 )
 ```
 
 ```{python}
-ojs_define(fig1_eff = fig1_eff.to_pandas())
+ojs_define(
+  fig1_eff = fig1_eff.to_pandas(),
+  tab_eff_string  = tab_eff.as_raw_html()
+)
 ```
 
 ```{ojs}
@@ -64,7 +127,8 @@ fig1_df = transpose(fig1_eff)
 ```
 
 ```{ojs}
-Plot.plot({
+//| output: false
+fig1 = Plot.plot({
   height: 420,
   x: {
     label: "Versant",
@@ -85,3 +149,139 @@ Plot.plot({
 ```{ojs}
 Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js")
 ```
+
+# La base SIASP
+
+## Késako ? 
+
+**<span class="u-red">S</span>ystème d'<span class="u-red">i</span>nformation des <span class="u-red">a</span>gents du <span class="u-red">s</span>ervice <span class="u-red">p</span>ublic**
+
+. . .
+
+* Sous-produit de la base tous salariés (BTS):
+  * Champ des agents publics
+  * Variables spécifiques au public (grade, ministère, etc.)
+
+. . .
+
+* Valorisations multiples:
+  * IP effectif, 3 IP salaires, etc.
+  * Valorisations multiples par SSM comme le [rapport annuel sur l'état de la fonction publique](https://www.fonction-publique.gouv.fr/toutes-les-publications/rapport-annuel-sur-letat-de-la-fonction-publique-edition-2025) (DGAFP)
+
+
+## Enjeux
+
+* 2 notions d'emploi:
+    * Effectifs au 31/12: notion d'emploi principal / secondaire
+    * EQTP: notion de temps de travail consacré à l'emploi
+
+. . .
+
+* Problème structurels de déclaration :
+  * Des grades: processus de reprise en gestion
+  * Des heures: environ 25% des données sont redressées
+  * ...
+
+
+# Le processus de production SIASP
+
+## De la DSN à SIASP
+
+![](/img/jordan.gif){fig-width="40%"}
+
+## De la DSN à SIASP
+
+![](/excalidraw/dsn_to_bts.png){fig-width="60%"}
+
+## Principe général
+
+* Champ et concepts homogènes sur 2 années
+    * Longitudinal: rétropolation à partir des évolutions
+
+. . .
+
+* Chaine refondue entièrement lors du passage à la DSN
+
+. . .
+
+* Capitalisation progressive:
+  * De 21 versions (2022) à 4 (2024)
+  * Réduction du délai de publication
+
+
+# Le processus de validation SIASP
+
+## Validation des chiffres
+
+![](/img/memes_vladimir.jpg){fig-width="60%"}
+
+## Validation des chiffres
+
+![](/img/ils_en_ont_parle.png)
+
+# Résultats principaux
+
+## Résultats
+
+![](/img/qpuc.jpg)
+
+
+## A vous de jouer ! 
+
+Quel versant de la fonction publique a connu la hausse la plus importante d'effectifs entre 2023 et 2024 ?
+
+* FPE
+* FPT
+* FPH 
+
+<!----FPE----->
+
+## A vous de jouer ! 
+
+Combien d'agents sont contractuels dans la fonction publique ?
+
+* 900 000
+* 1.2 million
+* 1.4 million 
+
+<details>
+<summary>
+Indice
+</summary>
+Nous avons 5.9 millions d'agents public en 2024.
+</details>
+
+
+## A vous de jouer ! 
+
+Quelle catégorie hiérarchique est la plus représentée dans la fonction publique en 2024 ?
+
+* Catégorie A
+* Catégorie B
+* Catégorie C
+
+<!--- catA ---->
+
+## A vous de jouer ! 
+
+Quelle proportion d'agents est à temps partiel dans la FPT ? 
+
+* 20%
+* 30%
+* 50%
+
+<!--- 20% --->
+
+## A vous de jouer ! 
+
+Quel est la part d'agents de plus de 50 ans dans la fonction publique ? 
+
+* 20% 
+* 40%
+* 60%
+
+## A vous de jouer ! 
+
+Quel est la part de femmes dans la fonction publique hospitalière ? 
+
+## Merci de votre attention
