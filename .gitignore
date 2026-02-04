@@ -18,3 +18,4 @@ _output/
 !modulesCompl/*
 **/*.quarto_ipynb
 __pycache__/
+/.luarc.json

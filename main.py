@@ -3,7 +3,7 @@ import polars as pl
 
 def import_fig1():
     millesime=2024
-    file_path = f"/home/onyxia/work/ip-effectifs/chiffres/{millesime}"
+    file_path = f"C:/Users/W3CRK9/Documents/PROJECTS/SIASP/ip-effectifs/chiffres/{millesime}"
     version_N = "4_1"
     version_N1 = "16_1"
 

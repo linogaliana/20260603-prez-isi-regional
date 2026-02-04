@@ -16,6 +16,8 @@ fig-cap-location: bottom
 embed-resources: false
 
 custom-toc: true
+execute: 
+  cache: true
 ---
 
 ## Résultat principal
