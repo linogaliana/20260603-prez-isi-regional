@@ -58,19 +58,28 @@ ojs_define(fig1_eff = fig1_eff.to_pandas())
 ```
 
 ```{ojs}
+fig1_df = transpose(fig1_eff)
+```
+
+```{ojs}
 Plot.plot({
   height: 420,
   x: {
     label: "Versant",
-    domain: ["FPE", "FPT", "FPH"]
   },
   marks: [
-    Plot.waffleY(fig1_eff, {
+    Plot.waffleY(fig1_df, {
       x: "versant",
       y: "2024_yca",
       fill: "versant",
-      tip: true
+      unit: 100,
+      tip: true,
+      /*rx: "100%"*/
     })
   ]
 })
+```
+
+```{ojs}
+Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js")
 ```
