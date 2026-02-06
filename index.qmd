@@ -1,11 +1,11 @@
 ---
-title: "Groupes de travail SIASP"
-subtitle: "Campagne SIASP 2024"
+title: "Les effectifs de la fonction publique"
+subtitle: "Atelier DERA 09/02"
 institute: Insee
-author: "Léna Esbelin, Lino Galiana, Téo Moreau"
-date: "Novembre-Décembre 2025"
+author: "Lino Galiana"
+date: "2025-02-09"
 description: |
-  GT par versant
+  Atelier DERA 09/02
 slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
 jump-to-slide: true #press "g" to jump and the number of slide
@@ -20,12 +20,13 @@ execute:
 
 # Introduction
 
-## En avant-première
+## Bande annonce
 
 ```{ojs}
 viewof choice_slide1 = Inputs.radio(["Tableau", "Figure"], {value: "Tableau"})
 ```
 
+<br>
 
 ```{ojs}
 tabs = {
@@ -39,11 +40,13 @@ tabs = {
 ```
 
 
+::: {.centering}
+
 ```{ojs}
 html`${tabs[choice_slide1]}`
 ```
 
-
+:::
 
 
 ```{python}
@@ -128,22 +131,81 @@ fig1_df = transpose(fig1_eff)
 
 ```{ojs}
 //| output: false
-fig1 = Plot.plot({
-  height: 420,
-  x: {
-    label: "Versant",
-  },
-  marks: [
-    Plot.waffleY(fig1_df, {
-      x: "versant",
-      y: "2024_yca",
-      fill: "versant",
-      unit: 100,
-      tip: true,
-      /*rx: "100%"*/
-    })
-  ]
-})
+fig1 = {
+
+  const valueKey = "2024_yca";
+
+  // 1) Garder uniquement les 3 versants
+  const versants3 = fig1_df.filter(
+    d => d.versant !== "Ensemble de la fonction publique "
+  );
+
+  // 2) Total (hors Ensemble)
+  const total = versants3.reduce((acc, d) => acc + d[valueKey], 0);
+
+  // 3) Données pour la waffle
+  const waffleData = versants3.map(d => ({
+    fx: "Total",
+    versant: d.versant,
+    y: d[valueKey],
+    total
+  }));
+
+  
+  const p = Plot.plot({
+    axis: null,
+    label: null,
+    height: 550,
+    width: 900,
+    marginTop: 60,
+    marginBottom: 70,
+    x: {
+      label: ""
+    },
+    color: {
+      legend: true,
+      domain: versants3.map(d => d.versant),
+      range: ["#F59E0B", "#3B82F6", "#10B981"] // optionnel
+    },
+    marks: [
+
+      Plot.axisFx({ lineWidth: 10, anchor: "bottom", dy: 20 }),
+
+      // Fond : toutes les cases du total (gauffre grisée)
+      Plot.waffleY(
+        [{ fx: "Total", y: total }],
+        { fx: "fx", y: "y", fillOpacity: 0.20, /*rx: "12%",*/ unit: 50},
+      ),
+
+      // Gauffre de données : 3 segments empilés dans la même gauffre
+      Plot.waffleY(
+        versants3.map(d => ({
+          fx: "Total",              // même fx => même gauffre
+          versant: d.versant,
+          y: d[valueKey]
+        })),
+        {
+          fx: "fx",
+          y: "y",
+          fill: "versant",
+          /*rx: "12%",*/
+          unit: 50,
+          tip: true,
+          title: d =>
+            `${d.versant}\n${d.y.toLocaleString("fr-FR")} (${(d.y / total).toLocaleString("fr-FR", { style: "percent" })})`
+        }
+      ),
+
+      // (Optionnel) Afficher 100% en bas
+      Plot.text(
+        [{ fx: "Total", label: "Répartition par versant des 5.9 millions d'agents publics" }],
+        { fx: "fx", text: "label", frameAnchor: "bottom", lineAnchor: "top", dy: 6, fontSize: 22, fontWeight: "bold" }
+      )
+    ]
+  }); 
+
+  return p
+}
 ```
 
 ```{ojs}
@@ -158,9 +220,9 @@ Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot
 
 . . .
 
-* Sous-produit de la base tous salariés (BTS):
+* Sous-produit de la [**base tous salariés (BTS)**]{.orange}:
   * Champ des agents publics
-  * Variables spécifiques au public (grade, ministère, etc.)
+  * [**Variables spécifiques**]{.red} au public (grade, ministère, etc.)
 
 . . .
 
@@ -168,26 +230,31 @@ Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot
   * IP effectif, 3 IP salaires, etc.
   * Valorisations multiples par SSM comme le [rapport annuel sur l'état de la fonction publique](https://www.fonction-publique.gouv.fr/toutes-les-publications/rapport-annuel-sur-letat-de-la-fonction-publique-edition-2025) (DGAFP)
 
+. . . 
+
+::: {.callout-tip}
+Pour en savoir plus sur SIASP, venez à la formation BTS !
+:::
 
 ## Enjeux
 
 * 2 notions d'emploi:
-    * Effectifs au 31/12: notion d'emploi principal / secondaire
-    * EQTP: notion de temps de travail consacré à l'emploi
+    * [**Effectifs au 31/12**]{.orange}: notion d'emploi principal / secondaire
+    * [**EQTP**]{.orange}: notion de temps de travail consacré à l'emploi
 
 . . .
 
 * Problème structurels de déclaration :
-  * Des grades: processus de reprise en gestion
+  * Des grades ou des localisations: processus de reprise en gestion
   * Des heures: environ 25% des données sont redressées
   * ...
 
 
-# Le processus de production SIASP
+# Le processus de production
 
 ## De la DSN à SIASP
 
-![](/img/jordan.gif){fig-width="40%"}
+![](/img/jordan.gif){width="50%"}
 
 ## De la DSN à SIASP
 
@@ -230,19 +297,95 @@ Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot
 
 Quel versant de la fonction publique a connu la hausse la plus importante d'effectifs entre 2023 et 2024 ?
 
-* FPE
-* FPT
-* FPH 
 
-<!----FPE----->
+```{ojs}
+options1 = ["FPE", "FPT", "FPH"];
+bonneReponse1 = "FPE"
+
+viewof choix1 = {
+  const el = Inputs.radio(options1, {
+  });
+
+  el.style.display = "flex";
+  el.style.flexDirection = "column";
+  el.style.gap = "0.35rem";
+  el.style.margin = "0";
+  el.style.padding = "0";
+  el.style.alignItems = "flex-start";
+
+  // Le label de la question (souvent un <div> ou <label> en tête)
+  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
+  // (si rien trouvé, pas grave)
+
+  for (const lab of el.querySelectorAll("label")) {
+    lab.style.display = "flex";
+    lab.style.alignItems = "center";
+    lab.style.gap = "0.5rem";
+    lab.style.margin = "0";
+    lab.style.padding = "0";
+  }
+
+  return el;
+}
+```
+
+
+```{ojs}
+choix1 === null
+  ? md``
+  : choix1 === bonneReponse1
+    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
+    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
+```
+
+
 
 ## A vous de jouer ! 
 
+
 Combien d'agents sont contractuels dans la fonction publique ?
 
-* 900 000
-* 1.2 million
-* 1.4 million 
+```{ojs}
+options2 = ["900 000", "1.2 million", "1.4 million"];
+bonneReponse2 = "1.4 million"
+
+viewof choix2 = {
+  const el = Inputs.radio(options2, {
+  });
+
+  el.style.display = "flex";
+  el.style.flexDirection = "column";
+  el.style.gap = "0.35rem";
+  el.style.margin = "0";
+  el.style.padding = "0";
+  el.style.alignItems = "flex-start";
+
+  // Le label de la question (souvent un <div> ou <label> en tête)
+  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
+  // (si rien trouvé, pas grave)
+
+  for (const lab of el.querySelectorAll("label")) {
+    lab.style.display = "flex";
+    lab.style.alignItems = "center";
+    lab.style.gap = "0.5rem";
+    lab.style.margin = "0";
+    lab.style.padding = "0";
+  }
+
+  return el;
+}
+```
+
+
+```{ojs}
+choix2 === null
+  ? md``
+  : choix2 === bonneReponse2
+    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
+    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
+```
+
+
 
 <details>
 <summary>
@@ -256,32 +399,143 @@ Nous avons 5.9 millions d'agents public en 2024.
 
 Quelle catégorie hiérarchique est la plus représentée dans la fonction publique en 2024 ?
 
-* Catégorie A
-* Catégorie B
-* Catégorie C
+```{ojs}
+options3 = ["Catégorie A", "Catégorie B", "Catégorie C"];
+bonneReponse3 = "Catégorie A"
 
-<!--- catA ---->
+viewof choix3 = {
+  const el = Inputs.radio(options3, {
+  });
+
+  el.style.display = "flex";
+  el.style.flexDirection = "column";
+  el.style.gap = "0.35rem";
+  el.style.margin = "0";
+  el.style.padding = "0";
+  el.style.alignItems = "flex-start";
+
+  // Le label de la question (souvent un <div> ou <label> en tête)
+  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
+  // (si rien trouvé, pas grave)
+
+  for (const lab of el.querySelectorAll("label")) {
+    lab.style.display = "flex";
+    lab.style.alignItems = "center";
+    lab.style.gap = "0.5rem";
+    lab.style.margin = "0";
+    lab.style.padding = "0";
+  }
+
+  return el;
+}
+```
+
+
+```{ojs}
+choix3 === null
+  ? md``
+  : choix3 === bonneReponse3
+    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
+    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
+```
 
 ## A vous de jouer ! 
 
 Quelle proportion d'agents est à temps partiel dans la FPT ? 
 
-* 20%
-* 30%
-* 50%
+```{ojs}
+options4 = ["20%", "30%", "40%"];
+bonneReponse4 = "20%"
+
+viewof choix4 = {
+  const el = Inputs.radio(options4, {
+  });
+
+  el.style.display = "flex";
+  el.style.flexDirection = "column";
+  el.style.gap = "0.35rem";
+  el.style.margin = "0";
+  el.style.padding = "0";
+  el.style.alignItems = "flex-start";
+
+  // Le label de la question (souvent un <div> ou <label> en tête)
+  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
+  // (si rien trouvé, pas grave)
+
+  for (const lab of el.querySelectorAll("label")) {
+    lab.style.display = "flex";
+    lab.style.alignItems = "center";
+    lab.style.gap = "0.5rem";
+    lab.style.margin = "0";
+    lab.style.padding = "0";
+  }
+
+  return el;
+}
+```
+
+
+```{ojs}
+choix4 === null
+  ? md``
+  : choix4 === bonneReponse4
+    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
+    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
+```
+
 
 <!--- 20% --->
 
 ## A vous de jouer ! 
 
+
 Quel est la part d'agents de plus de 50 ans dans la fonction publique ? 
 
-* 20% 
-* 40%
-* 60%
+```{ojs}
+options5 = ["20%", "40%", "60%"];
+bonneReponse5 = "40%"
+
+viewof choix5 = {
+  const el = Inputs.radio(options5, {
+  });
+
+  el.style.display = "flex";
+  el.style.flexDirection = "column";
+  el.style.gap = "0.35rem";
+  el.style.margin = "0";
+  el.style.padding = "0";
+  el.style.alignItems = "flex-start";
+
+  // Le label de la question (souvent un <div> ou <label> en tête)
+  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
+  // (si rien trouvé, pas grave)
+
+  for (const lab of el.querySelectorAll("label")) {
+    lab.style.display = "flex";
+    lab.style.alignItems = "center";
+    lab.style.gap = "0.5rem";
+    lab.style.margin = "0";
+    lab.style.padding = "0";
+  }
+
+  return el;
+}
+```
+
+
+```{ojs}
+choix5 === null
+  ? md``
+  : choix5 === bonneReponse5
+    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
+    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
+```
+
 
 ## A vous de jouer ! 
 
 Quel est la part de femmes dans la fonction publique hospitalière ? 
 
 ## Merci de votre attention
+
+**RDV mardi 10/02 pour la publication !** 
