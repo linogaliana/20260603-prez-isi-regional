@@ -1,541 +1,270 @@
 ---
-title: "Les effectifs de la fonction publique"
-subtitle: "Atelier DERA 09/02"
+title: "From *'it worked on my notebook'* to production-ready machine learning"
+subtitle: "Bridging the gap with MLOps"
 institute: Insee
 author: "Lino Galiana"
-date: "2025-02-09"
+date: "2025-09-29"
 description: |
-  Atelier DERA 09/02
-slide-tone: false # for blind readers
-chalkboard: false # press the B key to toggle chalkboard
-jump-to-slide: true #press "g" to jump and the number of slide
+  GT2 — September 2025
+slide-tone: false
+chalkboard: false
+jump-to-slide: true
 mouse-wheel: false
 transition: slide
 fig-cap-location: bottom
 embed-resources: false
 custom-toc: true
-execute: 
+execute:
   cache: true
 ---
 
 # Introduction
 
-## Bande annonce
+## The "production wall"
 
-```{ojs}
-viewof choice_slide1 = Inputs.radio(["Tableau", "Figure"], {value: "Tableau"})
-```
+- The majority of data-driven projects [**never deliver value**]{.blue2} ([1](https://sloanreview.mit.edu/projects/expanding-ais-impact-with-organizational-learning/), [2](https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/6), [3](https://www.researchgate.net/publication/346647451_Beyond_the_Hype_Why_Do_Data-Driven_Projects_Fail))
+  + Most *data science* and IA POCs fail when going to production
+  + How to [**move beyond the experimentation stage**]{.orange}?
 
-<br>
+. . .
 
-```{ojs}
-tabs = {
-   const tabs = {
-      Tableau: html`${tab_eff_string}`,
-      Figure: fig1
-   }
+- [**Going to production**]{.orange}: making an application [**live**]{.blue2} in the space of its [**users**]{.blue2}
+    - [**Serving**]{.orange}: [**deploying**]{.blue2} the application in a [**relevant format**]{.blue2} for its potential users
+    - [**Keeping it alive**]{.orange}: managing the [**lifecycle**]{.blue2} and fostering [**continuous improvement**]{.blue2}
 
-   return tabs
-}
-```
+. . .
+
+- [**Multiple dimensions**]{.orange}: domain knowledge, organisation, infrastructure, technical tooling...
 
 
-::: {.centering}
+## Fostering continuity
 
-```{ojs}
-html`${tabs[choice_slide1]}`
-```
+![Source: [ibm.com](https://public.dhe.ibm.com/software/data/sw-library/analytics/data-science-lifecycle/#model-implementation)](img/exploration-production.png){fig-align="center" width=70%}
 
+- [**How?**]{.orange}
+    - Applying [**software development best practices**]{.blue2}
+    - Introducing [**new concepts and tools**]{.blue2}: [DataOps](https://dataopsmanifesto.org/en/) and MLOps
+
+## DataOps and MLOps
+
+- Origin: the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement
+
+. . .
+
+![Source: [syloe.com](https://www.syloe.com/expert-devops-automatisation-deploiements/)](img/devops.png){fig-align="center" height=300}
+
+- [**DataOps**]{.orange}: building robust [**data pipelines**]{.blue2}
+
+- [**MLOps**]{.orange}: deploying and maintaining [**ML models**]{.blue2}
+
+
+# Handling data driven projects distinct lifecycles {.inverse}
+
+## Three lifecycles to master
+
+A robust ML pipeline requires managing [**three independent lifecycles**]{.orange}:
+
+. . .
+
+::: {.columns}
+::: {.column width="33%"}
+**Data**
+
+- Versioning
+- Lineage & provenance
+- Quality checks
+:::
+::: {.column width="33%"}
+**Code**
+
+- Version control (Git)
+- Modular design
+- Automated testing
+:::
+::: {.column width="33%"}
+**Software environment**
+
+- Dependency pinning
+- Reproducibility
+- Portability
+:::
 :::
 
+## Why does this matter?
 
-```{python}
-import polars as pl
-from main import import_fig1
-import polars.selectors as cs
-from great_tables import *
-from plotnine import *
-
-fig1_eff = import_fig1()
-
-tab_eff = (
-    GT(
-        fig1_eff
-    )
-    .fmt_percent(
-        cs.contains(["evol"]),
-        scale_values=False
-    )
-    .fmt_number(
-        cs.contains(["2023", "2024"]),
-        decimals = 0,
-        sep_mark = " "
-    )
-    .fmt_nanoplot(
-      columns="2024_yca_bar", plot_type="bar",
-    )
-    .fmt_nanoplot(
-      columns="evol_yca_bar", plot_type="bar",
-      options=nanoplot_options(
-        data_bar_stroke_color="green",
-        data_bar_fill_color="limegreen"
-      )
-    )
-    .tab_spanner(
-      md("**2024**"), ["2024_yca", "2024_yca_bar"]
-    )
-    .tab_spanner(
-      md("**2023**"), ["2023_yca"]
-    )
-    .tab_spanner(
-      md("**Evolution 2023-2024**"), cs.contains("evol_yca")
-    )
-    .cols_label(
-      **{
-        "2023_yca": "",
-        "2024_yca": "",
-        "2024_yca_bar": "",
-        "versant": "",
-        "evol_yca": "",        
-        "evol_yca_bar": "",
-        }
-    )
-    .tab_style(
-      style=style.fill(color="#c5eceb"),
-      locations=loc.body(
-          rows = (pl.col("versant").str.contains("Ensemble de la fonction publique"))
-      )
-   )
-   .tab_style(
-    style=style.text(weight="bold"),
-    locations=loc.body(columns="versant")
-  )
-  .tab_source_note(
-    source_note = md(
-      "Source: `SIASP 2024 V16.1 / V4.1`<br><br>Champ: France hors Mayotte, effectifs au 31/12 (postes principaux) en milliers d'agents, y compris contrats aidés<br><br>Résultats **sous embargo** avant publication le 10/02/26. "
-    )
-  )
-)
-```
-
-```{python}
-ojs_define(
-  fig1_eff = fig1_eff.to_pandas(),
-  tab_eff_string  = tab_eff.as_raw_html()
-)
-```
-
-```{ojs}
-fig1_df = transpose(fig1_eff)
-```
-
-```{ojs}
-//| output: false
-fig1 = {
-
-  const valueKey = "2024_yca";
-
-  // 1) Garder uniquement les 3 versants
-  const versants3 = fig1_df.filter(
-    d => d.versant !== "Ensemble de la fonction publique "
-  );
-
-  // 2) Total (hors Ensemble)
-  const total = versants3.reduce((acc, d) => acc + d[valueKey], 0);
-
-  // 3) Données pour la waffle
-  const waffleData = versants3.map(d => ({
-    fx: "Total",
-    versant: d.versant,
-    y: d[valueKey],
-    total
-  }));
-
-  
-  const p = Plot.plot({
-    axis: null,
-    label: null,
-    height: 550,
-    width: 900,
-    marginTop: 60,
-    marginBottom: 70,
-    x: {
-      label: ""
-    },
-    color: {
-      legend: true,
-      domain: versants3.map(d => d.versant),
-      range: ["#F59E0B", "#3B82F6", "#10B981"] // optionnel
-    },
-    marks: [
-
-      Plot.axisFx({ lineWidth: 10, anchor: "bottom", dy: 20 }),
-
-      // Fond : toutes les cases du total (gauffre grisée)
-      Plot.waffleY(
-        [{ fx: "Total", y: total }],
-        { fx: "fx", y: "y", fillOpacity: 0.20, /*rx: "12%",*/ unit: 50},
-      ),
-
-      // Gauffre de données : 3 segments empilés dans la même gauffre
-      Plot.waffleY(
-        versants3.map(d => ({
-          fx: "Total",              // même fx => même gauffre
-          versant: d.versant,
-          y: d[valueKey]
-        })),
-        {
-          fx: "fx",
-          y: "y",
-          fill: "versant",
-          /*rx: "12%",*/
-          unit: 50,
-          tip: true,
-          title: d =>
-            `${d.versant}\n${d.y.toLocaleString("fr-FR")} (${(d.y / total).toLocaleString("fr-FR", { style: "percent" })})`
-        }
-      ),
-
-      // (Optionnel) Afficher 100% en bas
-      Plot.text(
-        [{ fx: "Total", label: "Répartition par versant des 5.9 millions d'agents publics" }],
-        { fx: "fx", text: "label", frameAnchor: "bottom", lineAnchor: "top", dy: 6, fontSize: 22, fontWeight: "bold" }
-      )
-    ]
-  }); 
-
-  return p
-}
-```
-
-```{ojs}
-Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.17/dist/plot.umd.min.js")
-```
-
-# La base SIASP
-
-## Késako ? 
-
-**<span class="u-red">S</span>ystème d'<span class="u-red">i</span>nformation des <span class="u-red">a</span>gents du <span class="u-red">s</span>ervice <span class="u-red">p</span>ublic**
+- Models are [**not static artefacts**]{.blue2}: they depend on data, code, *and* the environment in which they were trained
 
 . . .
 
-* Sous-produit de la [**base tous salariés (BTS)**]{.orange}:
-  * Champ des agents publics
-  * [**Variables spécifiques**]{.red} au public (grade, ministère, etc.)
+- A model result is [**only reproducible**]{.orange} if all three are tracked together
 
 . . .
 
-* Valorisations multiples:
-  * IP effectif, 3 IP salaires, etc.
-  * Valorisations multiples par SSM comme le [rapport annuel sur l'état de la fonction publique](https://www.fonction-publique.gouv.fr/toutes-les-publications/rapport-annuel-sur-letat-de-la-fonction-publique-edition-2025) (DGAFP)
+- Failing to manage even one lifecycle leads to:
+    - *"Works on my machine"* syndrome
+    - Inability to roll back a broken update
+    - Silent regressions caused by data or dependency drift
 
-. . . 
+## Tooling for lifecycle management
 
-::: {.callout-tip}
-Pour en savoir plus sur SIASP, venez à la formation BTS !
-:::
+| Lifecycle | Tools |
+|-----------|-------|
+| Data | DVC, Delta Lake, Great Expectations |
+| Code | Git, pre-commit hooks, CI pipelines |
+| Environment | pip-tools, conda-lock, Poetry |
 
-## Enjeux
+→ Combining all three gives you a [**fully reproducible and auditable pipeline**]{.orange}
 
-* 2 notions d'emploi:
-    * [**Effectifs au 31/12**]{.orange}: notion d'emploi principal / secondaire
-    * [**EQTP**]{.orange}: notion de temps de travail consacré à l'emploi
+---
 
-. . .
+# Part 2 — Containerisation and Kubernetes {.inverse}
 
-* Problème structurels de déclaration :
-  * Des grades ou des localisations: processus de reprise en gestion
-  * Des heures: environ 25% des données sont redressées
-  * ...
+## Bridging the dev/production gap
 
+The [**environment gap**]{.orange} is one of the most common sources of failure:
 
-# Le processus de production
-
-## De la DSN à SIASP
-
-![](/img/jordan.gif){width="50%"}
-
-## De la DSN à SIASP
-
-![](/excalidraw/dsn_to_bts.png){fig-width="60%"}
-
-## Principe général
-
-* Champ et concepts homogènes sur 2 années
-    * Longitudinal: rétropolation à partir des évolutions
+> *"It worked on my laptop"* — but production uses different OS, libraries, CUDA versions…
 
 . . .
 
-* Chaine refondue entièrement lors du passage à la DSN
+[**Containerisation**]{.blue2} (Docker) solves this by packaging the full runtime alongside the code:
+
+- Same image runs locally, in CI, and in production
+- Eliminates *"it depends on the machine"* class of bugs
+
+## From a container to a fleet
+
+| Concern | Docker alone | Docker + Kubernetes |
+|---------|-------------|---------------------|
+| Single service | ✅ | ✅ |
+| Scaling on demand | ❌ | ✅ |
+| Self-healing | ❌ | ✅ |
+| Rolling updates | ❌ | ✅ |
+| Resource scheduling | ❌ | ✅ |
+
+[**Kubernetes**]{.orange} turns individual containers into an [**industrialised, scalable fleet**]{.blue2}
+
+## MLOps on Kubernetes
+
+- [**Training**]{.orange}: launch distributed GPU jobs (Kubeflow, Argo Workflows)
+- [**Model serving**]{.orange}: expose a versioned model behind a stable endpoint (KServe, Seldon)
+- [**Canary deployments**]{.orange}: route a fraction of traffic to a new model version before full rollout
+- [**Rollbacks**]{.orange}: switch back to a previous version in seconds if performance degrades
+
+---
+
+# Part 3 — ML Platforms: experiment tracking and observability {.inverse}
+
+## The experimentation phase
+
+During development, practitioners need to:
+
+- Track [**every experiment**]{.orange}: hyperparameters, metrics, artefacts
+- [**Compare runs**]{.blue2} objectively
+- [**Select and register**]{.blue2} the best model version
 
 . . .
 
-* Capitalisation progressive:
-  * De 21 versions (2022) à 4 (2024)
-  * Réduction du délai de publication
+![](img/mlflow-ui.png){fig-align="center" height=280}
 
+[**MLflow**]{.orange} provides a centralised tracking server, model registry, and serving API
 
-# Le processus de validation SIASP
+## From experimentation to production observability
 
-## Validation des chiffres
+The same platforms extend into [**production monitoring**]{.orange}:
 
-![](/img/memes_vladimir.jpg){fig-width="60%"}
+- Log [**real-world inputs and outputs**]{.blue2}
+- Compute [**performance metrics**]{.blue2} against ground truth or human feedback
+- Detect [**data drift**]{.orange} and [**concept drift**]{.orange}
 
-## Validation des chiffres
+. . .
 
-![](/img/ils_en_ont_parle.png)
+For LLM-based systems, [**Langfuse**]{.blue2} adds:
 
-# Résultats principaux
+- Trace-level observability (prompt → retrieval → generation)
+- Cost and latency tracking
+- Human annotation workflows
 
-## Résultats
+## Feedback loops and continuous improvement
 
-![](/img/qpuc.jpg)
-
-
-## A vous de jouer ! 
-
-Quel versant de la fonction publique a connu la hausse la plus importante d'effectifs entre 2023 et 2024 ?
-
-
-```{ojs}
-options1 = ["FPE", "FPT", "FPH"];
-bonneReponse1 = "FPE"
-
-viewof choix1 = {
-  const el = Inputs.radio(options1, {
-  });
-
-  el.style.display = "flex";
-  el.style.flexDirection = "column";
-  el.style.gap = "0.35rem";
-  el.style.margin = "0";
-  el.style.padding = "0";
-  el.style.alignItems = "flex-start";
-
-  // Le label de la question (souvent un <div> ou <label> en tête)
-  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
-  // (si rien trouvé, pas grave)
-
-  for (const lab of el.querySelectorAll("label")) {
-    lab.style.display = "flex";
-    lab.style.alignItems = "center";
-    lab.style.gap = "0.5rem";
-    lab.style.margin = "0";
-    lab.style.padding = "0";
-  }
-
-  return el;
-}
+```
+Deploy → Monitor → Detect drift → Collect new labels → Retrain → Deploy
+   ↑___________________________________________________|
 ```
 
+. . .
 
-```{ojs}
-choix1 === null
-  ? md``
-  : choix1 === bonneReponse1
-    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
-    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
-```
+- [**Monitoring is not optional**]{.orange}: a model that worked at launch will degrade as the world changes
+- [**Feedback loops**]{.blue2} close the gap between offline evaluation and real-world performance
+- Good observability turns every production incident into a [**training signal**]{.blue2}
 
+---
 
+# Part 4 — Supervised learning vs. LLM-based systems {.inverse}
 
-## A vous de jouer ! 
+## Two paradigms, two sets of operational constraints
 
+|  | Supervised ML | LLM-based systems |
+|--|--------------|-------------------|
+| Training | Full retraining cycle | Fine-tuning or prompt engineering |
+| Evaluation | Standard metrics (F1, RMSE…) | Requires LLM-as-judge or human review |
+| Drift | Feature / label drift | Prompt drift, context drift |
+| Versioning | Model weights + data | Weights + prompts + RAG index |
+| Latency | Typically low | Higher, variable |
 
-Combien d'agents sont contractuels dans la fonction publique ?
+## Annotation and evaluation challenges
 
-```{ojs}
-options2 = ["900 000", "1.2 million", "1.4 million"];
-bonneReponse2 = "1.4 million"
+[**Supervised learning**]{.orange}:
 
-viewof choix2 = {
-  const el = Inputs.radio(options2, {
-  });
+- Ground truth is (relatively) well-defined
+- Active learning can reduce annotation cost
+- Evaluation is largely automated
 
-  el.style.display = "flex";
-  el.style.flexDirection = "column";
-  el.style.gap = "0.35rem";
-  el.style.margin = "0";
-  el.style.padding = "0";
-  el.style.alignItems = "flex-start";
+. . .
 
-  // Le label de la question (souvent un <div> ou <label> en tête)
-  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
-  // (si rien trouvé, pas grave)
+[**LLMs**]{.orange}:
 
-  for (const lab of el.querySelectorAll("label")) {
-    lab.style.display = "flex";
-    lab.style.alignItems = "center";
-    lab.style.gap = "0.5rem";
-    lab.style.margin = "0";
-    lab.style.padding = "0";
-  }
+- What is the "correct" output? Often ambiguous
+- Human evaluation is expensive and hard to scale
+- Automated evaluation (LLM-as-judge) introduces its own biases
+- Prompt changes can silently break previously passing evaluations
 
-  return el;
-}
-```
+## Robustness and lifecycle management
 
+[**Supervised ML**]{.blue2}:
 
-```{ojs}
-choix2 === null
-  ? md``
-  : choix2 === bonneReponse2
-    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
-    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
-```
+- Risk: data drift, covariate shift
+- Mitigation: monitoring distributions, scheduled retraining
 
+. . .
 
+[**LLM-based systems**]{.blue2}:
 
-<details>
-<summary>
-Indice
-</summary>
-Nous avons 5.9 millions d'agents public en 2024.
-</details>
+- Risk: hallucination, prompt injection, context window limits
+- Mitigation: guardrails, retrieval-augmented generation (RAG), eval regression suites
+- Lifecycle: model upgrades from providers require [**re-evaluation of the full system**]{.orange}, not just the model
 
+---
 
-## A vous de jouer ! 
+# Conclusion {.inverse}
 
-Quelle catégorie hiérarchique est la plus représentée dans la fonction publique en 2024 ?
+## Key takeaways
 
-```{ojs}
-options3 = ["Catégorie A", "Catégorie B", "Catégorie C"];
-bonneReponse3 = "Catégorie A"
+1. [**Structure your project**]{.orange} around three independent lifecycles: data, code, environment
+2. [**Containerise early**]{.orange}: it is the single most effective step toward reproducibility and portability
+3. [**Track everything**]{.orange}: experiments, models, prompts — if it's not tracked, it didn't happen
+4. [**Monitor in production**]{.orange}: evaluation does not stop at deployment
+5. [**Know your paradigm**]{.orange}: supervised ML and LLM-based systems require different tooling and processes
 
-viewof choix3 = {
-  const el = Inputs.radio(options3, {
-  });
+. . .
 
-  el.style.display = "flex";
-  el.style.flexDirection = "column";
-  el.style.gap = "0.35rem";
-  el.style.margin = "0";
-  el.style.padding = "0";
-  el.style.alignItems = "flex-start";
+> The gap between a notebook that works and a system that delivers value is not a technical gap — it is an [**operational**]{.blue2} one.
 
-  // Le label de la question (souvent un <div> ou <label> en tête)
-  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
-  // (si rien trouvé, pas grave)
+## References and further reading
 
-  for (const lab of el.querySelectorAll("label")) {
-    lab.style.display = "flex";
-    lab.style.alignItems = "center";
-    lab.style.gap = "0.5rem";
-    lab.style.margin = "0";
-    lab.style.padding = "0";
-  }
-
-  return el;
-}
-```
-
-
-```{ojs}
-choix3 === null
-  ? md``
-  : choix3 === bonneReponse3
-    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
-    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
-```
-
-## A vous de jouer ! 
-
-Quelle proportion d'agents est à temps partiel dans la FPT ? 
-
-```{ojs}
-options4 = ["20%", "30%", "40%"];
-bonneReponse4 = "20%"
-
-viewof choix4 = {
-  const el = Inputs.radio(options4, {
-  });
-
-  el.style.display = "flex";
-  el.style.flexDirection = "column";
-  el.style.gap = "0.35rem";
-  el.style.margin = "0";
-  el.style.padding = "0";
-  el.style.alignItems = "flex-start";
-
-  // Le label de la question (souvent un <div> ou <label> en tête)
-  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
-  // (si rien trouvé, pas grave)
-
-  for (const lab of el.querySelectorAll("label")) {
-    lab.style.display = "flex";
-    lab.style.alignItems = "center";
-    lab.style.gap = "0.5rem";
-    lab.style.margin = "0";
-    lab.style.padding = "0";
-  }
-
-  return el;
-}
-```
-
-
-```{ojs}
-choix4 === null
-  ? md``
-  : choix4 === bonneReponse4
-    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
-    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
-```
-
-
-<!--- 20% --->
-
-## A vous de jouer ! 
-
-
-Quel est la part d'agents de plus de 50 ans dans la fonction publique ? 
-
-```{ojs}
-options5 = ["20%", "40%", "60%"];
-bonneReponse5 = "40%"
-
-viewof choix5 = {
-  const el = Inputs.radio(options5, {
-  });
-
-  el.style.display = "flex";
-  el.style.flexDirection = "column";
-  el.style.gap = "0.35rem";
-  el.style.margin = "0";
-  el.style.padding = "0";
-  el.style.alignItems = "flex-start";
-
-  // Le label de la question (souvent un <div> ou <label> en tête)
-  const head = el.querySelector(".observablehq--inspect, .observablehq--field, .observablehq--label");
-  // (si rien trouvé, pas grave)
-
-  for (const lab of el.querySelectorAll("label")) {
-    lab.style.display = "flex";
-    lab.style.alignItems = "center";
-    lab.style.gap = "0.5rem";
-    lab.style.margin = "0";
-    lab.style.padding = "0";
-  }
-
-  return el;
-}
-```
-
-
-```{ojs}
-choix5 === null
-  ? md``
-  : choix5 === bonneReponse5
-    ? md`![](https://minio.lab.sspcloud.fr/lgaliana/data/dumbeldore.jpg)`
-    : md`![](https://minio.lab.sspcloud.fr/lgaliana/data/rogue.jpg)`
-```
-
-
-## A vous de jouer ! 
-
-Quel est la part de femmes dans la fonction publique hospitalière ? 
-
-## Merci de votre attention
-
-**RDV mardi 10/02 pour la publication !** 
+- [MLflow documentation](https://mlflow.org/docs/latest/index.html)
+- [Langfuse documentation](https://langfuse.com/docs)
+- [Kubeflow](https://www.kubeflow.org/) — ML workflows on Kubernetes
+- [DataOps Manifesto](https://dataopsmanifesto.org/en/)
+- Sculley et al., *Hidden Technical Debt in Machine Learning Systems* (NeurIPS 2015)
+- Huyen, *Designing Machine Learning Systems* (O'Reilly, 2022)
