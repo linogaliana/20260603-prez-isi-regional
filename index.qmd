@@ -3,9 +3,9 @@ title: "From *'it worked on my notebook'* to production-ready machine learning"
 subtitle: "Bridging the gap with MLOps"
 institute: Insee
 author: "Lino Galiana"
-date: "2025-09-29"
+date: "2026-06-04"
 description: |
-  GT2 — September 2025
+  ISI Malta
 slide-tone: false
 chalkboard: false
 jump-to-slide: true
@@ -63,32 +63,10 @@ execute:
 ## Three lifecycles to master
 
 A robust ML pipeline requires managing [**three independent lifecycles**]{.orange}:
+    * *Jupyter Notebooks* does not separate them properly
 
-. . .
+![](excalidraw/projet_structure.png)
 
-::: {.columns}
-::: {.column width="33%"}
-**Data**
-
-- Versioning
-- Lineage & provenance
-- Quality checks
-:::
-::: {.column width="33%"}
-**Code**
-
-- Version control (Git)
-- Modular design
-- Automated testing
-:::
-::: {.column width="33%"}
-**Software environment**
-
-- Dependency pinning
-- Reproducibility
-- Portability
-:::
-:::
 
 ## Why does this matter?
 
@@ -105,19 +83,18 @@ A robust ML pipeline requires managing [**three independent lifecycles**]{.orang
     - Inability to roll back a broken update
     - Silent regressions caused by data or dependency drift
 
-## Tooling for lifecycle management
 
-| Lifecycle | Tools |
-|-----------|-------|
-| Data | DVC, Delta Lake, Great Expectations |
-| Code | Git, pre-commit hooks, CI pipelines |
-| Environment | pip-tools, conda-lock, Poetry |
+## Choose your tools appropriately
 
-→ Combining all three gives you a [**fully reproducible and auditable pipeline**]{.orange}
+* Code: versioning with Git, improving quality with formatters (`Ruff` !), community standard structure
+* Configuration: virtual environments and consistent depency management (uv!), Docker for more control on external dependencies (more later)
+* Data: S3 cloud storage with appropriate format (e.g. Parquet), pipeline approach (e.g. dbt)
 
----
+![](excalidraw/projet_structure2.png)
 
-# Part 2 — Containerisation and Kubernetes {.inverse}
+
+# From zero to hero in production {.inverse}
+
 
 ## Bridging the dev/production gap
 
@@ -132,28 +109,22 @@ The [**environment gap**]{.orange} is one of the most common sources of failure:
 - Same image runs locally, in CI, and in production
 - Eliminates *"it depends on the machine"* class of bugs
 
-## From a container to a fleet
 
-| Concern | Docker alone | Docker + Kubernetes |
-|---------|-------------|---------------------|
-| Single service | ✅ | ✅ |
-| Scaling on demand | ❌ | ✅ |
-| Self-healing | ❌ | ✅ |
-| Rolling updates | ❌ | ✅ |
-| Resource scheduling | ❌ | ✅ |
+## An industrialized project
 
 [**Kubernetes**]{.orange} turns individual containers into an [**industrialised, scalable fleet**]{.blue2}
 
+![](excalidraw/projet_structure3.png)
+
 ## MLOps on Kubernetes
 
-- [**Training**]{.orange}: launch distributed GPU jobs (Kubeflow, Argo Workflows)
-- [**Model serving**]{.orange}: expose a versioned model behind a stable endpoint (KServe, Seldon)
+- [**Training**]{.orange}: launch parallel trainings (e.g. cross validation)
+- [**Model serving**]{.orange}: expose a versioned model behind a stable endpoint (API)
 - [**Canary deployments**]{.orange}: route a fraction of traffic to a new model version before full rollout
-- [**Rollbacks**]{.orange}: switch back to a previous version in seconds if performance degrades
+- [**Rollbacks**]{.orange}: switch back to a previous version if performance degrades
 
----
 
-# Part 3 — ML Platforms: experiment tracking and observability {.inverse}
+# Adding experiment tracking and observability {.inverse}
 
 ## The experimentation phase
 
@@ -187,10 +158,7 @@ For LLM-based systems, [**Langfuse**]{.blue2} adds:
 
 ## Feedback loops and continuous improvement
 
-```
-Deploy → Monitor → Detect drift → Collect new labels → Retrain → Deploy
-   ↑___________________________________________________|
-```
+![](excalidraw/feedback_loop.png)
 
 . . .
 
@@ -198,7 +166,6 @@ Deploy → Monitor → Detect drift → Collect new labels → Retrain → Deplo
 - [**Feedback loops**]{.blue2} close the gap between offline evaluation and real-world performance
 - Good observability turns every production incident into a [**training signal**]{.blue2}
 
----
 
 # Part 4 — Supervised learning vs. LLM-based systems {.inverse}
 
@@ -207,17 +174,16 @@ Deploy → Monitor → Detect drift → Collect new labels → Retrain → Deplo
 |  | Supervised ML | LLM-based systems |
 |--|--------------|-------------------|
 | Training | Full retraining cycle | Fine-tuning or prompt engineering |
-| Evaluation | Standard metrics (F1, RMSE…) | Requires LLM-as-judge or human review |
-| Drift | Feature / label drift | Prompt drift, context drift |
-| Versioning | Model weights + data | Weights + prompts + RAG index |
-| Latency | Typically low | Higher, variable |
-
+| Evaluation | Standard metrics (F1, RMSE...) | Requires LLM-as-judge or human review (see [4](***)) |
+| Drift | Feature / label drift | Prompt drift, outdated knowledge base |
+| Availability | Batch or on the fly ? | Continuous |
+| Infrastructure | CPU often sufficient for inference | Bigger and bigger GPU (💵💵) |
+ 
 ## Annotation and evaluation challenges
 
 [**Supervised learning**]{.orange}:
 
 - Ground truth is (relatively) well-defined
-- Active learning can reduce annotation cost
 - Evaluation is largely automated
 
 . . .
@@ -229,42 +195,20 @@ Deploy → Monitor → Detect drift → Collect new labels → Retrain → Deplo
 - Automated evaluation (LLM-as-judge) introduces its own biases
 - Prompt changes can silently break previously passing evaluations
 
-## Robustness and lifecycle management
-
-[**Supervised ML**]{.blue2}:
-
-- Risk: data drift, covariate shift
-- Mitigation: monitoring distributions, scheduled retraining
-
 . . .
 
-[**LLM-based systems**]{.blue2}:
-
-- Risk: hallucination, prompt injection, context window limits
-- Mitigation: guardrails, retrieval-augmented generation (RAG), eval regression suites
-- Lifecycle: model upgrades from providers require [**re-evaluation of the full system**]{.orange}, not just the model
-
----
+* Is it possible to leapfrog when having missed the ML era ? 
 
 # Conclusion {.inverse}
 
 ## Key takeaways
 
 1. [**Structure your project**]{.orange} around three independent lifecycles: data, code, environment
-2. [**Containerise early**]{.orange}: it is the single most effective step toward reproducibility and portability
-3. [**Track everything**]{.orange}: experiments, models, prompts — if it's not tracked, it didn't happen
-4. [**Monitor in production**]{.orange}: evaluation does not stop at deployment
-5. [**Know your paradigm**]{.orange}: supervised ML and LLM-based systems require different tooling and processes
+2. [**Track everything**]{.orange}: experiments, models, prompts — if it's not tracked, it didn't happen
+3. [**Monitor in production**]{.orange}: evaluation does not stop at deployment
+4. [**Know your paradigm**]{.orange}: supervised ML and LLM-based systems require different tooling and processes
 
 . . .
 
-> The gap between a notebook that works and a system that delivers value is not a technical gap — it is an [**operational**]{.blue2} one.
+> The gap between a notebook that works and a system that delivers value is not only a technical gap: it is an [**operational**]{.blue2} one.
 
-## References and further reading
-
-- [MLflow documentation](https://mlflow.org/docs/latest/index.html)
-- [Langfuse documentation](https://langfuse.com/docs)
-- [Kubeflow](https://www.kubeflow.org/) — ML workflows on Kubernetes
-- [DataOps Manifesto](https://dataopsmanifesto.org/en/)
-- Sculley et al., *Hidden Technical Debt in Machine Learning Systems* (NeurIPS 2015)
-- Huyen, *Designing Machine Learning Systems* (O'Reilly, 2022)
