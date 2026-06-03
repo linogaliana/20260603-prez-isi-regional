@@ -41,7 +41,7 @@ navigation-mode: linear # linear/grid or vertical
 history: true
 transition-speed: slow
 number-sections: true
-number-depth: 2
+number-depth: 1
 from: markdown+emoji
 
 link-external-newwindow: true

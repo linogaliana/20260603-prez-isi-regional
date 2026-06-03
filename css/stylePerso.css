@@ -44,3 +44,26 @@
 .width65{
   width: 65%;
 }
+
+/* Texte des listes en noir (surcharge le bleu du thème) */
+.reveal .level2 li {
+  color: #000;
+}
+
+/* Titres de slides en bleu INSEE */
+.reveal .level2 h2 {
+  color: #0F417A;
+}
+
+/* Bleu INSEE pour le texte inline */
+.blue2 {
+  color: #0F417A;
+}
+
+/* Taille réduite des titres sur les slides de transition */
+.level1 .header-section-number {
+  font-size: 4em;
+}
+.level1 .title-text {
+  font-size: 1.2em;
+}

@@ -22,15 +22,21 @@ execute:
 
 ## The "production wall"
 
-- The majority of data-driven projects [**never deliver value**]{.blue2} ([1](https://sloanreview.mit.edu/projects/expanding-ais-impact-with-organizational-learning/), [2](https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/6), [3](https://www.researchgate.net/publication/346647451_Beyond_the_Hype_Why_Do_Data-Driven_Projects_Fail))
+- Most data-driven projects [**never deliver value**]{.blue2} ([1](https://sloanreview.mit.edu/projects/expanding-ais-impact-with-organizational-learning/), [2](https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/6), [3](https://www.researchgate.net/publication/346647451_Beyond_the_Hype_Why_Do_Data-Driven_Projects_Fail))
   + Most *data science* and IA POCs fail when going to production
   + How to [**move beyond the experimentation stage**]{.orange}?
 
 . . .
 
-- [**Going to production**]{.orange}: making an application [**live**]{.blue2} in the space of its [**users**]{.blue2}
-    - [**Serving**]{.orange}: [**deploying**]{.blue2} the application in a [**relevant format**]{.blue2} for its potential users
-    - [**Keeping it alive**]{.orange}: managing the [**lifecycle**]{.blue2} and fostering [**continuous improvement**]{.blue2}
+::: {.callout-tip}
+## Defining production
+
+[**Going to production**]{.orange}: making an application [**live**]{.blue2} in the space of its [**users**]{.blue2}
+
+- [**Serving**]{.orange}: [**deploying**]{.blue2} the application in a [**relevant format**]{.blue2} for its potential users
+- [**Keeping it alive**]{.orange}: managing the [**lifecycle**]{.blue2} and fostering [**continuous improvement**]{.blue2}
+
+::: 
 
 . . .
 
@@ -41,36 +47,26 @@ execute:
 
 ![Source: [ibm.com](https://public.dhe.ibm.com/software/data/sw-library/analytics/data-science-lifecycle/#model-implementation)](img/exploration-production.png){fig-align="center" width=70%}
 
-- [**How?**]{.orange}
-    - Applying [**software development best practices**]{.blue2}
-    - Introducing [**new concepts and tools**]{.blue2}: [DataOps](https://dataopsmanifesto.org/en/) and MLOps
+- Applying and extending [**software development best practices**]{.blue2}
+  - [**DataOps**]{.orange}: building robust [**data pipelines**]{.blue2}
+  - [**MLOps**]{.orange}: deploying and maintaining [**ML models**]{.blue2}
 
-## DataOps and MLOps
-
-- Origin: the [DevOps](https://en.wikipedia.org/wiki/DevOps) movement
-
-. . .
-
-![Source: [syloe.com](https://www.syloe.com/expert-devops-automatisation-deploiements/)](img/devops.png){fig-align="center" height=300}
-
-- [**DataOps**]{.orange}: building robust [**data pipelines**]{.blue2}
-
-- [**MLOps**]{.orange}: deploying and maintaining [**ML models**]{.blue2}
 
 
 # Handling data driven projects distinct lifecycles {.inverse}
 
 ## Three lifecycles to master
 
-A robust ML pipeline requires managing [**three independent lifecycles**]{.orange}:
-    * *Jupyter Notebooks* does not separate them properly
+* A robust ML pipeline requires managing [**three independent lifecycles**]{.orange}:
+    + *Jupyter Notebooks* does not separate them properly
 
 ![](excalidraw/projet_structure.png)
 
 
 ## Why does this matter?
 
-- Models are [**not static artefacts**]{.blue2}: they depend on data, code, *and* the environment in which they were trained
+- Models (weights and inference) are [**not static artefacts**]{.blue2}:
+    - they depend on data, code, *and* the environment in which they were trained
 
 . . .
 
@@ -84,37 +80,63 @@ A robust ML pipeline requires managing [**three independent lifecycles**]{.orang
     - Silent regressions caused by data or dependency drift
 
 
-## Choose your tools appropriately
+## Choosing appropriate tools
 
-* Code: versioning with Git, improving quality with formatters (`Ruff` !), community standard structure
-* Configuration: virtual environments and consistent depency management (uv!), Docker for more control on external dependencies (more later)
-* Data: S3 cloud storage with appropriate format (e.g. Parquet), pipeline approach (e.g. dbt)
+:::: {.columns}
+::: {.column width="30%"}
+[**Code**]{.center}
 
-![](excalidraw/projet_structure2.png)
+Versioning (`Git`), improving quality with formatters (`Ruff`), community standard structure (`cookiecutters`)...
+:::
+
+::: {.column width="5%"}
+:::
+
+
+::: {.column width="30%"}
+[**Configuration**]{.center}
+
+Virtual environments and dependency management (`uv`), controlling external dependencies (`Docker`)...
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="30%"}
+[**Data**]{.center}
+
+Standardised format (`Parquet`), cloud storage (`S3`), pipeline-oriented workflow (`dbt`)...
+
+:::
+
+::::
+
+![](excalidraw/projet_structure2.png){fig-align="center" width=30%}
 
 
 # From zero to hero in production {.inverse}
 
+## "It works on my machine"
+
+![](img/memes_works_machine.jpg)
 
 ## Bridging the dev/production gap
 
-The [**environment gap**]{.orange} is one of the most common sources of failure:
-
-> *"It worked on my laptop"* — but production uses different OS, libraries, CUDA versions…
+* [**Environment gap**]{.orange} is one of the most common sources of failure:
+    * Production servers might uses different OS, libraries, CUDA versions...
 
 . . .
 
-[**Containerisation**]{.blue2} (Docker) solves this by packaging the full runtime alongside the code:
-
-- Same image runs locally, in CI, and in production
-- Eliminates *"it depends on the machine"* class of bugs
+* [**Containerisation**]{.orange} (`Docker`) solves this by packaging the full runtime alongside the code:
+  - Same image runs locally, in CI, and in production
+  - Eliminates *"it works on my machine"* class of bugs
 
 
 ## An industrialized project
 
 [**Kubernetes**]{.orange} turns individual containers into an [**industrialised, scalable fleet**]{.blue2}
 
-![](excalidraw/projet_structure3.png)
+![](/excalidraw/projet_structure3.png)
 
 ## MLOps on Kubernetes
 
@@ -123,10 +145,13 @@ The [**environment gap**]{.orange} is one of the most common sources of failure:
 - [**Canary deployments**]{.orange}: route a fraction of traffic to a new model version before full rollout
 - [**Rollbacks**]{.orange}: switch back to a previous version if performance degrades
 
+::: {.callout-note}
+Great improvement but this is only the first phase of a project: continuous improvement requires observability
+:::
 
 # Adding experiment tracking and observability {.inverse}
 
-## The experimentation phase
+## Experimentation phase
 
 During development, practitioners need to:
 
@@ -136,21 +161,18 @@ During development, practitioners need to:
 
 . . .
 
-![](img/mlflow-ui.png){fig-align="center" height=280}
-
-[**MLflow**]{.orange} provides a centralised tracking server, model registry, and serving API
+`MLFlow` (and similar plateforms!) provides a centralised tracking server, model registry, and serving API
 
 ## From experimentation to production observability
 
-The same platforms extend into [**production monitoring**]{.orange}:
-
-- Log [**real-world inputs and outputs**]{.blue2}
-- Compute [**performance metrics**]{.blue2} against ground truth or human feedback
-- Detect [**data drift**]{.orange} and [**concept drift**]{.orange}
+* The same platforms extend into [**production monitoring**]{.orange}:
+    - Log [**real-world inputs and outputs**]{.blue2}
+    - Compute [**performance metrics**]{.blue2} against ground truth or human feedback
+    - Detect [**data drift**]{.orange} and [**concept drift**]{.orange}
 
 . . .
 
-For LLM-based systems, [**Langfuse**]{.blue2} adds:
+LLM-based systems need additional tracking. `Langfuse` adds:
 
 - Trace-level observability (prompt → retrieval → generation)
 - Cost and latency tracking
@@ -158,7 +180,7 @@ For LLM-based systems, [**Langfuse**]{.blue2} adds:
 
 ## Feedback loops and continuous improvement
 
-![](excalidraw/feedback_loop.png)
+![](/excalidraw/feedback_loop.png)
 
 . . .
 
@@ -166,18 +188,15 @@ For LLM-based systems, [**Langfuse**]{.blue2} adds:
 - [**Feedback loops**]{.blue2} close the gap between offline evaluation and real-world performance
 - Good observability turns every production incident into a [**training signal**]{.blue2}
 
-
-# Part 4 — Supervised learning vs. LLM-based systems {.inverse}
-
 ## Two paradigms, two sets of operational constraints
 
 |  | Supervised ML | LLM-based systems |
 |--|--------------|-------------------|
-| Training | Full retraining cycle | Fine-tuning or prompt engineering |
-| Evaluation | Standard metrics (F1, RMSE...) | Requires LLM-as-judge or human review (see [4](***)) |
-| Drift | Feature / label drift | Prompt drift, outdated knowledge base |
-| Availability | Batch or on the fly ? | Continuous |
-| Infrastructure | CPU often sufficient for inference | Bigger and bigger GPU (💵💵) |
+| __Training__ | Full retraining cycle | Fine-tuning or prompt engineering |
+| __Evaluation__ | Standard metrics (F1, RMSE...) | Requires LLM-as-judge or human review (see [4](***)) |
+| __Drift__ | Feature / label drift | Prompt drift, outdated knowledge base |
+| __Availability__ | Batch or on the fly ? | Continuous |
+| __Infrastructure__ | CPU often sufficient for inference | Bigger and bigger GPU (💵💵) |
  
 ## Annotation and evaluation challenges
 
@@ -197,18 +216,18 @@ For LLM-based systems, [**Langfuse**]{.blue2} adds:
 
 . . .
 
-* Is it possible to leapfrog when having missed the ML era ? 
+::: {.callout-warning}
+Is it really possible to leapfrog when having missed the ML era ? 
+:::
 
 # Conclusion {.inverse}
 
 ## Key takeaways
 
 1. [**Structure your project**]{.orange} around three independent lifecycles: data, code, environment
-2. [**Track everything**]{.orange}: experiments, models, prompts — if it's not tracked, it didn't happen
+2. [**Track everything**]{.orange}: experiments, models, prompts (if it's not tracked, you might not see that)
 3. [**Monitor in production**]{.orange}: evaluation does not stop at deployment
 4. [**Know your paradigm**]{.orange}: supervised ML and LLM-based systems require different tooling and processes
 
-. . .
-
-> The gap between a notebook that works and a system that delivers value is not only a technical gap: it is an [**operational**]{.blue2} one.
+__The gap between a notebook that works and a system that delivers value is not only a technical gap: it is an [operational]{.blue2} one.__
 
