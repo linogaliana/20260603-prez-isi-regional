@@ -1,26 +1,44 @@
-name: Publish webpage
-
-on: 
+on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
+
+name: Render and deploy to GitHub Pages
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up quarto
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render Quarto project
+        run: quarto render
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          version: 1.9.37
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: _output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
