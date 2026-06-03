@@ -1,6 +1,6 @@
 project:
   title: "Présentation quarto-Insee"
-  output-dir: _output
+  output-dir: public
   resources:
     - "_extensions/"
     - "css/"

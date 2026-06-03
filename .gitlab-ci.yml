@@ -9,11 +9,9 @@ pages:
   image: inseefrlab/onyxia-python-minimal
   script:
     - curl https://raw.githubusercontent.com/InseeFrLab/images-datascience/refs/heads/main/base/scripts/install-quarto.sh | sudo bash
-    - mkdir -p public
     # - pip install uv
     # - uv sync
     - quarto render
-    - mv _output public
     # - cat public/index.html
   artifacts:
     paths:
