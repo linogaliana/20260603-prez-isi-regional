@@ -2,10 +2,15 @@
 title: "From *'it worked on my notebook'* to production-ready machine learning"
 subtitle: "Bridging the gap with MLOps"
 institute: Insee
-author: "Lino Galiana"
+author:
+  - name: "Lino GALIANA"
+    email: "lino.galiana@insee.fr"
+    affiliations:
+      - name: "Insee — French National Institute of Statistics and Economic Studies"
 date: "2026-06-04"
 description: |
-  ISI Malta
+  ISI Regional Statistics Congress 2026
+
 slide-tone: false
 chalkboard: false
 jump-to-slide: true
@@ -18,9 +23,9 @@ execute:
   cache: true
 ---
 
-# Introduction
+# Introduction {#intro .backgroundTitre_bleu}
 
-## The "production wall"
+## The "production wall" {#prod_wall .backgroundStandard_bleu}
 
 - Most data-driven projects [**never deliver value**]{.blue2} ([1](https://sloanreview.mit.edu/projects/expanding-ais-impact-with-organizational-learning/), [2](https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/6), [3](https://www.researchgate.net/publication/346647451_Beyond_the_Hype_Why_Do_Data-Driven_Projects_Fail))
   + Most *data science* and AI POCs fail when going to production
@@ -43,7 +48,7 @@ execute:
 - [**Multiple dimensions**]{.orange}: domain knowledge, organisation, infrastructure, technical tooling...
 
 
-## Fostering continuity
+## Fostering continuity {#mlops_circle .backgroundStandard_bleu}
 
 ![Source: [ibm.com](https://public.dhe.ibm.com/software/data/sw-library/analytics/data-science-lifecycle/#model-implementation)](img/exploration-production.png){fig-align="center" width=70%}
 
@@ -53,9 +58,9 @@ execute:
 
 
 
-# Handling data driven projects distinct lifecycles {.inverse}
+# Handling data driven projects distinct lifecycles {#lifecycles .backgroundTitre_violet}
 
-## Three lifecycles to master
+## Three lifecycles to master  {.backgroundStandard_violet}
 
 * A robust ML pipeline requires managing [**three independent lifecycles**]{.orange}:
     + *Jupyter Notebooks* does not separate them properly
@@ -63,7 +68,7 @@ execute:
 ![](excalidraw/projet_structure.png)
 
 
-## Why does this matter?
+## Why does this matter?  {.backgroundStandard_violet}
 
 - Models (weights and inference) are [**not static artefacts**]{.blue2}:
     - they depend on data, code, *and* the environment in which they were trained
@@ -80,7 +85,7 @@ execute:
     - Silent regressions caused by data or dependency drift
 
 
-## Choosing appropriate tools
+## Choosing appropriate tools {.backgroundStandard_violet}
 
 :::: {.columns}
 ::: {.column width="30%"}
@@ -114,13 +119,13 @@ Standardised format (`Parquet`), cloud storage (`S3`), pipeline-oriented workflo
 ![](excalidraw/projet_structure2.png){fig-align="center" width=30%}
 
 
-# From zero to hero in production {.inverse}
+# From zero to hero in production  {.backgroundTitre_jaune}
 
-## "It works on my machine"
+## "It works on my machine"  {.backgroundStandard_jaune}
 
 ![](img/memes_works_machine.jpg)
 
-## Bridging the dev/production gap
+## Bridging the dev/production gap  {.backgroundStandard_jaune}
 
 * [**Environment gap**]{.orange} is one of the most common sources of failure:
     * Production servers might use different OS, libraries, CUDA versions...
@@ -132,7 +137,7 @@ Standardised format (`Parquet`), cloud storage (`S3`), pipeline-oriented workflo
   - Eliminates *"it works on my machine"* class of bugs
 
 
-## An industrialized project
+## An industrialized project  {.backgroundStandard_jaune}
 
 [**Kubernetes**]{.orange} turns individual containers into an [**industrialised, scalable fleet**]{.blue2}
 
@@ -149,9 +154,9 @@ Standardised format (`Parquet`), cloud storage (`S3`), pipeline-oriented workflo
 Great improvement but this is only the first phase of a project: continuous improvement requires observability
 :::
 
-# Adding experiment tracking and observability {.inverse}
+# Adding experiment tracking and observability  {.backgroundTitre_vert}
 
-## Experimentation phase
+## Experimentation phase  {.backgroundStandard_vert}
 
 During development, practitioners need to:
 
@@ -163,7 +168,7 @@ During development, practitioners need to:
 
 `MLFlow` (and similar platforms!) provides a centralised tracking server, model registry, and serving API
 
-## From experimentation to production observability
+## From experimentation to production observability {.backgroundStandard_vert}
 
 * The same platforms extend into [**production monitoring**]{.orange}:
     - Log [**real-world inputs and outputs**]{.blue2}
@@ -178,7 +183,7 @@ LLM-based systems need additional tracking. `Langfuse` adds:
 - Cost and latency tracking
 - Human annotation workflows
 
-## Feedback loops and continuous improvement
+## Feedback loops and continuous improvement {.backgroundStandard_vert}
 
 ![](/excalidraw/feedback_loop.png)
 
@@ -188,7 +193,7 @@ LLM-based systems need additional tracking. `Langfuse` adds:
 - [**Feedback loops**]{.blue2} close the gap between offline evaluation and real-world performance
 - Good observability turns every production incident into a [**training signal**]{.blue2}
 
-## Two paradigms, two sets of operational constraints
+## Two paradigms, two sets of operational constraints {.backgroundStandard_vert}
 
 |  | Supervised ML | LLM-based systems |
 |--|--------------|-------------------|
@@ -198,7 +203,7 @@ LLM-based systems need additional tracking. `Langfuse` adds:
 | __Availability__ | Batch or on the fly ? | Continuous |
 | __Infrastructure__ | CPU often sufficient for inference | Bigger and bigger GPU (💵💵) |
  
-## Annotation and evaluation challenges
+## Annotation and evaluation challenges {.backgroundStandard_vert}
 
 [**Supervised learning**]{.orange}:
 
@@ -220,9 +225,9 @@ LLM-based systems need additional tracking. `Langfuse` adds:
 Is it really possible to leapfrog when having missed the ML era ? 
 :::
 
-# Conclusion {.inverse}
+# Conclusion {.backgroundTitre_bleu}
 
-## Key takeaways
+## Key takeaways {.backgroundStandard_bleu}
 
 1. [**Structure your project**]{.orange} around three independent lifecycles: data, code, environment
 2. [**Track everything**]{.orange}: experiments, models, prompts — if it's not tracked, it didn't happen
