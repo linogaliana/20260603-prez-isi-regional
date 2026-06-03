@@ -23,7 +23,7 @@ execute:
 ## The "production wall"
 
 - Most data-driven projects [**never deliver value**]{.blue2} ([1](https://sloanreview.mit.edu/projects/expanding-ais-impact-with-organizational-learning/), [2](https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/6), [3](https://www.researchgate.net/publication/346647451_Beyond_the_Hype_Why_Do_Data-Driven_Projects_Fail))
-  + Most *data science* and IA POCs fail when going to production
+  + Most *data science* and AI POCs fail when going to production
   + How to [**move beyond the experimentation stage**]{.orange}?
 
 . . .
@@ -123,7 +123,7 @@ Standardised format (`Parquet`), cloud storage (`S3`), pipeline-oriented workflo
 ## Bridging the dev/production gap
 
 * [**Environment gap**]{.orange} is one of the most common sources of failure:
-    * Production servers might uses different OS, libraries, CUDA versions...
+    * Production servers might use different OS, libraries, CUDA versions...
 
 . . .
 
@@ -161,7 +161,7 @@ During development, practitioners need to:
 
 . . .
 
-`MLFlow` (and similar plateforms!) provides a centralised tracking server, model registry, and serving API
+`MLFlow` (and similar platforms!) provides a centralised tracking server, model registry, and serving API
 
 ## From experimentation to production observability
 
@@ -193,7 +193,7 @@ LLM-based systems need additional tracking. `Langfuse` adds:
 |  | Supervised ML | LLM-based systems |
 |--|--------------|-------------------|
 | __Training__ | Full retraining cycle | Fine-tuning or prompt engineering |
-| __Evaluation__ | Standard metrics (F1, RMSE...) | Requires LLM-as-judge or human review (see [4](***)) |
+| __Evaluation__ | Standard metrics (F1, RMSE...) | Requires LLM-as-judge or human review (see [4](https://hamel.dev/blog/posts/evals/index.html)) |
 | __Drift__ | Feature / label drift | Prompt drift, outdated knowledge base |
 | __Availability__ | Batch or on the fly ? | Continuous |
 | __Infrastructure__ | CPU often sufficient for inference | Bigger and bigger GPU (💵💵) |
@@ -225,7 +225,7 @@ Is it really possible to leapfrog when having missed the ML era ?
 ## Key takeaways
 
 1. [**Structure your project**]{.orange} around three independent lifecycles: data, code, environment
-2. [**Track everything**]{.orange}: experiments, models, prompts (if it's not tracked, you might not see that)
+2. [**Track everything**]{.orange}: experiments, models, prompts — if it's not tracked, it didn't happen
 3. [**Monitor in production**]{.orange}: evaluation does not stop at deployment
 4. [**Know your paradigm**]{.orange}: supervised ML and LLM-based systems require different tooling and processes
 
