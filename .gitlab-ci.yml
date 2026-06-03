@@ -12,7 +12,7 @@ pages:
     - mkdir -p public
     # - pip install uv
     # - uv sync
-    # - uv run quarto render
+    - quarto render
     - mv _output public
     # - cat public/index.html
   artifacts:
