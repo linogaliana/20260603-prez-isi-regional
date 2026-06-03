@@ -6,12 +6,12 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-4e5466e430b1db38349d513585fd1d59.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
 <script src="index_files/libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <meta name="author" content="Lino Galiana">
+  <meta name="author" content="Lino GALIANA">
   <meta name="dcterms.date" content="2026-06-04">
   <title>From ‘it worked on my notebook’ to production-ready machine learning</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,7 +35,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-1c166652f1de5ca097211eca68c26248.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-f62ad45c4092895220cba0288788f394.css">
   <link rel="stylesheet" href="css/insee_clair.css">
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/stylePerso.css">
@@ -133,21 +133,27 @@
       margin-right: 0; 
     }
   </style>
-  <link rel="icon" type="image/png" sizes="32x32" href="_extensions/insee-clair/ressources/insee_embleme_couleurs_RVB.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="_extensions/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="_extensions/insee-clair/ressources/1_Template-INSEE-Clair_premiere-page.svg" data-background-opacity="1" data-background-size="contain" class="quarto-title-block center">
+<section id="title-slide" data-background-image="_extensions/insee-clair/ressources/revealJs/1_Template-INSEE-Clair_premiere-page.svg" data-background-opacity="1" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">From <em>‘it worked on my notebook’</em> to production-ready machine learning</h1>
   <p class="subtitle">Bridging the gap with MLOps</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Lino Galiana 
+Lino GALIANA 
 </div>
+<div class="quarto-title-author-email">
+<a href="mailto:lino.galiana@insee.fr">lino.galiana@insee.fr</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Insee — French National Institute of Statistics and Economic Studies
+          </p>
         <p class="quarto-title-affiliation">
             Insee
           </p>
@@ -161,8 +167,8 @@ Lino Galiana
 <!-- _extensions/mon-extension/toc-slide.html -->
 <section id="custom-toc-slide">
   <h2>Sommaire</h2>
-  <div class="toc-cards"><div class="toc-card level-1"><a href="#/introduction"><p class="card-number card-number-01">01</p><p></p><p class="card-title">Introduction</p></a></div>
-<div class="toc-card level-1"><a href="#/handling-data-driven-projects-distinct-lifecycles"><p class="card-number card-number-02">02</p><p></p><p class="card-title">Handling data driven projects distinct lifecycles</p></a></div>
+  <div class="toc-cards"><div class="toc-card level-1"><a href="#/intro"><p class="card-number card-number-01">01</p><p></p><p class="card-title">Introduction</p></a></div>
+<div class="toc-card level-1"><a href="#/lifecycles"><p class="card-number card-number-02">02</p><p></p><p class="card-title">Handling data driven projects distinct lifecycles</p></a></div>
 <div class="toc-card level-1"><a href="#/from-zero-to-hero-in-production"><p class="card-number card-number-03">03</p><p></p><p class="card-title">From zero to hero in production</p></a></div>
 <div class="toc-card level-1"><a href="#/adding-experiment-tracking-and-observability"><p class="card-number card-number-04">04</p><p></p><p class="card-title">Adding experiment tracking and observability</p></a></div>
 <div class="toc-card level-1"><a href="#/conclusion"><p class="card-number card-number-05">05</p><p></p><p class="card-title">Conclusion</p></a></div></div>
@@ -208,11 +214,11 @@ Lino Galiana
 
 </section>
 <section>
-<section id="introduction" class="title-slide slide level1 center" data-number="1">
+<section id="intro" class="title-slide slide level1 backgroundTitre_bleu center" data-number="1">
 <h1><span class="header-section-number">1</span> Introduction</h1>
 
 </section>
-<section id="the-production-wall" class="slide level2">
+<section id="prod_wall" class="slide level2 backgroundStandard_bleu">
 <h2>The “production wall”</h2>
 <ul>
 <li>Most data-driven projects <span class="blue2"><strong>never deliver value</strong></span> (<a href="https://sloanreview.mit.edu/projects/expanding-ais-impact-with-organizational-learning/">1</a>, <a href="https://hdsr.mitpress.mit.edu/pub/2fu65ujf/release/6">2</a>, <a href="https://www.researchgate.net/publication/346647451_Beyond_the_Hype_Why_Do_Data-Driven_Projects_Fail">3</a>)
@@ -246,7 +252,7 @@ Lino Galiana
 </ul>
 </div>
 </section>
-<section id="fostering-continuity" class="slide level2">
+<section id="mlops_circle" class="slide level2 backgroundStandard_bleu">
 <h2>Fostering continuity</h2>
 
 <img data-src="img/exploration-production.png" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">Source: <a href="https://public.dhe.ibm.com/software/data/sw-library/analytics/data-science-lifecycle/#model-implementation">ibm.com</a></p><ul>
@@ -258,11 +264,11 @@ Lino Galiana
 </ul>
 </section></section>
 <section>
-<section id="handling-data-driven-projects-distinct-lifecycles" class="title-slide slide level1 inverse center" data-number="2">
+<section id="lifecycles" class="title-slide slide level1 backgroundTitre_violet center" data-number="2">
 <h1><span class="header-section-number">2</span> Handling data driven projects distinct lifecycles</h1>
 
 </section>
-<section id="three-lifecycles-to-master" class="slide level2">
+<section id="three-lifecycles-to-master" class="slide level2 backgroundStandard_violet">
 <h2>Three lifecycles to master</h2>
 <ul>
 <li>A robust ML pipeline requires managing <span class="orange"><strong>three independent lifecycles</strong></span>:
@@ -272,7 +278,7 @@ Lino Galiana
 </ul>
 
 <img data-src="excalidraw/projet_structure.png" class="r-stretch"></section>
-<section id="why-does-this-matter" class="slide level2">
+<section id="why-does-this-matter" class="slide level2 backgroundStandard_violet">
 <h2>Why does this matter?</h2>
 <ul>
 <li>Models (weights and inference) are <span class="blue2"><strong>not static artefacts</strong></span>:
@@ -296,7 +302,7 @@ Lino Galiana
 </ul>
 </div>
 </section>
-<section id="choosing-appropriate-tools" class="slide level2">
+<section id="choosing-appropriate-tools" class="slide level2 backgroundStandard_violet">
 <h2>Choosing appropriate tools</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
@@ -316,15 +322,15 @@ Lino Galiana
 
 <img data-src="excalidraw/projet_structure2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:30.0%"></section></section>
 <section>
-<section id="from-zero-to-hero-in-production" class="title-slide slide level1 inverse center" data-number="3">
+<section id="from-zero-to-hero-in-production" class="title-slide slide level1 backgroundTitre_jaune center" data-number="3">
 <h1><span class="header-section-number">3</span> From zero to hero in production</h1>
 
 </section>
-<section id="it-works-on-my-machine" class="slide level2">
+<section id="it-works-on-my-machine" class="slide level2 backgroundStandard_jaune">
 <h2>“It works on my machine”</h2>
 
 <img data-src="img/memes_works_machine.jpg" class="r-stretch"></section>
-<section id="bridging-the-devproduction-gap" class="slide level2">
+<section id="bridging-the-devproduction-gap" class="slide level2 backgroundStandard_jaune">
 <h2>Bridging the dev/production gap</h2>
 <ul>
 <li><span class="orange"><strong>Environment gap</strong></span> is one of the most common sources of failure:
@@ -342,7 +348,7 @@ Lino Galiana
 </ul>
 </div>
 </section>
-<section id="an-industrialized-project" class="slide level2">
+<section id="an-industrialized-project" class="slide level2 backgroundStandard_jaune">
 <h2>An industrialized project</h2>
 <p><span class="orange"><strong>Kubernetes</strong></span> turns individual containers into an <span class="blue2"><strong>industrialised, scalable fleet</strong></span></p>
 
@@ -370,11 +376,11 @@ Lino Galiana
 </div>
 </section></section>
 <section>
-<section id="adding-experiment-tracking-and-observability" class="title-slide slide level1 inverse center" data-number="4">
+<section id="adding-experiment-tracking-and-observability" class="title-slide slide level1 backgroundTitre_vert center" data-number="4">
 <h1><span class="header-section-number">4</span> Adding experiment tracking and observability</h1>
 
 </section>
-<section id="experimentation-phase" class="slide level2">
+<section id="experimentation-phase" class="slide level2 backgroundStandard_vert">
 <h2>Experimentation phase</h2>
 <p>During development, practitioners need to:</p>
 <ul>
@@ -386,7 +392,7 @@ Lino Galiana
 <p><code>MLFlow</code> (and similar platforms!) provides a centralised tracking server, model registry, and serving API</p>
 </div>
 </section>
-<section id="from-experimentation-to-production-observability" class="slide level2">
+<section id="from-experimentation-to-production-observability" class="slide level2 backgroundStandard_vert">
 <h2>From experimentation to production observability</h2>
 <ul>
 <li>The same platforms extend into <span class="orange"><strong>production monitoring</strong></span>:
@@ -405,7 +411,7 @@ Lino Galiana
 </ul>
 </div>
 </section>
-<section id="feedback-loops-and-continuous-improvement" class="slide level2">
+<section id="feedback-loops-and-continuous-improvement" class="slide level2 backgroundStandard_vert">
 <h2>Feedback loops and continuous improvement</h2>
 
 <img data-src="./excalidraw/feedback_loop.png" class="r-stretch"><div class="fragment">
@@ -416,7 +422,7 @@ Lino Galiana
 </ul>
 </div>
 </section>
-<section id="two-paradigms-two-sets-of-operational-constraints" class="slide level2">
+<section id="two-paradigms-two-sets-of-operational-constraints" class="slide level2 backgroundStandard_vert">
 <h2>Two paradigms, two sets of operational constraints</h2>
 <table class="caption-top">
 <thead>
@@ -455,7 +461,7 @@ Lino Galiana
 </tbody>
 </table>
 </section>
-<section id="annotation-and-evaluation-challenges" class="slide level2">
+<section id="annotation-and-evaluation-challenges" class="slide level2 backgroundStandard_vert">
 <h2>Annotation and evaluation challenges</h2>
 <p><span class="orange"><strong>Supervised learning</strong></span>:</p>
 <ul>
@@ -488,11 +494,11 @@ Lino Galiana
 </div>
 </section></section>
 <section>
-<section id="conclusion" class="title-slide slide level1 inverse center" data-number="5">
+<section id="conclusion" class="title-slide slide level1 backgroundTitre_bleu center" data-number="5">
 <h1><span class="header-section-number">5</span> Conclusion</h1>
 
 </section>
-<section id="key-takeaways" class="slide level2">
+<section id="key-takeaways" class="slide level2 backgroundStandard_bleu">
 <h2>Key takeaways</h2>
 <ol type="1">
 <li><span class="orange"><strong>Structure your project</strong></span> around three independent lifecycles: data, code, environment</li>
@@ -865,6 +871,158 @@ Lino Galiana
             }
           });
         }
+            let selectedAnnoteEl;
+            const selectorForAnnotation = ( cell, annotation) => {
+              let cellAttr = 'data-code-cell="' + cell + '"';
+              let lineAttr = 'data-code-annotation="' +  annotation + '"';
+              const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+              return selector;
+            }
+            const selectCodeLines = (annoteEl) => {
+              const doc = window.document;
+              const targetCell = annoteEl.getAttribute("data-target-cell");
+              const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+              const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+              const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+              const lineIds = lines.map((line) => {
+                return targetCell + "-" + line;
+              })
+              let top = null;
+              let height = null;
+              let parent = null;
+              if (lineIds.length > 0) {
+                  //compute the position of the single el (top and bottom and make a div)
+                  const el = window.document.getElementById(lineIds[0]);
+                  top = el.offsetTop;
+                  height = el.offsetHeight;
+                  parent = el.parentElement.parentElement;
+                if (lineIds.length > 1) {
+                  const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+                  const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+                  height = bottom - top;
+                }
+                if (top !== null && height !== null && parent !== null) {
+                  // cook up a div (if necessary) and position it 
+                  let div = window.document.getElementById("code-annotation-line-highlight");
+                  if (div === null) {
+                    div = window.document.createElement("div");
+                    div.setAttribute("id", "code-annotation-line-highlight");
+                    div.style.position = 'absolute';
+                    parent.appendChild(div);
+                  }
+                  div.style.top = top - 2 + "px";
+                  div.style.height = height + 4 + "px";
+                  div.style.left = 0;
+                  let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+                  if (gutterDiv === null) {
+                    gutterDiv = window.document.createElement("div");
+                    gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                    gutterDiv.style.position = 'absolute';
+                    const codeCell = window.document.getElementById(targetCell);
+                    const gutter = codeCell.querySelector('.code-annotation-gutter');
+                    gutter.appendChild(gutterDiv);
+                  }
+                  gutterDiv.style.top = top - 2 + "px";
+                  gutterDiv.style.height = height + 4 + "px";
+                }
+                selectedAnnoteEl = annoteEl;
+              }
+            };
+            const unselectCodeLines = () => {
+              const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+              elementsIds.forEach((elId) => {
+                const div = window.document.getElementById(elId);
+                if (div) {
+                  div.remove();
+                }
+              });
+              selectedAnnoteEl = undefined;
+            };
+              // Handle positioning of the toggle
+          window.addEventListener(
+            "resize",
+            throttle(() => {
+              elRect = undefined;
+              if (selectedAnnoteEl) {
+                selectCodeLines(selectedAnnoteEl);
+              }
+            }, 10)
+          );
+          function throttle(fn, ms) {
+          let throttle = false;
+          let timer;
+            return (...args) => {
+              if(!throttle) { // first call gets through
+                  fn.apply(this, args);
+                  throttle = true;
+              } else { // all the others get throttled
+                  if(timer) clearTimeout(timer); // cancel #2
+                  timer = setTimeout(() => {
+                    fn.apply(this, args);
+                    timer = throttle = false;
+                  }, ms);
+              }
+            };
+          }
+            const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+            for (let i=0; i<annoteTargets.length; i++) {
+              const annoteTarget = annoteTargets[i];
+              const targetCell = annoteTarget.getAttribute("data-target-cell");
+              const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+              const contentFn = () => {
+                const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+                if (content) {
+                  const tipContent = content.cloneNode(true);
+                  tipContent.classList.add("code-annotation-tip-content");
+                  return tipContent.outerHTML;
+                }
+              }
+              const config = {
+                allowHTML: true,
+                content: contentFn,
+                onShow: (instance) => {
+                  selectCodeLines(instance.reference);
+                  instance.reference.classList.add('code-annotation-active');
+                  window.tippy.hideAll();
+                },
+                onHide: (instance) => {
+                  unselectCodeLines();
+                  instance.reference.classList.remove('code-annotation-active');
+                },
+                maxWidth: 300,
+                delay: [50, 0],
+                duration: [200, 0],
+                offset: [5, 10],
+                arrow: true,
+                appendTo: function(el) {
+                  return el.parentElement.parentElement.parentElement;
+                },
+                interactive: true,
+                interactiveBorder: 10,
+                theme: 'light-border',
+                placement: 'right',
+                popperOptions: {
+                  modifiers: [
+                  {
+                    name: 'flip',
+                    options: {
+                      flipVariations: false, // true by default
+                      allowedAutoPlacements: ['right'],
+                      fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                    },
+                  },
+                  {
+                    name: 'preventOverflow',
+                    options: {
+                      mainAxis: false,
+                      altAxis: false
+                    }
+                  }
+                  ]        
+                }      
+              };
+              window.tippy(annoteTarget, config); 
+            }
         const findCites = (el) => {
           const parentEl = el.parentElement;
           if (parentEl) {
