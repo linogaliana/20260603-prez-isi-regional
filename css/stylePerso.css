@@ -1,0 +1,69 @@
+/**********************CSS PERSONNALISE****************************/
+
+/*.reveal section {
+  border: 5px solid black;
+}*/
+
+.border {
+  border: solid 2px black;
+}
+
+.titreAnimeAvant {
+  margin-top: 200px; 
+  font-size: 2.5em; 
+  font-weight: bold;
+  color: #0F417A;
+}
+
+.titreAnimeApres {
+  color: #0F417A;
+  position: absolute;
+  top: -0.5em;
+  left: 20%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.logoPageFin {
+  width: 200px;
+  height: 200px;
+  bottom: 50px;
+  position: relative;
+}
+
+#imageLogoInseeModal{
+  width: 70%;
+  left: 15%;
+  position: relative;
+}
+
+.width70{
+  width: 70%;
+}
+
+.width65{
+  width: 65%;
+}
+
+/* Texte des listes en noir (surcharge le bleu du thème) */
+.reveal .level2 li {
+  color: #000;
+}
+
+/* Titres de slides en bleu INSEE */
+.reveal .level2 h2 {
+  color: #0F417A;
+}
+
+/* Bleu INSEE pour le texte inline */
+.blue2 {
+  color: #0F417A;
+}
+
+/* Taille réduite des titres sur les slides de transition */
+.level1 .header-section-number {
+  font-size: 4em;
+}
+.level1 .title-text {
+  font-size: 1.2em;
+}
