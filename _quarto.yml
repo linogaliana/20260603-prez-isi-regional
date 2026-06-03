@@ -1,6 +1,7 @@
 project:
-  title: "Présentation quarto-Insee"
-  output-dir: public
+  type: default
+  title: "From *'it worked on my notebook'* to production-ready machine learning"
+  output-dir: _output
   resources:
     - "_extensions/"
     - "css/"
@@ -14,14 +15,9 @@ project:
     - "*_files/"
   render:
     - "index.qmd"
-    - "fpe.qmd"
-    - "fpt.qmd"
-    - "fph.qmd"
 
 format:
   insee-clair-revealjs: default
-  odt: 
-    prefer-html: true
     
 header-includes: |
   <link rel="icon" type="image/png" sizes="32x32" href="_extensions/insee-clair/ressources/revealJs/insee_embleme_couleurs_RVB.svg">
@@ -78,3 +74,4 @@ revealjs-plugins:
   - multimodal
 filters:
   - roughnotation
+
