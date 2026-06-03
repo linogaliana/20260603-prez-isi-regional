@@ -143,7 +143,7 @@ Standardised format (`Parquet`), cloud storage (`S3`), pipeline-oriented workflo
 
 ![](/excalidraw/projet_structure3.png)
 
-## MLOps on Kubernetes
+## MLOps on Kubernetes   {.backgroundStandard_jaune}
 
 - [**Training**]{.orange}: launch parallel trainings (e.g. cross validation)
 - [**Model serving**]{.orange}: expose a versioned model behind a stable endpoint (API)
